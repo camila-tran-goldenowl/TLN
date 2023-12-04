@@ -287,6 +287,10 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 .mat-card-actions button .mat-button-wrapper{
     @include title();
 }
+
+.filter-bar .mat-button-wrapper span{
+    text-transform: capitalize;
+}
 /* end filter section */
 
 /* begin card section */
