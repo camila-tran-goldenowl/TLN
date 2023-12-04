@@ -342,7 +342,14 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 }
 
 .search-card.focused[_ngcontent-mhq-c35]{
+    @include black-text();
     background-color: white;
+
+    .search-card-from{
+        span{
+            @include black-text();
+        }
+    }
 }
 /* end card section */
 
