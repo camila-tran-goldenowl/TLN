@@ -3,8 +3,6 @@
 @import url('https://fonts.cdnfonts.com/css/delmon-delicate');
 @import url('https://fonts.cdnfonts.com/css/microsoft-yahei');
 
-
-
 $primary-sea-color: #79A2AA;
 $primary-brown-color: #625956;
 $primary-black-color: #18181B;
@@ -147,10 +145,6 @@ body {
     letter-spacing: 0.15em;
 }
 
-.mat-select-arrow{
-    @include black-text();
-}
-
 .mat-select-value-text{
     @include header();
 }
@@ -180,6 +174,7 @@ body {
 }
 
 .mat-select-arrow{
+    @include black-text();
     transform: rotate(45deg);
     border: solid black;
     border-width: 0 2px 2px 0;
@@ -187,6 +182,7 @@ body {
     padding: 3px;
     border-top: 0 !important;
     border-left: 0 !important;
+    border-right: 2px solid black !important;
 }
 
 // language
@@ -361,7 +357,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .search-card-from{
     max-width: 55% !important;
-    line-height: unset;
+    line-height: unset !important;
     font-size: 18px;
     display: flex;
     align-items: self-end;
