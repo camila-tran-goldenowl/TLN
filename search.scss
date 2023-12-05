@@ -83,7 +83,9 @@ $secondary-grey-color: #DCDDDE;
 /* begin general */
 html[lang="en"] .mat-stroked-button,
 html[lang="en"] .mat-flat-button,
-html[lang="en"] .mat-card-content{
+html[lang="en"] .mat-card-content,
+html[lang="en"] .mat-form-field{
+    font-family: Montserrat !important;
     font-weight: 400 !important;
 }
 
@@ -114,6 +116,11 @@ body {
     border: 1px solid $secondary-grey-color !important;
 }
 
+.mat-form-field-outline-start,
+.mat-form-field-outline-end{
+    border-radius: 0 !important;
+}
+
 // calendar
 .mat-calendar *{
     font-family: Montserrat !important;
@@ -131,6 +138,10 @@ body {
     @include black-text();
     @include header();
 }
+
+// .mat-form-field-hide-placeholder .mat-form-field-outline{
+//     color: $secondary-orange-color !important;
+// }
 
 // input
 .mat-form-field-label{
@@ -168,11 +179,24 @@ body {
 }
 
 .mat-selected[aria-selected="true"]{
-    text-decoration: underline;
+    @include black-text();
     background-color: transparent !important;
 }
 
+.mat-select-arrow{
+    transform: rotate(45deg);
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    border-top: 0 !important;
+    border-left: 0 !important;
+}
+
 // language
+#desktopLang{
+    border-radius: 0;
+}
 .mat-stroked-button.mat-primary{
     @include body-text();
     @include black-text();
@@ -199,6 +223,10 @@ body {
     transition: 0.3s;
     background: transparent !important;
 }
+
+.mat-menu-panel{
+    border-radius: 0 !important;
+}
 // search
 .open-filter-button .ng-star-inserted {
     @include body-text();
@@ -211,6 +239,7 @@ body {
 .searchBarSubmitBtn{
     @include button();
     @include black-text();
+    flex: none;
 }
 /* end filter section */
 
@@ -274,9 +303,10 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 // action
 .mat-card-actions:first-child{
+    border-radius: 0;
     border: 1px solid $primary-black-color;
     background-color: white !important;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .mat-card-actions button{
