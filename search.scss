@@ -593,7 +593,7 @@ html[lang="en"] h2.product-title{
 
     .title-group{
         border-radius: 0;
-        background-color: $primary-black-color;
+        background-color: $primary-black-color !important;
         height: auto !important;
         padding: 10px 20px !important;
         margin: 14px;
