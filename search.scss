@@ -192,12 +192,14 @@ body {
 // language
 #desktopLang{
     border-radius: 0;
+    line-height: 20px;
+    letter-spacing: 0.15em;
 }
 .mat-stroked-button.mat-primary{
     @include body-text();
     @include black-text();
     border: 1px solid $primary-black-color;
-    background: white;
+    background: $secondary-white-color;
     padding: 12px;
 }
 
@@ -232,9 +234,11 @@ body {
     text-transform: uppercase;
 }
 
-.searchBarSubmitBtn{
+#searchBarSubmitBtn{
     @include button();
     @include black-text();
+    line-height: 28px;
+    letter-spacing: 0.15em;
     flex: none;
 }
 /* end filter search section */
@@ -263,12 +267,20 @@ body {
 .filter .subtitle{
     @include black-text();
     @include title();
+    line-height: 15px;
+    letter-spacing: 0.15em;
+
     text-transform: uppercase;
 } 
 
 .mat-mdc-standard-chip {
     @include button();
+    background-color: $secondary-grey-color !important;
     padding: 0;
+}
+
+.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){
+    background-color: $secondary-orange-color !important;
 }
 
 .mat-mdc-chip-action-label{
@@ -299,14 +311,14 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 // action
 .mat-card-actions:first-child{
-    border-radius: 0;
     border: 1px solid $primary-black-color;
-    background-color: white !important;
+    background-color: $secondary-white-color !important;
     text-transform: uppercase;
 }
 
 .mat-card-actions button{
     @include title();
+    border-radius: 0;
     text-transform: uppercase;
 }
 
@@ -316,6 +328,10 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .filter-bar .mat-button-wrapper span{
     text-transform: capitalize;
+}
+
+.filter-bar button{
+    background-color: $secondary-white-color;
 }
 /* end filter list section */
 
@@ -344,6 +360,8 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 }
 
 .search-card-from{
+    max-width: 55% !important;
+    line-height: unset;
     font-size: 18px;
     display: flex;
     align-items: self-end;
@@ -372,11 +390,9 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .search-card.focused[_ngcontent-mhq-c35]{
     @include black-text();
-    background-color: white;
+    background-color: $secondary-white-color;
 
     .search-card-from{
-        max-width: 53%;
-        line-height: unset;
         span{
             @include black-text();
         }
