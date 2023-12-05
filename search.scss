@@ -341,6 +341,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 .mat-card-actions button{
     @include title();
     border-radius: 0;
+    height: fit-content;
     text-transform: uppercase;
 }
 
@@ -706,14 +707,5 @@ mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end:hover{
 
         }
     }
-}
-
-app-shopping-cart{
-   .mat-card-actions{
-        button{
-            height: auto;
-            min-height: auto;
-        }
-   }
 }
 /* end checkout section */
