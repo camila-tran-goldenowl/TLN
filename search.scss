@@ -108,7 +108,8 @@ html[lang="en"] .card-content *,
 html[lang="en"] .mobile-top span, 
 html[lang="en"] .mat-card-content, 
 html[lang="en"] .mat-checkbox, 
-html[lang="en"] .invoice-container *{
+html[lang="en"] .invoice-container *,
+html[lang="en"] .mat-headline {
     font-family: Montserrat !important;
     font-weight: 400 !important;
 }
@@ -543,6 +544,8 @@ html[lang="en"] h2.product-title{
     }
 
     .product-features {
+        margin-top: 20px;
+
         > span {
             @include caption();
         }
@@ -575,12 +578,40 @@ html[lang="en"] h2.product-title{
     }
 }
 
-.product-card{
+.vendor-container{
     .open-gallery{
-        border-radius: 0 !important;
-        border: 0 !important;
-        padding: 0.5rem;
+        @include title();
+        text-transform: uppercase;
+        font-family: Montserrat;
+        line-height: 19px;
+        letter-spacing: 0.15em;
+
+        span, .mat-icon{
+            @include black-text();
+        }
     }
+
+    .title-group{
+        border-radius: 0;
+        background-color: $primary-black-color;
+        height: auto !important;
+        padding: 10px 20px !important;
+        margin: 14px;
+
+        h2{
+            @include main-font();
+            font-size: 10px !important;
+            line-height: 28px !important;
+            letter-spacing: 0.15em !important;
+            font-weight: 400 !important;
+        }
+    }
+}
+
+.open-gallery{
+    border-radius: 0 !important;
+    border: 0 !important;
+    padding: 0.5rem;
 }
 
 .rack[_ngcontent-lqp-c63]{
