@@ -117,6 +117,7 @@ html[lang="en"] .checkout-vendor-info,
 html[lang="en"] .side-cart .summary-row {
     font-family: Montserrat !important;
     font-weight: 400 !important;
+    @include black-text();
 }
 
 .mat-flat-button.mat-primary{
@@ -189,6 +190,17 @@ body {
     @include hover-underline();
 }
 
+.mat-menu-item:hover:after {
+    @include hover-underline();
+}
+
+.mat-menu-item:hover span{
+    background: transparent;
+}
+
+.mat-body p, .mat-body-1 p, .mat-typography .mat-body p, .mat-typography .mat-body-1 p, .mat-typography p{
+    margin: 0;
+}
 // guest 
 .mat-option:hover .mat-option-text {
     text-decoration: underline;
@@ -669,22 +681,27 @@ html[lang="en"] h2.product-title{
 
 
 /* begin dialog section */
-.mat-dialog-title{
-    h2{
-        @include sub-header();
-        font-size: 18px;
-        line-height: 29px;
-
-    }
+#mat-dialog-title-2{
+    @include sub-header();
+    font-size: 18px !important;
+    line-height: 29px;
+    line-height: 29px !important;
 }
+
 mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end span{
     @include title();
+    text-transform: uppercase;
     line-height: 15px;
     letter-spacing: 0.15em;
+
+    &:hover{
+        @include hover-underline();
+    }
 }
 
-mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end:hover{
-    @include hover-underline();
+mat-dialog-content.mat-dialog-content.mat-typography{
+    @include body-text();
+    line-height: 26px;
 }
 /* end dialog section */
 
