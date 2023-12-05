@@ -341,7 +341,8 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 .mat-card-actions button{
     @include title();
     border-radius: 0;
-    height: fit-content;
+    height: fit-content !important;
+    min-height: fit-content !important;
     text-transform: uppercase;
 }
 
