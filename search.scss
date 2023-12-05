@@ -105,7 +105,7 @@ body {
     @include black-text();
 }
 
-/* begin filter section */
+/* begin filter search section */
 .mobile-top{
     width: 100%;
 }
@@ -138,10 +138,6 @@ body {
     @include black-text();
     @include header();
 }
-
-// .mat-form-field-hide-placeholder .mat-form-field-outline{
-//     color: $secondary-orange-color !important;
-// }
 
 // input
 .mat-form-field-label{
@@ -241,10 +237,10 @@ body {
     @include black-text();
     flex: none;
 }
-/* end filter section */
+/* end filter search section */
 
 
-/* begin filter section */
+/* begin filter list section */
 .mdc-slider__track--active_fill,
 .mat-mdc-slider .mdc-slider__track--inactive{
     border-color: $primary-black-color !important;
@@ -321,7 +317,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 .filter-bar .mat-button-wrapper span{
     text-transform: capitalize;
 }
-/* end filter section */
+/* end filter list section */
 
 /* begin card section */
 .search-card {
@@ -355,6 +351,8 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .per-person{
     @include caption();
+    line-height: unset;
+    padding-right: 4px;
     order: -1;
 }
 
@@ -362,6 +360,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
     @include button();
     @include body-text();
     @include black-text();
+    @include title();
     text-transform: uppercase;
 
 }
@@ -376,6 +375,8 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
     background-color: white;
 
     .search-card-from{
+        max-width: 53%;
+        line-height: unset;
         span{
             @include black-text();
         }
@@ -450,3 +451,10 @@ html[lang="en"] .card-content * {
     display: none;
 }
 /* end map section */
+
+
+/* begin search list result */
+.search-results{
+    width: calc(52% - 1em) !important;
+}
+/* end search list result */
