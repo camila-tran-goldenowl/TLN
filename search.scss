@@ -109,7 +109,12 @@ html[lang="en"] .mobile-top span,
 html[lang="en"] .mat-card-content, 
 html[lang="en"] .mat-checkbox, 
 html[lang="en"] .invoice-container *,
-html[lang="en"] .mat-headline {
+html[lang="en"] .mat-headline,
+html[lang="en"] .rate-plan-subtitle, 
+html[lang="en"] .product-description, 
+html[lang="en"] .checkout-room-description, 
+html[lang="en"] .checkout-vendor-info, 
+html[lang="en"] .side-cart .summary-row {
     font-family: Montserrat !important;
     font-weight: 400 !important;
 }
@@ -575,6 +580,13 @@ html[lang="en"] h2.product-title{
             font-size: 18px;
             line-height: 29px;
         }
+    }
+
+    .product-description{
+        @include black-text();
+        @include body-text();
+        font-family: Montserrat;
+        line-height: 26px;
     }
 }
 
