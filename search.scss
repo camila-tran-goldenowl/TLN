@@ -699,6 +699,12 @@ mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end:hover{
 
         .summary-row{
             @include body-text();
+
+        }
+
+        .dates-row{
+            margin: 1rem 0 !important;
+            padding: 0 !important;
         }
 
         .date-summary{
@@ -719,6 +725,7 @@ mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end:hover{
     > div{
         justify-content: space-between;
         align-items: baseline;
+        margin-top: 1rem ;
     }
 
     .cart-total{
