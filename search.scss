@@ -326,9 +326,10 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
     text-transform: capitalize;
 }
 
-.filter-bar button{
-    background-color: $secondary-white-color;
+.filter-bar .mat-stroked-button.mat-primary{
+    background-color: white !important; 
 }
+
 /* end filter list section */
 
 /* begin card section */
