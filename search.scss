@@ -72,6 +72,13 @@ $secondary-grey-color: #DCDDDE;
     color: $primary-black-color !important;
 }
 
+@mixin hover-underline{
+    background-color: transparent !important;
+    text-decoration: underline;
+    transition: 0.3s;
+    text-underline-offset: 4px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -79,10 +86,29 @@ $secondary-grey-color: #DCDDDE;
 }
 
 /* begin general */
-html[lang="en"] .mat-stroked-button,
-html[lang="en"] .mat-flat-button,
-html[lang="en"] .mat-card-content,
-html[lang="en"] .mat-form-field{
+html[lang="en"] body, 
+html[lang="en"] .mat-body, 
+html[lang="en"] .mat-body-1, 
+html[lang="en"] .mat-typography, 
+html[lang="en"] .mat-form-field, 
+html[lang="en"] .mat-button, 
+html[lang="en"] .mat-raised-button, 
+html[lang="en"] .mat-stroked-button, 
+html[lang="en"] .mat-flat-button, 
+html[lang="en"] .mat-list-item, 
+html[lang="en"] .mat-list-option, 
+html[lang="en"] .mat-card-title, 
+html[lang="en"] .product-dates, 
+html[lang="en"] .mat-h1, 
+html[lang="en"] .mat-h3, 
+html[lang="en"] .mat-dialog-title, 
+html[lang="en"] h3.rate-plan-title, 
+html[lang="en"] .mat-subheading-2, 
+html[lang="en"] .card-content *, 
+html[lang="en"] .mobile-top span, 
+html[lang="en"] .mat-card-content, 
+html[lang="en"] .mat-checkbox, 
+html[lang="en"] .invoice-container *{
     font-family: Montserrat !important;
     font-weight: 400 !important;
 }
@@ -112,6 +138,10 @@ body {
     padding: 12px 10px !important;
     @include black-text();
     border: 1px solid $secondary-grey-color !important;
+}
+
+.open-filter-button.active{
+    border: 1px solid $secondary-orange-color !important;
 }
 
 .mat-form-field-outline-start,
@@ -150,8 +180,7 @@ body {
 }
 
 .mat-menu-item:hover:after {
-    text-decoration: underline;
-    transition: 0.3s;
+    @include hover-underline();
 }
 
 // guest 
@@ -213,9 +242,7 @@ body {
 }
 
 .mat-menu-item:hover{
-    text-decoration: underline;
-    transition: 0.3s;
-    background: transparent !important;
+    @include hover-underline();
 }
 
 .mat-menu-panel{
@@ -264,8 +291,7 @@ body {
     @include black-text();
     @include title();
     line-height: 15px;
-    letter-spacing: 0.15em;
-
+    letter-spacing: 0.15em !important;
     text-transform: uppercase;
 } 
 
@@ -275,7 +301,7 @@ body {
     padding: 0;
 }
 
-.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled){
+.mat-mdc-chip-selected{
     background-color: $secondary-orange-color !important;
 }
 
@@ -387,7 +413,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .search-card.focused[_ngcontent-mhq-c35]{
     @include black-text();
-    background-color: $secondary-white-color;
+    background-color: white;
 
     .search-card-from{
         span{
@@ -471,3 +497,223 @@ html[lang="en"] .card-content * {
     width: calc(52% - 1em) !important;
 }
 /* end search list result */
+
+
+
+/*==================PROPER PAGE =====================*/
+html[lang="en"] h2.product-title{
+    @include sub-header();
+    line-height: 32px;
+}
+
+// search bar
+.search-bar{
+    .mat-flat-button{
+        border-radius: 50%;
+    }
+}
+
+// description
+.vendor-description{
+    @include body-text();
+    @include black-text();
+    border-radius: 0 !important;
+    background-color: $secondary-grey-color !important;
+    line-height: 26px !important;
+    letter-spacing: 0 !important;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.vendor-description[_ngcontent-lqp-c70]{
+    box-shadow: none !important;
+}
+
+/* begin hotel card detail section */
+.product-info-container {
+    .product-dates {
+        @include caption();
+        line-height: 22px;
+    }
+
+    .date-message {
+        display: none;
+    }
+
+    .product-features {
+        > span {
+            @include caption();
+        }
+
+        .material-icons {
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+        }
+    }
+
+    .rate-price-container > p {
+        @include caption();
+        line-height: 22px;
+    }
+
+    .rate-plan-price {
+        font-weight: 500;
+
+        .rack {
+            line-height: 19px;  
+        }
+        
+
+        .sl {
+            margin-top: 1em;
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+}
+
+.product-card{
+    .open-gallery{
+        border-radius: 0 !important;
+        border: 0 !important;
+        padding: 0.5rem;
+    }
+}
+
+.rack[_ngcontent-lqp-c63]{
+    margin-bottom: 0.5em;
+}
+#add-product{
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.rate-plan-container{
+    .rate-plan-text-container{
+        padding-right: 0 !important;
+
+        .rate-plan-subtitle{
+            @include body-text();
+            white-space: inherit !important;
+            line-height: 25.6px;
+        }
+    
+        .rate-plan-title-container{
+            h3{
+                @include sub-header();
+                font-size: 18px;
+                line-height: 22px !important;
+                white-space: inherit !important;
+            }
+        }
+
+        button{
+
+            mat-icon{
+                color: $secondary-orange-color;
+            }
+        }
+    }
+    
+}
+
+/* end hotel card detail section */
+
+
+/* begin dialog section */
+.mat-dialog-title{
+    h2{
+        @include sub-header();
+        font-size: 18px;
+        line-height: 29px;
+
+    }
+}
+mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end span{
+    @include title();
+    line-height: 15px;
+    letter-spacing: 0.15em;
+}
+
+mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end:hover{
+    @include hover-underline();
+}
+/* end dialog section */
+
+/* begin checkout section */
+.mat-card-title{
+    font-family: Delmon Delicate;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+
+}
+
+.mat-list{
+    .mat-list-item{
+
+        .cart-room-type{
+            @include sub-header();
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: -0.5px;
+
+            white-space: inherit !important;
+        }
+
+        .summary-row{
+            @include body-text();
+        }
+
+        .date-summary{
+            @include title();
+            font-family: Montserrat;
+            line-height: 19px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 1.125rem;
+
+        }
+    }
+}
+
+.mat-card-content{
+    p{
+        @include header();
+    }
+
+    > div{
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .cart-total{
+        .sl{
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+
+        .rack{
+            @include title();
+            font-weight: 500;
+            line-height: 15px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+
+        }
+    }
+}
+
+app-shopping-cart{
+   .mat-card-actions{
+        button{
+            height: auto;
+            min-height: auto;
+        }
+   }
+}
+/* end checkout section */
