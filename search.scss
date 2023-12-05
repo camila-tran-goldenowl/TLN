@@ -745,4 +745,23 @@ mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end:hover{
         }
     }
 }
+
+.vendor-products-container{
+    mat-card-actions{
+        .mat-button-wrapper{
+            visibility: hidden;
+
+            &::after{
+                content: "BOOK NOW";
+                visibility: visible;
+                display: block;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
 /* end checkout section */
