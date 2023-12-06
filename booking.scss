@@ -122,3 +122,7 @@ body {
     color: #3388CC !important;
     text-decoration: none !important;
 }
+
+.gridcell > span{
+    @include body-text();
+}
