@@ -255,9 +255,6 @@ div#base_page\:tabview{
     margin-top: 40px;
 
     .accordion-bar-content{
-        .accordion-status-block{
-            margin-right: 2rem;
-        }
 
         .accordion-status {
             @include title();
