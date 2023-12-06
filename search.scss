@@ -574,32 +574,24 @@ html[lang="en"] h2.product-title{
         }
     }
 
-    .rate-price-container > p {
-        @include caption();
-        line-height: 22px;
-    }
-
-    .rate-plan-price {
-        font-weight: 500;
-
-        .rack {
-            line-height: 19px;  
-        }
-        
-
-        .sl {
-            margin-top: 1em;
-            font-size: 18px;
-            line-height: 29px;
-        }
-    }
-
     .product-description{
         @include black-text();
         @include body-text();
         font-family: Montserrat;
         line-height: 26px;
     }
+}
+
+
+.rate-plan-price .sl, .cart-item-price .sl[_ngcontent-lqp-c63] {
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 18px !important;
+}
+
+.rate-price-container > * {
+    @include caption();
+    line-height: 22px;
 }
 
 .vendor-container{
@@ -650,6 +642,7 @@ html[lang="en"] h2.product-title{
 
 .rate-plan-container{
     .rate-plan-text-container{
+        width: calc(75% - 5rem) !important;
         padding-right: 0 !important;
 
         .rate-plan-subtitle{
@@ -661,7 +654,7 @@ html[lang="en"] h2.product-title{
         .rate-plan-title-container{
             h3{
                 @include sub-header();
-                font-size: 18px;
+                font-size: 18px !important;
                 line-height: 22px !important;
                 white-space: inherit !important;
             }
@@ -773,6 +766,11 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
         }
     }
+
+    .mat-card-actions{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 }
 
 .vendor-products-container{
@@ -791,6 +789,18 @@ mat-dialog-content.mat-dialog-content.mat-typography{
                 transform: translate(-50%, -50%);
             }
         }
+
+        .mat-button-disabled{
+            &::after{
+                content:"PROCEED";
+                visibility: visible;
+                display: block;
+                margin: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 }
-/* end checkout section */
