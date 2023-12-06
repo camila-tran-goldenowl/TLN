@@ -3,6 +3,10 @@
 @import url('https://fonts.cdnfonts.com/css/delmon-delicate');
 @import url('https://fonts.cdnfonts.com/css/microsoft-yahei');
 
+html {
+    font-size: 62.5%;
+}
+
 $primary-sea-color: #79A2AA;
 $primary-brown-color: #625956;
 $primary-black-color: #18181B;
@@ -183,6 +187,11 @@ body {
 div#base_page\:j_idt43:after {
     @include body-text();
     line-height: 26px;
+    margin-top: 1.6rem;
     content: "\a Scroll down to view reservations and payment status.";
     white-space: pre;
+}
+
+.rb-footer{
+    display: none;
 }
