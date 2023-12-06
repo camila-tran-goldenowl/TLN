@@ -640,7 +640,12 @@ html[lang="en"] h2.product-title{
     margin-right: 0;
 }
 
+.rate-plan-container[_ngcontent-fmi-c56] {
+    align-items: baseline !important;
+}
+
 .rate-plan-container{
+
     .rate-plan-text-container{
         width: calc(75% - 5rem) !important;
         padding-right: 0 !important;
@@ -775,11 +780,20 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
 .vendor-products-container{
     mat-card-actions{
+        margin-bottom: 0 !important;
+
         .mat-button-wrapper{
             visibility: hidden;
         }
 
         button{
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.15em;
+            text-align: center;
+
             &::after{
                 visibility: visible;
                 display: block;
@@ -800,5 +814,40 @@ mat-dialog-content.mat-dialog-content.mat-typography{
                 content:"PROCEED";
             }
         }
+    }
+}
+
+html[lang=en] .mat-headline{
+    color: white !important;
+}
+
+app-shopping-cart{
+    .mat-card{
+        background: white;
+        border-radius: 0 !important;
+        margin-top: 76px;
+
+        &:has(.mat-button-disabled){
+            padding: 24px!important;
+
+            .cart-total{
+                margin:0 !important;
+            }
+
+            .ng-tns-c65-11{
+                align-items: baseline;
+            }
+        }
+
+        .mat-card-actions{
+            margin: 20px 0 0 0 !important;
+        }
+    }
+}
+
+app-search-bar{
+    .mat-flat-button.mat-primary{
+        padding: 0!important;
+        border-radius: 50% !important;
     }
 }
