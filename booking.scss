@@ -296,10 +296,9 @@ div#base_page\:vendorMessagePanel{
         @include header();
         color: white !important;
     }
+    
     a{
-        &::after{
-            right: 2rem !important;
-        }
+        right: 2rem !important;
     }
 }
 
