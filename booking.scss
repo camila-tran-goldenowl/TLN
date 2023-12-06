@@ -137,25 +137,6 @@ body {
     @include body-text();
 }
 
-.accordion-status {
-    @include title();
-    text-transform: lowercase !important;
-    line-height: 19px;
-    padding: 14px 20px;
-}
-
-.accordion-status::first-letter{
-    text-transform: uppercase !important;
-}
-
-.res{
-    background-color: $success-color !important;
-}
-
-.na {
-    background-color: $fail-color !important;
-}
-
 
 .ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
     background-color: $dark-grey !important;
@@ -272,6 +253,32 @@ div#base_page\:base_header{
 
 div#base_page\:tabview{
     margin-top: 40px;
+
+    .accordion-bar-content{
+        .accordion-status-block{
+            margin-right: 2rem;
+        }
+
+        .accordion-status {
+            @include title();
+            text-transform: lowercase !important;
+            line-height: 19px;
+            padding: 14px 20px;
+            color: white !important;
+        }
+        
+        .accordion-status::first-letter{
+            text-transform: uppercase !important;
+        }
+        
+        .res{
+            background-color: $success-color !important;
+        }
+        
+        .na {
+            background-color: $fail-color !important;
+        }
+    }
 }
 
 div#base_page\:vendorMessagePanel{
