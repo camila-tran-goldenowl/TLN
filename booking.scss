@@ -153,3 +153,11 @@ body {
         color: white !important;
     }
 }
+
+.accordion-title.rbn-bold{
+    @include body-text();
+}
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
+    color: $secondary-orange-color !important;
+}
