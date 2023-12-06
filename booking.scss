@@ -238,6 +238,7 @@ div#base_page\:gform\:gid{
 
     .ui-btn-icon-right{
         &:after{
+            @include black-text();
             background-color: transparent !important;
         }
         
