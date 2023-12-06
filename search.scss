@@ -300,9 +300,22 @@ body {
 .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{
     @include black-text();
 }
+app-search-filter{
+    mat-icon{
+        @include black-text();
+    }
+}
 
-.title > span{
-    @include sub-header();
+.title{
+    align-items: center !important;
+
+    > span{
+        @include sub-header();
+    }
+
+    button{
+        top: auto !important;
+    }
 }
 
 .filter .subtitle{
