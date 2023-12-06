@@ -147,11 +147,10 @@ body {
     background-color: $fail-color !important;
 }
 
-#base_page:vendorMessagePanel{
-    .ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
-        background-color: $dark-grey !important;
-        color: white !important;
-    }
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
+    background-color: $dark-grey !important;
+    color: white !important;
 }
 
 .accordion-title.rbn-bold{
@@ -163,7 +162,7 @@ body {
 }
 
 .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
-    background: transparent !important;
+    background-color: $dark-grey !important;
 }
 
 #base_page:locform:languageSelect_input-button{
