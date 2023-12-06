@@ -179,3 +179,10 @@ body {
     font-weight: 400;
     line-height: 32px;
 }
+
+div#base_page\:j_idt43:after {
+    @include body-text();
+    line-height: 26px;
+    content: "\a Scroll down to view reservations and payment status.";
+    white-space: pre;
+}
