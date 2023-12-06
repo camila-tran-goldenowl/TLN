@@ -263,7 +263,7 @@ div#base_page\:vendorMessagePanel{
 }
 
 form#base_page\:gform{
-    margin-top: 4rem;
+    margin-top: 40px;
 }
 
 .ui-content{
@@ -274,11 +274,19 @@ form#base_page\:gform{
     margin-top: 0!important;
 }
 div#base_page\:tabview{
-    margin-top: 4rem;
+    margin-top: 40px;
 }
 
 div#base_page\:vendorMessagePanel{
     .ui-panel-m-titlebar{
         padding: 0.9rem 2rem !important;
     }
+
+    .ui-panel-m-content{
+        min-height: 70px;
+    }
+}
+
+div#base_page\:txtab{
+    margin-top: 40px;
 }
