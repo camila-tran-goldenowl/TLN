@@ -1,0 +1,97 @@
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/delmon-delicate');
+@import url('https://fonts.cdnfonts.com/css/microsoft-yahei');
+
+$primary-sea-color: #79A2AA;
+$primary-brown-color: #625956;
+$primary-black-color: #18181B;
+
+$secondary-yellow-color: #FFD075;
+$secondary-orange-color: #F89426;
+$secondary-beige-color: #F9F6F0;
+$secondary-white-color: #FFFDFA;
+$secondary-grey-color: #DCDDDE;
+
+@mixin main-font{
+    font-family: Montserrat !important;
+}
+
+@mixin small-title {
+    font-size: 6px !important;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.15em;
+    text-align: right;    
+}
+
+@mixin header {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+@mixin sub-header{
+    font-family: Delmon Delicate !important;
+    font-size: 20px !important;
+    font-weight: 400;
+}
+
+@mixin body-text{
+    font-family: Montserrat;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+@mixin caption{
+    font-family: Montserrat;
+    font-size: 14px !important;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+@mixin title{
+    font-family: Montserrat;
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+@mixin button{
+    border: none !important;
+    padding: 10px 25px;
+	background-color: $secondary-orange-color !important;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+}
+
+@mixin black-text{
+    color: $primary-black-color !important;
+}
+
+@mixin hover-underline{
+    background-color: transparent !important;
+    text-decoration: underline;
+    transition: 0.3s;
+    text-underline-offset: 4px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif !important;
+    @include black-text();
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    @include black-text();
+}
+
+#base_page\:gform > .ui-btn.ui-input-btn.ui-corner-all.ui-shadow, #base_page\:locform\:languageSelect_input-button, #base_page\:locform\:currencySelect_input-button, [id*=ppstdform] > .ui-btn{
+    @include button();
+}
