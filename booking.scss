@@ -253,11 +253,19 @@ div#base_page\:vendorMessagePanel{
 }
 
 .rbn-yb-searchtext{
-    margin-top: 2rem;
+    margin-top: 2rem !important;
     display: block;
     margin: auto;
 }
 
+form#base_page\:gform{
+    margin-top: 4rem;
+}
+
 .ui-content{
     padding: 0;
+}
+
+.ui-field-contain:first-child{
+    margin-top: 0!important;
 }
