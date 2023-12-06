@@ -12,6 +12,8 @@ $secondary-orange-color: #F89426;
 $secondary-beige-color: #F9F6F0;
 $secondary-white-color: #FFFDFA;
 $secondary-grey-color: #DCDDDE;
+$success-color:#54AF91;
+$fail-color:#EA5F5F;
 
 @mixin main-font{
     font-family: Montserrat !important;
@@ -125,4 +127,19 @@ body {
 
 .gridcell > span{
     @include body-text();
+}
+
+.accordion-status{
+    @include title();
+    text-transform: capitalize;
+    line-height: 19px;
+    padding: 14px 20px;
+}
+
+.res{
+    background-color: $success-color !important;
+}
+
+.na {
+    background-color: $fail-color !important;
 }
