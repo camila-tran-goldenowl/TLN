@@ -218,6 +218,14 @@ a#base_page\:txtab\:2\:f1\:toPDFNew .ui-link{
 div#base_page\:gform\:gem,
 div#base_page\:gform\:gid{
     box-shadow: none !important;
+
+    input{
+        padding: 0!important;
+    }
+
+    .ui-btn.ui-icon-delete{
+        color: $secondary-grey-color !important;
+    }
 }
 
 .ui-field-contain{
