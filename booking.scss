@@ -276,3 +276,9 @@ form#base_page\:gform{
 div#base_page\:tabview{
     margin-top: 4rem;
 }
+
+div#base_page\:vendorMessagePanel{
+    .ui-panel-m-titlebar{
+        padding: 0.9rem 2rem !important;
+    }
+}
