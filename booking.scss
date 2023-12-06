@@ -205,3 +205,16 @@ a#base_page\:txtab\:2\:f1\:toPDFNew .ui-link{
 .ui-table-reflow td{
     vertical-align: middle;
 }
+
+.ui-input-text{
+    @include body-text();
+    line-height: 26px;
+
+    border: 1px solid $secondary-grey-color;
+    border-radius: none !important;
+    padding: 1.2rem 2rem !important;
+}
+
+div#base_page\:gform\:gem{
+    box-shadow: none !important;
+}
