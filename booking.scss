@@ -236,3 +236,10 @@ div#base_page\:gform\:gid{
 .rb-header{
     height: 140px!important;
 }
+
+div#base_page\:vendorMessagePanel{
+    h3{
+        @include header();
+        color: white !important;
+    }
+}
