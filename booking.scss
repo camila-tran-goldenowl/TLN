@@ -173,3 +173,9 @@ body {
     @include text-column();
     @include body-text();
 }
+
+#base_page:guest-intranet-greeting{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
