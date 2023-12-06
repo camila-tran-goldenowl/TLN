@@ -185,6 +185,10 @@ body {
     line-height: 32px;
 }
 
+div#base_page\:j_idt43{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
 div#base_page\:j_idt43:after {
     @include body-text();
     line-height: 26px;
@@ -268,4 +272,7 @@ form#base_page\:gform{
 
 .ui-field-contain:first-child{
     margin-top: 0!important;
+}
+div#base_page\:tabview{
+    margin-top: 4rem;
 }
