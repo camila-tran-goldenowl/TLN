@@ -230,6 +230,7 @@ form#base_page\:gform{
 
 .ui-content{
     padding: 0;
+    padding-bottom: 55px;
 }
 
 .ui-field-contain:first-child{
@@ -245,8 +246,12 @@ div#base_page\:base_header{
             &:after{
                 @include black-text();
                 background-color: transparent !important;
-            }
-            
+            } 
+        }
+
+        div#base_page\:locform\:languageSelect_input-button{
+            margin-top: 20px !important;
+            margin-right: 18px !important;
         }
     }
 }
