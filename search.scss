@@ -777,9 +777,10 @@ mat-dialog-content.mat-dialog-content.mat-typography{
     mat-card-actions{
         .mat-button-wrapper{
             visibility: hidden;
+        }
 
+        button{
             &::after{
-                content: "BOOK NOW";
                 visibility: visible;
                 display: block;
                 margin: auto;
@@ -788,18 +789,15 @@ mat-dialog-content.mat-dialog-content.mat-typography{
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+
+            &:not(.mat-button-disabled)::after{
+                 content: "BOOK NOW";
+            }
         }
 
         .mat-button-disabled{
             &::after{
                 content:"PROCEED";
-                visibility: visible;
-                display: block;
-                margin: auto;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
             }
         }
     }
