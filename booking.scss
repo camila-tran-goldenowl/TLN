@@ -161,3 +161,12 @@ body {
 .ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
     color: $secondary-orange-color !important;
 }
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
+    background: transparent !important;
+}
+
+#base_page:locform:languageSelect_input-button{
+    @include text-column();
+    @include body-text();
+}
