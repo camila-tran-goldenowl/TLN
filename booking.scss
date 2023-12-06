@@ -170,10 +170,6 @@ body {
     color: $secondary-orange-color !important;
 }
 
-// .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
-//     background-color: $dark-grey !important;
-// }
-
 #base_page:locform:languageSelect_input-button{
     @include text-column();
     @include body-text();
@@ -237,24 +233,9 @@ div#base_page\:gform\:gid{
     align-items: center;
 }
 
-.rb-header{
-    height: 140px!important;
 
-    .ui-btn-icon-right{
-        &:after{
-            @include black-text();
-            background-color: transparent !important;
-        }
-        
-    }
-}
 
-div#base_page\:vendorMessagePanel{
-    h3{
-        @include header();
-        color: white !important;
-    }
-}
+
 
 .rbn-yb-searchtext{
     margin-top: 2rem !important;
@@ -273,18 +254,44 @@ form#base_page\:gform{
 .ui-field-contain:first-child{
     margin-top: 0!important;
 }
+/*======================SECTION=========================*/
+
+div#base_page\:base_header{
+    .rb-header{
+        height: 140px!important;
+    
+        .ui-btn-icon-right{
+            &:after{
+                @include black-text();
+                background-color: transparent !important;
+            }
+            
+        }
+    }
+}
+
 div#base_page\:tabview{
     margin-top: 40px;
 }
 
 div#base_page\:vendorMessagePanel{
-    margin-top: 40px;
+    margin-top: 40px !important;
     .ui-panel-m-titlebar{
         padding: 0.9rem 2rem !important;
     }
 
     .ui-panel-m-content{
         min-height: 70px;
+    }
+    
+    h3{
+        @include header();
+        color: white !important;
+    }
+    a{
+        &::after{
+            right: 2rem !important;
+        }
     }
 }
 
