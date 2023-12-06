@@ -132,9 +132,9 @@ body {
     @include body-text();
 }
 
-.accordion-status{
+.accordion-status {
     @include title();
-    text-transform: capitalize;
+    text-transform: capitalize !important;
     line-height: 19px;
     padding: 14px 20px;
 }
