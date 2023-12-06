@@ -134,9 +134,13 @@ body {
 
 .accordion-status {
     @include title();
-    text-transform: capitalize !important;
+    text-transform: lowercase !important;
     line-height: 19px;
     padding: 14px 20px;
+}
+
+.accordion-status::first-letter{
+    text-transform: uppercase !important;
 }
 
 .res{
