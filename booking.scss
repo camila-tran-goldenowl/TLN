@@ -170,9 +170,9 @@ body {
     color: $secondary-orange-color !important;
 }
 
-.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
-    background-color: $dark-grey !important;
-}
+// .ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
+//     background-color: $dark-grey !important;
+// }
 
 #base_page:locform:languageSelect_input-button{
     @include text-column();
