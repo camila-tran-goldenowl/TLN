@@ -235,6 +235,13 @@ div#base_page\:gform\:gid{
 
 .rb-header{
     height: 140px!important;
+
+    .ui-btn-icon-right{
+        &:after{
+            background-color: transparent !important;
+        }
+        
+    }
 }
 
 div#base_page\:vendorMessagePanel{
