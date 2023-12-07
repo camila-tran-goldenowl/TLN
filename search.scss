@@ -606,7 +606,7 @@ html[lang="en"] h2.product-title{
 }
 
 
-.rate-plan-price .sl, .cart-item-price .sl[_ngcontent-lqp-c63] {
+.rate-plan-price .sl, .cart-item-price .sl[_ngcontent-lqp-c63], .sl {
     font-weight: 500;
     line-height: 22px;
     font-size: 18px !important;
@@ -779,7 +779,7 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
     .cart-total{
         margin-top: 0!important;
-        
+
         .sl{
             font-size: 22px;
             font-weight: 500;
@@ -801,7 +801,6 @@ mat-dialog-content.mat-dialog-content.mat-typography{
         margin-right: 0 !important;
     }
 }
-
 .vendor-products-container{
     mat-card-actions{
         margin-bottom: 0 !important;
