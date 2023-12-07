@@ -326,8 +326,11 @@ div#base_page\:txtab{
     }
 
     tbody#base_page\:txtab_data{
+        @include button();
         @include title();
         letter-spacing: 0.15em;
+        text-transform: uppercase;
+
 
         .ui-btn{
             background-color: $secondary-orange-color;
