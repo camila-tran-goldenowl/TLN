@@ -296,7 +296,7 @@ div#base_page\:vendorMessagePanel{
         @include header();
         color: white !important;
     }
-    
+
     a{
         right: 2rem !important;
     }
@@ -304,4 +304,8 @@ div#base_page\:vendorMessagePanel{
 
 div#base_page\:txtab{
     margin-top: 40px;
+
+    a#base_page\:txtab\:3\:f1\:toPDFNew {
+        text-decoration: underline !important;
+    }
 }
