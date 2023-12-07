@@ -342,7 +342,21 @@ div#base_page\:txtab{
 }
 
 
+.ui-collapsible-content{
 
+    .ui-grid-solo{
+        .rbn-bold{
+            @include sub-header();
+        }
+
+        .ui-block-a{
+            @include body-text();
+            font-family: Montserrat;
+            line-height: 26px;
+        }
+    }
+    
+}
 
 // mobile 
 .ui-table-reflow td .ui-table-cell-label, .ui-table-reflow th .ui-table-cell-label{
