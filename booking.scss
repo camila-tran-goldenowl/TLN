@@ -252,6 +252,22 @@ div#base_page\:base_header{
             margin-top: 20px !important;
             margin-right: 18px !important;
         }
+
+        select#base_page\:locform\:languageSelect_input{
+            &::after{
+                background-image: none !important;
+                background-color: transparent !important;
+                @include black-text();
+                transform: rotate(45deg);
+                border: solid black;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+                border-top: 0 !important;
+                border-left: 0 !important;
+                border-right: 2px solid black !important;
+            }
+        }
     }
 }
 
@@ -305,10 +321,8 @@ div#base_page\:vendorMessagePanel{
 div#base_page\:txtab{
     margin-top: 40px;
 
-    form#base_page\:txtab\:3\:f1{
-        a{
+    .ui-link{
             text-decoration: underline !important;
             text-underline-offset: 4px;
-        }
     }
 }
