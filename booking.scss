@@ -326,15 +326,13 @@ div#base_page\:txtab{
     }
 
     tbody#base_page\:txtab_data{
-       
-
-
         .ui-btn{
             @include button();
             @include title();
             letter-spacing: 0.15em !important;
             text-transform: uppercase !important;
             background-color: $secondary-orange-color;
+            text-shadow: none !important;
         } 
         .ui-shadow{
             box-shadow: none !important;
