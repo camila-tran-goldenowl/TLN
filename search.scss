@@ -27,7 +27,7 @@ $secondary-grey-color: #DCDDDE;
 
 @mixin header {
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
@@ -160,6 +160,32 @@ body {
 // calendar
 .mat-calendar *{
     font-family: Montserrat !important;
+
+    .mat-calendar-controls{
+        .mdc-button__label{
+            span{
+                @include body-text();
+                text-transform: lowercase;
+                line-height: 20px;
+            }  
+
+            &::first-letter{
+                text-transform: uppercase;
+            }
+
+        }
+    }
+}
+
+.mat-calendar-content{
+    td.mat-calendar-body-label {
+        @include body-text();
+        text-transform: lowercase;
+
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
 }
 
 .mat-calendar-body-cell-content{
@@ -233,6 +259,13 @@ body {
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 2px solid black !important;
+}
+
+mat-form-field{
+    label#mat-form-field-label-5 {
+        text-transform: capitalize;
+        @include header();
+    }
 }
 
 // language
@@ -311,11 +344,6 @@ body {
 .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{
     @include black-text();
 }
-app-search-filter{
-    mat-icon{
-        @include black-text();
-    }
-}
 
 app-search-filter-bar{
     button{
@@ -335,6 +363,16 @@ app-search-filter-bar{
     }
 }
 
+app-search-filter{
+    .title{
+        font-size: 24px !important;
+    }
+    mat-icon{
+        @include black-text();
+    }
+}
+
+
 app-search-filter-window{
     .filter-container{
         max-width: 360px !important;
@@ -344,16 +382,21 @@ app-search-filter-window{
     .mat-card{
         .title{
             @include sub-header();
+            font-size: 24px !important;
         }
     }
 
-    .mat-focus-indicator{
-        margin-left: 33px;
-        padding: 13.5px 20px !important;
-        .mat-button-wrapper{
-            letter-spacing: 0.15em;
+    mat-card-actions{
+        .mat-focus-indicator{
+            margin-left: 33px;
+            padding: 13.5px 20px !important;
+    
+            .mat-button-wrapper{
+                letter-spacing: 0.15em;
+            }
         }
     }
+    
 }
 
 .filter .subtitle{
