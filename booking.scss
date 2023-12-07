@@ -305,7 +305,10 @@ div#base_page\:vendorMessagePanel{
 div#base_page\:txtab{
     margin-top: 40px;
 
-    a#base_page\:txtab\:3\:f1\:toPDFNew {
-        text-decoration: underline !important;
+    form#base_page\:txtab\:3\:f1{
+        a{
+            text-decoration: underline !important;
+            text-underline-offset: 4px;
+        }
     }
 }
