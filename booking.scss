@@ -170,7 +170,8 @@ div#base_page\:j_idt43{
 span#base_page\:guest-intranet-greeting::after {
     @include body-text();
     line-height: 26px;
-    margin-top: 1.6rem;
+    display: block;
+    margin-top: 1.6em;
     white-space: pre;
     content: "Scroll down to view reservations and payment status.";
 }
