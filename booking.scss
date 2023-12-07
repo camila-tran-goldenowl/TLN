@@ -328,8 +328,8 @@ div#base_page\:txtab{
     tbody#base_page\:txtab_data{
         @include button();
         @include title();
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
+        letter-spacing: 0.15em !important;
+        text-transform: uppercase !important;
 
 
         .ui-btn{
