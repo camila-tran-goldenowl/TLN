@@ -148,6 +148,7 @@ body {
 }
 
 .open-filter-button.active{
+    border-radius: 0;
     border: 1px solid $secondary-orange-color !important;
 }
 
@@ -317,6 +318,10 @@ app-search-filter{
 }
 
 app-search-filter-bar{
+    button{
+        border-radius: 0 !important;
+    }
+
     .title{
         align-items: center !important;
     
@@ -330,6 +335,26 @@ app-search-filter-bar{
     }
 }
 
+app-search-filter-window{
+    .filter-container{
+        max-width: 360px !important;
+        width: auto !important;
+    }
+
+    .mat-card{
+        .title{
+            @include sub-header();
+        }
+    }
+
+    .mat-focus-indicator{
+        margin-left: 33px;
+        padding: 13.5px 20px !important;
+        .mat-button-wrapper{
+            letter-spacing: 0.15em;
+        }
+    }
+}
 
 .filter .subtitle{
     @include black-text();
@@ -432,15 +457,12 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
     max-width: 55% !important;
     line-height: unset !important;
     font-size: 18px;
-    display: flex;
-    align-items: self-end;
 }
 
 .per-person{
     @include caption();
     line-height: unset;
-    padding-right: 4px;
-    order: -1;
+    vertical-align: baseline;
 }
 
 #searchMoreInfo {
@@ -462,6 +484,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
     background-color: white;
 
     .search-card-from{
+       
         span{
             @include black-text();
         }
@@ -514,10 +537,18 @@ html[lang="en"] .card-content * {
         
     }
 
+    
     .card-actions{
         margin-top: 0 !important;
+
+        .actions-text{
+            font-weight: 500 !important;
+        }
     }
+    
 }
+
+
 
 .map-container .map-icon{
     @include body-text();
@@ -528,12 +559,66 @@ html[lang="en"] .card-content * {
     line-height: 18px;
 }
 
+.gm-style-iw-tc{
+    display: none;
+}
+
+app-search-card{
+    div{
+        border-radius: 0 !important;
+    }
+    
+    .search-card-from{
+        margin-right: 4px;
+        font-weight: 500!important;
+    
+        span:first-child{
+            margin-right: 4px;
+        }
+    }    
+}
+
+map-info-window{
+    .content-title{
+        border-radius: 0 !important;
+    }
+
+    button{
+        padding: 14px 20px !important;
+    }
+
+    .actions-text{
+        
+    }
+}
+
+.gm-style-iw.gm-style-iw-c,
 .gm-style-iw-d{
     max-height: fit-content !important;
 }
 
-.gm-style-iw-tc{
-    display: none;
+html[lang=en] .card-content{
+    padding: 1em !important;
+
+    .actions-text{
+        div{
+            span{
+                font-weight: 500 !important;
+            }
+        }
+        
+    }
+
+    .content-title{
+        color: white !important;
+    }  
+    
+}
+
+google-map{
+    .content-title{
+        border-radius: 0 !important;
+    }
 }
 /* end map section */
 
@@ -571,11 +656,16 @@ html[lang="en"] h2.product-title{
     margin-top: 20px;
 }
 
+.vendor-description[_ngcontent-fmi-c70]{
+    box-shadow: none !important;
+}
+
 .vendor-description[_ngcontent-lqp-c70]{
     box-shadow: none !important;
 }
 
 /* begin hotel card detail section */
+
 .product-info-container {
     .product-dates {
         @include caption();
@@ -608,6 +698,11 @@ html[lang="en"] h2.product-title{
     }
 }
 
+app-product{
+    .product-card{
+        border-radius: 0 !important;
+    }
+}
 
 .rate-plan-price .sl, .cart-item-price .sl[_ngcontent-lqp-c63], .sl {
     font-weight: 500;
@@ -646,6 +741,7 @@ html[lang="en"] h2.product-title{
             line-height: 28px !important;
             letter-spacing: 0.15em !important;
             font-weight: 400 !important;
+            text-transform: uppercase;
         }
     }
 }
@@ -720,6 +816,7 @@ mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end span{
 
     &:hover{
         @include hover-underline();
+        text-decoration-color: $secondary-orange-color;
     }
 }
 
@@ -731,7 +828,7 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
 /* begin checkout section */
 .mat-card-title{
-    font-family: Delmon Delicate;
+    font-family: Delmon Delicate !important;
     font-size: 22px;
     font-weight: 400;
     line-height: 35px;
@@ -846,6 +943,11 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
 html[lang=en] .mat-headline{
     color: white !important;
+}
+
+html[lang=en] .mat-card-title{
+    @include sub-header();
+    font-size: 22px !important;
 }
 
 app-shopping-cart{
