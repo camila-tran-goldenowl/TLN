@@ -171,7 +171,8 @@ span#base_page\:guest-intranet-greeting::after {
     @include body-text();
     line-height: 26px;
     margin-top: 1.6rem;
-    content: "\a Scroll down to view reservations and payment status.";
+    white-space: pre;
+    content: "Scroll down to view reservations and payment status.";
 }
 
 .rb-footer{
