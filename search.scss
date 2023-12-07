@@ -233,6 +233,10 @@ body {
 }
 
 // language
+.search-card.focused[_ngcontent-wnk-c35]{
+    background: transparent !important;
+}
+
 #desktopLang{
     border-radius: 0;
     line-height: 20px;
