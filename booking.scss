@@ -268,6 +268,10 @@ div#base_page\:base_header{
                 border-right: 2px solid black !important;
             }
         }
+
+        .ui-icon-carat-d:after{
+            background-color: transparent !important;
+        }
     }
 }
 
