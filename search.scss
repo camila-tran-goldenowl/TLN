@@ -313,17 +313,20 @@ app-search-filter{
     }
 }
 
-.title{
-    align-items: center !important;
-
-    > span{
-        @include sub-header();
-    }
-
-    button{
-        top: auto !important;
+app-search-filter-bar{
+    .title{
+        align-items: center !important;
+    
+        > span{
+            @include sub-header();
+        }
+    
+        button{
+            top: auto !important;
+        }
     }
 }
+
 
 .filter .subtitle{
     @include black-text();
@@ -825,13 +828,14 @@ mat-dialog-content.mat-dialog-content.mat-typography{
             }
 
             &:not(.mat-button-disabled)::after{
-                 content: "BOOK NOW";
+                content:"PROCEED";
             }
         }
 
         .mat-button-disabled{
             &::after{
-                content:"PROCEED";
+                content: "BOOK NOW";
+                
             }
         }
     }
