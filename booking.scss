@@ -326,3 +326,14 @@ div#base_page\:txtab{
             text-underline-offset: 4px;
     }
 }
+
+
+
+// mobile 
+.ui-table-reflow td .ui-table-cell-label, .ui-table-reflow th .ui-table-cell-label{
+    width: 50%;
+}
+
+.ui-field-contain, .ui-mobile fieldset.ui-field-contain{
+    flex-direction: row;
+}
