@@ -297,8 +297,9 @@ body {
 .mat-mdc-slider .mdc-slider__track--inactive{
     border-color: $primary-black-color !important;
 }
+
 .filter-container{
-    top: 64px;
+    top: 64px !important;
 }
 .mat-card{
     font-family: Montserrat !important;
