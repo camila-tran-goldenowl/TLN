@@ -324,7 +324,17 @@ div#base_page\:txtab{
             text-decoration: underline !important;
             text-underline-offset: 4px;
     }
+
+    form#base_page\:txtab\:0\:stpFrm{
+        .ui-btn{
+            background-color: $secondary-orange-color;
+        } 
+        .ui-shadow{
+            box-shadow: none !important;
+        }
+    }
 }
+
 
 
 
