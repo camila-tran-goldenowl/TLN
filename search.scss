@@ -732,7 +732,6 @@ mat-dialog-content.mat-dialog-content.mat-typography{
     font-size: 22px;
     font-weight: 400;
     line-height: 35px;
-
 }
 
 .mat-list{
@@ -779,6 +778,8 @@ mat-dialog-content.mat-dialog-content.mat-typography{
     }
 
     .cart-total{
+        margin-top: 0!important;
+        
         .sl{
             font-size: 22px;
             font-weight: 500;
@@ -847,7 +848,7 @@ html[lang=en] .mat-headline{
 
 app-shopping-cart{
     .mat-card{
-        background: white;
+        background: white !important;
         border-radius: 0 !important;
         margin-top: 76px;
 
