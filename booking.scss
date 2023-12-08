@@ -381,17 +381,10 @@ div#base_page\:txtab{
     }
 
     // table
-    div#base_page\:postab{
-        .ui-table-cell-label{
-            width: 50% !important;
-        }
-    }
     
-    div#base_page\:postab {
-        .ui-table-cell-label{
-            width: 50% !important;
-            flex: 0;
-        }
+    .ui-table-cell-label{
+        width: 50% !important;
+        flex: 0;
     }
 
     td.rbn-dtcol{
