@@ -382,21 +382,18 @@ div#base_page\:txtab{
 
     // table
     .ui-table-cell-label{
-        width: 50% !important;
+        width: 30% !important;
     }
 
-    
+    td.rbn-dtcol{
+        display: flex !important;
+    }
 
     div#base_page\:tabview{
         .ui-table{
             
             td{
-                &.rbn-dtcol{
-                    display: flex !important;
-                }
-                b{
-                    width: 60%;
-                }
+                display: flex;
             }
         }
     }
