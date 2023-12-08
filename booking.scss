@@ -388,17 +388,11 @@ div#base_page\:txtab{
     }
 
     div[id^="base_page:tabview:resultTable"] {
+        td {
+            display: flex !important;
+        }
         .ui-table-cell-label{
             width: 30% !important;
-        }
-    }
-
-    div#base_page\:tabview{
-        .ui-table{
-            
-            td{
-                display: flex;
-            }
         }
     }
 
