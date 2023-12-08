@@ -126,6 +126,20 @@ html[lang="en"] .ui-widget-content .ui-state-highlight{
     color: $primary-black-color !important
 }
 
+.ui-selectonemenu-trigger{
+    padding: 0 !important;
+    .ui-icon{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+html[lang="en"] .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon{
+    margin: 0 !important;
+}
+
+
 .ui-widget-content .ui-state-highlight{
     @include body-text();
     background-color: transparent !important;
@@ -140,7 +154,6 @@ html[lang="en"] .ui-widget-content .ui-state-highlight{
     background-color: white !important;    
 
     > .ui-button-text{
-        text-transform: capitalize !important;
         font-weight: 400!important;
     }
 }
