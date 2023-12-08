@@ -385,13 +385,11 @@ div#base_page\:txtab{
         width: 50% !important;
     }
 
-    .ui-table-reflow.ui-responsive td{
-        display: flex;
-    }
+    
 
     div#base_page\:tabview{
         .ui-table{
-            display: flex;
+            display: flex !important;
             td{
                 b{
                     width: 60%;
