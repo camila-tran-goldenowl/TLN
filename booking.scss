@@ -387,11 +387,16 @@ div#base_page\:txtab{
     }
 
     // table
-    .ui-responsive>.ui-block-a{
-        span{
-            // width: 30%;
+    .ui-datatable{
+        .rbn-dtcol{
+            display: flex;
+
+            .ui-table-cell-label{
+                width: 30%;
+            }
         }
     }
+
     .ui-table-reflow.ui-responsive td{
         &:first-child{
             form{
