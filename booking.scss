@@ -370,6 +370,10 @@ div#base_page\:txtab{
     flex-direction: row;
 }
 
+div[id*="div#base_page\:tabview\:resultTable"]{
+    background: red;
+}
+
 @media (max-width: 35em){
     // input 
     
@@ -389,6 +393,9 @@ div#base_page\:txtab{
     }
 
     // table
+    div[id*="div#base_page\:tabview\:resultTable"]{
+        background: red;
+    }
     
     .ui-table-cell-label{
         width: 50% !important;
