@@ -377,11 +377,23 @@ div#base_page\:txtab{
         align-items: flex-start;
     }
 
-    .ui-field-contain>label ~ [class*="ui-"]{
+    div#base_page\:gform\:gid{
         width: 100% !important;
     }
 
+    //more 
+    div#base_page\:tabview\:j_idt627{
+        .ui-block-a{
+            text-align: left;
+        }
+    }
+
     // table
+    .ui-responsive>.ui-block-a{
+        span{
+            // width: 30%;
+        }
+    }
     .ui-table-reflow.ui-responsive td{
         &:first-child{
             form{
