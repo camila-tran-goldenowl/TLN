@@ -1076,7 +1076,7 @@ padding: 1em;
 .rb-h-selwrapper:before {
 	content: "";
 	display: inline-block;
-	background-image: url(/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega);
+	background-image: url(https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega);
 	background-position: -64px -16px;
 	height: 16px;
 	margin-left: 190px;

@@ -86,6 +86,7 @@ $secondary-grey-color: #DCDDDE;
 }
 
 // general 
+
 html[lang="en"] .ui-button-text{
     @include main-font();
     @include black-text();
@@ -106,12 +107,12 @@ border-radius: 0 !important;
     }
 }
 .ui-selectonemenu-items-wrapper{
-    @include body-text();
     line-height: 26px !important;
 
     ul{
         li{
-            
+            @include body-text();
+
             &::hover{
                 @include hover-underline();
                 background-color: transparent !important;
@@ -121,7 +122,12 @@ border-radius: 0 !important;
     }
 }
 
+html[lang="en"] .ui-widget-content .ui-state-highlight{
+    color: $primary-black-color !important
+}
+
 .ui-widget-content .ui-state-highlight{
+    @include body-text();
     background-color: transparent !important;
     text-underline-offset: 4px;
     text-decoration: underline;

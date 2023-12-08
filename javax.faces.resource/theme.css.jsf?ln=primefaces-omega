@@ -142,7 +142,7 @@
 }
 
 .ui-state-default .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega");
 }
 
 .ui-state-hover .ui-icon,.ui-state-focus .ui-icon {

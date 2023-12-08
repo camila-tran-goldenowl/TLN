@@ -142,15 +142,15 @@
 }
 
 .ui-state-default .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-state-hover .ui-icon,.ui-state-focus .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-state-active .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-state-highlight .ui-icon {
@@ -1590,7 +1590,7 @@ button.ui-button.ui-state-active,.ui-button.ui-state-active {
 }
 
 .ui-datatable .ui-selection-column .ui-radiobutton-box .ui-icon,.ui-datatable .ui-selection-column .ui-chkbox-box .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-panel.ui-widget {
@@ -1664,7 +1664,7 @@ button.ui-button.ui-state-active,.ui-button.ui-state-active {
 }
 
 .ui-treetable .ui-selection .ui-chkbox-box .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-treetable .ui-paginator.ui-paginator-bottom {
@@ -1699,11 +1699,11 @@ button.ui-button.ui-state-active,.ui-button.ui-state-active {
 }
 
 .ui-selectbooleanbutton.ui-button.ui-state-default .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-selectbooleanbutton.ui-button.ui-state-hover.ui-icon,.ui-selectbooleanbutton.ui-button.ui-state-focus .ui-icon {
-    background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
+    background-image: url("https://nisade.evoke.jp/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-omega")
 }
 
 .ui-selectbooleanbutton.ui-button.ui-state-active .ui-icon {
