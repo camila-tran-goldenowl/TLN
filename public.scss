@@ -87,14 +87,15 @@ $secondary-grey-color: #DCDDDE;
 
 
 /* begin menu section */
-#orderForm:vndcat{
-    .ui-button{
-        @include button();
 
-    }
+
+html[lang="en"] .ui-button-text{
+        @include main-font();
+        @include black-text();
+        letter-spacing: 0.15em;
 }
 
-.ui-button-text{
-    @include main-font();
+html[lang="en"] #orderForm:vndcat button{
+    @include button();
 }
 /* begin menu section */
