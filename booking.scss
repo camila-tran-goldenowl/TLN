@@ -387,14 +387,9 @@ div#base_page\:txtab{
     }
 
     // table
-    .ui-datatable{
-        .rbn-dtcol{
-            display: flex;
-
-            .ui-table-cell-label{
-                width: 30%;
-            }
-        }
+    
+    .ui-table-cell-label{
+        width: 50%;
     }
 
     .ui-table-reflow.ui-responsive td{
