@@ -385,11 +385,13 @@ div#base_page\:txtab{
         width: 50% !important;
     }
 
-    
+    .gridcell{
+        display: flex !important;
+    }
 
     div#base_page\:tabview{
         .ui-table{
-            display: flex !important;
+            
             td{
                 b{
                     width: 60%;
