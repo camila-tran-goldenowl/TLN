@@ -387,8 +387,7 @@ div#base_page\:txtab{
         display: flex !important;
     }
 
-    div[id^="base_page:tabview:resultTable"], 
-    div[id^="base_page:tabview:orderItemTable"] {
+    div[id^="base_page:tabview:resultTable"] {
         td {
             display: flex !important;
         }
@@ -396,6 +395,13 @@ div#base_page\:txtab{
             width: 40% !important;
         }
     }
+
+    div[id^="base_page:tabview:orderItemTable"]{
+        .ui-block-a{
+            display: flex;
+        }
+    }
+    
 
     .ui-table-reflow.ui-responsive td{
         &:first-child{
