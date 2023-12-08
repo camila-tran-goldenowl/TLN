@@ -94,4 +94,7 @@ $secondary-grey-color: #DCDDDE;
     }
 }
 
+.ui-button-text{
+    @include main-font();
+}
 /* begin menu section */
