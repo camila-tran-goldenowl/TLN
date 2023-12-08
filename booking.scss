@@ -381,14 +381,18 @@ div#base_page\:txtab{
     }
 
     // table
-    .ui-table-cell-label{
-        width: 30% !important;
-    }
+    
 
     td.rbn-dtcol{
         display: flex !important;
     }
 
+    div[id^="base_page:tabview:resultTable"] {
+        .ui-table-cell-label{
+            width: 30% !important;
+        }
+    }
+    
     div#base_page\:tabview{
         .ui-table{
             
