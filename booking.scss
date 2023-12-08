@@ -369,3 +369,14 @@ div#base_page\:txtab{
 .ui-field-contain, .ui-mobile fieldset.ui-field-contain{
     flex-direction: row;
 }
+
+@media (max-width: 35em){
+    .ui-table-reflow.ui-responsive td{
+        &:first-child{
+            width: 50%;
+            text-align: left;
+            float: right;
+        }
+
+    }
+}
