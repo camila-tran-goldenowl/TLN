@@ -377,6 +377,10 @@ div#base_page\:txtab{
         align-items: flex-start;
     }
 
+    .ui-field-contain>label ~ [class*="ui-"]{
+        width: 100%;
+    }
+
     // table
     .ui-table-reflow.ui-responsive td{
         &:first-child{
