@@ -371,6 +371,13 @@ div#base_page\:txtab{
 }
 
 @media (max-width: 35em){
+    // input 
+    .ui-field-contain{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    // table
     .ui-table-reflow.ui-responsive td{
         &:first-child{
             form{
