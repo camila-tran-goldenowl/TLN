@@ -373,9 +373,12 @@ div#base_page\:txtab{
 @media (max-width: 35em){
     .ui-table-reflow.ui-responsive td{
         &:first-child{
-            width: 50%;
-            text-align: left;
-            float: right;
+            form{
+                width: 50%;
+                text-align: left;
+                float: right;
+            }
+            
         }
 
     }
