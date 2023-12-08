@@ -85,17 +85,86 @@ $secondary-grey-color: #DCDDDE;
     box-sizing: border-box;
 }
 
+// general 
+html[lang="en"] .ui-button-text{
+    @include main-font();
+    @include black-text();
+    letter-spacing: 0.15em;
+    font-weight: 400 !important;
+}
+
+html[lang="en"] .ui-corner-all{
+border-radius: 0 !important;
+}
+
+/* begin top menu section */
+
+// selection
+.ui-btn-right{
+    label{
+        @include body-text();
+    }
+}
+.ui-selectonemenu-items-wrapper{
+    @include body-text();
+    line-height: 26px !important;
+
+    ul{
+        li{
+            
+            &::hover{
+                @include hover-underline();
+                background-color: transparent !important;
+            }
+        }
+        
+    }
+}
+
+.ui-widget-content .ui-state-highlight{
+    background-color: transparent !important;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $secondary-orange-color;
+}
+
+.vc-chip-container .chip {
+    @include body-text();
+    background-color: white !important;    
+
+    > .ui-button-text{
+        text-transform: capitalize !important;
+        font-weight: 400!important;
+    }
+
+    &::hover{
+        background-color: red!important;
+    }
+}
+/* end top menu section */
+
 
 /* begin menu section */
-
-
-html[lang="en"] .ui-button-text{
-        @include main-font();
-        @include black-text();
-        letter-spacing: 0.15em;
+.rb-vendor-text{
+    @include sub-header();
+    font-size: 22px !important;
 }
 
 html[lang="en"] #orderForm:vndcat button{
     @include button();
+    border: 1px solid $secondary-grey-color;
 }
-/* begin menu section */
+/* end menu section */
+
+/* begin list section */
+.flex-item.rb-vendor-item {
+    margin: 0 10px 10px 10px !important;
+    padding: 0 !important;
+    padding-bottom: 10px !important;
+
+    label{
+        @include body-text();
+    }
+}
+/* end list section */
