@@ -372,13 +372,14 @@ div#base_page\:txtab{
 
 @media (max-width: 35em){
     // input 
+    
     .ui-field-contain{
         flex-direction: column;
         align-items: flex-start;
         border-bottom: 0 !important;
     }
 
-    div#base_page\:gform\:gid{
+    div#base_page\:gform\:gid, div#base_page\:gform\:gem{
         width: 100% !important;
     }
 
