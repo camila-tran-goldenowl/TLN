@@ -378,7 +378,7 @@ div#base_page\:txtab{
     }
 
     .ui-field-contain>label ~ [class*="ui-"]{
-        width: 100%;
+        width: 100% !important;
     }
 
     // table
