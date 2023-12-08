@@ -387,12 +387,13 @@ div#base_page\:txtab{
         display: flex !important;
     }
 
-    div[id^="base_page:tabview:resultTable"] {
+    div[id^="base_page:tabview:resultTable"], 
+    div[id^="base_page:tabview:orderItemTable"] {
         td {
             display: flex !important;
         }
         .ui-table-cell-label{
-            width: 30% !important;
+            width: 40% !important;
         }
     }
 
