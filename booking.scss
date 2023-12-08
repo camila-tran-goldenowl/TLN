@@ -389,16 +389,14 @@ div#base_page\:txtab{
     }
 
     // table
-    div[id*="div#base_page\:tabview\:resultTable"]{
-        background: red;
-    }
-    
     .ui-table-cell-label{
         width: 50% !important;
     }
 
     div#base_page\:tabview{
+        background-color: red;
         .ui-table{
+            display: flex;
             td{
                 b{
                     width: 60%;
