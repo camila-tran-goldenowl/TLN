@@ -449,5 +449,9 @@ div#base_page\:txtab{
             
         }
 
+        &:last-child{
+            padding-top: 0 !important;
+        }
+
     }
 }
