@@ -105,6 +105,7 @@ html body .ui-group-theme-a .ui-body-inherit,
 html .ui-panel-page-container-a{
     text-shadow: none !important;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -543,4 +544,9 @@ div[id^="base_page:tabview"]{
         }
 
     }
+}
+
+.ui-block-a{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
