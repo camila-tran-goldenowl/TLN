@@ -227,6 +227,12 @@ div#base_page\:gform\:gid{
 
 form#base_page\:gform{
     margin-top: 40px;
+
+    .ui-field-contain{
+        &:first-child{
+            padding: 0!important;
+        }
+    }
 }
 
 .ui-content{
