@@ -387,7 +387,7 @@ div#base_page\:txtab{
         flex: 0;
     }
 
-    span[class*="receivedMessageText"]{
+    span[class^="receivedMessageText"]{
         display: block;
         float: right;
         width: 50%;
