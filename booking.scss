@@ -395,14 +395,12 @@ div#base_page\:txtab{
         padding-bottom: 1.2rem;
     }
 
-    .ui-table td{
-        &:first-child{
-            text-transform: uppercase;
-            @include title();
-            font-weight: 500;
-            line-height: 19px;
-            letter-spacing: 0.15em;
-        }
+    .ui-table-cell-label{
+        text-transform: uppercase;
+        @include title();
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0.15em;
     }
 
     .ui-table-cell-label{
