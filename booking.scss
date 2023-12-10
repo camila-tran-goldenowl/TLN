@@ -426,10 +426,15 @@ div#base_page\:txtab{
         }
     }
 
-    div[id^="base_page:tabview:orderItemTable"]{
+    html[lang="en"] div[id^="base_page:tabview:orderItem"]{
         .ui-block-a{
             display: flex;
         }
+
+        span[id$=":prodname"]{
+            font-weight: 400!important;
+        }
+
 
         span {
             width: 40% !important;
