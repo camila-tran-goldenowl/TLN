@@ -412,6 +412,11 @@ div#base_page\:txtab{
         display: flex !important;
     }
 
+    .accordion-bar-content{
+        td:first-child{
+            align-items: center;
+        }
+    }
     //collapse detail
     .ui-collapsible-content{
         div[id^="base_page:tabview:resultTable"] {
@@ -433,6 +438,7 @@ div#base_page\:txtab{
             td{
                 display: flex !important;
                 flex-wrap: wrap;
+                align-items: center;
             }
 
             .ui-table-row{
