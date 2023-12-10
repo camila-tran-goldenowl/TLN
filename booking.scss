@@ -552,5 +552,7 @@ div[id^="base_page:tabview"]{
 }
 
 .ui-grid-solo{
-    grid-template-columns: 1fr !important;
+    .ui-block-a {
+        grid-template-columns: 1fr !important;
+    }
 }
