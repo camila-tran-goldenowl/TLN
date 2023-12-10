@@ -422,6 +422,10 @@ div#base_page\:txtab{
         }
 
         div[id^="base_page:tabview:orderItemTable"]{
+            td{
+                display: flex !important;
+            }
+            
             .ui-table-row{
                 b.ui-table-cell-label {
                     width: 40% !important;
