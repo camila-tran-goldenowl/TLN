@@ -391,11 +391,11 @@ div#base_page\:txtab{
     }
 
     // table
-    ui-table td{
+    .ui-table th, .ui-table td{
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
     }
-    
+
     .ui-table-cell-label{
         width: 50% !important;
         flex: 0;
