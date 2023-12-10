@@ -400,9 +400,13 @@ div#base_page\:txtab{
     border-radius: 0 !important;
 }
 
-.ui-btn-icon-left{
-    padding-left: 0 !important;
+div[id^="base_page:tabview"]{
+    .ui-btn-icon-left:after {
+        padding-left: 1.125rem;
+        left: 1rem;
+    }
 }
+
 // mobile 
 @media (max-width: 35em){
     // input 
