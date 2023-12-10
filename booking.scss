@@ -255,6 +255,11 @@ div#base_page\:base_header{
         }
     }
 }
+
+div#base_page\:locform\:languageSelect_input-button{
+    display: flex;
+    align-items: flex-end;
+}
 .ui-icon-carat-d:after{
     width: 1px;
     height: 2px;
@@ -270,7 +275,8 @@ div#base_page\:base_header{
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 2px solid black !important;
-    margin-top: -2px;
+    margin-top: 0!important;
+    position: relative;
 }
 
 div#base_page\:tabview{
