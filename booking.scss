@@ -424,6 +424,7 @@ div#base_page\:txtab{
         div[id^="base_page:tabview:orderItemTable"]{
             td{
                 display: flex !important;
+                flex-wrap: wrap;
             }
 
             .ui-table-row{
