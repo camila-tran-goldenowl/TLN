@@ -395,7 +395,9 @@ div#base_page\:txtab{
     border-radius: 0 !important;
 }
 
-
+.ui-btn-icon-left{
+    padding-left: 0 !important;
+}
 // mobile 
 @media (max-width: 35em){
     // input 
