@@ -404,7 +404,7 @@ div[id^="base_page:tabview"]{
     .ui-collapsible-heading-toggle{
         padding-left: 1.2em;
 
-        .ui-btn-icon-left:after {
+        &:after {
             left: 1em;
         }
     }
