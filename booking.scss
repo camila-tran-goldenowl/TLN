@@ -446,6 +446,12 @@ div#base_page\:txtab{
                     }
 
                     span{
+                        text-transform: uppercase;
+                        @include title();
+                        font-weight: 500;
+                        line-height: 19px;
+                        letter-spacing: 0.15em;
+                        text-align: left;
                         width: 40% !important;
                     }
                 }
