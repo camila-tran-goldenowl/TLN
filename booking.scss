@@ -521,8 +521,15 @@ div[id^="base_page:tabview"]{
 div[id^="base_page:tabview:orderItem"],
 div[id^="base_page:tabview:orderItemTable"]{
     .ui-block-a, 
-    td.gridcell{
+    td{
         grid-template-columns: 4fr 6fr !important;
+        align-items: center;
+    }
+}
+
+.ui-table-row{
+    td{
+        grid-template-columns: 1fr 1fr !important;
         align-items: center;
     }
 }
