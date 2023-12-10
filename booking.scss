@@ -484,11 +484,6 @@ div[id^="base_page:tabview"]{
         }
 
         div[id^="base_page:tabview:orderItemTable"]{
-            td{
-                display: flex !important;
-                flex-wrap: wrap;
-                align-items: center;
-            }
 
             .ui-table-row{
                 // b.ui-table-cell-label {
@@ -504,9 +499,6 @@ div[id^="base_page:tabview"]{
                 // }
 
                 .ui-datagrid{
-                    .ui-block-a{
-                        display: flex;
-                    }
 
                     // span{
                     //     width: 40% !important;
@@ -551,8 +543,16 @@ div[id^="base_page:tabview"]{
     grid-template-columns: 1fr 1fr;
 }
 
+
+
 .ui-grid-solo{
     .ui-block-a {
         grid-template-columns: 1fr !important;
+    }
+}
+
+div[id$=":pocgrd_content"]{
+    .ui-block-a {
+        grid-template-columns: 4fr 6fr !important;
     }
 }
