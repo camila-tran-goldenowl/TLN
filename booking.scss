@@ -518,6 +518,14 @@ div[id^="base_page:tabview"]{
     }
 }
 
+.ui-table-row{
+    td{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        align-items: center;
+    }
+}
+
 div[id^="base_page:tabview:orderItem"],
 div[id^="base_page:tabview:orderItemTable"]{
     .ui-block-a, 
@@ -528,10 +536,3 @@ div[id^="base_page:tabview:orderItemTable"]{
     }
 }
 
-.ui-table-row{
-    td{
-        display: grid;
-        grid-template-columns: 1fr 1fr !important;
-        align-items: center;
-    }
-}
