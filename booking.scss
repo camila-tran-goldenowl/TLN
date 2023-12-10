@@ -541,6 +541,7 @@ div[id^="base_page:tabview"]{
 .ui-block-a{
     display: grid !important;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 
@@ -553,5 +554,6 @@ div[id^="base_page:tabview"]{
 div[id^="base_page:tabview:orderItem"]{
     .ui-block-a {
         grid-template-columns: 4fr 6fr !important;
+        align-items: center;
     }
 }
