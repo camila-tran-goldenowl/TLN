@@ -425,10 +425,20 @@ div#base_page\:txtab{
             td{
                 display: flex !important;
             }
-            
+
             .ui-table-row{
                 b.ui-table-cell-label {
                     width: 40% !important;
+
+                    span{
+                        width: 40% !important;
+                    }
+                }
+
+                .ui-datagrid{
+                    .ui-block-a{
+                        display: flex;
+                    }
                 }
             }
         }
