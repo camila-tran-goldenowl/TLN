@@ -421,16 +421,12 @@ div#base_page\:txtab{
             font-weight: 400!important;
         }
 
-        div[id^="base_page:tabview:orderItemTable"] + div[id$=":data"]{
-            td {
-                display: flex !important;
-            }
-
-            b.ui-table-cell-label{
+        div[id^="base_page:tabview:orderItemTable"]{
+            thead {
                 width: 40% !important;
             }
 
-            span{
+            tbody{
                 width: 60% !important;
             }
         }
