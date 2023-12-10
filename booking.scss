@@ -259,6 +259,10 @@ div#base_page\:base_header{
 div#base_page\:locform\:languageSelect_input-button{
     display: flex;
     align-items: flex-end;
+
+    span{
+        margin-right: 5px;
+    }
 }
 .ui-icon-carat-d:after{
     width: 1px;
