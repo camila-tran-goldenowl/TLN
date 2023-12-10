@@ -529,7 +529,7 @@ div[id^="base_page:tabview"]{
 div[id^="base_page:tabview:orderItem"],
 div[id^="base_page:tabview:orderItemTable"]{
     .ui-block-a, 
-    td{
+    > td{
         display: grid;
         grid-template-columns: 4fr 6fr !important;
         align-items: center;
