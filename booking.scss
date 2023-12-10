@@ -418,16 +418,15 @@ div#base_page\:txtab{
             }
         }
 
-        html[lang="en"] div[id^="base_page:tabview:orderItem"]{
+        span[id$=":prodname"]{
+            font-weight: 400!important;
+        }
+
+        html[lang="en"] > div[id^="base_page:tabview:orderItem"]{
             .ui-block-a{
                 display: flex;
             }
-    
-            span[id$=":prodname"]{
-                font-weight: 400!important;
-            }
-    
-    
+
             span {
                 width: 40% !important;
             }
@@ -444,7 +443,7 @@ div#base_page\:txtab{
         }
 
     }
-    
+
     .ui-table-reflow.ui-responsive td{
         &:first-child{
             form{
