@@ -483,30 +483,6 @@ div[id^="base_page:tabview"]{
             font-weight: 400!important;
         }
 
-        div[id^="base_page:tabview:orderItemTable"]{
-
-            .ui-table-row{
-                // b.ui-table-cell-label {
-                //     width: 40% !important;
-
-                //     span{
-                //         width: 40% !important;
-                //     }
-                // }
-
-                // span{
-                //     width: 60%;
-                // }
-
-                .ui-datagrid{
-
-                    // span{
-                    //     width: 40% !important;
-                    // }
-                }
-            }
-        }
-
         span[id$=":receivedMessageText"]{
             display: block;
             float: right;
