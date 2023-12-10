@@ -395,7 +395,7 @@ div#base_page\:txtab{
         padding-bottom: 1.2rem;
     }
 
-    .ui-table-cell-label{
+    .ui-table-cell-label, .ui-block-a > span{
         text-transform: uppercase;
         @include title();
         font-weight: 500;
