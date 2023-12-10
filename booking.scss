@@ -421,7 +421,7 @@ div#base_page\:txtab{
             font-weight: 400!important;
         }
 
-        div[id^="base_page:tabview:orderItemTable"] + div[id^="data"]{
+        div[id^="base_page:tabview:orderItemTable"] + div[id$=":data"]{
             td {
                 display: flex !important;
             }
