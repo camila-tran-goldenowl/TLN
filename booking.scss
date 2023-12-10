@@ -387,6 +387,14 @@ div#base_page\:txtab{
         flex: 0;
     }
 
+    span[class*="callreceivedMessageText"]{
+        display: block;
+        float: right;
+        width: 50%;
+        padding-left: 1rem;
+        clear: both;
+    }
+
     td.rbn-dtcol{
         display: flex !important;
     }
