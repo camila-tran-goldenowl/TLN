@@ -420,14 +420,14 @@ div#base_page\:txtab{
     //collapse detail
     .ui-collapsible-content{
         div[id^="base_page:tabview:resultTable"] {
-            td {
-                display: flex !important;
-            }
+            // td {
+            //     display: flex !important;
+            // }
     
-            .ui-table-cell-label{
-                flex: 0;
-                width: 40% !important;
-            }
+            // .ui-table-cell-label{
+            //     flex: 0;
+            //     width: 40% !important;
+            // }
         }
 
         span[id$=":prodname"]{
@@ -442,26 +442,26 @@ div#base_page\:txtab{
             }
 
             .ui-table-row{
-                b.ui-table-cell-label {
-                    width: 40% !important;
+                // b.ui-table-cell-label {
+                //     width: 40% !important;
 
-                    span{
-                        width: 40% !important;
-                    }
-                }
+                //     span{
+                //         width: 40% !important;
+                //     }
+                // }
 
-                span{
-                    width: 60%;
-                }
+                // span{
+                //     width: 60%;
+                // }
 
                 .ui-datagrid{
                     .ui-block-a{
                         display: flex;
                     }
 
-                    span{
-                        width: 40% !important;
-                    }
+                    // span{
+                    //     width: 40% !important;
+                    // }
                 }
             }
         }
