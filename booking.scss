@@ -271,6 +271,7 @@ div#base_page\:locform\:languageSelect_input-button{
     background-image: none !important;
     background-color: transparent !important;
     @include black-text();
+    transform: rotate(45deg);
     border: solid black;
     border-width: 0 2px 2px 0;
     display: inline-block;
