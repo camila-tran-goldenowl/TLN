@@ -544,14 +544,13 @@ div[id^="base_page:tabview"]{
 }
 
 
-
 .ui-grid-solo{
     .ui-block-a {
         grid-template-columns: 1fr !important;
     }
 }
 
-div[id$=":pocgrd_content"]{
+div[id^="base_page:tabview:orderItem"]{
     .ui-block-a {
         grid-template-columns: 4fr 6fr !important;
     }
