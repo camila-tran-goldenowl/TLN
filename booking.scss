@@ -258,20 +258,19 @@ div#base_page\:base_header{
 
 div#base_page\:locform\:languageSelect_input-button{
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
 
     span{
         margin-right: 5px;
     }
 }
+
 .ui-icon-carat-d:after{
     width: 1px;
     height: 2px;
-    transform: translateY(-50%) rotate(45deg) !important;
     background-image: none !important;
     background-color: transparent !important;
     @include black-text();
-    transform: rotate(45deg);
     border: solid black;
     border-width: 0 2px 2px 0;
     display: inline-block;
