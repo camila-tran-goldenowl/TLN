@@ -429,6 +429,10 @@ div#base_page\:txtab{
             b.ui-table-cell-label{
                 width: 40% !important;
             }
+
+            span{
+                width: 60% !important;
+            }
         }
 
         span[id$=":receivedMessageText"]{
