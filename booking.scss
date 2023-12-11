@@ -245,8 +245,11 @@ form#base_page\:gform{
 
     .ui-btn{
         visibility: hidden;
+        padding-right: 0;
+        padding-left: 0;
         
         &::after{
+            @include button();
             visibility: visible;
             display: block;
             content: "CLICK TO REFRESH PAGE";
