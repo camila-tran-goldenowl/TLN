@@ -434,7 +434,8 @@ div[id^="base_page:txtab"]{
     }
 }
 
-div[id^="base_page:ttab"]{
+div[id^="base_page:ttab"],
+div[id^="base_page:postab"]{
     td{
         background-color: transparent !important;
     }
@@ -564,3 +565,7 @@ div[id^="base_page:ttab"]{
 //     }
 // }
 
+
+.ui-table-cell-label{
+    width: 50%;
+}
