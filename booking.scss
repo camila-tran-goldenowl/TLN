@@ -406,6 +406,9 @@ div#base_page\:txtab{
 }
 
 div[id^="base_page:tabview"]{
+    td{
+        vertical-align: baseline;
+    }
     .ui-collapsible-heading-toggle{
         padding-left: 3em;
 
