@@ -242,6 +242,17 @@ form#base_page\:gform{
             padding: 0!important;
         }
     }
+
+    button{
+        visibility: hidden;
+        
+        &::after{
+            visibility: visible;
+            display: block;
+            content: "CLICK TO REFRESH PAGE";
+            
+        }
+    }
 }
 
 div#base_page\:j_idt49{
