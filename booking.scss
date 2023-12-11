@@ -97,15 +97,6 @@ $link-color:#3388CC;
     letter-spacing: 0.15em !important;
 }
 
-.ui-body-a, 
-.ui-page-theme-a .ui-body-inherit, 
-html .ui-bar-a .ui-body-inherit, 
-html .ui-body-a .ui-body-inherit, 
-html body .ui-group-theme-a .ui-body-inherit, 
-html .ui-panel-page-container-a{
-    text-shadow: none !important;
-}
-
 .ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a{
     font-weight: 400 !important;
 }
@@ -473,6 +464,7 @@ div[id^="base_page:postab"]{
             text-align: left;
         }
     }
+
     .ui-table th, .ui-table td{
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
