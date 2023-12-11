@@ -453,8 +453,7 @@ div[id^="base_page:postab"]{
     border-bottom: 1px solid $secondary-grey-color;
 }
 
-tbody#base_page\:postab_data,
-tbody#base_page\:ttab_data{
+.ui-table-row{
     td{
         &:first-child{
             border-left: 1px solid $secondary-grey-color;
