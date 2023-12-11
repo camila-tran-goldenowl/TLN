@@ -420,10 +420,17 @@ div[id^="base_page:tabview"]{
 }
 
 .ui-column-header{
+    box-shadow: 0px 1px 0px 0px #EEEEEE;
     background-color: $secondary-grey-color;
 
     span{
         font-weight: 500 !important;
+    }
+}
+
+div[id^="base_page:txtab"]{
+    th{
+        text-align: center;
     }
 }
 
