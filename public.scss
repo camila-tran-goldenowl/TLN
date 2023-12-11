@@ -180,7 +180,7 @@ html[lang="en"] #orderForm:vndcat button{
 
     label{
         @include body-text();
-        font-family: 500;
+        font-family: 500 !important;
     }
 }
 /* end list section */
