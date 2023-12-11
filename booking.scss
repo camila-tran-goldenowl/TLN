@@ -250,6 +250,7 @@ form#base_page\:gform{
         
         &::after{
             @include button();
+            @include black-text();
             padding-right: 0 !important;
             padding-left: 0 !important;
             visibility: visible;
