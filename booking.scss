@@ -247,16 +247,6 @@ form#base_page\:gform{
         visibility: hidden;
         
         &::after{
-            border: none !important;
-            padding: 10px 25px;
-            background-color: #f89426 !important;
-            border-radius: 0 !important;
-            text-transform: uppercase;
-            font-family: Montserrat;
-            font-size: 12px !important;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: .15em !important;
             visibility: visible;
             display: block;
             content: "CLICK TO REFRESH PAGE";
@@ -288,17 +278,15 @@ div#base_page\:base_header{
                 background-color: transparent !important;
             } 
         }
-
-        div#base_page\:locform\:languageSelect_input-button{
-            margin-top: 20px !important;
-            margin-right: 18px !important;
-        }
     }
 }
+
 
 div#base_page\:locform\:languageSelect_input-button{
     display: flex;
     align-items: flex-start;
+    margin-top: 20px !important;
+    margin-right: 18px !important;
 
     span{
         margin-right: 5px;
