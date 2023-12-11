@@ -469,6 +469,23 @@ tbody#base_page\:ttab_data{
 // mobile 
 @media (max-width: 35em){
 
+    .table-stroke thead th, .table-stripe thead th, .table-stripe tbody tr:last-child{
+        border-bottom: 0;
+    }
+    
+    tbody#base_page\:postab_data,
+    tbody#base_page\:ttab_data{
+        td{
+            &:first-child{
+                border-left: 0;
+            }
+    
+            &:last-child{
+                border-right: 0;
+            }
+        }
+    }
+
     .table-stripe tbody tr:nth-child(odd) td,.table-stripe tbody tr:nth-child(odd) th {
         background-color: $secondary-grey-color !important;
     }
