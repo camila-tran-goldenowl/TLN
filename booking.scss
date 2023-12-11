@@ -282,7 +282,7 @@ div#base_page\:base_header{
 
 div#base_page\:locform\:languageSelect_input-button{
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
 
     span{
         margin-right: 5px;
@@ -303,7 +303,7 @@ div#base_page\:locform\:languageSelect_input-button{
     border-top: 0 !important;
     border-left: 0 !important;
     border-right: 1.5px solid black !important;
-    margin-top: 0!important;
+    margin-top: 2px!important;
     position: relative;
     margin-left: 5px;
 }
