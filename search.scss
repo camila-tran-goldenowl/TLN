@@ -177,6 +177,14 @@ body {
     }
 }
 
+.search-dates{
+    max-width: fit-content !important;
+
+    .mat-date-range-input-wrapper{
+        flex: 1
+    }    
+}
+
 .mat-calendar-content{
     td.mat-calendar-body-label {
         @include body-text();
@@ -223,8 +231,16 @@ body {
     @include hover-underline();
 }
 
-.mat-menu-item:hover span{
-    background: transparent;
+app-search-card.ng-star-inserted{
+    &:hover{
+        background: $secondary-grey-color;
+
+        button{
+            background-color: $primary-black-color;
+            color: white;
+        }
+    }
+    
 }
 
 .mat-body p, .mat-body-1 p, .mat-typography .mat-body p, .mat-typography .mat-body-1 p, .mat-typography p{
@@ -261,12 +277,12 @@ body {
     border-right: 2px solid black !important;
 }
 
-mat-form-field{
-    label#mat-form-field-label-5 {
-        text-transform: capitalize;
-        @include header();
-    }
-}
+// mat-form-field{
+//     label#mat-form-field-label-5 {
+//         text-transform: capitalize;
+//         @include header();
+//     }
+// }
 
 // language
 .search-card.focused[_ngcontent-wnk-c35]{
@@ -504,8 +520,8 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .per-person{
     @include caption();
+    display: block;
     line-height: unset;
-    vertical-align: baseline;
 }
 
 #searchMoreInfo {
@@ -544,6 +560,8 @@ html[lang="en"] .card-content * {
     @include main-font();
     @include black-text();
     padding: 13px 10px;
+    display: flex;
+    align-items: center;
 
     .content-title{
         background: $primary-black-color !important;
@@ -572,7 +590,10 @@ html[lang="en"] .card-content * {
     button{
         @include button();
         font-size: 10px !important;
-        padding: 14px 20px !important;
+        padding: 4px 20px !important;  
+        line-height: 28px;
+        letter-spacing: 0.15em;
+
 
         .mat-button-wrapper{
             font-size: 10px;
@@ -590,7 +611,6 @@ html[lang="en"] .card-content * {
     }
     
 }
-
 
 
 .map-container .map-icon{
@@ -688,7 +708,7 @@ html[lang="en"] h2.product-title{
 }
 
 // description
-.vendor-description{
+html[lang="en"] .vendor-description{
     @include body-text();
     @include black-text();
     border-radius: 0 !important;
@@ -697,6 +717,7 @@ html[lang="en"] h2.product-title{
     letter-spacing: 0 !important;
     padding: 10px 15px;
     margin-top: 20px;
+    box-shadow: none !important;
 }
 
 .vendor-description[_ngcontent-fmi-c70]{
@@ -744,6 +765,12 @@ html[lang="en"] h2.product-title{
 app-product{
     .product-card{
         border-radius: 0 !important;
+
+        .mat-form-field-label{
+            @include title();
+            line-height: 19px;
+            letter-spacing: 0.15em;
+        }
     }
 }
 
