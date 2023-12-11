@@ -281,12 +281,14 @@ div#base_page\:base_header{
     }
 }
 
+form#base_page\:locform{
+    top: 2rem !important;
+    right: 1.8 rem !important;
+}
 
 div#base_page\:locform\:languageSelect_input-button{
     display: flex;
     align-items: flex-start;
-    margin-top: 20px !important;
-    margin-right: 18px !important;
 
     span{
         margin-right: 5px;
