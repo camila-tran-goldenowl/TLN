@@ -401,14 +401,6 @@ div#base_page\:txtab{
     
 }
 
-.table-stripe tbody tr:nth-child(odd) td,.table-stripe tbody tr:nth-child(odd) th {
-    background-color: $secondary-grey-color !important;
-}
-
-.table-stripe tbody tr:nth-child(even) td,.table-stripe tbody tr:nth-child(even) th {
-    background-color: #F4F4F4 !important;
-}
-
 .ui-btn-icon-right:after{
     border-radius: 0 !important;
 }
@@ -426,6 +418,14 @@ div[id^="base_page:tabview"]{
 
 // mobile 
 @media (max-width: 35em){
+
+    .table-stripe tbody tr:nth-child(odd) td,.table-stripe tbody tr:nth-child(odd) th {
+        background-color: $secondary-grey-color !important;
+    }
+    
+    .table-stripe tbody tr:nth-child(even) td,.table-stripe tbody tr:nth-child(even) th {
+        background-color: #F4F4F4 !important;
+    }
     // input 
     .ui-field-contain{
         flex-direction: column;
