@@ -16,6 +16,7 @@ $secondary-orange-color: #F89426;
 $secondary-beige-color: #F9F6F0;
 $secondary-white-color: #FFFDFA;
 $secondary-grey-color: #DCDDDE;
+$secondary-light-grey-color: #F4F4F4;
 
 
 $success-color:#54AF91;
@@ -99,6 +100,9 @@ $link-color:#3388CC;
 
 .ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a{
     font-weight: 400 !important;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+    background-color: $secondary-light-grey-color !important;
 }
 
 *{
@@ -495,7 +499,7 @@ div[id^="base_page:postab"]{
     }
     
     .table-stripe tbody tr:nth-child(even) td,.table-stripe tbody tr:nth-child(even) th {
-        background-color: #F4F4F4 !important;
+        background-color: $secondary-light-grey-color !important;
     }
     // input 
     .ui-field-contain{
