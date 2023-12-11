@@ -416,8 +416,12 @@ div[id^="base_page:tabview"]{
     
 }
 
-.ui-column-header span{
-    font-weight: 500 !important;
+.ui-column-header{
+    background-color: $secondary-grey-color;
+
+    span{
+        font-weight: 500 !important;
+    }
 }
 
 // mobile 
