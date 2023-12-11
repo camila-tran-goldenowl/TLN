@@ -416,6 +416,10 @@ div[id^="base_page:tabview"]{
     
 }
 
+.ui-column-header span{
+    font-weight: 500 !important;
+}
+
 // mobile 
 @media (max-width: 35em){
 
