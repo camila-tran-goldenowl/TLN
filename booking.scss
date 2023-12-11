@@ -434,6 +434,12 @@ div[id^="base_page:txtab"]{
     }
 }
 
+div[id^="base_page:ttab"]{
+    td{
+        background-color: transparent !important;
+    }
+}
+
 // mobile 
 @media (max-width: 35em){
 
