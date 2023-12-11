@@ -106,6 +106,10 @@ html .ui-panel-page-container-a{
     text-shadow: none !important;
 }
 
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a{
+    font-weight: 400 !important;
+}
+
 *{
     margin: 0;
     padding: 0;
