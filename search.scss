@@ -136,6 +136,7 @@ body {
     @include black-text();
 }
 
+
 /* begin filter search section */
 .mobile-top{
     width: 100%;
@@ -253,9 +254,16 @@ app-search-card.ng-star-inserted{
     margin: 0;
 }
 // guest 
-.search-guests.mat-focused{
+.search-location.mat-focused{
     .mat-select-arrow-wrapper{
         transform: rotate(45deg) translateY(-25%) !important; 
+    }
+}
+
+.search-guests,
+.search-guests.mat-focused{
+    .mat-select-arrow-wrapper{
+        height: fit-content;
     }
 }
 .mat-option:hover .mat-option-text {
@@ -331,6 +339,14 @@ app-search-card.ng-star-inserted{
     border-radius: 0 !important;
 }
 
+// discount code
+.mat-form-field-appearance-outline {
+    .mat-form-field-label{
+        margin-top: 0!important;
+        /* align area input */
+    }
+}
+
 .search-discount-code,
 .search-location{
     &.mat-focused{
@@ -353,6 +369,7 @@ app-search-card.ng-star-inserted{
         }
     }
 }
+
 
 // search
 .open-filter-button .ng-star-inserted {
@@ -714,10 +731,6 @@ map-info-window{
     button{
         padding: 14px 20px !important;
     }
-
-    .actions-text{
-        
-    }
 }
 
 .gm-style-iw.gm-style-iw-c,
@@ -756,6 +769,10 @@ google-map{
     width: calc(52% - 1em) !important;
 }
 /* end search list result */
+
+
+    
+
 
 
 
