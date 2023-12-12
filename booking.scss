@@ -486,6 +486,14 @@ div[id^="base_page:postab"]{
     border-color: $secondary-grey-color;
 }
 
+.table-stripe tbody tr:nth-child(odd) td,.table-stripe tbody tr:nth-child(odd) th {
+        background-color: $secondary-grey-color !important;
+    }
+    
+.table-stripe tbody tr:nth-child(even) td,.table-stripe tbody tr:nth-child(even) th {
+    background-color: $secondary-light-grey-color !important;
+}
+
 // mobile 
 @media (max-width: 35em){
 
@@ -506,13 +514,6 @@ div[id^="base_page:postab"]{
         }
     }
 
-    .table-stripe tbody tr:nth-child(odd) td,.table-stripe tbody tr:nth-child(odd) th {
-        background-color: $secondary-grey-color !important;
-    }
-    
-    .table-stripe tbody tr:nth-child(even) td,.table-stripe tbody tr:nth-child(even) th {
-        background-color: $secondary-light-grey-color !important;
-    }
     // input 
     .ui-field-contain{
         flex-direction: column;
