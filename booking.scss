@@ -281,6 +281,12 @@ div#base_page\:j_idt49{
     text-shadow: none !important;
 }
 
+thead[id^="#base_page\:tabview\:resultTable"]{
+    span.ui-column-title{
+        font-weight: 400%;
+    }
+}
+
 /*======================SECTION=========================*/
 
 div#base_page\:base_header{
