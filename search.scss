@@ -400,7 +400,7 @@ app-search-filter{
 
 app-search-filter-window{
     .filter-container{
-        max-width: 360px !important;
+        box-sizing: content-box;
         width: auto !important;
     }
 
@@ -446,17 +446,32 @@ app-search-filter-window{
     @include body-text();
 }
 
+html[lang="en"] mat-chip-option{
+    padding: 14px 16px !important;
+
+    .mat-mdc-chip-graphic{
+        padding-left: 0 !important;
+    }
+
+    .mdc-evolution-chip__action{
+        padding-right: 0 !important;
+    }
+
+    .mdc-evolution-chip__text-label{
+        margin-bottom: 0 !important;
+    }
+
+    button[aria-selected="false"] .mdc-evolution-chip__action{
+        padding-right: 0 !important;
+    }
+}
+
 // range
 .mat-mdc-slider .mdc-slider__value-indicator{
     @include black-text();
     opacity: 1;
-    background-color: transparent;
+    background-color: transparent !important;
     
-}
-
-.mdc-slider__value-indicator-text{
-    font-family: Montserrat !important;
-    @include body-text();
 }
 
 .mdc-slider .mdc-slider__value-indicator::before{
@@ -469,32 +484,40 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 }
 
 // action
-.mat-card-actions:first-child{
-    border: 1px solid $primary-black-color;
-    background-color: $secondary-white-color !important;
-    text-transform: uppercase;
+.mat-card-actions{
+    &:first-child{
+        border: 1px solid $primary-black-color;
+        background-color: $secondary-white-color !important;
+        text-transform: uppercase;
+    }
+
+    button{
+        @include title();
+        border-radius: 0;
+        height: fit-content !important;
+        min-height: fit-content !important;
+        text-transform: uppercase;
+
+        &.mat-stroked-button{
+            padding-top: 12.5px !important;
+            padding-bottom: 12.5px !important;
+        }
+    }
+
+    .mat-button-wrapper{
+        @include title();
+    }
 }
 
-.mat-card-actions button{
-    @include title();
-    border-radius: 0;
-    height: fit-content !important;
-    min-height: fit-content !important;
-    text-transform: uppercase;
-}
+.filter-bar{
+    .mat-button-wrapper span{
+        text-transform: capitalize;
+    }
 
-.mat-card-actions button .mat-button-wrapper{
-    @include title();
+    .mat-stroked-button.mat-primary{
+        background-color: white !important; 
+    }
 }
-
-.filter-bar .mat-button-wrapper span{
-    text-transform: capitalize;
-}
-
-.filter-bar .mat-stroked-button.mat-primary{
-    background-color: white !important; 
-}
-
 /* end filter list section */
 
 /* begin card section */
