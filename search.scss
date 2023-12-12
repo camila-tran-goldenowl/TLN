@@ -333,9 +333,24 @@ app-search-card.ng-star-inserted{
 
 .search-discount-code,
 .search-location{
+    &.mat-focused{
+        margin-top: -2px;
+        .mat-form-field-label-wrapper{
+            padding-top: 1.84375em !important; 
+        }
+    }
+
     .mat-form-field-label-wrapper{
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .mat-form-field-appearance-outline {
+        margin-top: 0!important;
+
+        .mat-form-field-label{
+            margin-top: 0!important;
+        }
     }
 }
 
