@@ -157,6 +157,10 @@ body {
     border-radius: 0 !important;
 }
 
+mat-label{
+    font-size: 10px;
+}
+
 // calendar
 .mat-calendar *{
     @include main-font();
@@ -183,6 +187,14 @@ body {
     .mat-date-range-input-wrapper{
         flex: 1
     }    
+
+    mat-datepicker-toggle > button{
+        width: fit-content !important;
+        height: fit-content !important;
+        vertical-align: bottom !important;
+        padding: 0 !important;
+        margin-left: 30px;
+    }
 }
 
 .mat-calendar-content{
@@ -243,7 +255,7 @@ app-search-card.ng-star-inserted{
 // guest 
 .search-guests.mat-focused{
     .mat-select-arrow-wrapper{
-        transform: rotate(45deg) !important; 
+        transform: rotate(45deg) translateY(-25%) !important; 
     }
 }
 .mat-option:hover .mat-option-text {
@@ -322,8 +334,8 @@ app-search-card.ng-star-inserted{
 .search-discount-code,
 .search-location{
     .mat-form-field-label-wrapper{
-        top: 50%;
-        transform: translateY(-50%);
+        // top: 50%;
+        // transform: translateY(-50%);
     }
 }
 
