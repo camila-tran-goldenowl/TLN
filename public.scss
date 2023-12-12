@@ -194,8 +194,9 @@ html[lang="en"] #orderForm:vndcat button{
     }
 }
 
-.rb-cat-desc.rb-vendor-description{
+.rb-vendor-description{
     @include caption();
+    background-color: red;
 }
 /* end list section */
 
