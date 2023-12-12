@@ -3078,7 +3078,7 @@ div.ui-button,.ui-splitbutton {
     margin: 0;
     padding: 0;
     display: block;
-    background: url("/javax.faces.resource/messages/messages.png.jsf?ln=primefaces&v=6.1.19") no-repeat
+    background: url("https://nisade.evoke.jp/javax.faces.resource/messages/messages.png.jsf?ln=primefaces&v=6.1.19") no-repeat
 }
 
 .ui-growl-image-info {
@@ -3681,7 +3681,7 @@ div.ui-button,.ui-splitbutton {
 }
 
 .ui-messages-info-icon,.ui-messages-warn-icon,.ui-messages-error-icon,.ui-messages-fatal-icon,.ui-message-info-icon,.ui-message-warn-icon,.ui-message-error-icon,.ui-message-fatal-icon {
-    background: url("/javax.faces.resource/messages/messages.png.jsf?ln=primefaces&v=6.1.19") no-repeat;
+    background: url("https://nisade.evoke.jp/javax.faces.resource/messages/messages.png.jsf?ln=primefaces&v=6.1.19") no-repeat;
     display: block;
     float: left;
     margin: 0;

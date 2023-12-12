@@ -8,6 +8,7 @@
     <link type="text/css" rel="stylesheet" href="/javax.faces.resource/order02.css?ln=css">
     <link type="text/css" rel="stylesheet" href="/javax.faces.resource/components.css">
     <script type="text/javascript" src="/javax.faces.resource/jquery/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="./public.css">
     <script type="text/javascript"
         src="/javax.faces.resource/jquery/jquery-plugins.js"></script>
     <script type="text/javascript" src="/javax.faces.resource/core.js"></script>
@@ -19,12 +20,12 @@
     <link type="text/css" rel="stylesheet"
         href="/javax.faces.resource/fileupload/fileupload.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="./public.css">
+   
     <script type="text/javascript"
         src="/javax.faces.resource/fileupload/fileupload.js"></script>
     <script type="text/javascript">if (window.PrimeFaces) { PrimeFaces.settings.locale = 'fr'; }</script>
     <link href="/public/template:default/css/base_desk_layout.css" rel="stylesheet" type="text/css">
-
+    
     <title>Nisade</title>
 
     <script src="/template/default/js/calendar.js"></script>
@@ -492,8 +493,7 @@
                                     data-widget="widget_orderForm_j_idt117">
                                     <div id="orderForm:j_idt117_content" class="ui-panel-content ui-widget-content">
                                         <label id="orderForm:scrolltop" style="cursor: pointer">Looking for something
-                                            else? Select from a different category.</label>
-                                    </div>
+                                            else? Select from a different category.</label></div>
                                 </div>
                             </div>
                         </div>
@@ -517,14 +517,13 @@
             </div>
             <div id="orderForm:addbskdlg"
                 class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container rb-add-prod-dialog rb-dl-vendor-2c999018742b39e401744c4ab8d257d2 rb-dl-prod-2c999018746a856101746bc65e5a1931 rb-dl-parent-cat-2c999018746fa9a2017475f2323b743c rb-dl-child-cat-2c999018746fa9a20174953c237676df ui-draggable"
-                role="dialog" aria-labelledby="orderForm:addbskdlg_title" aria-hidden="true"
-                style="width: auto; height: auto; left: 504px; top: 21px; z-index: 1018; display: none;"
-                aria-live="off">
+                role="dialog" aria-labelledby="orderForm:addbskdlg_title" aria-hidden="false"
+                style="width: auto; height: auto; left: 504px; top: 75px; z-index: 1046; display: block;"
+                aria-live="polite">
                 <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top ui-draggable-handle">
                     <span id="orderForm:addbskdlg_title" class="ui-dialog-title">Rusutsu → CTS </span><a href="#"
                         class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"
-                        role="button"><span class="ui-icon ui-icon-closethick"></span></a>
-                </div>
+                        role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
                 <div class="ui-dialog-content ui-widget-content" style="height: auto;"><input id="orderForm:focusProp"
                         name="orderForm:focusProp" type="text"
                         class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" role="textbox"
@@ -628,7 +627,7 @@
                                 <div class="ui-helper-hidden-accessible"><select id="orderForm:cbval_0_input"
                                         name="orderForm:cbval_0_input" tabindex="-1" aria-hidden="true"
                                         onchange="PrimeFaces.ab({s:&quot;orderForm:cbval_0&quot;,e:&quot;change&quot;,p:&quot;orderForm:cbval_0&quot;,u:&quot;orderForm:pricepg orderForm:butpg orderForm:nolespg orderForm:stdtpg orderForm:grossprice orderForm:net orderForm:sellprice growl&quot;,onst:function(cfg){showModal();;},onco:function(xhr,status,args){hideModal();updateCurrency();;}});">
-                                        <option value="1">Taxi: Prius/Vanette (1-2 guests)</option>
+                                        <option value="1" selected="selected">Taxi: Prius/Vanette (1-2 guests)</option>
                                         <option value="2">Camry/Crown (1-2 guests)</option>
                                         <option value="3">Vellfire/Alphard (1-3 guests)</option>
                                         <option value="4">Grand Cabin (1-7 guests)</option>
@@ -641,20 +640,20 @@
                         </div>
                         <div class="flex-option"><label id="orderForm:pdtoptnm_1" style="font-weight: bold;">Departure
                                 Flight No</label><input id="orderForm:cbtval_1" name="orderForm:cbtval_1" type="text"
-                                maxlength="24" size="24"
+                                value="" maxlength="24" size="24"
                                 class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
                                 role="textbox" aria-disabled="false" aria-readonly="false"></div>
                         <div class="flex-option"><label id="orderForm:pdtoptnm_2" style="font-weight: bold;">Depart.
                                 Flight Time</label><input id="orderForm:cbtval_2" name="orderForm:cbtval_2" type="text"
-                                maxlength="24" size="24"
+                                value="" maxlength="24" size="24"
                                 class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"
                                 role="textbox" aria-disabled="false" aria-readonly="false"></div>
                         <div class="flex-option"><label id="orderForm:pdtoptnm_3" style="font-weight: bold;">Number of
                                 Adults *</label>
                             <div id="orderForm:cbval_3"
-                                class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" role="combobox"
-                                aria-haspopup="true" aria-expanded="false" aria-owns="orderForm:cbval_3_items"
-                                style="min-width: 129px;">
+                                class="ui-selectonemenu ui-widget ui-state-default ui-corner-all ui-state-error"
+                                role="combobox" aria-haspopup="true" aria-expanded="false"
+                                aria-owns="orderForm:cbval_3_items" style="min-width: 129px;">
                                 <div class="ui-helper-hidden-accessible"><input id="orderForm:cbval_3_focus"
                                         name="orderForm:cbval_3_focus" type="text" autocomplete="off"
                                         aria-expanded="false" aria-autocomplete="list"
@@ -674,8 +673,8 @@
                                     </select></div><label id="orderForm:cbval_3_label"
                                     class="ui-selectonemenu-label ui-inputfield ui-corner-all">-- Please Select
                                     --</label>
-                                <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
-                                        class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-error">
+                                    <span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
                             </div>
                         </div>
                         <div class="flex-option"><label id="orderForm:pdtoptnm_4" style="font-weight: bold;">Number of
@@ -692,7 +691,7 @@
                                 <div class="ui-helper-hidden-accessible"><select id="orderForm:cbval_4_input"
                                         name="orderForm:cbval_4_input" tabindex="-1" aria-hidden="true"
                                         onchange="PrimeFaces.ab({s:&quot;orderForm:cbval_4&quot;,e:&quot;change&quot;,p:&quot;orderForm:cbval_4&quot;,u:&quot;orderForm:pricepg orderForm:butpg orderForm:nolespg orderForm:stdtpg orderForm:grossprice orderForm:net orderForm:sellprice growl&quot;,onst:function(cfg){showModal();;},onco:function(xhr,status,args){hideModal();updateCurrency();;}});">
-                                        <option value="1">0</option>
+                                        <option value="1" selected="selected">0</option>
                                         <option value="2">1</option>
                                         <option value="3">2</option>
                                         <option value="4">3</option>
@@ -719,7 +718,7 @@
                                 <div class="ui-helper-hidden-accessible"><select id="orderForm:cbval_5_input"
                                         name="orderForm:cbval_5_input" tabindex="-1" aria-hidden="true"
                                         onchange="PrimeFaces.ab({s:&quot;orderForm:cbval_5&quot;,e:&quot;change&quot;,p:&quot;orderForm:cbval_5&quot;,u:&quot;orderForm:pricepg orderForm:butpg orderForm:nolespg orderForm:stdtpg orderForm:grossprice orderForm:net orderForm:sellprice growl&quot;,onst:function(cfg){showModal();;},onco:function(xhr,status,args){hideModal();updateCurrency();;}});">
-                                        <option value="1">0</option>
+                                        <option value="1" selected="selected">0</option>
                                         <option value="2">1</option>
                                         <option value="3">2</option>
                                         <option value="4">3</option>
@@ -746,7 +745,7 @@
                                 <div class="ui-helper-hidden-accessible"><select id="orderForm:cbval_6_input"
                                         name="orderForm:cbval_6_input" tabindex="-1" aria-hidden="true"
                                         onchange="PrimeFaces.ab({s:&quot;orderForm:cbval_6&quot;,e:&quot;change&quot;,p:&quot;orderForm:cbval_6&quot;,u:&quot;orderForm:pricepg orderForm:butpg orderForm:nolespg orderForm:stdtpg orderForm:grossprice orderForm:net orderForm:sellprice growl&quot;,onst:function(cfg){showModal();;},onco:function(xhr,status,args){hideModal();updateCurrency();;}});">
-                                        <option value="1">The Vale Rusutsu</option>
+                                        <option value="1" selected="selected">The Vale Rusutsu</option>
                                     </select></div><label id="orderForm:cbval_6_label"
                                     class="ui-selectonemenu-label ui-inputfield ui-corner-all">The Vale Rusutsu</label>
                                 <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
@@ -756,9 +755,9 @@
                         <div class="flex-option"><label id="orderForm:pdtoptnm_7" style="font-weight: bold;">Luggage
                                 *</label>
                             <div id="orderForm:cbval_7"
-                                class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" role="combobox"
-                                aria-haspopup="true" aria-expanded="false" aria-owns="orderForm:cbval_7_items"
-                                style="min-width: 129px;">
+                                class="ui-selectonemenu ui-widget ui-state-default ui-corner-all ui-state-error"
+                                role="combobox" aria-haspopup="true" aria-expanded="false"
+                                aria-owns="orderForm:cbval_7_items" style="min-width: 129px;">
                                 <div class="ui-helper-hidden-accessible"><input id="orderForm:cbval_7_focus"
                                         name="orderForm:cbval_7_focus" type="text" autocomplete="off"
                                         aria-expanded="false" aria-autocomplete="list"
@@ -785,16 +784,16 @@
                                     </select></div><label id="orderForm:cbval_7_label"
                                     class="ui-selectonemenu-label ui-inputfield ui-corner-all">-- Please Select
                                     --</label>
-                                <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
-                                        class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-error">
+                                    <span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
                             </div>
                         </div>
                         <div class="flex-option"><label id="orderForm:pdtoptnm_8" style="font-weight: bold;">Ski &amp;
                                 Board Bags *</label>
                             <div id="orderForm:cbval_8"
-                                class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" role="combobox"
-                                aria-haspopup="true" aria-expanded="false" aria-owns="orderForm:cbval_8_items"
-                                style="min-width: 129px;">
+                                class="ui-selectonemenu ui-widget ui-state-default ui-corner-all ui-state-error"
+                                role="combobox" aria-haspopup="true" aria-expanded="false"
+                                aria-owns="orderForm:cbval_8_items" style="min-width: 129px;">
                                 <div class="ui-helper-hidden-accessible"><input id="orderForm:cbval_8_focus"
                                         name="orderForm:cbval_8_focus" type="text" autocomplete="off"
                                         aria-expanded="false" aria-autocomplete="list"
@@ -810,8 +809,8 @@
                                     </select></div><label id="orderForm:cbval_8_label"
                                     class="ui-selectonemenu-label ui-inputfield ui-corner-all">-- Please Select
                                     --</label>
-                                <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span
-                                        class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
+                                <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right ui-state-error">
+                                    <span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div>
                             </div>
                         </div>
                         <div class="flex-option"><label id="orderForm:pdtoptnm_9" style="font-weight: bold;">Child
@@ -828,7 +827,7 @@
                                 <div class="ui-helper-hidden-accessible"><select id="orderForm:cbval_9_input"
                                         name="orderForm:cbval_9_input" tabindex="-1" aria-hidden="true"
                                         onchange="PrimeFaces.ab({s:&quot;orderForm:cbval_9&quot;,e:&quot;change&quot;,p:&quot;orderForm:cbval_9&quot;,u:&quot;orderForm:pricepg orderForm:butpg orderForm:nolespg orderForm:stdtpg orderForm:grossprice orderForm:net orderForm:sellprice growl&quot;,onst:function(cfg){showModal();;},onco:function(xhr,status,args){hideModal();updateCurrency();;}});">
-                                        <option value="1">0</option>
+                                        <option value="1" selected="selected">0</option>
                                         <option value="2">1</option>
                                         <option value="3">2</option>
                                     </select></div><label id="orderForm:cbval_9_label"
@@ -840,7 +839,7 @@
                         <div id="orderForm:pricepg" class="flex-option"><label id="orderForm:grosslbl"
                                 style="font-weight: bold;">Cost</label><label id="orderForm:gross"
                                 class="cur rb-prod-gross-value" original-value-formatted="￥28,800"
-                                original-value="28800" original-value-currency="JPY">￥28,800</label></div>
+                                original-value="28800" original-value-currency="JPY"></label></div>
                         <div id="orderForm:forcedtmsgpg"></div>
                         <div id="orderForm:qtypg" class="flex-option"><label id="orderForm:qtylbl"
                                 style="font-weight: bold;">Quantity</label>
@@ -901,8 +900,7 @@
                 <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top ui-draggable-handle">
                     <span id="guestDialogForm:newguestdlg_title" class="ui-dialog-title">Add Guest</span><a href="#"
                         class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close"
-                        role="button"><span class="ui-icon ui-icon-closethick"></span></a>
-                </div>
+                        role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
                 <div class="ui-dialog-content ui-widget-content" style="height: auto;"></div>
             </div>
             <div id="guestDialogForm:editguestdlg"
@@ -912,8 +910,7 @@
                 <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top ui-draggable-handle">
                     <span id="guestDialogForm:editguestdlg_title" class="ui-dialog-title">Edit Group Member</span><a
                         href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"
-                        aria-label="Close" role="button"><span class="ui-icon ui-icon-closethick"></span></a>
-                </div>
+                        aria-label="Close" role="button"><span class="ui-icon ui-icon-closethick"></span></a></div>
                 <div class="ui-dialog-content ui-widget-content" style="height: auto;"></div>
             </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2"
                 value="5932623275996269063:4058493358910259765" autocomplete="off">
@@ -944,7 +941,7 @@
     </div>
     <div id="j_idt890"></div>
     <div id="ajaxLoader" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"
-        style="background-color: transparent; box-shadow: none; border: none; width: auto; height: auto; left: 680px; top: 367.5px; z-index: 1016; display: none;"
+        style="background-color: transparent; box-shadow: none; border: none; width: auto; height: auto; left: 680px; top: 367.5px; z-index: 1047; display: none;"
         role="dialog" aria-labelledby="ajaxLoader_title" aria-hidden="true" aria-live="off">
         <div class="ui-dialog-content ui-widget-content" style="height: auto;"><img id="waitImage"
                 src="/template/default/images/ajaxLoader.gif"></div>
@@ -1020,7 +1017,41 @@
             </ul>
         </div>
     </div>
-    <div id="growl_container" class="ui-growl ui-widget" style="z-index: 1015;"></div>
+    <div id="growl_container" class="ui-growl ui-widget" style="z-index: 1048;">
+        <div class="ui-growl-item-container ui-state-highlight ui-corner-all ui-helper-hidden ui-shadow ui-growl-error"
+            aria-live="polite" style="display: block;">
+            <div class="ui-growl-item">
+                <div class="ui-growl-icon-close ui-icon ui-icon-closethick" style="display:none"></div><span
+                    class="ui-growl-image ui-growl-image-error"></span>
+                <div class="ui-growl-message"><span class="ui-growl-title"></span>
+                    <p>Number of Adults is required.</p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="ui-growl-item-container ui-state-highlight ui-corner-all ui-helper-hidden ui-shadow ui-growl-error"
+            aria-live="polite" style="display: block;">
+            <div class="ui-growl-item">
+                <div class="ui-growl-icon-close ui-icon ui-icon-closethick" style="display:none"></div><span
+                    class="ui-growl-image ui-growl-image-error"></span>
+                <div class="ui-growl-message"><span class="ui-growl-title"></span>
+                    <p>Luggage is required.</p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        <div class="ui-growl-item-container ui-state-highlight ui-corner-all ui-helper-hidden ui-shadow ui-growl-error"
+            aria-live="polite" style="display: block;">
+            <div class="ui-growl-item">
+                <div class="ui-growl-icon-close ui-icon ui-icon-closethick" style="display:none"></div><span
+                    class="ui-growl-image ui-growl-image-error"></span>
+                <div class="ui-growl-message"><span class="ui-growl-title"></span>
+                    <p>Ski &amp; Board Bags is required.</p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
     <div class="ui-dialog-docking-zone"></div>
     <div id="confirmdlg"
         class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container rb-confirm-dialog"
@@ -1045,6 +1076,7 @@
     <div id="forest-ext-shadow-host"></div>
     <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
     </div>
+    <div id="orderForm:addbskdlg_modal" class="ui-widget-overlay ui-dialog-mask" style="z-index: 1036;"></div>
     <div id="orderForm:cbval_0_panel"
         class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay">
         <div class="ui-selectonemenu-items-wrapper" style="max-height:200px">

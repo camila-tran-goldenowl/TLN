@@ -13,6 +13,11 @@ $secondary-beige-color: #F9F6F0;
 $secondary-white-color: #FFFDFA;
 $secondary-grey-color: #DCDDDE;
 
+$success-color:#54AF91;
+$fail-color:#EA5F5F;
+$dark-grey: #66686A;
+$link-color:#3388CC;
+
 @mixin main-font{
     font-family: Montserrat !important;
 }
@@ -69,7 +74,7 @@ $secondary-grey-color: #DCDDDE;
 }
 
 @mixin black-text{
-    color: $primary-black-color !important;
+   @include black-text()
 }
 
 @mixin hover-underline{
@@ -80,21 +85,26 @@ $secondary-grey-color: #DCDDDE;
 }
 
 *{
+    @include main-font();
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-size: 62.5%;
+}
+
 // general 
 
-html[lang="en"] .ui-button-text{
+html .ui-button-text{
     @include main-font();
     @include black-text();
     letter-spacing: 0.15em;
     font-weight: 400 !important;
 }
 
-html[lang="en"] .ui-corner-all{
+html .ui-corner-all{
 border-radius: 0 !important;
 }
 
@@ -122,7 +132,7 @@ border-radius: 0 !important;
     }
 }
 
-html[lang="en"] .ui-widget-content .ui-state-highlight{
+html .ui-widget-content .ui-state-highlight{
     color: $primary-black-color !important
 }
 
@@ -135,7 +145,7 @@ html[lang="en"] .ui-widget-content .ui-state-highlight{
     }
 }
 
-html[lang="en"] .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon{
+html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon{
     margin: 0 !important;
 }
 
@@ -183,4 +193,65 @@ html[lang="en"] #orderForm:vndcat button{
         font-weight: 500 !important;
     }
 }
+
+.rb-cat-desc.rb-vendor-description{
+    @include caption();
+}
 /* end list section */
+
+
+
+
+/* begin dialog section */
+
+// header
+.ui-dialog-titlebar{
+    @include black-text();
+    span{
+        background-color: $secondary-grey-color !important;
+    }
+}
+
+// warning messages
+.ui-growl-item{
+    display: flex;
+    align-items: center;
+    background-color: $fail-color;
+
+    
+    
+}
+.ui-growl-message{
+    padding: 0 !important;
+
+    span{
+        padding: 0 !important;
+    }
+}
+
+.rb-prod-dialog-but{
+    background-color: $secondary-orange-color;
+    padding: 13px 0 !important; 
+
+    #orderForm\:butpg{
+        padding: 0 !important; 
+    }
+
+    .button#orderForm\:addbtn{
+        padding: 0 !important;
+    }
+
+    .ui-button-text{
+        @include caption();
+        @include black-text();
+        padding: 0 !important;
+        background-color: $secondary-orange-color;
+        font-weight: 400 !important;
+    }
+
+    .ui-button.ui-widget.ui-state-default{
+        border: 0;
+    }
+}
+
+/* end dialog section */
