@@ -115,7 +115,7 @@ html[lang="en"] .product-description,
 html[lang="en"] .checkout-room-description, 
 html[lang="en"] .checkout-vendor-info, 
 html[lang="en"] .side-cart .summary-row {
-    font-family: Montserrat !important;
+    @include main-font();
     font-weight: 400 !important;
     @include black-text();
 }
@@ -159,7 +159,7 @@ body {
 
 // calendar
 .mat-calendar *{
-    font-family: Montserrat !important;
+    @include main-font();
 
     .mat-calendar-controls{
         .mdc-button__label{
@@ -223,13 +223,7 @@ body {
     @include header();
 }
 
-.mat-menu-item:hover:after {
-    @include hover-underline();
-}
 
-.mat-menu-item:hover:after {
-    @include hover-underline();
-}
 
 app-search-card.ng-star-inserted{
     &:hover{
@@ -247,6 +241,11 @@ app-search-card.ng-star-inserted{
     margin: 0;
 }
 // guest 
+.search-guests.mat-focused{
+    .mat-select-arrow-wrapper{
+        transform: rotate(45deg) !important; 
+    }
+}
 .mat-option:hover .mat-option-text {
     text-decoration: underline;
 }
@@ -277,13 +276,6 @@ app-search-card.ng-star-inserted{
     border-right: 2px solid black !important;
 }
 
-// mat-form-field{
-//     label#mat-form-field-label-5 {
-//         text-transform: capitalize;
-//         @include header();
-//     }
-// }
-
 // language
 .search-card.focused[_ngcontent-wnk-c35]{
     background: transparent !important;
@@ -313,10 +305,14 @@ app-search-card.ng-star-inserted{
     text-underline-offset: 4px;
     display: inline-block;
     position: relative;
-}
 
-.mat-menu-item:hover{
-    @include hover-underline();
+    &:hover{
+        @include hover-underline();
+    }
+
+    &:hover:after {
+        @include hover-underline();
+    }
 }
 
 .mat-menu-panel{
@@ -361,7 +357,7 @@ app-search-card.ng-star-inserted{
     top: 64px !important;
 }
 .mat-card{
-    font-family: Montserrat !important;
+    @include main-font();
 }
 .open-filter-button.active,
 .mdc-evolution-chip__text-label,
@@ -424,6 +420,8 @@ app-search-filter-window{
     
 }
 
+
+
 .filter .subtitle{
     @include black-text();
     @include title();
@@ -467,20 +465,22 @@ html[lang="en"] mat-chip-option{
 }
 
 // range
-.mat-mdc-slider .mdc-slider__value-indicator{
-    @include black-text();
-    opacity: 1;
+html[lang="en"] .mat-mdc-slider .mdc-slider__value-indicator {
+    @include main-font();
+    opacity: 1 !important;
     background-color: transparent !important;
-    
-}
 
-.mdc-slider .mdc-slider__value-indicator::before{
-    border: none;
-}
+    span{
+        @include black-text();
+        @include body-text();
+        line-height: 20px;
+        font-family: Montserrat;
 
-mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider--range .mdc-slider__value-indicator-text{
-    font-family: Montserrat !important;
-    @include body-text();
+        &::before{
+            display: none;
+        }
+
+    }
 }
 
 // action
@@ -591,7 +591,7 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 /* begin map section */
 html[lang="en"] .card-content * {
-    font-family: Montserrat !important;
+    @include main-font();
 }
 
 .card-content{
