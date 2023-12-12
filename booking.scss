@@ -485,15 +485,6 @@ div[id^="base_page:postab"]{
 .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited{
     border-color: $secondary-grey-color;
 }
-
-.table-stripe tbody tr:nth-child(odd) td,.table-stripe tbody tr:nth-child(odd) th {
-        background-color: $secondary-grey-color !important;
-    }
-    
-.table-stripe tbody tr:nth-child(even) td,.table-stripe tbody tr:nth-child(even) th {
-    background-color: $secondary-light-grey-color !important;
-}
-
 // mobile 
 @media (max-width: 35em){
 
