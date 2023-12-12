@@ -322,6 +322,15 @@ app-search-card.ng-star-inserted{
 .mat-menu-panel{
     border-radius: 0 !important;
 }
+
+.search-discount-code,
+.search-location{
+    .mat-form-field-label-wrapper{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 // search
 .open-filter-button .ng-star-inserted {
     @include body-text();
@@ -540,7 +549,13 @@ mat-slider.mat-mdc-slider.mdc-slider.mat-primary.mdc-slider--discrete.mdc-slider
 
 .search-card.focused[_ngcontent-mhq-c35]{
     @include black-text();
-    background-color: white;
+    background-color: #E0E0E0 !important;
+    border: none;
+
+    #searchMoreInfo{
+        color: white !important;
+        background-color: $primary-black-color !important;
+    }
 
     .search-card-from{
        
