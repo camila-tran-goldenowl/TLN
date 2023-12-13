@@ -74,7 +74,7 @@ $link-color:#3388CC;
 }
 
 @mixin black-text{
-   @include black-text()
+    color: $primary-black-color;
 }
 
 @mixin hover-underline{
@@ -171,7 +171,8 @@ html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon{
 
 
 /* begin menu section */
-.rb-vendor-text{
+.rb-vendor-text, 
+.rb-parent-cat-text{
     @include sub-header();
     font-size: 22px !important;
 }
@@ -183,7 +184,7 @@ html[lang="en"] #orderForm:vndcat button{
 /* end menu section */
 
 /* begin list section */
-.flex-item.rb-vendor-item {
+.flex-item {
     margin: 0 10px 10px 10px !important;
     padding: 0 !important;
     padding-bottom: 10px !important;
@@ -196,7 +197,6 @@ html[lang="en"] #orderForm:vndcat button{
 
 .rb-vendor-description{
     @include caption();
-    background-color: red;
 }
 /* end list section */
 
