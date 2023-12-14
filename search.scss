@@ -85,10 +85,6 @@ $secondary-grey-color: #DCDDDE;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-}
-
 /* begin general */
 html[lang="en"] body, 
 html[lang="en"] .mat-body, 
@@ -167,6 +163,10 @@ mat-label{
 }
 
 // calendar
+.mat-datepicker-content .mat-calendar{
+    height: fit-content !important;
+}
+
 .mat-calendar *{
     @include main-font();
 
@@ -344,12 +344,12 @@ app-search-card.ng-star-inserted{
 }
 
 // discount code
-.mat-form-field-appearance-outline {
-    .mat-form-field-label{
-        margin-top: 0!important;
-        /* align area input */
-    }
-}
+// .mat-form-field-appearance-outline {
+//     .mat-form-field-label{
+//         margin-top: 0!important;
+//         /* align area input */
+//     }
+// }
 
 .search-discount-code,
 .search-location{
@@ -781,7 +781,7 @@ google-map{
 
 
 /*==================PROPER PAGE =====================*/
-html[lang="en"] h2.product-title, .checkout-room-type{
+html[lang="en"] h2.product-title{
     @include sub-header();
     line-height: 32px;
 }
@@ -815,16 +815,7 @@ html[lang="en"] .vendor-description{
 }
 
 /* begin hotel card detail section */
-html[lang="en"] .checkout-room-description{
-    @include body-text();
-    opacity: 1;
-}
 
-app-cart-product .product-features {
-    margin-top: 10px !important;
-}
-
-app-cart-product,
 .product-info-container {
     .product-dates {
         @include caption();
@@ -840,7 +831,6 @@ app-cart-product,
 
         > span {
             @include caption();
-            margin-right: 10px;
         }
 
         .material-icons {
@@ -853,6 +843,7 @@ app-cart-product,
     .product-description{
         @include black-text();
         @include body-text();
+        font-family: Montserrat;
         line-height: 26px;
     }
 }
@@ -1028,12 +1019,6 @@ mat-dialog-content.mat-dialog-content.mat-typography{
             letter-spacing: 0.15em;
             text-transform: uppercase;
         }
-
-        .date{
-            @include body-text;
-            line-height: 26px;
-
-        }
     }
 }
 
@@ -1149,119 +1134,5 @@ app-search-bar{
     .mat-flat-button.mat-primary{
         padding: 0!important;
         border-radius: 50% !important;
-    }
-}
-
-
-// ====================================
-
-app-shopping-cart{
-    .checkout-vendor{
-        @include sub-header;
-        font-size: 22px;
-        line-height: 35px;
-        padding-bottom: 1.1rem !important;
-    }
-
-    .mat-card-content>div{
-        p{
-            display: none;
-        }
-    
-        .cart-total{
-            margin-right: 0 !important
-        }
-    }
-
-}
-
-html[lang="en"] .rate-plan-info{
-    padding-top: 1.6rem !important;
-}
-.rate-plan-info{ 
-    margin-top: 2.4rem!important;;
-    margin-bottom: 2.4rem !important;
-    border-radius: 0 !important;
-
-    .rate-plan-title{
-        @include sub-header;
-        font-size: 18px !important;
-    }
-
-    .more-info-long{
-        margin-top: 2.4rem !important;
-        opacity: 1;
-        @include black-text;
-
-        p{
-            @include body-text;
-            line-height: 26px;
-        }
-    }
-}
-
-
-app-payment-schedule{
-    .payment-schedule-container{
-        padding-bottom: 2.4rem;
-        opacity: 1;
-
-        .full-date{
-            @include title;
-            line-height: 19px;
-        }
-    
-        mat-icon{
-            color: $secondary-orange-color !important;
-            width: 14px !important;
-            height: 14px !important;
-            font-size: 14px !important;
-        }
-    }
-    
-}
-
-
-// form
-app-customer-form{
-    mat-checkbox{
-        .mat-checkbox-label{
-            @include caption;
-            line-height: 19px;
-
-        }
-
-        .mat-checkbox-inner-container{
-            .mat-checkbox-frame{
-                border-color: $primary-black-color;
-            }
-
-            .mat-checkbox-checkmark{
-                fill: $secondary-orange-color;
-                border-radius: 0 !important;
-            }
-            
-            .mat-checkbox-checkmark-path {
-                stroke: $secondary-orange-color!important;
-            }
-        }
-    }
-
-    .button-container{
-        display: flex;
-        align-items: center;
-
-        button:not(.mobile){
-            min-width: 40rem !important;
-            margin-left: 3rem !important;
-        }
-    }
-}
-
-
-.mat-form-field-infix {
-    input, mat-label{
-        @include header();
-        text-transform: capitalize;
     }
 }
