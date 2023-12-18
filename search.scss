@@ -954,6 +954,19 @@ app-product{
     }
     
 }
+.mat-select-panel{
+    border-radius: 0 !important;
+}
+
+.mat-form-field.mat-focused {
+    .mat-form-field-label{
+        color: $secondary-orange-color !important;
+    }
+    
+    .mat-select-arrow-wrapper {
+        transform: rotate(45deg) translateY(-25%) !important;
+    }
+}
 
 /* end hotel card detail section */
 
