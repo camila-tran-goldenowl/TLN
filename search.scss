@@ -49,6 +49,9 @@ app-cart-product{
     }
 }
 
+.mat-form-field-appearance-outline .mat-select-arrow-wrapper{
+    transform: translateY(0) !important;
+}
 
 
 @mixin main-font{
@@ -390,13 +393,9 @@ app-search-card.ng-star-inserted{
 }
 
 // discount code
-// .mat-form-field-appearance-outline {
-//     .mat-form-field-label{
-//         margin-top: 0!important;
-//         /* align area input */
-//     }
-// }
-
+.mat-form-field-appearance-outline .mat-form-field-label {
+    margin-top: 0!important;
+}
 .search-discount-code,
 .search-location{
     &.mat-focused{
@@ -405,21 +404,13 @@ app-search-card.ng-star-inserted{
             padding-top: 1.84375em !important; 
         }
     }
-
-    .mat-form-field-label-wrapper{
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .mat-form-field-appearance-outline {
-        margin-top: 0!important;
-
-        .mat-form-field-label{
-            margin-top: 0!important;
-        }
-    }
 }
+mat-form-field.search-discount-code{
+    .mat-form-field-infix{
+        padding: 0.8em 0 !important;
+    }
 
+}
 
 // search
 .open-filter-button .ng-star-inserted {

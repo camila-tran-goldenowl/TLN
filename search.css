@@ -19,6 +19,10 @@ app-cart-product html mat-form-field:not(.mat-form-field-type-mat-select) .mat-f
   padding: 1em 0 !important;
 }
 
+.mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+  transform: translateY(0) !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -294,6 +298,10 @@ app-search-card.ng-star-inserted:hover button {
   border-radius: 0 !important;
 }
 
+.mat-form-field-appearance-outline .mat-form-field-label {
+  margin-top: 0 !important;
+}
+
 .search-discount-code.mat-focused,
 .search-location.mat-focused {
   margin-top: -2px;
@@ -302,18 +310,9 @@ app-search-card.ng-star-inserted:hover button {
 .search-location.mat-focused .mat-form-field-label-wrapper {
   padding-top: 1.84375em !important;
 }
-.search-discount-code .mat-form-field-label-wrapper,
-.search-location .mat-form-field-label-wrapper {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.search-discount-code .mat-form-field-appearance-outline,
-.search-location .mat-form-field-appearance-outline {
-  margin-top: 0 !important;
-}
-.search-discount-code .mat-form-field-appearance-outline .mat-form-field-label,
-.search-location .mat-form-field-appearance-outline .mat-form-field-label {
-  margin-top: 0 !important;
+
+mat-form-field.search-discount-code .mat-form-field-infix {
+  padding: 0.8em 0 !important;
 }
 
 .open-filter-button .ng-star-inserted {
