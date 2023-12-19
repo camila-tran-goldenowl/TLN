@@ -12,6 +12,44 @@ $secondary-orange-color: #F89426;
 $secondary-beige-color: #F9F6F0;
 $secondary-white-color: #FFFDFA;
 $secondary-grey-color: #DCDDDE;
+$secondary-light-grey-color: #F4F4F4;
+
+$success-color:#54AF91;
+$fail-color:#EA5F5F;
+$dark-grey: #66686A;
+$link-color:#3388CC;
+
+// input
+app-cart-product{
+    .mat-form-field-infix{
+        border-top: 0 !important;
+    
+        
+        .mat-form-field-label-wrapper
+        {
+            top: 0 !important;
+            
+        }
+    }
+    
+    .mat-form-field-appearance-outline{
+        .mat-form-field-label{
+            top: 1.34375em !important;
+            padding-top: 0 !important;
+            margin-top: 0!important;
+        }
+    
+        .mat-select-arrow-wrapper{
+            transform: translateY(0) !important;
+        }
+    }
+    
+    html mat-form-field:not(.mat-form-field-type-mat-select) .mat-form-field-infix{
+        padding: 1em 0 !important;
+    }
+}
+
+
 
 @mixin main-font{
     font-family: Montserrat !important;
@@ -77,6 +115,14 @@ $secondary-grey-color: #DCDDDE;
     text-decoration: underline;
     transition: 0.3s;
     text-underline-offset: 4px;
+}
+
+@mixin text-column{
+    font-family: Montserrat;
+    font-size: 12px !important;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.15em !important;
 }
 
 *{
@@ -391,6 +437,7 @@ app-search-card.ng-star-inserted{
     letter-spacing: 0.15em;
     flex: none;
     padding: 10px 25px !important;
+    flex: 2 1 0% !important;
 }
 /* end filter search section */
 
@@ -775,10 +822,6 @@ google-map{
     width: calc(52% - 1em) !important;
 }
 /* end search list result */
-
-
-    
-
 
 
 
@@ -1305,5 +1348,487 @@ app-customer-form{
     input, mat-label{
         @include header();
         text-transform: capitalize;
+    }
+}
+
+
+//=========================BOOKING PAGE=========================
+
+.ui-page-theme-a a, html .ui-bar-a a, html .ui-body-a a, html body .ui-group-theme-a a{
+    font-weight: 400 !important;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+    background-color: $secondary-light-grey-color !important;
+}
+
+
+#base_page\:gform > .ui-btn.ui-input-btn.ui-corner-all.ui-shadow, #base_page\:locform\:languageSelect_input-button, #base_page\:locform\:currencySelect_input-button, [id*=ppstdform] > .ui-btn{
+    @include button();
+    @include text-column();
+}
+
+.ui-outputlabel.ui-widget,
+.ui-column-title{
+    @include text-column();
+    text-transform: uppercase;
+}
+
+.rbn-yb-searchtext{
+    @include body-text();
+    line-height: 26px;
+    text-align: center;
+    max-width: 949px;
+}
+
+.ui-link{
+    color: $link-color !important;
+    text-decoration: none !important;
+}
+
+.gridcell > span{
+    @include body-text();
+}
+
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
+    background-color: $dark-grey !important;
+    color: white !important;
+}
+
+.accordion-title.rbn-bold{
+    @include body-text();
+}
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit, .ui-btn .ui-panel-collapsible-heading-toggle, .ui-icon-minus:after, .ui-icon-plus:after{
+    color: $secondary-orange-color !important;
+}
+
+#base_page:locform:languageSelect_input-button{
+    @include text-column();
+    @include body-text();
+}
+
+#base_page:guest-intranet-greeting{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+div#base_page\:j_idt43{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+span#base_page\:guest-intranet-greeting::after {
+    @include body-text();
+    line-height: 26px;
+    display: block;
+    margin-top: 1.6rem;
+    content: "Scroll down to view reservations and payment status.";
+}
+
+.rb-footer{
+    display: none;
+}
+
+a#base_page\:txtab\:2\:f1\:toPDFNew .ui-link{
+    text-decoration: underline !important;
+    text-underline-offset: 4px;
+}
+
+.ui-table-reflow td{
+    vertical-align: middle;
+}
+
+.ui-input-text{
+    @include body-text();
+    line-height: 26px;
+
+    border: 1px solid $secondary-grey-color;
+    border-radius: none !important;
+    padding: 1.2rem 2rem !important;
+}
+
+div#base_page\:gform\:gem,
+div#base_page\:gform\:gid{
+    box-shadow: none !important;
+    border-radius: 0 !important;
+
+    input{
+        padding: 0!important;
+    }
+
+    .ui-btn.ui-icon-delete{
+        color: $secondary-grey-color !important;
+    }
+}
+
+.ui-shadow{
+    box-shadow: none !important;
+}
+
+.ui-field-contain{
+    display: flex;
+    align-items: center;
+}
+
+
+.rbn-yb-searchtext{
+    margin-top: 2rem !important;
+    display: block;
+    margin: auto;
+}
+
+form#base_page\:gform{
+    margin-top: 40px;
+
+    .ui-field-contain{
+        &:first-child{
+            padding: 0!important;
+        }
+    }
+
+    > .ui-btn{
+        visibility: hidden;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        
+        &::after{
+            @include button();
+            @include black-text();
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            visibility: visible;
+            display: block;
+            content: "CLICK TO REFRESH PAGE";
+            
+        }
+    }
+}
+
+div#base_page\:j_idt49{
+    margin-top: 4rem;
+}
+
+.ui-content{
+    padding: 0 1em 55px 1em;
+}
+
+.ui-field-contain:first-child{
+    margin-top: 0!important;
+}
+
+.ui-page-theme-a{
+    text-shadow: none !important;
+}
+
+thead[id^="base_page:tabview:resultTable"],
+thead[id^="base_page:tabview:orderItem"]{
+    span.ui-column-title{
+        font-weight: 400 !important;
+    }
+}
+
+/*======================SECTION=========================*/
+
+div#base_page\:base_header{
+    .rb-header{
+        height: 140px!important;
+    
+        .ui-btn-icon-right{
+            &:after{
+                @include black-text();
+                background-color: transparent !important;
+            } 
+        }
+    }
+}
+
+form#base_page\:locform{
+    top: 2rem !important;
+    right: 1.8 rem !important;
+}
+
+div#base_page\:locform\:languageSelect_input-button{
+    display: flex;
+    align-items: flex-start;
+
+    span{
+        margin-right: 5px;
+    }
+}
+
+.ui-icon-carat-d:after{
+    width: 1px;
+    height: 2px;
+    background-image: none !important;
+    background-color: transparent !important;
+    @include black-text();
+    transform: rotate(45deg);
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 1.5px solid black !important;
+    margin-top: 2px!important;
+    position: relative;
+    margin-left: 5px;
+}
+
+div#base_page\:tabview{
+    margin-top: 40px;
+
+    .accordion-bar-content{
+
+        .accordion-status {
+            @include title();
+            text-transform: lowercase !important;
+            line-height: 19px;
+            padding: 14px 20px;
+            color: white !important;
+        }
+        
+        .accordion-status::first-letter{
+            text-transform: uppercase !important;
+        }
+        
+        .res{
+            background-color: $success-color !important;
+        }
+        
+        .na {
+            background-color: $fail-color !important;
+        }
+    }
+}
+
+div#base_page\:vendorMessagePanel{
+    margin-top: 40px !important;
+    .ui-panel-m-titlebar{
+        padding: 0.9rem 2rem !important;
+    }
+
+    .ui-panel-m-content{
+        min-height: 70px;
+        background-color: transparent;
+    }
+    
+    h3{
+        @include header();
+        color: white !important;
+    }
+
+    a{
+        right: 2rem !important;
+    }
+}
+
+div#base_page\:txtab{
+    margin-top: 40px;
+
+    .ui-link{
+            text-decoration: underline !important;
+            text-underline-offset: 4px;
+    }
+
+    tbody#base_page\:txtab_data{
+        .ui-btn{
+            @include button();
+            @include title();
+            letter-spacing: 0.15em !important;
+            text-transform: uppercase !important;
+            background-color: $secondary-orange-color;
+            text-shadow: none !important;
+        } 
+        .ui-shadow{
+            box-shadow: none !important;
+        }
+    }
+    
+}
+
+
+.ui-collapsible-content{
+
+    .ui-grid-solo{
+        .rbn-bold{
+            @include sub-header();
+        }
+
+        .ui-block-a{
+            margin-top: 1.6em;
+            @include body-text();
+            font-family: Montserrat;
+            line-height: 26px;
+        }
+    }
+    
+}
+
+.ui-btn-icon-right:after{
+    border-radius: 0 !important;
+}
+
+div[id^="base_page:tabview"]{
+    td{
+        vertical-align: baseline;
+    }
+    .ui-collapsible-heading-toggle{
+        padding-left: 3em;
+
+        &:after {
+            left: 1em;
+        }
+    }
+    
+}
+
+.ui-column-header{
+    box-shadow: 0px 1px 0px 0px #EEEEEE;
+    background-color: $secondary-grey-color;
+
+    span{
+        font-weight: 500 !important;
+    }
+}
+
+div[id^="base_page:txtab"]{
+    th, td{
+        text-align: center;
+    }
+}
+
+div[id^="base_page:ttab"],
+div[id^="base_page:postab"]{
+    td{
+        background-color: transparent !important;
+    }
+}
+
+.table-stroke thead th, .table-stripe thead th, .table-stripe tbody tr:last-child{
+    border-bottom: 1px solid $secondary-grey-color;
+}
+
+.ui-table-row{
+    td{
+        &:first-child{
+            border-left: 1px solid $secondary-grey-color;
+        }
+
+        &:last-child{
+            border-right: 1px solid $secondary-grey-color;
+        }
+    }
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited{
+    border-color: $secondary-grey-color;
+}
+
+.table-stripe tbody tr:nth-child(odd) td, .table-stripe tbody tr:nth-child(odd) th{
+    background: $secondary-light-grey-color !important;
+}
+
+.table-stripe tbody tr:nth-child(even) td, .table-stripe tbody tr:nth-child(even) th{
+    background: $secondary-grey-color !important;
+}
+
+// mobile 
+@media (max-width: 35em){
+
+    .table-stroke thead th, .table-stripe thead th, .table-stripe tbody tr:last-child{
+        border-bottom: 0;
+    }
+    
+    tbody#base_page\:postab_data,
+    tbody#base_page\:ttab_data{
+        td{
+            &:first-child{
+                border-left: 0;
+            }
+    
+            &:last-child{
+                border-right: 0;
+            }
+        }
+    }
+
+    // input 
+    .ui-field-contain{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 0 !important;
+    }
+
+    div#base_page\:gform\:gid, .ui-body-a, .ui-page-theme-a .ui-body-inherit{
+        width: 100% !important;
+    }
+
+    //more 
+    div#base_page\:tabview\:j_idt627{
+        text-align: left;
+    }
+
+    /* table */
+    div[id^="base_page:txtab"]{
+        th, td{
+            text-align: left;
+        }
+    }
+
+    .ui-table th, .ui-table td{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .ui-table-cell-label, .ui-block-a > span{
+        text-transform: uppercase;
+        @include title();
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0.15em;
+    }
+
+    .accordion-bar-content{
+        tr:first-child{
+            align-items: end;
+        }
+    }
+    //collapse detail
+    .ui-collapsible-content {
+        span[id$=":prodname"]{
+            font-weight: 400!important;
+        }
+
+        span[id$=":receivedMessageText"]{
+            display: block;
+            float: right;
+            width: 50%;
+            padding-left: 1rem;
+            clear: both;
+            padding-top: 0!important;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    .ui-table-reflow.ui-responsive td{
+        &:first-child{
+            form{
+                margin-top: 1rem;
+                width: 50%;
+                text-align: left;
+                float: right;
+                clear: both;
+            }
+            
+        }
+
+        &:last-child{
+            padding-top: 0 !important;
+        }
+
     }
 }
