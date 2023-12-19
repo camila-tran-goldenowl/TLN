@@ -822,6 +822,18 @@ html[lang="en"] .checkout-room-description{
     opacity: 1;
 }
 
+// .checkout{
+//     padding-right: 0.5rem !important;
+//     padding-left: 0.5rem!important;
+// }
+
+html app-cart-product {
+    .mat-list-item.cart-item{
+        max-width: none !important;
+    } 
+    
+}
+
 app-cart-product .product-features {
     margin-top: 10px !important;
 }
@@ -849,6 +861,8 @@ app-cart-product,
             height: 20px;
             width: 20px;
             font-size: 20px;
+            margin-right: 5px !important;
+            margin-left: 0px !important;
         }
     }
 
@@ -1060,7 +1074,7 @@ mat-dialog-content.mat-dialog-content.mat-typography{
     > div{
         justify-content: space-between;
         align-items: baseline;
-        margin-top: 1rem ;
+        margin-top: 10px ;
     }
 
     .cart-total{
@@ -1158,6 +1172,7 @@ app-shopping-cart{
             margin: 20px 0 0 0 !important;
         }
     }
+       
 }
 
 app-search-bar{
@@ -1171,9 +1186,10 @@ app-search-bar{
 // ====================================
 
 app-shopping-cart{
+    
     .checkout-vendor{
         @include sub-header;
-        font-size: 22px;
+        font-size: 22px !important;
         line-height: 35px;
         padding-bottom: 1.1rem !important;
     }
@@ -1194,8 +1210,8 @@ html[lang="en"] .rate-plan-info{
     padding-top: 1.6rem !important;
 }
 .rate-plan-info{ 
-    margin-top: 2.4rem!important;;
-    margin-bottom: 2.4rem !important;
+    margin-top: 24px!important;;
+    margin-bottom: 24px !important;
     border-radius: 0 !important;
 
     .rate-plan-title{
@@ -1204,7 +1220,7 @@ html[lang="en"] .rate-plan-info{
     }
 
     .more-info-long{
-        margin-top: 2.4rem !important;
+        margin-top: 24px !important;
         opacity: 1;
         @include black-text;
 
@@ -1217,8 +1233,10 @@ html[lang="en"] .rate-plan-info{
 
 
 app-payment-schedule{
+    margin-right: 0.5rem;
+
     .payment-schedule-container{
-        padding-bottom: 2.4rem;
+        padding-bottom: 24px;
         opacity: 1;
 
         .full-date{
@@ -1238,6 +1256,15 @@ app-payment-schedule{
 
 
 // form
+html[lang="en"] .mat-h1{
+    @include sub-header();
+    font-size: 22px !important;
+}
+
+input.mat-input-element {
+    margin-top: 0 !important;
+}
+
 app-customer-form{
     mat-checkbox{
         .mat-checkbox-label{
@@ -1267,8 +1294,8 @@ app-customer-form{
         align-items: center;
 
         button:not(.mobile){
-            min-width: 40rem !important;
-            margin-left: 3rem !important;
+            min-width: 25rem !important;
+            margin-left: 30px !important;
         }
     }
 }

@@ -730,6 +730,10 @@ html[lang=en] .checkout-room-description {
   opacity: 1;
 }
 
+html app-cart-product .mat-list-item.cart-item {
+  max-width: none !important;
+}
+
 app-cart-product .product-features {
   margin-top: 10px !important;
 }
@@ -763,6 +767,8 @@ app-cart-product .product-features .material-icons,
   height: 20px;
   width: 20px;
   font-size: 20px;
+  margin-right: 5px !important;
+  margin-left: 0px !important;
 }
 app-cart-product .product-description,
 .product-info-container .product-description {
@@ -978,7 +984,7 @@ mat-dialog-content.mat-dialog-content.mat-typography {
 .mat-card-content > div {
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .mat-card-content .cart-total {
   margin-top: 0 !important;
@@ -1071,7 +1077,7 @@ app-shopping-cart .checkout-vendor {
   font-family: Delmon Delicate !important;
   font-size: 20px !important;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 22px !important;
   line-height: 35px;
   padding-bottom: 1.1rem !important;
 }
@@ -1087,8 +1093,8 @@ html[lang=en] .rate-plan-info {
 }
 
 .rate-plan-info {
-  margin-top: 2.4rem !important;
-  margin-bottom: 2.4rem !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
   border-radius: 0 !important;
 }
 .rate-plan-info .rate-plan-title {
@@ -1098,7 +1104,7 @@ html[lang=en] .rate-plan-info {
   font-size: 18px !important;
 }
 .rate-plan-info .more-info-long {
-  margin-top: 2.4rem !important;
+  margin-top: 24px !important;
   opacity: 1;
   color: #18181B !important;
 }
@@ -1110,8 +1116,11 @@ html[lang=en] .rate-plan-info {
   line-height: 26px;
 }
 
+app-payment-schedule {
+  margin-right: 0.5rem;
+}
 app-payment-schedule .payment-schedule-container {
-  padding-bottom: 2.4rem;
+  padding-bottom: 24px;
   opacity: 1;
 }
 app-payment-schedule .payment-schedule-container .full-date {
@@ -1126,6 +1135,17 @@ app-payment-schedule .payment-schedule-container mat-icon {
   width: 14px !important;
   height: 14px !important;
   font-size: 14px !important;
+}
+
+html[lang=en] .mat-h1 {
+  font-family: Delmon Delicate !important;
+  font-size: 20px !important;
+  font-weight: 400;
+  font-size: 22px !important;
+}
+
+input.mat-input-element {
+  margin-top: 0 !important;
 }
 
 app-customer-form mat-checkbox .mat-checkbox-label {
@@ -1150,8 +1170,8 @@ app-customer-form .button-container {
   align-items: center;
 }
 app-customer-form .button-container button:not(.mobile) {
-  min-width: 40rem !important;
-  margin-left: 3rem !important;
+  min-width: 25rem !important;
+  margin-left: 30px !important;
 }
 
 .mat-form-field-infix input, .mat-form-field-infix mat-label {
