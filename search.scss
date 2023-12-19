@@ -169,6 +169,19 @@ html[lang="en"] .side-cart .summary-row {
     @include black-text();
 }
 
+.mat-form-field.mat-form-field-invalid .mat-form-field-label, 
+.mat-form-field.mat-form-field-invalid .mat-form-field-label.mat-accent, 
+.mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker,
+.mat-form-field-appearance-outline.mat-focused.mat-warn .mat-form-field-outline-thick, 
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+    color: #FF0000 !important;
+}
+
+.mat-form-field-hide-placeholder .mat-select-placeholder,
+mat-label{
+    @include main-font();
+}
+
 .mat-flat-button.mat-primary{
     @include black-text();;
     @include button();
@@ -396,6 +409,15 @@ app-search-card.ng-star-inserted{
 .mat-form-field-appearance-outline .mat-form-field-label {
     margin-top: 0!important;
 }
+
+.search-discount-code{
+    max-width: 190px !important;
+}
+
+.search-location{
+    max-width: 115px !important;
+}
+
 .search-discount-code,
 .search-location{
     &.mat-focused{
@@ -1321,6 +1343,12 @@ app-customer-form{
                 stroke: $secondary-orange-color!important;
             }
         }
+
+    
+    }
+
+    mat-label{
+        text-transform: uppercase !important;
     }
 
     .button-container{
