@@ -201,7 +201,37 @@ body {
 
 /* begin filter search section */
 .mobile-top{
-    width: 100%;
+    width: 100% !important;
+}
+.mobile{
+    #add-product{
+        // width: 100% !important;
+    }
+
+    // card
+    .search-card {
+        padding: 0px !important
+    }
+    
+
+}
+#mobileLang{
+    border-radius: 0 !important;
+}
+.show-search-extended{
+    border-radius: 0 !important;
+    background-color: #A1A1AA !important;
+
+    span.edit-search{
+        margin-left: 0.7rem;
+        color: white !important;
+        @include body-text();
+        text-transform: capitalize !important;
+    }
+
+    .mat-icon{
+        color: white !important;
+    }
 }
 
 .open-filter-button {
@@ -260,7 +290,7 @@ mat-label{
         height: fit-content !important;
         vertical-align: bottom !important;
         padding: 0 !important;
-        margin-left: 30px;
+        margin-left: 10px;
     }
 }
 
@@ -633,7 +663,7 @@ html[lang="en"] .mat-mdc-slider .mdc-slider__value-indicator {
     padding: 15px !important;
 }
 
-.search-card-carousel{
+.search-card-carousel:not(.mobile){
     height: auto !important;
 }
 
@@ -826,6 +856,12 @@ google-map{
     .content-title{
         border-radius: 0 !important;
     }
+}
+
+.map-icon:before, .map-icon-focus:before{
+    content: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/house-icon.svg") !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
 }
 /* end map section */
 
