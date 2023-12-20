@@ -215,6 +215,14 @@ body {
     
 
 }
+
+@media screen and (max-width: 400px){
+    .filter-container{
+        width: 100% !important;
+        max-width: calc(100vw - 66px) !important;
+    }
+   
+}
 #mobileLang{
     border-radius: 0 !important;
 }
