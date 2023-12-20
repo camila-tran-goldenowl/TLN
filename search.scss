@@ -19,6 +19,7 @@ $fail-color:#EA5F5F;
 $dark-grey: #66686A;
 $link-color:#3388CC;
 
+
 // input
 app-cart-product{
     .mat-form-field-infix{
@@ -56,6 +57,10 @@ app-cart-product{
 
 @mixin main-font{
     font-family: Montserrat !important;
+}
+
+@mixin second-font{
+    font-family: Delmon Delicate !important;
 }
 
 @mixin small-title {
@@ -169,6 +174,32 @@ html[lang="en"] .side-cart .summary-row {
     @include black-text();
 }
 
+html[lang="en"] body, 
+html[lang="en"] .mat-body, 
+html[lang="en"] .mat-body-1, 
+html[lang="en"] .mat-typography, 
+html[lang="en"] .mat-form-field, 
+html[lang="en"] .mat-button, 
+html[lang="en"] .mat-raised-button, 
+html[lang="en"] .mat-stroked-button, 
+html[lang="en"] .mat-flat-button, 
+html[lang="en"] .mat-list-item,
+html[lang="en"] .mat-list-option, 
+html[lang="en"] .mat-card-title, 
+html[lang="en"] .product-dates, 
+html[lang="en"] .mat-h1, 
+html[lang="en"] .mat-h3, 
+html[lang="en"] .mat-dialog-title, 
+html[lang="en"] h3.rate-plan-title, 
+html[lang="en"] .mat-subheading-2, 
+html[lang="en"] .card-content *, 
+html[lang="en"] .mobile-top span, 
+html[lang="en"] .mat-card-content, 
+html[lang="en"] .mat-checkbox, 
+html[lang="en"] .invoice-container *{
+    @include main-font();
+}
+
 .mat-form-field.mat-form-field-invalid .mat-form-field-label, 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label.mat-accent, 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker,
@@ -204,16 +235,94 @@ body {
     width: 100% !important;
 }
 .mobile{
-    #add-product{
-        // width: 100% !important;
-    }
+   
 
     // card
     .search-card {
         padding: 0px !important
     }
-    
 
+    // search dialog
+    app-search-bar{
+        .show-cal-search::before{
+            border: 1px solid $secondary-grey-color;
+            background-color: transparent !important;
+            box-shadow: 0px 2px 20px 0px #0000001F;
+        }
+
+        .title-cal-search{
+            > div{
+                @include second-font();
+            }
+        }
+
+        .search-dates {
+            max-width: none !important;
+
+            .mat-date-range-input-wrapper {
+                flex: none !important;
+            }
+        }
+
+        .search-discount-code{
+            max-width: none !important;
+        }
+
+        .search-discount-code mat-label{
+            text-transform: capitalize !important;
+        }
+    }
+
+    // input
+    mat-label{
+        text-transform: capitalize!important;
+
+        > span{
+            text-transform: capitalize!important;
+        }
+    }
+
+    // book button
+    #add-product{
+        width: 100% !important;
+    }
+
+    .product-dates{
+        text-align: left !important;
+    }
+
+    // cart checkout
+    mat-expansion-panel{
+        .basket-icon{
+            margin-right: 10px;
+        }
+
+        .basket-text{
+            @include sub-header();
+        }
+
+        .mat-expansion-panel-body{
+            > div{
+                align-items: baseline;
+                >p{
+                    @include header;
+                }
+            }
+        }
+
+        .sl{
+            margin-top: 10px;
+        }
+    }
+
+    app-payment-schedule .payment-schedule-container mat-icon{
+        width: 18px !important;
+        height: 18px !important;
+    }
+}
+
+.basket-text{
+    @include second-font();
 }
 
 @media screen and (max-width: 400px){
@@ -239,6 +348,15 @@ body {
 
     .mat-icon{
         color: white !important;
+    }
+}
+
+.show-search-extended:has(.add-code){
+    background: #F3CB9F !important;
+
+    span{
+        @include caption();
+        text-transform: capitalize !important;
     }
 }
 
@@ -1031,6 +1149,9 @@ app-product{
     border-radius: 0 !important;
     border: 0 !important;
     padding: 0.5rem;
+}
+.open-gallery > .mat-icon, .open-gallery > span{
+    @include black-text();
 }
 
 .rack[_ngcontent-lqp-c63]{
