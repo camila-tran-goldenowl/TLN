@@ -1395,6 +1395,8 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
+  display: block;
+  margin: auto;
 }
 form#base_page\:gform .ui-input-text {
   box-shadow: none !important;
