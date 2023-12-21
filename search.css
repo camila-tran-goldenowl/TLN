@@ -1685,7 +1685,7 @@ div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
 }
 
 #scrollToPay {
-  border-radius: none;
+  border-radius: 0 !important;
 }
 #scrollToPay label {
   font-family: Montserrat;

@@ -1902,7 +1902,7 @@ div#base_page\:txtab{
 }
 
 #scrollToPay{
-    border-radius: none;
+    border-radius: 0 !important;
 
     label{
         @include body-text;
