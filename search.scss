@@ -1724,8 +1724,13 @@ div#base_page\:vendorMessagePanel{
     border-radius: 0 !important;
 
     .ui-panel-m-titlebar{
-        color: white !important;
         background-color: $dark-grey;
+        h3{
+            @include sub-header();
+            @include main-font();
+            color: white !important;
+           
+        }
     }
 
     .ui-panel-m-content {

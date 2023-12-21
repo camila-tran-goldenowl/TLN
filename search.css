@@ -1530,8 +1530,14 @@ div#base_page\:vendorMessagePanel {
   border-radius: 0 !important;
 }
 div#base_page\:vendorMessagePanel .ui-panel-m-titlebar {
-  color: white !important;
   background-color: #66686A;
+}
+div#base_page\:vendorMessagePanel .ui-panel-m-titlebar h3 {
+  font-family: Delmon Delicate !important;
+  font-size: 20px !important;
+  font-weight: 400;
+  font-family: Montserrat !important;
+  color: white !important;
 }
 div#base_page\:vendorMessagePanel .ui-panel-m-content {
   background: transparent !important;
