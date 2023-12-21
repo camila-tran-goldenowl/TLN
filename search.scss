@@ -1828,6 +1828,10 @@ div#base_page\:tabview{
             text-transform: capitalize;
             padding: 0.8rem 1.25rem !important;
 
+            &::first-letter{
+                text-transform: uppercase;
+            }
+
             &.res{
                 background-color: $success-color !important;
             }

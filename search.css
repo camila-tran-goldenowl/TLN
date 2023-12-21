@@ -1622,6 +1622,9 @@ div#base_page\:tabview .accordion-status-block .accordion-status {
   text-transform: capitalize;
   padding: 0.8rem 1.25rem !important;
 }
+div#base_page\:tabview .accordion-status-block .accordion-status::first-letter {
+  text-transform: uppercase;
+}
 div#base_page\:tabview .accordion-status-block .accordion-status.res {
   background-color: #54AF91 !important;
 }
