@@ -1739,4 +1739,13 @@ div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:order
 
 .rb-footer {
   display: none;
+}
+
+.ui-mobile form#base_page\:gform .ui-field-contain {
+  align-items: flex-start !important;
+  flex-direction: column;
+  border: none !important;
+}
+.ui-mobile form#base_page\:gform input {
+  width: 100%;
 }/*# sourceMappingURL=search.css.map */

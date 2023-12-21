@@ -1956,3 +1956,19 @@ div#base_page\:txtab{
 .rb-footer{
     display: none;
 }
+
+.ui-mobile{
+    form#base_page\:gform{
+        .ui-field-contain{
+            align-items: flex-start !important;
+            flex-direction: column;
+            border: none !important;
+        }
+
+        input{
+            width: 100%;
+        }
+        
+    }
+    
+}
