@@ -1564,12 +1564,16 @@ app-customer-form{
 //=========================BOOKING PAGE=========================
 // top menu
 div#base_page\:locform\:languageSelect{
-    @include button();
-    @include title();
-    line-height: 19px;
-    letter-spacing: 0.15em !important;
-    background-color: $secondary-orange-color;
-    text-transform: uppercase;
+
+    select#base_page\:locform\:languageSelect_input{
+        @include button();
+        @include title();
+        line-height: 19px;
+        letter-spacing: 0.15em !important;
+        background-color: $secondary-orange-color;
+        text-transform: uppercase;
+    }
+    
 
 }
 // message 
