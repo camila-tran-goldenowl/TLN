@@ -1471,4 +1471,8 @@ div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {
   text-decoration: underline !important;
   text-underline-offset: 4px;
+}
+
+div#base_page\:ttab {
+  margin-top: 2rem;
 }/*# sourceMappingURL=search.css.map */
