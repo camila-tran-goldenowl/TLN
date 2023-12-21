@@ -54,7 +54,11 @@ app-cart-product{
     transform: translateY(0) !important;
 }
 
-
+.search-discount-code{
+    .mat-form-field-label-wrapper{
+        top: -0.54375em;
+    }
+}
 @mixin main-font{
     font-family: Montserrat !important;
 }
@@ -137,7 +141,6 @@ app-cart-product{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @include main-font();
 }
 
 /* begin general */
@@ -606,8 +609,8 @@ mat-form-field.search-discount-code{
     line-height: 28px;
     letter-spacing: 0.15em;
     flex: none;
-    padding: 10px 25px !important;
-    flex: 2 1 0% !important;
+    padding: 0.625rem 1.5rem !important;
+    flex: none !important;
 }
 /* end filter search section */
 
@@ -1402,6 +1405,15 @@ app-search-bar{
         padding: 0!important;
         border-radius: 50% !important;
     }
+
+  
+    mat-form-field{
+        margin-right: 0.8rem !important;
+    }
+
+    #searchBarSubmitBtn{
+        margin-left: 0.8rem !important;
+    }
 }
 
 
@@ -1600,15 +1612,15 @@ app-customer-form{
 }
 
 div#base_page\:j_idt43{
-    margin-top: 4rem;
-    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 span#base_page\:guest-intranet-greeting::after {
     @include body-text();
     line-height: 26px;
     display: block;
-    margin-top: 1.6rem;
+    margin-top: 1rem;
     content: "Scroll down to view reservations and payment status.";
 }
 
@@ -1641,6 +1653,7 @@ div#base_page\:gform\:gid{
 
     input{
         padding: 0!important;
+        color: #66686A !important;
     }
 
     .ui-btn.ui-icon-delete{
@@ -1659,7 +1672,7 @@ div#base_page\:gform\:gid{
 
 
 .rbn-yb-searchtext{
-    margin-top: 2rem !important;
+    margin-top: 1.25rem !important;
     display: block;
     margin: auto;
 }
@@ -1672,8 +1685,8 @@ form#base_page\:gform{
             padding: 0!important;
         }
     }
-
-    > .ui-btn{
+    
+    .ui-btn{
         visibility: hidden;
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1692,7 +1705,7 @@ form#base_page\:gform{
 }
 
 div#base_page\:j_idt49{
-    margin-top: 4rem;
+    margin-top: 2.5rem;
 }
 
 .ui-content{
@@ -1858,9 +1871,6 @@ div#base_page\:txtab{
 }
 
 div[id^="base_page:tabview"]{
-    td{
-        vertical-align: baseline;
-    }
     .ui-collapsible-heading-toggle{
         padding-left: 3em;
 
@@ -2024,3 +2034,4 @@ tbody#base_page\:txtab_data{
         white-space: unset !important;
     }
 }
+
