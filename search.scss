@@ -1609,4 +1609,33 @@ form#base_page\:gform{
 
 div#base_page\:j_idt43{
     margin-top: 2.5rem;
+    margin-bottom: 3.1rem;
+}
+
+// table
+table{
+    thead{
+        .ui-column-header{
+            .ui-column-title{
+                @include title;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+        
+            }
+        }
+    }
+
+    tbody{
+        .ui-table-row{
+            span{
+                @include body-text();
+            }
+        }
+    }
+}
+
+
+div#base_page\:postab,
+div#base_page\:ttab{
+
 }
