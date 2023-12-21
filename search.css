@@ -1530,7 +1530,11 @@ div#base_page\:vendorMessagePanel {
   border-radius: 0 !important;
 }
 div#base_page\:vendorMessagePanel .ui-panel-m-titlebar {
+  color: white !important;
   background-color: #66686A;
+}
+div#base_page\:vendorMessagePanel .ui-panel-m-content {
+  background: transparent !important;
 }
 
 .rb-footer {

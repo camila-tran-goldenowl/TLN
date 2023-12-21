@@ -1722,8 +1722,14 @@ div#base_page\:tabview{
 // information
 div#base_page\:vendorMessagePanel{
     border-radius: 0 !important;
+
     .ui-panel-m-titlebar{
+        color: white !important;
         background-color: $dark-grey;
+    }
+
+    .ui-panel-m-content {
+        background: transparent !important;
     }
 }
 
