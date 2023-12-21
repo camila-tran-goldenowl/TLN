@@ -1569,6 +1569,8 @@ app-customer-form{
     text-align: center;
     margin-top: 1.8rem;
     max-width: 949px;
+    display: block;
+    margin: auto;
 }
 
 // infor
@@ -1576,8 +1578,6 @@ form#base_page\:gform{
     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
         @include button();
         @include title();
-        display: block;
-        margin: auto;
     }
 
     .ui-field-contain{
