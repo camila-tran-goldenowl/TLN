@@ -1657,7 +1657,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
 }
 
 .ui-panel-m-titlebar {
-  background-color: #66686A;
+  background-color: #66686A !important;
 }
 .ui-panel-m-titlebar h3 {
   font-family: Delmon Delicate !important;

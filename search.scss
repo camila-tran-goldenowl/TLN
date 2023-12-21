@@ -1871,7 +1871,7 @@ div#base_page\:tabview{
 
 // information
 .ui-panel-m-titlebar{
-    background-color: $dark-grey;
+    background-color: $dark-grey !important;
     h3{
         @include sub-header();
         @include main-font();
