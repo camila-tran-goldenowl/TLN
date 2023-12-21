@@ -1770,7 +1770,14 @@ html .ui-body-a .ui-btn:visited,
 html body .ui-group-theme-a .ui-btn:visited, 
 html head + body .ui-btn.ui-btn-a:visited {
     border-color: $secondary-grey-color;
-  }
+}
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit, 
+.ui-btn .ui-panel-collapsible-heading-toggle, 
+.ui-icon-minus:after, 
+.ui-icon-plus:after{
+    background-color: $dark-grey;
+}
 
 .table-stroke thead th, .table-stripe thead th, 
 .table-stripe tbody tr:last-child{
