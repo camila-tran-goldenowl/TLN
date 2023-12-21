@@ -1587,5 +1587,6 @@ form#base_page\:gform{
     label{
         @include title();
         letter-spacing: 0.15em;
+        text-transform: uppercase;
     }
 }
