@@ -1509,7 +1509,7 @@ div#base_page\:tabview .ui-icon-plus:after {
 div#base_page\:tabview .ui-btn-icon-left:after {
   left: 1.25rem !important;
 }
-div#base_page\:tabview .accordion-status-block {
+div#base_page\:tabview .accordion-status-block .accordion-status {
   font-family: Montserrat;
   font-size: 12px !important;
   font-weight: 400;
@@ -1518,9 +1518,9 @@ div#base_page\:tabview .accordion-status-block {
   text-transform: capitalize;
   padding: 0.8rem 1.25rem !important;
 }
-div#base_page\:tabview .accordion-status-block .res {
+div#base_page\:tabview .accordion-status-block .accordion-status.res {
   background-color: #54AF91 !important;
 }
-div#base_page\:tabview .accordion-status-block .na {
+div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: #EA5F5F !important;
 }/*# sourceMappingURL=search.css.map */
