@@ -1502,4 +1502,10 @@ div#base_page\:tabview .accordion-title span {
 }
 div#base_page\:tabview a.ui-collapsible-heading-toggle {
   padding: 1.25rem;
+}
+div#base_page\:tabview .ui-icon-plus:after {
+  background-color: #66686A !important;
+}
+div#base_page\:tabview .ui-btn-icon-left:after {
+  left: 1.25rem !important;
 }/*# sourceMappingURL=search.css.map */

@@ -1688,4 +1688,12 @@ div#base_page\:tabview{
     a.ui-collapsible-heading-toggle {
         padding: 1.25rem;
     }
+
+    .ui-icon-plus:after {
+        background-color: $dark-grey !important;
+    }
+
+    .ui-btn-icon-left:after{
+        left: 1.25rem !important;
+    }
 }
