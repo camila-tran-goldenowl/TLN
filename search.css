@@ -1559,6 +1559,7 @@ div#base_page\:txtab .ui-column-header {
 }
 div#base_page\:txtab .ui-table-row td {
   text-align: center;
+  vertical-align: middle;
 }
 
 .rb-footer {
