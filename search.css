@@ -1434,6 +1434,10 @@ div#base_page\:j_idt43 {
   margin-bottom: 3.1rem;
 }
 
+table thead .ui-column-header {
+  background-color: #DCDDDE;
+  padding: 1rem 0.625rem !important;
+}
 table thead .ui-column-header .ui-column-title {
   font-family: Montserrat;
   font-size: 12px !important;

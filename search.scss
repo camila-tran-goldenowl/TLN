@@ -1616,6 +1616,8 @@ div#base_page\:j_idt43{
 table{
     thead{
         .ui-column-header{
+            background-color: $secondary-grey-color;
+            padding: 1rem 0.625rem !important;
             .ui-column-title{
                 @include title;
                 text-transform: uppercase;
