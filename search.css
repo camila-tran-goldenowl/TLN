@@ -1541,6 +1541,11 @@ div#base_page\:vendorMessagePanel .ui-panel-m-titlebar h3 {
 }
 div#base_page\:vendorMessagePanel .ui-panel-m-content {
   background: transparent !important;
+  min-height: 70px;
+}
+
+div#base_page\:txtab {
+  margin-top: 2.5rem;
 }
 
 .rb-footer {
