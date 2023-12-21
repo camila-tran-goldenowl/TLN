@@ -1642,6 +1642,9 @@ div#base_page\:vendorMessagePanel .ui-panel-m-content {
   background: transparent !important;
   min-height: 70px;
 }
+div#base_page\:vendorMessagePanel .ui-icon-minus:after {
+  background: #66686A;
+}
 
 div#base_page\:txtab {
   margin-top: 2.5rem;

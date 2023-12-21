@@ -1855,6 +1855,10 @@ div#base_page\:vendorMessagePanel{
         background: transparent !important;
         min-height: 70px; 
     }
+
+    .ui-icon-minus:after{
+        background: $dark-grey;
+    }
 }
 
 div#base_page\:txtab{
