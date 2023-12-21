@@ -1726,7 +1726,11 @@ app-customer-form{
             font-weight: 400 !important;
         }
     }
-    
+
+    span#base_page\:guest-intranet-greeting,
+    .ui-table-row td span{
+        @include main-font();
+    }
     /*======================SECTION=========================*/
     
     div#base_page\:base_header{
