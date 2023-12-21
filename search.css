@@ -1579,6 +1579,7 @@ html head + body .ui-btn.ui-btn-a:visited {
 div#base_page\:postab.ui-shadow,
 div#base_page\:ttab.ui-shadow {
   box-shadow: none !important;
+  border: 1px solid #DCDDDE;
 }
 div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {

@@ -1782,6 +1782,7 @@ div#base_page\:ttab{
 
     &.ui-shadow{
         box-shadow: none !important;
+        @include border();
     }
 
     .ui-link{
