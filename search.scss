@@ -1892,6 +1892,12 @@ div#base_page\:txtab{
 
     button[id*=":stpFrm:stripeSubmit"]{
         @include button;
+        @include title;
+        @include black-text;
+        text-shadow: none !important;
+        font-family: Montserrat;
+        letter-spacing: 0.15em;
+
     }
 }
 
