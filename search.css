@@ -141,6 +141,14 @@ body {
 }
 .mobile app-search-bar .title-cal-search > div {
   font-family: Delmon Delicate !important;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.mobile app-search-bar .title-cal-search .mat-icon {
+  height: auto !important;
+}
+.mobile app-search-bar .close-cal-search .mat-icon {
+  color: #18181B !important;
 }
 .mobile app-search-bar .search-dates {
   max-width: none !important;
@@ -153,6 +161,13 @@ body {
 }
 .mobile app-search-bar .search-discount-code mat-label {
   text-transform: capitalize !important;
+}
+.mobile app-search-bar .mat-form-field {
+  margin-right: 0 !important;
+}
+.mobile app-search-bar #searchBarSubmitBtn {
+  margin-left: 0 !important;
+  flex: 1 1 auto !important;
 }
 .mobile mat-label {
   text-transform: capitalize !important;
@@ -190,6 +205,16 @@ body {
 .mobile app-payment-schedule .payment-schedule-container mat-icon {
   width: 18px !important;
   height: 18px !important;
+}
+.mobile .product-info-container .product-data-container {
+  position: relative;
+}
+.mobile .product-info-container .product-dates {
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .basket-text {
@@ -1255,7 +1280,7 @@ app-search-bar .mat-flat-button.mat-primary {
   padding: 0 !important;
   border-radius: 50% !important;
 }
-app-search-bar mat-form-field {
+app-search-bar .mat-form-field {
   margin-right: 0.8rem !important;
 }
 app-search-bar #searchBarSubmitBtn {
@@ -1555,6 +1580,10 @@ div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {
   text-decoration: none;
   font-weight: 400 !important;
+}
+div#base_page\:postab .ui-table-row td,
+div#base_page\:ttab .ui-table-row td {
+  background: transparent !important;
 }
 
 div#base_page\:ttab {
