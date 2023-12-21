@@ -1630,7 +1630,8 @@ a#base_page\:txtab\:2\:f1\:toPDFNew .ui-link{
 
     border: 1px solid $secondary-grey-color;
     border-radius: none !important;
-    padding: 1.2rem 2rem !important;
+    padding: 0.75rem 1.25
+    rem !important;
 }
 
 div#base_page\:gform\:gem,
@@ -2014,5 +2015,11 @@ div[id^="base_page:postab"]{
             padding-top: 0 !important;
         }
 
+    }
+}
+
+tbody#base_page\:txtab_data{
+    button.ui-btn{
+        white-space: unset !important;
     }
 }
