@@ -1870,23 +1870,28 @@ div#base_page\:tabview{
 }
 
 // information
+.ui-panel-m-titlebar{
+    background-color: $dark-grey;
+    h3{
+        @include sub-header();
+        @include main-font();
+        color: white !important;
+       
+    }
+}
+
+.ui-panel-m-content {
+    background: transparent !important;
+    min-height: 70px; 
+
+    span{
+        @include title;
+        @include black-text;
+    }
+}
+
 div#base_page\:vendorMessagePanel{
     border-radius: 0 !important;
-
-    .ui-panel-m-titlebar{
-        background-color: $dark-grey;
-        h3{
-            @include sub-header();
-            @include main-font();
-            color: white !important;
-           
-        }
-    }
-
-    .ui-panel-m-content {
-        background: transparent !important;
-        min-height: 70px; 
-    }
 
     .ui-icon-minus:after{
         background: $dark-grey;

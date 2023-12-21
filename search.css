@@ -1656,22 +1656,31 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: #EA5F5F !important;
 }
 
-div#base_page\:vendorMessagePanel {
-  border-radius: 0 !important;
-}
-div#base_page\:vendorMessagePanel .ui-panel-m-titlebar {
+.ui-panel-m-titlebar {
   background-color: #66686A;
 }
-div#base_page\:vendorMessagePanel .ui-panel-m-titlebar h3 {
+.ui-panel-m-titlebar h3 {
   font-family: Delmon Delicate !important;
   font-size: 20px !important;
   font-weight: 400;
   font-family: Montserrat !important;
   color: white !important;
 }
-div#base_page\:vendorMessagePanel .ui-panel-m-content {
+
+.ui-panel-m-content {
   background: transparent !important;
   min-height: 70px;
+}
+.ui-panel-m-content span {
+  font-family: Montserrat;
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 17px;
+  color: #18181B !important;
+}
+
+div#base_page\:vendorMessagePanel {
+  border-radius: 0 !important;
 }
 div#base_page\:vendorMessagePanel .ui-icon-minus:after {
   background: #66686A;
