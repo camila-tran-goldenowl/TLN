@@ -1547,6 +1547,15 @@ div#base_page\:vendorMessagePanel .ui-panel-m-content {
 div#base_page\:txtab {
   margin-top: 2.5rem;
 }
+div#base_page\:txtab .ui-link {
+  font-weight: 400 !important;
+}
+div#base_page\:txtab .ui-column-header {
+  text-align: center;
+}
+div#base_page\:txtab tbody th {
+  text-align: center;
+}
 
 .rb-footer {
   display: none;

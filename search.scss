@@ -1741,6 +1741,20 @@ div#base_page\:vendorMessagePanel{
 
 div#base_page\:txtab{
     margin-top: 2.5rem;
+
+    .ui-link{
+        font-weight: 400!important;
+    }
+
+    .ui-column-header{
+        text-align: center;
+    }
+
+    tbody{
+        th{
+            text-align: center;
+        }
+    }
 }
 
 
