@@ -141,6 +141,8 @@ app-cart-product{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
+   
 }
 
 /* begin general */
@@ -1552,7 +1554,7 @@ app-customer-form{
 //=========================BOOKING PAGE=========================
 
 // message 
-div#base_page\:messages{
+.rbn-yb-searchtext{
     @include body-text();
     text-align: center;
     margin-top: 1.8rem;
@@ -1560,5 +1562,7 @@ div#base_page\:messages{
 
 // infor
 form#base_page\:gform{
-
+    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
+        @include button();
+    }
 }

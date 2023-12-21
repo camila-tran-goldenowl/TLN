@@ -31,6 +31,7 @@ app-cart-product html mat-form-field:not(.mat-form-field-type-mat-select) .mat-f
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 
 /* begin general */
@@ -1374,11 +1375,19 @@ app-customer-form .button-container button:not(.mobile) {
   text-transform: capitalize;
 }
 
-div#base_page\:messages {
+.rbn-yb-searchtext {
   font-family: Montserrat;
   font-size: 16px !important;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   margin-top: 1.8rem;
+}
+
+form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+  border: none !important;
+  padding: 10px 25px;
+  background-color: #F89426 !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
 }/*# sourceMappingURL=search.css.map */
