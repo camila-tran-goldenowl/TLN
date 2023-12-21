@@ -1375,19 +1375,21 @@ app-customer-form .button-container button:not(.mobile) {
   text-transform: capitalize;
 }
 
-div#base_page\:locform\:languageSelect select#base_page\:locform\:languageSelect_input {
+div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button {
   border: none !important;
   padding: 10px 25px;
   background-color: #F89426 !important;
   border-radius: 0 !important;
   text-transform: uppercase;
+  background-color: #F89426;
+}
+div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button span {
   font-family: Montserrat;
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
   line-height: 19px;
   letter-spacing: 0.15em !important;
-  background-color: #F89426;
   text-transform: uppercase;
 }
 

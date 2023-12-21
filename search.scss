@@ -1565,13 +1565,17 @@ app-customer-form{
 // top menu
 div#base_page\:locform\:languageSelect{
 
-    select#base_page\:locform\:languageSelect_input{
+    div#base_page\:locform\:languageSelect_input-button{
         @include button();
-        @include title();
-        line-height: 19px;
-        letter-spacing: 0.15em !important;
         background-color: $secondary-orange-color;
-        text-transform: uppercase;
+       
+
+        span{
+            @include title();
+            line-height: 19px;
+            letter-spacing: 0.15em !important;
+            text-transform: uppercase;
+        }
     }
     
 
