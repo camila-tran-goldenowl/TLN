@@ -1387,6 +1387,9 @@ app-customer-form .button-container button:not(.mobile) {
   margin: auto;
 }
 
+form#base_page\:gform {
+  margin-top: 2.5rem;
+}
 form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   border: none !important;
   padding: 10px 25px;
@@ -1424,4 +1427,8 @@ form#base_page\:gform .ui-field-contain label {
   line-height: 17px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+div#base_page\:j_idt43 {
+  margin-top: 2.5rem;
 }/*# sourceMappingURL=search.css.map */

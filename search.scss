@@ -1575,6 +1575,8 @@ app-customer-form{
 
 // infor
 form#base_page\:gform{
+    margin-top: 2.5rem;
+
     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
         @include button();
         @include title();
@@ -1603,5 +1605,8 @@ form#base_page\:gform{
         }
     }
 
-    
+}
+
+div#base_page\:j_idt43{
+    margin-top: 2.5rem;
 }
