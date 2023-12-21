@@ -1633,6 +1633,7 @@ table{
         
             }
         }
+        
     }
 
     tbody{
@@ -1642,15 +1643,16 @@ table{
             }
         }
     }
+
+    .table-stroke thead th, .table-stripe thead th, 
+    .table-stripe tbody tr:last-child{
+        border-bottom: 0 !important;
+    }
 }
 
 
 div#base_page\:postab,
 div#base_page\:ttab{
-
-    .table-stripe tbody tr:last-child{
-        border-bottom: 0 !important;
-    }
 
     .ui-link{
         text-decoration: underline !important;

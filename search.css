@@ -1462,11 +1462,11 @@ table tbody .ui-table-row span {
   font-weight: 400;
   line-height: 26px;
 }
-
-div#base_page\:postab .table-stripe tbody tr:last-child,
-div#base_page\:ttab .table-stripe tbody tr:last-child {
+table .table-stroke thead th, table .table-stripe thead th,
+table .table-stripe tbody tr:last-child {
   border-bottom: 0 !important;
 }
+
 div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {
   text-decoration: underline !important;
