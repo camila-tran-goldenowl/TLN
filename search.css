@@ -1466,4 +1466,9 @@ table tbody .ui-table-row span {
 div#base_page\:postab .table-stripe tbody tr:last-child,
 div#base_page\:ttab .table-stripe tbody tr:last-child {
   border-bottom: 0 !important;
+}
+div#base_page\:postab .ui-link,
+div#base_page\:ttab .ui-link {
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
 }/*# sourceMappingURL=search.css.map */

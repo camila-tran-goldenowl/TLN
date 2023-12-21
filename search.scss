@@ -1652,4 +1652,8 @@ div#base_page\:ttab{
         border-bottom: 0 !important;
     }
 
+    .ui-link{
+        text-decoration: underline !important;
+        text-underline-offset: 4px;
+    }
 }
