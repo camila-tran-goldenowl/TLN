@@ -1384,10 +1384,14 @@ app-customer-form .button-container button:not(.mobile) {
   margin-top: 1.8rem;
 }
 
-form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+html form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   border: none !important;
   padding: 10px 25px;
   background-color: #F89426 !important;
   border-radius: 0 !important;
   text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 17px;
 }/*# sourceMappingURL=search.css.map */

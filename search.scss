@@ -1561,8 +1561,9 @@ app-customer-form{
 }
 
 // infor
-form#base_page\:gform{
+html form#base_page\:gform{
     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
         @include button();
+        @include title();
     }
 }
