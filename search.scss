@@ -129,6 +129,7 @@ app-cart-product{
 @mixin input{
     box-shadow: none !important;
     @include border();
+    border-radius: 0 !important;
 }
 
 @mixin hover-underline{
@@ -1591,6 +1592,7 @@ form#base_page\:gform{
         }
 
         input{ 
+            @include main-font();
             padding: 0 !important;
         }
     
