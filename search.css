@@ -1586,12 +1586,9 @@ html head + body .ui-btn.ui-btn-a:visited {
 
 .ui-datatable {
   border: 1px solid #DCDDDE;
-}
-
-div#base_page\:postab.ui-shadow,
-div#base_page\:ttab.ui-shadow {
   box-shadow: none !important;
 }
+
 div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {
   text-decoration: none;
