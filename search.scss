@@ -1612,15 +1612,15 @@ app-customer-form{
 }
 
 div#base_page\:j_idt43{
-    margin-top: 2.5rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
 }
 
 span#base_page\:guest-intranet-greeting::after {
     @include body-text();
     line-height: 26px;
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     content: "Scroll down to view reservations and payment status.";
 }
 
@@ -1653,7 +1653,6 @@ div#base_page\:gform\:gid{
 
     input{
         padding: 0!important;
-        color: #66686A !important;
     }
 
     .ui-btn.ui-icon-delete{
@@ -1672,7 +1671,7 @@ div#base_page\:gform\:gid{
 
 
 .rbn-yb-searchtext{
-    margin-top: 1.25rem !important;
+    margin-top: 2rem !important;
     display: block;
     margin: auto;
 }
@@ -1685,8 +1684,8 @@ form#base_page\:gform{
             padding: 0!important;
         }
     }
-    
-    .ui-btn{
+
+    > .ui-btn{
         visibility: hidden;
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -1705,7 +1704,7 @@ form#base_page\:gform{
 }
 
 div#base_page\:j_idt49{
-    margin-top: 2.5rem;
+    margin-top: 4rem;
 }
 
 .ui-content{
@@ -1871,6 +1870,9 @@ div#base_page\:txtab{
 }
 
 div[id^="base_page:tabview"]{
+    td{
+        vertical-align: baseline;
+    }
     .ui-collapsible-heading-toggle{
         padding-left: 3em;
 
