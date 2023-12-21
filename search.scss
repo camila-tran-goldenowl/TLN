@@ -122,6 +122,15 @@ app-cart-product{
     color: $primary-black-color !important;
 }
 
+@mixin border{
+    border: 1px solid #DCDDDE
+}
+
+@mixin input{
+    box-shadow: none !important;
+    @include border();
+}
+
 @mixin hover-underline{
     background-color: transparent !important;
     text-decoration: underline;
@@ -1558,6 +1567,7 @@ app-customer-form{
     @include body-text();
     text-align: center;
     margin-top: 1.8rem;
+    max-width: 949px;
 }
 
 // infor
@@ -1565,5 +1575,17 @@ html form#base_page\:gform{
     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
         @include button();
         @include title();
+    }
+
+    input{
+        @include input;
+        @include body-text();
+        color: $dark-grey;
+        padding: 12px 15px;
+    }
+
+    label{
+        @include title();
+        letter-spacing: 0.15em;
     }
 }

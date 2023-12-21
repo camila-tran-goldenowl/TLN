@@ -1382,6 +1382,7 @@ app-customer-form .button-container button:not(.mobile) {
   line-height: 26px;
   text-align: center;
   margin-top: 1.8rem;
+  max-width: 949px;
 }
 
 html form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
@@ -1394,4 +1395,21 @@ html form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
+}
+html form#base_page\:gform input {
+  box-shadow: none !important;
+  border: 1px solid #DCDDDE;
+  font-family: Montserrat;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 26px;
+  color: #66686A;
+  padding: 12px 15px;
+}
+html form#base_page\:gform label {
+  font-family: Montserrat;
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.15em;
 }/*# sourceMappingURL=search.css.map */
