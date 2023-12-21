@@ -1502,6 +1502,7 @@ div#base_page\:tabview .accordion-title span {
 }
 div#base_page\:tabview a.ui-collapsible-heading-toggle {
   padding: 1.25rem;
+  padding-left: 3.5rem !important;
 }
 div#base_page\:tabview .ui-icon-plus:after {
   background-color: #66686A !important;
@@ -1523,4 +1524,15 @@ div#base_page\:tabview .accordion-status-block .accordion-status.res {
 }
 div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: #EA5F5F !important;
+}
+
+div#base_page\:vendorMessagePanel {
+  border-radius: 0 !important;
+}
+div#base_page\:vendorMessagePanel .ui-panel-m-titlebar {
+  background-color: #66686A;
+}
+
+.rb-footer {
+  display: none;
 }/*# sourceMappingURL=search.css.map */

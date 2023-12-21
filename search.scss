@@ -1687,6 +1687,7 @@ div#base_page\:tabview{
 
     a.ui-collapsible-heading-toggle {
         padding: 1.25rem;
+        padding-left: 3.5rem !important;
     }
 
     .ui-icon-plus:after {
@@ -1716,4 +1717,18 @@ div#base_page\:tabview{
 
         
     }
+}
+
+// information
+div#base_page\:vendorMessagePanel{
+    border-radius: 0 !important;
+    .ui-panel-m-titlebar{
+        background-color: $dark-grey;
+    }
+}
+
+
+// footer
+.rb-footer{
+    display: none;
 }
