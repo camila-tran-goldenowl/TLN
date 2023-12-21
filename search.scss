@@ -1624,6 +1624,7 @@ div#base_page\:j_idt43{
 table{
     thead{
         .ui-column-header{
+            vertical-align: middle;
             background-color: $secondary-grey-color;
             padding: 1rem 0.625rem !important;
             .ui-column-title{
@@ -1641,6 +1642,10 @@ table{
             span{
                 @include body-text();
             }
+        }
+
+        td{
+            vertical-align: middle;
         }
     }
 

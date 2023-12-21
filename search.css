@@ -1445,6 +1445,7 @@ div#base_page\:j_idt43 span::after {
 }
 
 table thead .ui-column-header {
+  vertical-align: middle;
   background-color: #DCDDDE;
   padding: 1rem 0.625rem !important;
 }
@@ -1461,6 +1462,9 @@ table tbody .ui-table-row span {
   font-size: 16px !important;
   font-weight: 400;
   line-height: 26px;
+}
+table tbody td {
+  vertical-align: middle;
 }
 
 .ui-page-theme-a .ui-btn,
