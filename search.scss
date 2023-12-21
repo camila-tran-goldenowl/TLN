@@ -1784,13 +1784,15 @@ html head + body .ui-btn.ui-btn-a:visited {
     border-bottom: 0 !important;
 }
 
+.ui-datatable{
+    @include border();
+}
 
 div#base_page\:postab,
 div#base_page\:ttab{
 
     &.ui-shadow{
-        box-shadow: none !important;
-        @include border();
+        box-shadow: none !important;     
     }
 
     .ui-link{
