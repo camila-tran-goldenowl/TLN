@@ -1508,4 +1508,19 @@ div#base_page\:tabview .ui-icon-plus:after {
 }
 div#base_page\:tabview .ui-btn-icon-left:after {
   left: 1.25rem !important;
+}
+div#base_page\:tabview .accordion-status-block {
+  font-family: Montserrat;
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 17px;
+  color: white;
+  text-transform: capitalize;
+  padding: 0.8rem 1.25rem !important;
+}
+div#base_page\:tabview .accordion-status-block .res {
+  background-color: #54AF91 !important;
+}
+div#base_page\:tabview .accordion-status-block .na {
+  background-color: #EA5F5F !important;
 }/*# sourceMappingURL=search.css.map */

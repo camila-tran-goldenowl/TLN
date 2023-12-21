@@ -1696,4 +1696,19 @@ div#base_page\:tabview{
     .ui-btn-icon-left:after{
         left: 1.25rem !important;
     }
+
+    .accordion-status-block{
+        @include title();
+        color: white;
+        text-transform: capitalize;
+        padding: 0.8rem 1.25rem !important;
+
+        .res{
+            background-color: $success-color !important;
+        }
+
+        .na{
+            background-color: $fail-color !important;
+        }
+    }
 }
