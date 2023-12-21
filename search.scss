@@ -1903,12 +1903,14 @@ div#base_page\:txtab{
     // collapse info
     .rbn-vendor-box{
         .ui-grid-solo{
+            margin-left: 1rem;
             span.rbn-bold{
                 @include sub-header();
             }
 
             .ui-block-a{
                 @include body-text();
+                margin-bottom: 10px;
             }
         }
     }
