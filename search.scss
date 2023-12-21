@@ -1780,6 +1780,10 @@ html head + body .ui-btn.ui-btn-a:visited {
 div#base_page\:postab,
 div#base_page\:ttab{
 
+    &.ui-shadow{
+        box-shadow: none !important;
+    }
+
     .ui-link{
         text-decoration: none;
         font-weight: 400!important;
