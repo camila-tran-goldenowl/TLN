@@ -1579,16 +1579,27 @@ form#base_page\:gform{
         margin: auto;
     }
 
-    .ui-input-text{
-        @include input;
-        @include body-text();
-        color: $dark-grey;
-        padding: 12px 15px;
+    .ui-field-contain{
+        display: flex;
+        align-items: center;
+
+        .ui-input-text{
+            @include input;
+            @include body-text();
+            color: $dark-grey;
+            padding: 12px 15px;
+        }
+
+        input{ 
+            padding: 0 !important;
+        }
+    
+        label{
+            @include title();
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
     }
 
-    label{
-        @include title();
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-    }
+    
 }

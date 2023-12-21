@@ -1398,7 +1398,11 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   display: block;
   margin: auto;
 }
-form#base_page\:gform .ui-input-text {
+form#base_page\:gform .ui-field-contain {
+  display: flex;
+  align-items: center;
+}
+form#base_page\:gform .ui-field-contain .ui-input-text {
   box-shadow: none !important;
   border: 1px solid #DCDDDE;
   font-family: Montserrat;
@@ -1408,7 +1412,10 @@ form#base_page\:gform .ui-input-text {
   color: #66686A;
   padding: 12px 15px;
 }
-form#base_page\:gform label {
+form#base_page\:gform .ui-field-contain input {
+  padding: 0 !important;
+}
+form#base_page\:gform .ui-field-contain label {
   font-family: Montserrat;
   font-size: 12px !important;
   font-weight: 400;
