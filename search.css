@@ -1555,6 +1555,7 @@ table tbody .ui-table-row span {
   line-height: 26px;
 }
 table tbody td {
+  font-family: Montserrat !important;
   vertical-align: middle;
 }
 
