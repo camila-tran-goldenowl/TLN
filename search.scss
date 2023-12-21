@@ -1822,6 +1822,21 @@ div#base_page\:tabview{
         left: 1.25rem !important;
     }
 
+    // collapse info
+    .rbn-vendor-box{
+        .ui-grid-solo{
+            margin-left: 1rem;
+            span.rbn-bold{
+                @include sub-header();
+            }
+
+            .ui-block-a{
+                @include body-text();
+                margin-bottom: 10px;
+            }
+        }
+    }
+
     .accordion-status-block{
 
         .accordion-status{
@@ -1898,21 +1913,6 @@ div#base_page\:txtab{
         font-family: Montserrat;
         letter-spacing: 0.15em;
 
-    }
-
-    // collapse info
-    .rbn-vendor-box{
-        .ui-grid-solo{
-            margin-left: 1rem;
-            span.rbn-bold{
-                @include sub-header();
-            }
-
-            .ui-block-a{
-                @include body-text();
-                margin-bottom: 10px;
-            }
-        }
     }
 
     .ui-datatable-tablewrapper{
