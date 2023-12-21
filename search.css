@@ -1456,15 +1456,15 @@ table thead .ui-column-header .ui-column-title {
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
+table thead .table-stroke thead th, table thead .table-stripe thead th,
+table thead .table-stripe tbody tr:last-child {
+  border-bottom: 0 !important;
+}
 table tbody .ui-table-row span {
   font-family: Montserrat;
   font-size: 16px !important;
   font-weight: 400;
   line-height: 26px;
-}
-table .table-stroke thead th, table .table-stripe thead th,
-table .table-stripe tbody tr:last-child {
-  border-bottom: 0 !important;
 }
 
 div#base_page\:postab .ui-link,

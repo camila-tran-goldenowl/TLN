@@ -1633,6 +1633,11 @@ table{
         
             }
         }
+
+        .table-stroke thead th, .table-stripe thead th, 
+        .table-stripe tbody tr:last-child{
+            border-bottom: 0 !important;
+        }
         
     }
 
@@ -1644,10 +1649,7 @@ table{
         }
     }
 
-    .table-stroke thead th, .table-stripe thead th, 
-    .table-stripe tbody tr:last-child{
-        border-bottom: 0 !important;
-    }
+    
 }
 
 
