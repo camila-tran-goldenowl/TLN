@@ -1553,7 +1553,7 @@ div#base_page\:txtab .ui-link {
 div#base_page\:txtab .ui-column-header {
   text-align: center;
 }
-div#base_page\:txtab tbody .ui-table-row th {
+div#base_page\:txtab .ui-table-row th {
   text-align: center;
 }
 
