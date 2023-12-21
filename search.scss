@@ -1870,6 +1870,9 @@ div#base_page\:tabview{
 }
 
 // information
+.ui-panel-m{
+    border-radius: 0 !important;
+}
 .ui-panel-m-titlebar{
     background-color: $dark-grey !important;
     h3{
@@ -1884,7 +1887,7 @@ div#base_page\:tabview{
     background: transparent !important;
     min-height: 70px; 
 
-    span{
+    span, li{
         @include title;
         @include black-text;
     }

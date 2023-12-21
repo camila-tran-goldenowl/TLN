@@ -1656,6 +1656,10 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: #EA5F5F !important;
 }
 
+.ui-panel-m {
+  border-radius: 0 !important;
+}
+
 .ui-panel-m-titlebar {
   background-color: #66686A !important;
 }
@@ -1671,7 +1675,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background: transparent !important;
   min-height: 70px;
 }
-.ui-panel-m-content span {
+.ui-panel-m-content span, .ui-panel-m-content li {
   font-family: Montserrat;
   font-size: 12px !important;
   font-weight: 400;
