@@ -1493,4 +1493,13 @@ div#base_page\:ttab {
 
 div#base_page\:tabview {
   margin-top: 2.5rem;
+}
+div#base_page\:tabview .accordion-title span {
+  font-family: Montserrat;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 26px;
+}
+div#base_page\:tabview a.ui-collapsible-heading-toggle {
+  padding: 1.25rem;
 }/*# sourceMappingURL=search.css.map */

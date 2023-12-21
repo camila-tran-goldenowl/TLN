@@ -1680,4 +1680,12 @@ div#base_page\:ttab{
 
 div#base_page\:tabview{
     margin-top: 2.5rem;
+
+    .accordion-title span{
+        @include body-text();
+    }
+
+    a.ui-collapsible-heading-toggle {
+        padding: 1.25rem;
+    }
 }
