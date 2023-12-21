@@ -1648,4 +1648,8 @@ table{
 div#base_page\:postab,
 div#base_page\:ttab{
 
+    .table-stripe tbody tr:last-child{
+        border-bottom: 0 !important;
+    }
+
 }
