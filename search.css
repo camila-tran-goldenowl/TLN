@@ -1620,7 +1620,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status {
   font-weight: 400;
   line-height: 17px;
   color: white;
-  text-transform: capitalize;
+  text-transform: lowercase;
   padding: 0.8rem 1.25rem !important;
 }
 div#base_page\:tabview .accordion-status-block .accordion-status::first-letter {
@@ -1666,6 +1666,13 @@ div#base_page\:txtab .ui-column-header {
 div#base_page\:txtab .ui-table-row td {
   text-align: center;
   vertical-align: middle;
+}
+div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
+  border: none !important;
+  padding: 10px 25px;
+  background-color: #F89426 !important;
+  border-radius: 0 !important;
+  text-transform: uppercase;
 }
 
 .rb-footer {

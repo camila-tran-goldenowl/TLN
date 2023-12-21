@@ -1826,7 +1826,7 @@ div#base_page\:tabview{
         .accordion-status{
             @include title();
             color: white;
-            text-transform: capitalize;
+            text-transform: lowercase;
             padding: 0.8rem 1.25rem !important;
 
             &::first-letter{
@@ -1887,6 +1887,10 @@ div#base_page\:txtab{
             text-align: center;
             vertical-align: middle;
         }
+    }
+
+    button[id*=":stpFrm:stripeSubmit"]{
+        @include button;
     }
 }
 
