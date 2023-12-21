@@ -1394,6 +1394,13 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
   letter-spacing: 0.15em !important;
   text-transform: uppercase;
 }
+div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button .ui-btn-icon-right:after {
+  background: transparent !important;
+  font-family: Montserrat;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 26px;
+}
 
 .rbn-yb-searchtext {
   font-family: Montserrat;

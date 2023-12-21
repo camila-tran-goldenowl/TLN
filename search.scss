@@ -1578,6 +1578,11 @@ div#base_page\:locform\:languageSelect{
             letter-spacing: 0.15em !important;
             text-transform: uppercase;
         }
+
+        .ui-btn-icon-right:after{
+            background: transparent !important;
+            @include body-text();
+        }
     }
     
 
