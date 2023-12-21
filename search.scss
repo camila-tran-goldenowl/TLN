@@ -1669,8 +1669,8 @@ div#base_page\:postab,
 div#base_page\:ttab{
 
     .ui-link{
-        text-decoration: underline !important;
-        text-underline-offset: 4px;
+        text-decoration: none;
+        font-weight: 400!important;
     }
 }
 

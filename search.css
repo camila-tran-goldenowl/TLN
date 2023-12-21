@@ -1483,8 +1483,8 @@ html head + body .ui-btn.ui-btn-a:visited {
 
 div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {
-  text-decoration: underline !important;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  font-weight: 400 !important;
 }
 
 div#base_page\:ttab {
