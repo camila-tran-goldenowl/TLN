@@ -1901,6 +1901,14 @@ div#base_page\:txtab{
     }
 }
 
+#scrollToPay{
+    border-radius: none;
+
+    label{
+        @include body-text;
+        @include black-text;
+    }
+}
 
 // footer
 .rb-footer{

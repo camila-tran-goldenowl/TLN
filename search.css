@@ -1684,6 +1684,17 @@ div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
   letter-spacing: 0.15em;
 }
 
+#scrollToPay {
+  border-radius: none;
+}
+#scrollToPay label {
+  font-family: Montserrat;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 26px;
+  color: #18181B !important;
+}
+
 .rb-footer {
   display: none;
 }/*# sourceMappingURL=search.css.map */
