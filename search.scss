@@ -1621,6 +1621,14 @@ div#base_page\:j_idt43{
 }
 
 // table
+.table-stripe tbody tr:nth-child(odd) td, .table-stripe tbody tr:nth-child(odd) th {
+    background: $secondary-light-grey-color !important;
+  }
+  
+.table-stripe tbody tr:nth-child(even) td, .table-stripe tbody tr:nth-child(even) th {
+    background: $secondary-grey-color !important;
+}
+  
 table{
     thead{
         .ui-column-header{

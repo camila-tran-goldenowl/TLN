@@ -1444,6 +1444,14 @@ div#base_page\:j_idt43 span::after {
   content: "Scroll down to view reservations and payment status.";
 }
 
+.table-stripe tbody tr:nth-child(odd) td, .table-stripe tbody tr:nth-child(odd) th {
+  background: #F4F4F4 !important;
+}
+
+.table-stripe tbody tr:nth-child(even) td, .table-stripe tbody tr:nth-child(even) th {
+  background: #DCDDDE !important;
+}
+
 table thead .ui-column-header {
   vertical-align: middle;
   background-color: #DCDDDE;
