@@ -1683,6 +1683,20 @@ div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
   font-family: Montserrat;
   letter-spacing: 0.15em;
 }
+div#base_page\:txtab .rbn-vendor-box .ui-grid-solo span.rbn-bold {
+  font-family: Delmon Delicate !important;
+  font-size: 20px !important;
+  font-weight: 400;
+}
+div#base_page\:txtab .rbn-vendor-box .ui-grid-solo .ui-block-a {
+  font-family: Montserrat;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 26px;
+}
+div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:orderItem"] span {
+  font-family: Montserrat !important;
+}
 
 #scrollToPay {
   border-radius: 0 !important;

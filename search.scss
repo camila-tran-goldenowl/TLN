@@ -1899,6 +1899,28 @@ div#base_page\:txtab{
         letter-spacing: 0.15em;
 
     }
+
+    // collapse info
+    .rbn-vendor-box{
+        .ui-grid-solo{
+            span.rbn-bold{
+                @include sub-header();
+            }
+
+            .ui-block-a{
+                @include body-text();
+            }
+        }
+    }
+
+    .ui-datatable-tablewrapper{
+        div[id$="base_page:tabview:orderItem"]{
+            span{
+                @include main-font();
+            }
+        }
+    }
+    
 }
 
 #scrollToPay{
