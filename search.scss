@@ -1568,10 +1568,12 @@ div#base_page\:locform\:languageSelect{
     div#base_page\:locform\:languageSelect_input-button{
         @include button();
         background-color: $secondary-orange-color;
+        opacity: 1;
        
 
         span{
             @include title();
+            @include black-text();
             line-height: 19px;
             letter-spacing: 0.15em !important;
             text-transform: uppercase;
