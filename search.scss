@@ -137,6 +137,7 @@ app-cart-product{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    @include main-font();
 }
 
 /* begin general */
@@ -1818,6 +1819,7 @@ div#base_page\:txtab{
     }
 
     tbody#base_page\:txtab_data{
+        @include main-font();
         .ui-btn{
             @include button();
             @include title();
