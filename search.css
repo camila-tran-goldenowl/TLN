@@ -1637,6 +1637,9 @@ div#base_page\:tabview .rbn-vendor-box .ui-grid-solo .ui-block-a {
   line-height: 26px;
   margin-bottom: 10px;
 }
+div#base_page\:tabview .ui-block-a {
+  font-family: Montserrat !important;
+}
 div#base_page\:tabview .accordion-status-block .accordion-status {
   font-family: Montserrat;
   font-size: 12px !important;
@@ -1676,6 +1679,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
   min-height: 70px;
 }
 .ui-panel-m-content span, .ui-panel-m-content li {
+  font-family: Montserrat !important;
   font-family: Montserrat;
   font-size: 12px !important;
   font-weight: 400;

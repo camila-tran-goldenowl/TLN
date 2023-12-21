@@ -1843,6 +1843,9 @@ div#base_page\:tabview{
             }
         }
     }
+    .ui-block-a{
+        @include main-font();
+    }
 
     .accordion-status-block{
 
@@ -1888,6 +1891,7 @@ div#base_page\:tabview{
     min-height: 70px; 
 
     span, li{
+        @include main-font;
         @include title;
         @include black-text;
     }
