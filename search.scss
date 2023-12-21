@@ -1751,9 +1751,12 @@ div#base_page\:txtab{
     }
 
     tbody{
-        th{
-            text-align: center;
+        .ui-table-row{
+            th{
+                text-align: center;
+            }
         }
+        
     }
 }
 
