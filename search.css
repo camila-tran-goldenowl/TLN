@@ -1396,7 +1396,7 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   font-weight: 400;
   line-height: 17px;
 }
-form#base_page\:gform input {
+form#base_page\:gform .ui-input-text {
   box-shadow: none !important;
   border: 1px solid #DCDDDE;
   font-family: Montserrat;

@@ -1577,7 +1577,7 @@ form#base_page\:gform{
         @include title();
     }
 
-    input{
+    .ui-input-text{
         @include input;
         @include body-text();
         color: $dark-grey;
