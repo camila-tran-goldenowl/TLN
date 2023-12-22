@@ -1748,4 +1748,10 @@ html.ui-mobile form#base_page\:gform .ui-field-contain {
 }
 html.ui-mobile form#base_page\:gform input {
   width: 100%;
+}
+html.ui-mobile div#base_page\:postab,
+html.ui-mobile div#base_page\:ttab {
+  border: none !important;
+  background-color: #DCDDDE !important;
+  box-shadow: none !important;
 }/*# sourceMappingURL=search.css.map */

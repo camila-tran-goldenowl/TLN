@@ -1970,5 +1970,12 @@ html.ui-mobile{
         }
         
     }
+
+    div#base_page\:postab,
+    div#base_page\:ttab{
+        border: none !important;
+        background-color: $secondary-grey-color !important;
+        box-shadow: none !important;
+    }
     
 }
