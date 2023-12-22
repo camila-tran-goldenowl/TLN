@@ -1618,6 +1618,7 @@ div#base_page\:base_header{
     }
 
     .ui-icon-carat-d:after {
+        border-radius: 0;
         width: 1px;
         height: 2px;
         background-image: none !important;
@@ -1641,6 +1642,7 @@ div#base_page\:locform\:languageSelect{
 
     div#base_page\:locform\:languageSelect_input-button{
         @include button();
+        display: flex;
         background-color: $secondary-orange-color;
         opacity: 1;
        
@@ -1706,16 +1708,21 @@ form#base_page\:gform{
 
 }
 
-div#base_page\:j_idt43{
+.ui-outputpanel{
     margin-top: 2.5rem;
     margin-bottom: 3.1rem;
 
-    span::after{
-        @include body-text();
-        line-height: 26px;
-        display: block;
-        margin-top: 1rem;
-        content: "Scroll down to view reservations and payment status.";
+    span#base_page\:guest-intranet-greeting{
+        @include sub-header();
+        @include main-font();
+
+        &::after{
+            @include body-text();
+            line-height: 26px;
+            display: block;
+            margin-top: 1rem;
+            content: "Scroll down to view reservations and payment status.";
+        }
     }
 }
 
@@ -1726,6 +1733,11 @@ div#base_page\:j_idt43{
   
 .table-stripe tbody tr:nth-child(even) td, .table-stripe tbody tr:nth-child(even) th {
     background: $secondary-grey-color !important;
+}
+
+.ui-table td {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
 }
   
 table{
@@ -1773,11 +1785,16 @@ html head + body .ui-btn.ui-btn-a:visited {
 }
 
 .ui-panel-m-titlebar.ui-bar.ui-bar-inherit, 
-.ui-btn .ui-panel-collapsible-heading-toggle, 
-.ui-icon-minus:after, 
-.ui-icon-plus:after{
-    background-color: $dark-grey;
+.ui-btn .ui-panel-collapsible-heading-toggle{
+    background-color: white;
 }
+
+
+.ui-icon-minus:after,
+.ui-btn-icon-notext:after{
+    background-color: $dark-grey !important;
+}
+
 
 .table-stroke thead th, .table-stripe thead th, 
 .table-stripe tbody tr:last-child{
@@ -1801,6 +1818,11 @@ div#base_page\:ttab{
         td{
             background: transparent !important;
         }
+    }
+
+    .ui-table-cell-label{
+        @include main-font;
+        font-weight: 400;
     }
 }
 
@@ -1832,6 +1854,7 @@ div#base_page\:tabview{
     .rbn-vendor-box{
         .ui-grid-solo{
             margin-left: 1rem;
+            text-align: left;
             span.rbn-bold{
                 @include sub-header();
             }
@@ -1845,6 +1868,7 @@ div#base_page\:tabview{
     .ui-block-a{
         @include main-font();
     }
+   
 
     .accordion-status-block{
 
@@ -1898,10 +1922,6 @@ div#base_page\:tabview{
 
 div#base_page\:vendorMessagePanel{
     border-radius: 0 !important;
-
-    .ui-icon-minus:after{
-        background: $dark-grey;
-    }
 }
 
 div#base_page\:txtab{
@@ -1940,6 +1960,16 @@ div#base_page\:txtab{
             }
         }
     }
+
+    .ui-table-cell-label{
+        @include title;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+
+        padding: 0!important;
+
+    }
     
 }
 
@@ -1957,7 +1987,7 @@ div#base_page\:txtab{
     display: none;
 }
 
-html.ui-mobile{
+@media (max-width: 35em) {
     form#base_page\:gform{
         .ui-field-contain{
             align-items: flex-start !important;
@@ -1965,7 +1995,7 @@ html.ui-mobile{
             border: none !important;
         }
 
-        input{
+        .ui-input-text {
             width: 100%;
         }
         
@@ -1978,8 +2008,97 @@ html.ui-mobile{
         box-shadow: none !important;
     }
     
-}
+    div#base_page\:postab,
+    div#base_page\:ttab {
+        tbody{
+            td{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+        
+    }
 
-body{
-    background-color: black;
+    span#base_page\:guest-intranet-greeting::after{
+        max-width: 275px;
+        margin:auto;
+        width: fit-content;
+    }
+
+    .ui-grid-solo{
+        margin-top: 10px;
+    }
+
+    div#base_page\:tabview{
+        
+       
+
+        tbody[id*=":resultTable"]
+        // ,tbody[id*="base_page:tabview:orderItemTable"]
+        {
+            >.ui-table-row{
+                td{
+                    align-items: center;
+                    display: grid !important;
+                    grid-template-columns: 4fr 6fr;
+                }
+            }
+            
+        }
+
+        a.ui-collapsible-heading-toggle {
+            padding-left: 4rem !important;
+        }
+
+        div[id*=":pocgrd_content"],
+        div[id*=":pdoptgrd_content"]{
+            .ui-block-a{
+                display: grid;
+                grid-template-columns: 4fr 6fr;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+
+    }
+
+    div#base_page\:txtab{
+        .ui-table-cell-label{
+            text-align: left !important;
+            float: left;
+        }
+
+        td{
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        tbody#base_page\:txtab_data{
+            > .ui-table-row{
+
+                td{
+                    text-align: left !important;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+
+                    span[id*=":receivedMessageText"]{
+                        display: block;
+                        text-align: left;
+                        float: right;
+                        margin-left: 50%;
+                    }
+
+                    form[id*=":f1"]{
+                        float: right;
+                    }
+
+                    &:last-child:not(span){
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
 }

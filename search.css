@@ -1412,6 +1412,7 @@ div#base_page\:base_header form#base_page\:locform {
   right: 1.8 rem !important;
 }
 div#base_page\:base_header .ui-icon-carat-d:after {
+  border-radius: 0;
   width: 1px;
   height: 2px;
   background-image: none !important;
@@ -1436,6 +1437,7 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
   background-color: #F89426 !important;
   border-radius: 0 !important;
   text-transform: uppercase;
+  display: flex;
   background-color: #F89426;
   opacity: 1;
 }
@@ -1512,11 +1514,17 @@ form#base_page\:gform .ui-field-contain label {
   text-transform: uppercase;
 }
 
-div#base_page\:j_idt43 {
+.ui-outputpanel {
   margin-top: 2.5rem;
   margin-bottom: 3.1rem;
 }
-div#base_page\:j_idt43 span::after {
+.ui-outputpanel span#base_page\:guest-intranet-greeting {
+  font-family: Delmon Delicate !important;
+  font-size: 20px !important;
+  font-weight: 400;
+  font-family: Montserrat !important;
+}
+.ui-outputpanel span#base_page\:guest-intranet-greeting::after {
   font-family: Montserrat;
   font-size: 16px !important;
   font-weight: 400;
@@ -1533,6 +1541,11 @@ div#base_page\:j_idt43 span::after {
 
 .table-stripe tbody tr:nth-child(even) td, .table-stripe tbody tr:nth-child(even) th {
   background: #DCDDDE !important;
+}
+
+.ui-table td {
+  padding-left: 0.8rem !important;
+  padding-right: 0.8rem !important;
 }
 
 table thead .ui-column-header {
@@ -1573,10 +1586,13 @@ html head + body .ui-btn.ui-btn-a:visited {
 }
 
 .ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
-.ui-btn .ui-panel-collapsible-heading-toggle,
+.ui-btn .ui-panel-collapsible-heading-toggle {
+  background-color: white;
+}
+
 .ui-icon-minus:after,
-.ui-icon-plus:after {
-  background-color: #66686A;
+.ui-btn-icon-notext:after {
+  background-color: #66686A !important;
 }
 
 .table-stroke thead th, .table-stripe thead th,
@@ -1597,6 +1613,11 @@ div#base_page\:ttab .ui-link {
 div#base_page\:postab .ui-table-row td,
 div#base_page\:ttab .ui-table-row td {
   background: transparent !important;
+}
+div#base_page\:postab .ui-table-cell-label,
+div#base_page\:ttab .ui-table-cell-label {
+  font-family: Montserrat !important;
+  font-weight: 400;
 }
 
 div#base_page\:ttab {
@@ -1624,6 +1645,7 @@ div#base_page\:tabview .ui-btn-icon-left:after {
 }
 div#base_page\:tabview .rbn-vendor-box .ui-grid-solo {
   margin-left: 1rem;
+  text-align: left;
 }
 div#base_page\:tabview .rbn-vendor-box .ui-grid-solo span.rbn-bold {
   font-family: Delmon Delicate !important;
@@ -1690,9 +1712,6 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
 div#base_page\:vendorMessagePanel {
   border-radius: 0 !important;
 }
-div#base_page\:vendorMessagePanel .ui-icon-minus:after {
-  background: #66686A;
-}
 
 div#base_page\:txtab {
   margin-top: 2.5rem;
@@ -1725,6 +1744,16 @@ div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
 div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:orderItem"] span {
   font-family: Montserrat !important;
 }
+div#base_page\:txtab .ui-table-cell-label {
+  font-family: Montserrat;
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 0 !important;
+}
 
 #scrollToPay {
   border-radius: 0 !important;
@@ -1741,21 +1770,75 @@ div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:order
   display: none;
 }
 
-html.ui-mobile form#base_page\:gform .ui-field-contain {
-  align-items: flex-start !important;
-  flex-direction: column;
-  border: none !important;
-}
-html.ui-mobile form#base_page\:gform input {
-  width: 100%;
-}
-html.ui-mobile div#base_page\:postab,
-html.ui-mobile div#base_page\:ttab {
-  border: none !important;
-  background-color: #DCDDDE !important;
-  box-shadow: none !important;
-}
-
-body {
-  background-color: black;
+@media (max-width: 35em) {
+  form#base_page\:gform .ui-field-contain {
+    align-items: flex-start !important;
+    flex-direction: column;
+    border: none !important;
+  }
+  form#base_page\:gform .ui-input-text {
+    width: 100%;
+  }
+  div#base_page\:postab,
+  div#base_page\:ttab {
+    border: none !important;
+    background-color: #DCDDDE !important;
+    box-shadow: none !important;
+  }
+  div#base_page\:postab tbody td,
+  div#base_page\:ttab tbody td {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  span#base_page\:guest-intranet-greeting::after {
+    max-width: 275px;
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .ui-grid-solo {
+    margin-top: 10px;
+  }
+  div#base_page\:tabview tbody[id*=":resultTable"] > .ui-table-row td {
+    align-items: center;
+    display: grid !important;
+    grid-template-columns: 4fr 6fr;
+  }
+  div#base_page\:tabview a.ui-collapsible-heading-toggle {
+    padding-left: 4rem !important;
+  }
+  div#base_page\:tabview div[id*=":pocgrd_content"] .ui-block-a,
+  div#base_page\:tabview div[id*=":pdoptgrd_content"] .ui-block-a {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  div#base_page\:txtab .ui-table-cell-label {
+    text-align: left !important;
+    float: left;
+  }
+  div#base_page\:txtab td {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td {
+    text-align: left !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td span[id*=":receivedMessageText"] {
+    display: block;
+    text-align: left;
+    float: right;
+    margin-left: 50%;
+  }
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td form[id*=":f1"] {
+    float: right;
+  }
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td:last-child:not(span) {
+    display: block !important;
+  }
 }/*# sourceMappingURL=search.css.map */
