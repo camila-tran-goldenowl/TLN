@@ -1754,4 +1754,8 @@ html.ui-mobile div#base_page\:ttab {
   border: none !important;
   background-color: #DCDDDE !important;
   box-shadow: none !important;
+}
+
+body {
+  background-color: black;
 }/*# sourceMappingURL=search.css.map */
