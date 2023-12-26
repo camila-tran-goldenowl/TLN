@@ -1682,8 +1682,12 @@ form#base_page\:gform{
     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
         @include button();
         @include title();
+        @include black-text();
         width: fit-content;
         margin: auto;
+        line-height: 19px;
+        letter-spacing: 0.15em;
+
     }
 
     .ui-field-contain{
