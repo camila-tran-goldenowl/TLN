@@ -1480,9 +1480,9 @@ app-shopping-cart{
     }
 
     .mat-card-content>div{
-        p{
-            display: none;
-        }
+        // p{
+        //     display: none;
+        // }
     
         .cart-total{
             margin-right: 0 !important
@@ -1551,6 +1551,7 @@ input.mat-input-element {
 }
 
 app-customer-form{
+
     mat-checkbox{
         .mat-checkbox-label{
             @include caption;
@@ -1577,7 +1578,7 @@ app-customer-form{
     }
 
     mat-label{
-        text-transform: uppercase !important;
+        // text-transform: uppercase !important;
     }
 
     .button-container{
@@ -1585,7 +1586,7 @@ app-customer-form{
         align-items: center;
 
         button:not(.mobile){
-            min-width: 25rem !important;
+            min-width: 15rem !important;
             margin-left: 30px !important;
         }
     }
@@ -1681,17 +1682,20 @@ form#base_page\:gform{
     .ui-btn.ui-input-btn.ui-corner-all.ui-shadow{
         @include button();
         @include title();
+        width: fit-content;
+        margin: auto;
     }
 
     .ui-field-contain{
         display: flex;
         align-items: center;
+        justify-content: center;
 
         .ui-input-text{
             @include input;
             @include body-text();
             color: $dark-grey;
-            padding: 12px 15px;
+            padding: 8px 15px;
         }
 
         input{ 
@@ -2100,5 +2104,24 @@ div#base_page\:txtab{
                 }
             }
         }
+    }
+}
+
+
+.rack{
+    background: transparent !important;
+}
+
+mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
+    color: #625956;
+}
+
+@media (min-width: 28em){
+    .ui-field-contain>label ~ [class*="ui-"], .ui-field-contain .ui-controlgroup-controls{
+        width: 40% !important;
+    }
+
+    .ui-field-contain>label{
+        width: 15% !important;
     }
 }
