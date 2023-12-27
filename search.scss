@@ -1079,6 +1079,17 @@ html[lang="en"] .vendor-description{
     padding: 10px 15px;
     margin-top: 20px;
     box-shadow: none !important;
+
+    &::before{
+        content: 'Highlights\a' attr(title);
+        white-space: pre;
+        font-weight: 500;
+        @include hover-underline();
+        line-height: 19px;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
 }
 
 .vendor-description[_ngcontent-fmi-c70]{
@@ -1577,8 +1588,96 @@ app-customer-form{
     
     }
 
-    mat-label{
-        // text-transform: uppercase !important;
+    mat-label, span.mat-form-field-required-marker{
+        display: none !important;
+    }
+
+    mat-form-field.firstName{
+        .mat-form-field-wrapper{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2.5fr 7.5fr;
+
+            &::before{
+                @include header();
+                @include black-text();
+                content: "First Name: ";
+            }
+        }
+    }
+
+    mat-form-field.lastName{
+        .mat-form-field-wrapper{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2.5fr 7.5fr;
+            &::before{
+                @include header();
+                @include black-text();
+                content: "Last Name: ";
+            }
+        }
+    }
+
+
+    mat-form-field.email{
+        .mat-form-field-wrapper{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2.5fr 7.5fr;
+            &::before{
+                @include header();
+                @include black-text();
+                content: "Email: ";
+            }
+        }
+    }
+
+    mat-form-field.phone{
+        .mat-form-field-wrapper{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2.5fr 7.5fr;
+            &::before{
+                @include header();
+                @include black-text();
+                content: "Phone: ";
+            }
+        }
+    }
+
+    mat-form-field.country{
+        .mat-form-field-wrapper{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1.1fr 7.9fr;
+            &::before{
+                @include header();
+                @include black-text();
+                content: "Country: ";
+            }
+        }
+    }
+
+
+    .message mat-form-field{
+        .mat-form-field-wrapper{
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1.1fr 7.9fr;
+            &::before{
+                @include header();
+                @include black-text();
+                content: "Message: ";
+            }
+        }
+    }
+
+    .details.customer-identity,
+    .details.customer-contact{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2.5rem;
     }
 
     .button-container{
@@ -1847,7 +1946,7 @@ div#base_page\:tabview{
 
     a.ui-collapsible-heading-toggle {
         padding: 1.25rem;
-        padding-left: 3.5rem !important;
+        padding-left: 4rem !important;
     }
 
     .ui-icon-plus:after {
