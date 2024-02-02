@@ -1,7 +1,7 @@
 // font 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
-@import url('https://fonts.cdnfonts.com/css/delmon-delicate');
-@import url('https://fonts.cdnfonts.com/css/microsoft-yahei');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 
 $primary-sea-color: #79A2AA;
 $primary-brown-color: #625956;
@@ -48,6 +48,10 @@ app-cart-product{
     html mat-form-field:not(.mat-form-field-type-mat-select) .mat-form-field-infix{
         padding: 1em 0 !important;
     }
+
+    mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
+        color: #c0c0c0;
+    }
 }
 
 .mat-form-field-appearance-outline .mat-select-arrow-wrapper{
@@ -60,11 +64,11 @@ app-cart-product{
     }
 }
 @mixin main-font{
-    font-family: Montserrat !important;
+    font-family: Inter !important;
 }
 
 @mixin second-font{
-    font-family: Delmon Delicate !important;
+    font-family: Archivo !important;
 }
 
 @mixin small-title {
@@ -76,7 +80,6 @@ app-cart-product{
 }
 
 @mixin header {
-    font-family: Montserrat;
     font-size: 18px !important;
     font-weight: 400;
     line-height: 22px;
@@ -84,27 +87,24 @@ app-cart-product{
 }
 
 @mixin sub-header{
-    font-family: Delmon Delicate !important;
+    font-family: Inter !important;
     font-size: 20px !important;
     font-weight: 400;
 }
 
 @mixin body-text{
-    font-family: Montserrat;
     font-size: 16px !important;
     font-weight: 400;
     line-height: 26px;
 }
 
 @mixin caption{
-    font-family: Montserrat;
     font-size: 14px !important;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 17px;
 }
 
 @mixin title{
-    font-family: Montserrat;
     font-size: 12px !important;
     font-weight: 400;
     line-height: 17px;
@@ -123,7 +123,7 @@ app-cart-product{
 }
 
 @mixin border{
-    border: 1px solid #DCDDDE
+    border: 1px solid $secondary-grey-color !important;
 }
 
 @mixin input{
@@ -140,7 +140,7 @@ app-cart-product{
 }
 
 @mixin text-column{
-    font-family: Montserrat;
+    font-family: Archivo;
     font-size: 12px !important;
     font-weight: 400;
     line-height: 19px;
@@ -151,7 +151,7 @@ app-cart-product{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: Inter;
    
 }
 
@@ -241,7 +241,7 @@ mat-label{
 
 
 body {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Archivo', sans-serif !important;
     @include black-text();
 }
 
@@ -421,11 +421,6 @@ body {
     border: 1px solid $secondary-grey-color !important;
 }
 
-.open-filter-button.active{
-    border-radius: 0;
-    border: 1px solid $secondary-orange-color !important;
-}
-
 .mat-form-field-outline-start,
 .mat-form-field-outline-end{
     border-radius: 0 !important;
@@ -582,7 +577,13 @@ app-search-card.ng-star-inserted{
     border-radius: 0;
     line-height: 20px;
     letter-spacing: 0.15em;
+
+    span{
+        @include main-font();
+        font-size: 16px;
+    }
 }
+
 .mat-stroked-button.mat-primary{
     @include body-text();
     @include black-text();
@@ -625,6 +626,12 @@ app-search-card.ng-star-inserted{
     max-width: 190px !important;
 }
 
+html[lang="en"] .mat-form-field-infix mat-label{
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+}
+
+
 .search-location{
     max-width: 115px !important;
 }
@@ -662,6 +669,7 @@ mat-form-field.search-discount-code{
     flex: none;
     padding: 0.625rem 1.5rem !important;
     flex: none !important;
+    font-size: 12px;
 }
 /* end filter search section */
 
@@ -722,6 +730,7 @@ app-search-filter-window{
     .mat-card{
         .title{
             @include sub-header();
+            font-weight: 700;
             font-size: 24px !important;
         }
     }
@@ -739,8 +748,6 @@ app-search-filter-window{
     
 }
 
-
-
 .filter .subtitle{
     @include black-text();
     @include title();
@@ -751,22 +758,43 @@ app-search-filter-window{
 
 .mat-mdc-standard-chip {
     @include button();
-    background-color: $secondary-grey-color !important;
+    @include border();
+    background-color: white !important;
     padding: 0;
 }
 
 .mat-mdc-chip-selected{
-    background-color: $secondary-orange-color !important;
+    background-color: $primary-black-color !important;
+    border: none;
+
+    span{
+        color: white !important;
+    }
 }
 
 .mat-mdc-chip-action-label{
     @include body-text();
 }
 
-html[lang="en"] mat-chip-option{
+.filter.bedrooms{
+    mat-chip-option{
+        display: flex;
+        justify-content: center;
+        width: 70px;
+    }
+}
+
+html mat-chip-option{
     padding: 14px 16px !important;
+    @include border();
+
+
+    button.mdc-evolution-chip__action{
+        width: 100%;
+    }
 
     .mat-mdc-chip-graphic{
+        display: none;
         padding-left: 0 !important;
     }
 
@@ -793,15 +821,20 @@ html[lang="en"] .mat-mdc-slider .mdc-slider__value-indicator {
         @include black-text();
         @include body-text();
         line-height: 20px;
-        font-family: Montserrat;
+        @include second-font();
 
         &::before{
             display: none;
         }
-
     }
 }
 
+html[lang="en"] .mdc-slider{
+    &__thumb-knob{
+        background-color: white !important;
+        @include border();
+    }
+}
 // action
 .mat-card-actions{
     &:first-child{
@@ -854,12 +887,15 @@ html[lang="en"] .mat-mdc-slider .mdc-slider__value-indicator {
 
 .search-card-title{
     @include sub-header();
+    @include second-font();
+    font-weight: 500;
     margin-bottom: 20px !important;
 }
 
 .search-card-desc{
     @include body-text();
     @include black-text();
+    font-weight: 400;
     margin-bottom: 20px !important;
 }
 
@@ -867,12 +903,15 @@ html[lang="en"] .mat-mdc-slider .mdc-slider__value-indicator {
     max-width: 55% !important;
     line-height: unset !important;
     font-size: 18px;
+    font-weight: 700 !important;
 }
 
 .per-person{
     @include caption();
     display: block;
+    color: #787878 !important;
     line-height: unset;
+    font-weight: 400;
 }
 
 #searchMoreInfo {
@@ -880,6 +919,7 @@ html[lang="en"] .mat-mdc-slider .mdc-slider__value-indicator {
     @include body-text();
     @include black-text();
     @include title();
+    letter-spacing: 0.15em;
     text-transform: uppercase;
 
 }
@@ -990,7 +1030,7 @@ app-search-card{
     
     .search-card-from{
         margin-right: 4px;
-        font-weight: 500!important;
+        // font-weight: 500!important;
     
         span:first-child{
             margin-right: 4px;
@@ -1058,6 +1098,8 @@ google-map{
 /*==================PROPER PAGE =====================*/
 html[lang="en"] h2.product-title, .checkout-room-type{
     @include sub-header();
+    @include second-font();
+    font-weight: 500;
     line-height: 32px;
 }
 
@@ -1068,12 +1110,23 @@ html[lang="en"] h2.product-title, .checkout-room-type{
     }
 }
 
+.select-dates{
+    span{
+        text-transform: uppercase !important;
+        @include second-font();
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.15em;
+    }
+}
+
 // description
 html[lang="en"] .vendor-description{
     @include body-text();
     @include black-text();
+    @include second-font();
     border-radius: 0 !important;
-    background-color: #dcdddea6 !important;
+    background-color: $secondary-grey-color !important;
     line-height: 26px !important;
     letter-spacing: 0 !important;
     padding: 10px 15px;
@@ -1083,12 +1136,10 @@ html[lang="en"] .vendor-description{
     &::before{
         content: 'Highlights\a' attr(title);
         white-space: pre;
-        font-weight: 500;
-        @include hover-underline();
+        font-weight: 600;
         line-height: 19px;
-        letter-spacing: 0.15em;
-        margin-bottom: 0.5rem;
-        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 1.2rem;
     }
 }
 
@@ -1183,13 +1234,24 @@ app-product{
 .vendor-container{
     .open-gallery{
         @include title();
+        @include second-font();
         text-transform: uppercase;
-        font-family: Montserrat;
+        border: none !important;
         line-height: 19px;
         letter-spacing: 0.15em;
+        background-color: white !important;
+
+        &:hover{
+            background-color:  $primary-black-color !important;
+        }
 
         span, .mat-icon{
             @include black-text();
+
+            &:hover{
+                color: white;
+                border: none;
+            }
         }
     }
 
@@ -1215,6 +1277,11 @@ app-product{
     border-radius: 0 !important;
     border: 0 !important;
     padding: 0.5rem;
+    background: none !important;
+
+    &:hover{
+        background: none !important;
+    }
 }
 .open-gallery > .mat-icon, .open-gallery > span{
     @include black-text();
@@ -1224,6 +1291,7 @@ app-product{
     margin-bottom: 0.5em;
 }
 #add-product{
+    letter-spacing: 0.15em;
     width: fit-content;
     display: block;
     margin-left: auto;
@@ -1252,6 +1320,8 @@ app-product{
                 font-size: 18px !important;
                 line-height: 22px !important;
                 white-space: inherit !important;
+                @include second-font();
+                font-weight: 500 !important;
             }
         }
 
@@ -1309,8 +1379,8 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
 /* begin checkout section */
 .mat-card-title{
-    font-family: Delmon Delicate !important;
-    font-size: 22px;
+    @include second-font();
+    font-size: 20px;
     font-weight: 400;
     line-height: 35px;
 }
@@ -1319,11 +1389,11 @@ mat-dialog-content.mat-dialog-content.mat-typography{
     .mat-list-item{
 
         .cart-room-type{
-            @include sub-header();
-            font-size: 18px;
+            @include second-font();
+            font-weight: 500;
+            font-size: 18px !important;
             line-height: 21px;
             letter-spacing: -0.5px;
-
             white-space: inherit !important;
         }
 
@@ -1339,7 +1409,6 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
         .date-summary{
             @include title();
-            font-family: Montserrat;
             line-height: 19px;
             letter-spacing: 0.15em;
             text-transform: uppercase;
@@ -1351,6 +1420,10 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
         }
     }
+}
+
+html[lang="en"] .rack[_ngcontent-lqp-c56]{
+    @include title();
 }
 
 .mat-card-content{
@@ -1434,7 +1507,9 @@ html[lang=en] .mat-headline{
 
 html[lang=en] .mat-card-title{
     @include sub-header();
-    font-size: 22px !important;
+    @include second-font();
+    font-weight: 500;
+    font-size: 20px !important;
 }
 
 app-shopping-cart{
@@ -1475,6 +1550,27 @@ app-search-bar{
 
     #searchBarSubmitBtn{
         margin-left: 0.8rem !important;
+        @include button();
+        @include black-text();
+        line-height: 28px;
+        letter-spacing: 0.15em;
+        flex: none;
+        padding: 0.625rem 1.5rem !important;
+        flex: none !important;
+        font-size: 12px;
+
+
+        span:first-child > span{
+            visibility: hidden;
+            font-size: 0;
+
+            &::after{
+                display: inline-block;
+                visibility: visible;
+                content: "Search";
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -1513,6 +1609,8 @@ html[lang="en"] .rate-plan-info{
     .rate-plan-title{
         @include sub-header;
         font-size: 18px !important;
+        @include second-font();
+        font-weight: 500;
     }
 
     .more-info-long{
@@ -1695,6 +1793,7 @@ app-customer-form{
 .mat-form-field-infix {
     input, mat-label{
         @include header();
+        @include main-font();
         text-transform: capitalize;
     }
 }
@@ -2055,7 +2154,7 @@ div#base_page\:txtab{
         @include title;
         @include black-text;
         text-shadow: none !important;
-        font-family: Montserrat;
+        font-family: Archivo;
         letter-spacing: 0.15em;
 
     }
@@ -2216,9 +2315,11 @@ div#base_page\:txtab{
 }
 
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
-    color: #625956;
+    color:  $primary-black-color;
 }
-
+button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary{
+    background: #F4F4F4 !important;
+}
 @media (min-width: 28em){
     .ui-field-contain>label ~ [class*="ui-"], .ui-field-contain .ui-controlgroup-controls{
         width: 30% !important;
