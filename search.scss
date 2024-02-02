@@ -1563,15 +1563,15 @@ app-search-bar{
 
 
         span:first-child > span{
-            visibility: hidden;
-            font-size: 0;
+            // visibility: hidden;
+            // font-size: 0;
 
-            &::after{
-                display: inline-block;
-                visibility: visible;
-                content: "Search";
-                text-align: center;
-            }
+            // &::after{
+            //     display: inline-block;
+            //     visibility: visible;
+            //     content: "Search";
+            //     text-align: center;
+            // }
         }
     }
 }
