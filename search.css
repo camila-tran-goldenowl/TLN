@@ -533,7 +533,7 @@ mat-form-field.search-discount-code .mat-form-field-infix {
 .open-filter-button.active,
 .mdc-evolution-chip__text-label,
 .mdc-evolution-chip__action[aria-selected=false] .mdc-evolution-chip__text-label,
-.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark {
+html[lang=en] .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark {
   color: #18181B !important;
 }
 
@@ -663,8 +663,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .mat-card-actions:first-child {
-  border: 1px solid #18181B;
-  background-color: #FFFDFA !important;
+  text-decoration: underline;
   text-transform: uppercase;
 }
 .mat-card-actions button {

@@ -689,7 +689,7 @@ mat-form-field.search-discount-code{
 .open-filter-button.active,
 .mdc-evolution-chip__text-label,
 .mdc-evolution-chip__action[aria-selected=false] .mdc-evolution-chip__text-label,
-.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{
+html[lang="en"] .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark{
     @include black-text();
 }
 
@@ -838,8 +838,7 @@ html[lang="en"] .mdc-slider{
 // action
 .mat-card-actions{
     &:first-child{
-        border: 1px solid $primary-black-color;
-        background-color: $secondary-white-color !important;
+        text-decoration: underline;
         text-transform: uppercase;
     }
 
