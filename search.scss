@@ -1094,6 +1094,15 @@ google-map{
 
 
 /*==================PROPER PAGE =====================*/
+.vendor-image-container{
+    &:hover{
+        .open-gallery{
+            transition: 0.2s;
+            border: none !important;
+            background-color: $primary-black-color !important;
+        }
+    }
+}
 html[lang="en"] h2.product-title, .checkout-room-type{
     @include sub-header();
     @include second-font();
@@ -1243,7 +1252,9 @@ app-product{
         background-color: white !important;
 
         &:hover{
-            background-color:  $primary-black-color !important;
+            transition: 0.2s;
+            border: none !important;
+            background-color: $primary-black-color !important;
         }
 
         span, .mat-icon{

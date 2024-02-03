@@ -902,6 +902,12 @@ google-map .content-title {
 
 /* end search list result */
 /*==================PROPER PAGE =====================*/
+.vendor-image-container:hover .open-gallery {
+  transition: 0.2s;
+  border: none !important;
+  background-color: #18181B !important;
+}
+
 html[lang=en] h2.product-title, .checkout-room-type {
   font-size: 20px !important;
   font-weight: 400;
@@ -1051,6 +1057,8 @@ app-product .product-card .mat-form-field-label {
   background-color: white !important;
 }
 .vendor-container .open-gallery:hover {
+  transition: 0.2s;
+  border: none !important;
   background-color: #18181B !important;
 }
 .vendor-container .open-gallery span, .vendor-container .open-gallery .mat-icon {
