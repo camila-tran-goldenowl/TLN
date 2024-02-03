@@ -87,7 +87,6 @@ app-cart-product{
 }
 
 @mixin sub-header{
-    font-family: Inter !important;
     font-size: 20px !important;
     font-weight: 400;
 }
@@ -151,7 +150,7 @@ app-cart-product{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter;
+    font-family: Inter !important;
    
 }
 
@@ -899,9 +898,9 @@ html[lang="en"] .mdc-slider{
 }
 
 .search-card-from{
+    @include header();
     max-width: 55% !important;
     line-height: unset !important;
-    font-size: 18px;
     font-weight: 700 !important;
 }
 
@@ -1222,7 +1221,7 @@ app-product{
 .rate-plan-price .sl, .cart-item-price .sl[_ngcontent-lqp-c63], .sl {
     font-weight: 500;
     line-height: 22px;
-    font-size: 18px !important;
+    @include header();
 }
 
 .rate-price-container > * {
@@ -1318,9 +1317,7 @@ app-product{
     
         .rate-plan-title-container{
             h3{
-                @include sub-header();
-                font-size: 18px !important;
-                line-height: 22px !important;
+                @include header();
                 white-space: inherit !important;
                 @include second-font();
                 font-weight: 500 !important;
@@ -1356,13 +1353,16 @@ app-product{
 /* begin dialog section */
 #mat-dialog-title-2{
     @include sub-header();
-    font-size: 18px !important;
+    @include second-font();
+    font-weight: 700 !important;
     line-height: 29px;
     line-height: 29px !important;
 }
 
 mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end span{
     @include title();
+    @include second-font();
+    font-weight: 500;
     text-transform: uppercase;
     line-height: 15px;
     letter-spacing: 0.15em;
@@ -1392,8 +1392,8 @@ mat-dialog-content.mat-dialog-content.mat-typography{
 
         .cart-room-type{
             @include second-font();
+            @include header();
             font-weight: 500;
-            font-size: 18px !important;
             line-height: 21px;
             letter-spacing: -0.5px;
             white-space: inherit !important;
@@ -1583,6 +1583,7 @@ app-shopping-cart{
     
     .checkout-vendor{
         @include sub-header;
+        @include second-font;
         font-size: 22px !important;
         line-height: 35px;
         padding-bottom: 1.1rem !important;
@@ -1609,10 +1610,9 @@ html[lang="en"] .rate-plan-info{
     border-radius: 0 !important;
 
     .rate-plan-title{
-        @include sub-header;
-        font-size: 18px !important;
+        @include header;
         @include second-font();
-        font-weight: 500;
+        font-weight: 500 !important;
     }
 
     .more-info-long{
@@ -1654,6 +1654,8 @@ app-payment-schedule{
 // form
 html[lang="en"] .mat-h1{
     @include sub-header();
+    @include second-font();
+    font-weight: 700 !important;
     font-size: 22px !important;
 }
 
@@ -1896,6 +1898,7 @@ form#base_page\:gform{
         justify-content: center;
 
         .ui-input-text{
+            @include main-font();
             @include input;
             @include body-text();
             color: $dark-grey;
@@ -1954,10 +1957,19 @@ table{
             vertical-align: middle;
             background-color: $secondary-grey-color;
             padding: 1rem 0.625rem !important;
+            span{
+                font-weight: 500 !important;
+            }
+
             .ui-column-title{
                 @include title;
+                @include second-font();
                 text-transform: uppercase;
                 letter-spacing: 0.15em;
+
+                span{
+                    font-weight: 500 !important;
+                }
         
             }
         }
@@ -1967,6 +1979,7 @@ table{
     tbody{
         .ui-table-row{
             span{
+                @include main-font();
                 @include body-text();
             }
         }
@@ -2186,6 +2199,7 @@ div#base_page\:txtab{
 
     label{
         @include body-text;
+        @include second-font();
         @include black-text;
     }
 }
