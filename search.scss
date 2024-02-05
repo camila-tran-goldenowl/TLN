@@ -151,7 +151,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Inter !important;
-   
 }
 
 .material-icons{
@@ -733,8 +732,12 @@ app-search-filter-window{
     .mat-card{
         .title{
             @include sub-header();
-            font-weight: 700;
             font-size: 24px !important;
+
+            span{
+                font-weight: 500;
+                @include second-font();
+            }
         }
     }
 
