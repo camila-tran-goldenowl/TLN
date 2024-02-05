@@ -629,8 +629,8 @@ app-search-card.ng-star-inserted{
     max-width: 190px !important;
 }
 
-html[lang="en"] .mat-form-field-infix mat-label{
-    font-size: 12px !important;
+html[lang="en"] .mat-form-field-infix mat-label {
+    @include title();
     text-transform: uppercase !important;
 }
 
@@ -1126,9 +1126,7 @@ html[lang="en"] h2.product-title, .checkout-room-type{
     span{
         text-transform: uppercase !important;
         @include second-font();
-        font-size: 12px;
-        line-height: 18px;
-        letter-spacing: 0.15em;
+        @include title();
     }
 }
 
@@ -1583,7 +1581,7 @@ app-search-bar{
         font-size: 12px;
 
 
-        span:first-child > span{
+        // span:first-child > span{
             // visibility: hidden;
             // font-size: 0;
 
@@ -1593,7 +1591,7 @@ app-search-bar{
             //     content: "Search";
             //     text-align: center;
             // }
-        }
+        // }
     }
 }
 
