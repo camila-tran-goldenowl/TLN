@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/delmon-delicate');
 @import url('https://fonts.cdnfonts.com/css/microsoft-yahei');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
     --primary-sea-color: #79A2AA;
@@ -24,48 +25,48 @@
 }
 
 // input
-app-cart-product{
-    .mat-form-field-infix{
-        border-top: 0 !important;
+// app-cart-product{
+//     .mat-form-field-infix{
+//         border-top: 0 !important;
     
         
-        .mat-form-field-label-wrapper
-        {
-            top: 0 !important;
+//         .mat-form-field-label-wrapper
+//         {
+//             top: 0 !important;
             
-        }
-    }
+//         }
+//     }
     
-    .mat-form-field-appearance-outline{
-        .mat-form-field-label{
-            top: 1.34375em !important;
-            padding-top: 0 !important;
-            margin-top: 0!important;
-        }
+//     .mat-form-field-appearance-outline{
+//         .mat-form-field-label{
+//             top: 1.34375em !important;
+//             padding-top: 0 !important;
+//             margin-top: 0!important;
+//         }
     
-        .mat-select-arrow-wrapper{
-            transform: translateY(0) !important;
-        }
-    }
+//         .mat-select-arrow-wrapper{
+//             transform: translateY(0) !important;
+//         }
+//     }
     
-    html mat-form-field:not(.mat-form-field-type-mat-select) .mat-form-field-infix{
-        padding: 1em 0 !important;
-    }
+//     html mat-form-field:not(.mat-form-field-type-mat-select) .mat-form-field-infix{
+//         padding: 1em 0 !important;
+//     }
 
-    mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
-        color: #c0c0c0;
-    }
-}
+//     mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
+//         color: #c0c0c0;
+//     }
+// }
 
-.mat-form-field-appearance-outline .mat-select-arrow-wrapper{
-    transform: translateY(0) !important;
-}
+// .mat-form-field-appearance-outline .mat-select-arrow-wrapper{
+//     transform: translateY(0) !important;
+// }
 
-.search-discount-code{
-    .mat-form-field-label-wrapper{
-        top: -0.54375em;
-    }
-}
+// .search-discount-code{
+//     .mat-form-field-label-wrapper{
+//         top: -0.54375em;
+//     }
+// }
 @mixin main-font{
     font-family: Inter !important;
 }
@@ -155,6 +156,10 @@ app-cart-product{
     box-sizing: border-box;
     font-family: Inter !important;
    
+}
+
+.material-icons{
+    font-family: 'Material Icons' !important;
 }
 
 /* begin general */
@@ -638,15 +643,15 @@ html[lang="en"] .mat-form-field-infix mat-label{
     max-width: 115px !important;
 }
 
-.search-discount-code,
-.search-location{
-    &.mat-focused{
-        margin-top: -2px;
-        .mat-form-field-label-wrapper{
-            padding-top: 1.84375em !important; 
-        }
-    }
-}
+// .search-discount-code,
+// .search-location{
+//     &.mat-focused{
+//         margin-top: -2px;
+//         .mat-form-field-label-wrapper{
+//             padding-top: 1.84375em !important; 
+//         }
+//     }
+// }
 mat-form-field.search-discount-code{
     .mat-form-field-infix{
         padding: 0.8em 0 !important;
@@ -1102,6 +1107,7 @@ google-map{
         .open-gallery{
             transition: 0.2s;
             border: none !important;
+            color: white !important;
             background-color: var(--primary-black-color) !important;
         }
     }
@@ -1257,6 +1263,7 @@ app-product{
         &:hover{
             transition: 0.2s;
             border: none !important;
+            color: white !important;
             background-color: var(--primary-black-color) !important;
         }
 
