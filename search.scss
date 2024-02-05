@@ -1,24 +1,27 @@
 // font 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/delmon-delicate');
+@import url('https://fonts.cdnfonts.com/css/microsoft-yahei');
 
-
-$primary-sea-color: #79A2AA;
-$primary-brown-color: #625956;
-$primary-black-color: #18181B;
-
-$secondary-yellow-color: #FFD075;
-$secondary-orange-color: #F89426;
-$secondary-beige-color: #F9F6F0;
-$secondary-white-color: #FFFDFA;
-$secondary-grey-color: #DCDDDE;
-$secondary-light-grey-color: #F4F4F4;
-
-$success-color:#54AF91;
-$fail-color:#EA5F5F;
-$dark-grey: #66686A;
-$link-color:#3388CC;
-
+:root {
+    --primary-sea-color: #79A2AA;
+    --primary-brown-color: #625956;
+    --primary-black-color: #18181B;
+  
+    --secondary-yellow-color: #FFD075;
+    --secondary-orange-color: #F89426;
+    --secondary-beige-color: #F9F6F0;
+    --secondary-white-color: #FFFDFA;
+    --secondary-grey-color: #DCDDDE;
+    --secondary-light-grey-color: #F4F4F4;
+  
+    --success-color: #54AF91;
+    --fail-color: #EA5F5F;
+    --dark-grey: #66686A;
+    --link-color: #3388CC;
+}
 
 // input
 app-cart-product{
@@ -112,17 +115,17 @@ app-cart-product{
 @mixin button{
     border: none !important;
     padding: 10px 25px;
-	background-color: $secondary-orange-color !important;
+	background-color: var(--secondary-orange-color) !important;
     border-radius: 0 !important;
     text-transform: uppercase;
 }
 
 @mixin black-text{
-    color: $primary-black-color !important;
+    color: var(--primary-black-color) !important;
 }
 
 @mixin border{
-    border: 1px solid $secondary-grey-color !important;
+    border: 1px solid var(--secondary-grey-color) !important;
 }
 
 @mixin input{
@@ -260,7 +263,7 @@ body {
     // search dialog
     app-search-bar{
         .show-cal-search::before{
-            border: 1px solid $secondary-grey-color;
+            border: 1px solid var(--secondary-grey-color);
             background-color: transparent !important;
             box-shadow: 0px 2px 20px 0px #0000001F;
         }
@@ -417,7 +420,7 @@ body {
 .open-filter-button {
     padding: 12px 10px !important;
     @include black-text();
-    border: 1px solid $secondary-grey-color !important;
+    border: 1px solid var(--secondary-grey-color) !important;
 }
 
 .mat-form-field-outline-start,
@@ -511,10 +514,10 @@ mat-label{
 
 app-search-card.ng-star-inserted{
     &:hover{
-        background: $secondary-grey-color;
+        background: var(--secondary-grey-color);
 
         button{
-            background-color: $primary-black-color;
+            background-color: var(--primary-black-color);
             color: white;
         }
     }
@@ -586,13 +589,13 @@ app-search-card.ng-star-inserted{
 .mat-stroked-button.mat-primary{
     @include body-text();
     @include black-text();
-    border: 1px solid $primary-black-color;
-    background: $secondary-white-color;
+    border: 1px solid var(--primary-black-color);
+    background: var(--secondary-white-color);
     padding: 12px;
 }
 
 .mat-stroked-button.mat-primary[aria-expanded="true"]{
-    border: 1px solid $secondary-orange-color !important;
+    border: 1px solid var(--secondary-orange-color) !important;
 }
 
 .mat-menu-item{
@@ -676,7 +679,7 @@ mat-form-field.search-discount-code{
 /* begin filter list section */
 .mdc-slider__track--active_fill,
 .mat-mdc-slider .mdc-slider__track--inactive{
-    border-color: $primary-black-color !important;
+    border-color: var(--primary-black-color) !important;
 }
 
 .filter-container{
@@ -763,7 +766,7 @@ app-search-filter-window{
 }
 
 .mat-mdc-chip-selected{
-    background-color: $primary-black-color !important;
+    background-color: var(--primary-black-color) !important;
     border: none;
 
     span{
@@ -934,7 +937,7 @@ html[lang="en"] .mdc-slider{
 
     #searchMoreInfo{
         color: white !important;
-        background-color: $primary-black-color !important;
+        background-color: var(--primary-black-color) !important;
     }
 
     .search-card-from{
@@ -959,7 +962,7 @@ html[lang="en"] .card-content * {
     align-items: center;
 
     .content-title{
-        background: $primary-black-color !important;
+        background: var(--primary-black-color) !important;
         font-size: 10px !important;
         text-transform: uppercase;
         line-height: 28px;
@@ -1099,7 +1102,7 @@ google-map{
         .open-gallery{
             transition: 0.2s;
             border: none !important;
-            background-color: $primary-black-color !important;
+            background-color: var(--primary-black-color) !important;
         }
     }
 }
@@ -1133,7 +1136,7 @@ html[lang="en"] .vendor-description{
     @include black-text();
     @include second-font();
     border-radius: 0 !important;
-    background-color: $secondary-grey-color !important;
+    background-color: var(--secondary-grey-color) !important;
     line-height: 26px !important;
     letter-spacing: 0 !important;
     padding: 10px 15px;
@@ -1254,7 +1257,7 @@ app-product{
         &:hover{
             transition: 0.2s;
             border: none !important;
-            background-color: $primary-black-color !important;
+            background-color: var(--primary-black-color) !important;
         }
 
         span, .mat-icon{
@@ -1269,7 +1272,7 @@ app-product{
 
     .title-group{
         border-radius: 0 !important;
-        background-color: $primary-black-color !important;
+        background-color: var(--primary-black-color) !important;
         height: auto !important;
         padding: 10px 20px !important;
         margin: 14px;
@@ -1338,7 +1341,7 @@ app-product{
         button{
 
             mat-icon{
-                color: $secondary-orange-color;
+                color: var(--secondary-orange-color);
             }
         }
     }
@@ -1350,7 +1353,7 @@ app-product{
 
 .mat-form-field.mat-focused {
     .mat-form-field-label{
-        color: $secondary-orange-color !important;
+        color: var(--secondary-orange-color) !important;
     }
     
     .mat-select-arrow-wrapper {
@@ -1380,7 +1383,7 @@ mat-dialog-actions.mat-dialog-actions.mat-dialog-actions-align-end span{
 
     &:hover{
         @include hover-underline();
-        text-decoration-color: $secondary-orange-color;
+        text-decoration-color: var(--secondary-orange-color);
     }
 }
 
@@ -1652,7 +1655,7 @@ app-payment-schedule{
         }
     
         mat-icon{
-            color: $secondary-orange-color !important;
+            color: var(--secondary-orange-color) !important;
             width: 14px !important;
             height: 14px !important;
             font-size: 14px !important;
@@ -1685,16 +1688,16 @@ app-customer-form{
 
         .mat-checkbox-inner-container{
             .mat-checkbox-frame{
-                border-color: $primary-black-color;
+                border-color: var(--primary-black-color);
             }
 
             .mat-checkbox-checkmark{
-                fill: $secondary-orange-color;
+                fill: var(--secondary-orange-color);
                 border-radius: 0 !important;
             }
             
             .mat-checkbox-checkmark-path {
-                stroke: $secondary-orange-color!important;
+                stroke: var(--secondary-orange-color)!important;
             }
         }
 
@@ -1857,7 +1860,7 @@ div#base_page\:locform\:languageSelect{
     div#base_page\:locform\:languageSelect_input-button{
         @include button();
         display: flex;
-        background-color: $secondary-orange-color;
+        background-color: var(--secondary-orange-color);
         opacity: 1;
        
 
@@ -1912,7 +1915,7 @@ form#base_page\:gform{
             @include main-font();
             @include input;
             @include body-text();
-            color: $dark-grey;
+            color: var(--dark-grey);
             padding: 8px 15px;
         }
 
@@ -1950,11 +1953,11 @@ form#base_page\:gform{
 
 // table
 .table-stripe tbody tr:nth-child(odd) td, .table-stripe tbody tr:nth-child(odd) th {
-    background: $secondary-light-grey-color !important;
+    background: var(--secondary-light-grey-color) !important;
   }
   
 .table-stripe tbody tr:nth-child(even) td, .table-stripe tbody tr:nth-child(even) th {
-    background: $secondary-grey-color !important;
+    background: var(--secondary-grey-color) !important;
 }
 
 .ui-table td {
@@ -1966,7 +1969,7 @@ table{
     thead{
         .ui-column-header{
             vertical-align: middle;
-            background-color: $secondary-grey-color;
+            background-color: var(--secondary-grey-color);
             padding: 1rem 0.625rem !important;
             span{
                 font-weight: 500 !important;
@@ -2013,7 +2016,7 @@ html .ui-bar-a .ui-btn:visited,
 html .ui-body-a .ui-btn:visited, 
 html body .ui-group-theme-a .ui-btn:visited, 
 html head + body .ui-btn.ui-btn-a:visited {
-    border-color: $secondary-grey-color;
+    border-color: var(--secondary-grey-color);
 }
 
 .ui-panel-m-titlebar.ui-bar.ui-bar-inherit, 
@@ -2024,7 +2027,7 @@ html head + body .ui-btn.ui-btn-a:visited {
 
 .ui-icon-minus:after,
 .ui-btn-icon-notext:after{
-    background-color: $dark-grey !important;
+    background-color: var(--dark-grey) !important;
 }
 
 
@@ -2075,7 +2078,7 @@ div#base_page\:tabview{
     }
 
     .ui-icon-plus:after {
-        background-color: $dark-grey !important;
+        background-color: var(--dark-grey) !important;
     }
 
     .ui-btn-icon-left:after{
@@ -2115,11 +2118,11 @@ div#base_page\:tabview{
             }
 
             &.res{
-                background-color: $success-color !important;
+                background-color: var(--success-color) !important;
             }
     
             &.na{
-                background-color: $fail-color !important;
+                background-color: var(--fail-color) !important;
             }
         }
 
@@ -2132,7 +2135,7 @@ div#base_page\:tabview{
     border-radius: 0 !important;
 }
 .ui-panel-m-titlebar{
-    background-color: $dark-grey !important;
+    background-color: var(--dark-grey) !important;
     h3{
         @include sub-header();
         @include main-font();
@@ -2237,7 +2240,7 @@ div#base_page\:txtab{
     div#base_page\:postab,
     div#base_page\:ttab{
         border: none !important;
-        background-color: $secondary-grey-color !important;
+        background-color: var(--secondary-grey-color) !important;
         box-shadow: none !important;
     }
     
@@ -2342,7 +2345,7 @@ div#base_page\:txtab{
 }
 
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
-    color:  $primary-black-color;
+    color:  var(--primary-black-color);
 }
 button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary{
     background: #F4F4F4 !important;
