@@ -628,7 +628,7 @@ app-search-card.ng-star-inserted{
     max-width: 190px !important;
 }
 
-html[lang="en"] .mat-form-field-infix mat-label {
+.mat-form-field-infix mat-label {
     @include title();
     text-transform: uppercase !important;
 }
@@ -1826,13 +1826,16 @@ app-customer-form{
 }
 
 
-.mat-form-field-infix {
-    input, mat-label{
-        @include header();
-        @include main-font();
-        text-transform: capitalize;
+.search-discount-code{
+    .mat-form-field-infix {
+        input, mat-label{
+            @include header();
+            @include main-font();
+            text-transform: capitalize !important;
+        }
     }
 }
+
 
 
 //=========================BOOKING PAGE=========================
