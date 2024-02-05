@@ -720,6 +720,16 @@ app-search-filter{
     mat-icon{
         @include black-text();
     }
+
+    .mat-card-actions:not(.mat-card-actions-align-end) .mat-stroked-button:first-child{
+        border: none !important;
+        padding-left: 0 !important;
+        @include hover-underline();
+
+        &::hover{
+            background: none;
+        }
+    }
 }
 
 
