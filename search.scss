@@ -19,49 +19,6 @@
   --dark-grey: #66686a;
   --link-color: #3388cc;
 }
-
-// input
-// app-cart-product{
-//     .mat-form-field-infix{
-//         border-top: 0 !important;
-
-//         .mat-form-field-label-wrapper
-//         {
-//             top: 0 !important;
-
-//         }
-//     }
-
-//     .mat-form-field-appearance-outline{
-//         .mat-form-field-label{
-//             top: 1.34375em !important;
-//             padding-top: 0 !important;
-//             margin-top: 0!important;
-//         }
-
-//         .mat-select-arrow-wrapper{
-//             transform: translateY(0) !important;
-//         }
-//     }
-
-//     html mat-form-field:not(.mat-form-field-type-mat-select) .mat-form-field-infix{
-//         padding: 1em 0 !important;
-//     }
-
-//     mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color{
-//         color: #c0c0c0;
-//     }
-// }
-
-// .mat-form-field-appearance-outline .mat-select-arrow-wrapper{
-//     transform: translateY(0) !important;
-// }
-
-// .search-discount-code{
-//     .mat-form-field-label-wrapper{
-//         top: -0.54375em;
-//     }
-// }
 @mixin main-font {
   font-family: Inter !important;
 }
@@ -437,8 +394,31 @@ mat-label {
   height: fit-content !important;
 }
 
-.mat-calendar * {
+html[lang="en"] .mat-calendar * {
   @include main-font();
+  @include body-text();
+  @include black-text();
+
+  table tbody tr td {
+    background: white !important;
+  }
+
+  .mat-calendar-body-selected,
+  .mat-calendar-body-active .mat-calendar-body-cell-content,
+  .mat-calendar-body-cell-content:hover {
+    color: var(--primary-black-color) !important;
+    background-color: var(--secondary-orange-color) !important;
+  }
+
+  .mat-calendar-body-cell-content {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  mat-calendar-body-label {
+    display: none !important;
+  }
 
   .mat-calendar-controls {
     .mdc-button__label {
@@ -468,6 +448,10 @@ mat-label {
     vertical-align: bottom !important;
     padding: 0 !important;
     margin-left: 10px;
+  }
+
+  .mat-datepicker-toggle-active {
+    color: var(--secondary-orange-color) !important;
   }
 }
 
@@ -618,9 +602,6 @@ app-search-card.ng-star-inserted {
 }
 
 // discount code
-.mat-form-field-appearance-outline .mat-form-field-label {
-  margin-top: 0 !important;
-}
 
 .search-discount-code {
   max-width: 190px !important;
@@ -643,15 +624,6 @@ mat-form-field-infix {
   max-width: 115px !important;
 }
 
-// .search-discount-code,
-// .search-location{
-//     &.mat-focused{
-//         margin-top: -2px;
-//         .mat-form-field-label-wrapper{
-//             padding-top: 1.84375em !important;
-//         }
-//     }
-// }
 mat-form-field.search-discount-code {
   .mat-form-field-infix {
     padding: 0.8em 0 !important;
@@ -701,11 +673,6 @@ html[lang="en"]
   .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
   .mdc-evolution-chip__checkmark {
   @include black-text();
-}
-
-app-search-card {
-  &:hover {
-  }
 }
 
 app-search-filter-bar {
@@ -914,7 +881,7 @@ html[lang="en"] .mdc-slider {
 .search-card-title {
   @include sub-header();
   @include second-font();
-  font-weight: 500;
+  font-weight: 500 !important;
   margin-bottom: 20px !important;
 }
 
@@ -957,7 +924,7 @@ html[lang="en"] .mdc-slider {
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();
-  background: linear-gradient(0deg, #DCDDDE, #DCDDDE) !important;  
+  background: linear-gradient(0deg, #dcddde, #dcddde) !important;
   border: none;
 
   #searchMoreInfo {
@@ -1172,11 +1139,6 @@ html[lang="en"] .checkout-room-description {
   @include body-text();
   opacity: 1;
 }
-
-// .checkout{
-//     padding-right: 0.5rem !important;
-//     padding-left: 0.5rem!important;
-// }
 
 html app-cart-product {
   .mat-list-item.cart-item {
