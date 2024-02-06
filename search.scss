@@ -631,6 +631,14 @@ app-search-card.ng-star-inserted {
   text-transform: uppercase !important;
 }
 
+mat-form-field-infix {
+  mat-select {
+    .mat-select-value-text {
+      font-size: 16px;
+    }
+  }
+}
+
 .search-location {
   max-width: 115px !important;
 }
@@ -693,6 +701,11 @@ html[lang="en"]
   .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
   .mdc-evolution-chip__checkmark {
   @include black-text();
+}
+
+app-search-card {
+  &:hover {
+  }
 }
 
 app-search-filter-bar {
@@ -941,9 +954,10 @@ html[lang="en"] .mdc-slider {
   opacity: 1 !important;
 }
 
-.search-card.focused[_ngcontent-mhq-c35] {
+html[lang="en"] .search-card.focused,
+html[lang="en"] .search-card:hover {
   @include black-text();
-  background-color: #e0e0e0 !important;
+  background: linear-gradient(0deg, #DCDDDE, #DCDDDE) !important;  
   border: none;
 
   #searchMoreInfo {
@@ -952,7 +966,8 @@ html[lang="en"] .mdc-slider {
   }
 
   .search-card-from {
-    span {
+    @include black-text();
+    > span {
       @include black-text();
     }
   }
@@ -1393,10 +1408,9 @@ html[lang="en"] app-product-dialog-component {
       background-color: white !important;
 
       &:hover {
-
-        span{
-            @include hover-underline();
-            text-decoration-color: var(--secondary-orange-color) !important;
+        span {
+          @include hover-underline();
+          text-decoration-color: var(--secondary-orange-color) !important;
         }
       }
 
@@ -1815,6 +1829,18 @@ app-customer-form {
       @include main-font();
       text-transform: capitalize !important;
     }
+  }
+}
+
+app-payments {
+  mat-card {
+    border-radius: 0 !important;
+  }
+
+  .invoice-label {
+    @include title;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
   }
 }
 
@@ -2385,6 +2411,14 @@ html .ui-corner-all {
 .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
 .mat-checkbox-checked.mat-accent .mat-checkbox-background {
   background-color: var(--secondary-orange-color);
+
+  svg.mat-checkbox-checkmark {
+    fill: white !important;
+
+    path {
+      stroke: white !important;
+    }
+  }
 }
 /* begin top menu section */
 div#orderForm\:wzd_content,
