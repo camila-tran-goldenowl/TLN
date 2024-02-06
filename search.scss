@@ -445,7 +445,7 @@ html[lang="en"] .mat-calendar * {
   mat-datepicker-toggle > button {
     width: fit-content !important;
     height: fit-content !important;
-    vertical-align: bottom !important;
+    vertical-align: middle !important;
     padding: 0 !important;
     margin-left: 10px;
   }
@@ -926,6 +926,9 @@ html[lang="en"] .search-card:hover {
   @include black-text();
   background: linear-gradient(0deg, #dcddde, #dcddde) !important;
   border: none;
+  transition: 0.2s;
+  transform: none !important;
+  @include border();
 
   #searchMoreInfo {
     color: white !important;
@@ -1302,6 +1305,15 @@ app-product {
   display: block;
   margin-left: auto;
   margin-right: 0;
+
+  mat-icon{
+    display: none;
+  }
+
+  &::after{
+    content: "Book now";
+    text-transform: uppercase;
+  }
 }
 
 .rate-plan-container[_ngcontent-fmi-c56] {
