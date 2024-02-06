@@ -210,6 +210,12 @@ mat-label {
   line-height: 28px;
 }
 
+// mat-form-field:hover{
+//     .mat-form-field-outline-start,
+//     .mat-form-field-outline-end {
+//         border-color: var(--secondary-orange-color) !important;
+//     }
+// }
 /* end general */
 
 /* begin filter search section */
@@ -1296,9 +1302,6 @@ app-product {
   @include black-text();
 }
 
-.rack[_ngcontent-lqp-c63] {
-  margin-bottom: 0.5em;
-}
 #add-product {
   letter-spacing: 0.15em;
   width: fit-content;
@@ -1306,24 +1309,29 @@ app-product {
   margin-left: auto;
   margin-right: 0;
 
-  mat-icon{
+  mat-icon {
     display: none;
   }
 
-  &::after{
+  &::after {
     content: "Book now";
     text-transform: uppercase;
   }
 }
 
-.rate-plan-container[_ngcontent-fmi-c56] {
-  align-items: baseline !important;
-}
-
 .rate-plan-container {
+  align-items: baseline !important;
+
   .rate-plan-text-container {
     width: calc(75% - 5rem) !important;
     padding-right: 0 !important;
+
+    .rate-plan-price {
+      .rack {
+        background: rgba(232, 138, 138, 0.2) !important;
+        margin-bottom: 0.5em;
+      }
+    }
 
     .rate-plan-subtitle {
       @include body-text();
@@ -2316,7 +2324,9 @@ div#base_page\:txtab {
 }
 
 .rack {
-  background: transparent !important;
+  //   background: transparent !important;
+  margin-bottom: 0.5em;
+  background: rgba(232, 138, 138, 0.2) !important;
 }
 
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
