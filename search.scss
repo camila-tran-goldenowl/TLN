@@ -118,7 +118,7 @@
 }
 
 .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick,
-.mat-form-field-appearance-outline:hover .mat-form-field-outline-thick{
+.mat-form-field-appearance-outline:hover .mat-form-field-outline-thick {
   color: var(--secondary-orange-color) !important;
 }
 
@@ -644,16 +644,16 @@ mat-form-field.search-discount-code {
   text-transform: uppercase;
 }
 
-.search-logo{
-  margin-right: 1rem; 
-	background: url('https://dabb7zy6p4b0z.cloudfront.net/nisade/nisade_black.png');  
-	background-size: contain;
-	background-repeat: no-repeat; 
-	background-position:center; 
-	width: 200px;
-	height: 60px;
-	background-position:center;
-	box-sizing: border-box;    
+.search-logo {
+  margin-right: 1rem;
+  background: url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisade_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 60px;
+  background-position: center;
+  box-sizing: border-box;
 }
 
 #searchBarSubmitBtn {
@@ -1700,18 +1700,17 @@ html[lang="en"] .mat-h1 {
   .mat-form-field-label {
   transform: translateY(-2.1em) scale(0.75) !important;
 }
-.mat-form-field-infix:has(input){
+.mat-form-field-infix:has(input) {
   .mat-form-field-appearance-outline .mat-form-field-label {
     margin-top: 0.285em !important;
   }
 }
 
-.mat-form-field-infix:has(.mat-select){
-  .mat-form-field-appearance-outline .mat-form-field-label{
+.mat-form-field-infix:has(.mat-select) {
+  .mat-form-field-appearance-outline .mat-form-field-label {
     margin-top: 0.7em !important;
   }
 }
-
 
 // input.mat-input-element {
 //   margin-top: 0 !important;
@@ -1845,7 +1844,12 @@ app-customer-form {
     column-gap: 2.5rem;
   }
 
-  .details:not(.customer-identity,.customer-contact,.customer-nation){
+  .details:not(
+      .customer-identity,
+      .customer-contact,
+      .customer-nation,
+      .message
+    ) {
     display: none !important;
   }
 
