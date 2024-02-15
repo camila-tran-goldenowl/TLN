@@ -1845,6 +1845,10 @@ app-customer-form {
     column-gap: 2.5rem;
   }
 
+  .details.customer-address-micro{
+    display: none !important;
+  }
+
   .button-container {
     display: flex;
     align-items: center;
