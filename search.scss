@@ -1853,6 +1853,13 @@ app-customer-form {
     display: none !important;
   }
 
+  .details.customer-nation::only-child{
+    mat-form-field.country {
+      .mat-form-field-wrapper {
+        grid-template-columns: 1.1fr 7.9fr !important;
+      }
+  }
+
   .button-container {
     display: flex;
     align-items: center;
