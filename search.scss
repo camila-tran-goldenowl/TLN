@@ -1692,19 +1692,19 @@ html[lang="en"] .mat-h1 {
   font-size: 22px !important;
 }
 
-// .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
-//   .mat-form-field-label,
-// .mat-form-field-appearance-outline.mat-form-field-can-float
-//   .mat-input-server:focus
-//   + .mat-form-field-label-wrapper
-//   .mat-form-field-label {
-//   transform: translateY(-2.1em) scale(0.75) !important;
-// }
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label,
+.mat-form-field-appearance-outline.mat-form-field-can-float
+  .mat-input-server:focus
+  + .mat-form-field-label-wrapper
+  .mat-form-field-label {
+  transform: translateY(-2.1em) scale(0.75) !important;
+}
 
 // .mat-form-field-infix:has(input) {
-//   .mat-form-field-appearance-outline .mat-form-field-label {
-//     margin-top: 0.285em !important;
-//   }
+.mat-form-field-appearance-outline .mat-form-field-label {
+  margin-top: 0.285em !important;
+}
 // }
 
 // .mat-form-field-infix:has(.mat-select) {
@@ -1854,1307 +1854,965 @@ app-customer-form {
     display: none !important;
   }
 
-  .details.customer-nation::only-child{
+  .details.customer-nation::only-child {
     mat-form-field.country {
       .mat-form-field-wrapper {
         grid-template-columns: 1.1fr 7.9fr !important;
       }
-  }
+    }
 
-  .button-container {
-    display: flex;
-    align-items: center;
+    .button-container {
+      display: flex;
+      align-items: center;
 
-    button:not(.mobile) {
-      min-width: 15rem !important;
-      margin-left: 30px !important;
+      button:not(.mobile) {
+        min-width: 15rem !important;
+        margin-left: 30px !important;
+      }
     }
   }
-}
 
-.search-discount-code {
-  .mat-form-field-infix {
-    input,
-    mat-label {
-      @include header();
+  .search-discount-code {
+    .mat-form-field-infix {
+      input,
+      mat-label {
+        @include header();
+        @include main-font();
+        text-transform: capitalize !important;
+      }
+    }
+  }
+
+  app-payments {
+    mat-card {
+      border-radius: 0 !important;
+    }
+
+    .invoice-label {
+      @include title;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+  }
+
+  //=========================BOOKING PAGE=========================
+  // top menu
+  div#base_page\:base_header {
+    .rb-header {
+      height: 140px !important;
+
+      .ui-btn-icon-right:after {
+        color: #18181b !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+      }
+    }
+
+    form#base_page\:locform {
+      top: 2rem !important;
+      right: 1.8 rem !important;
+    }
+
+    .ui-icon-carat-d:after {
+      border-radius: 0;
+      width: 1px;
+      height: 2px;
+      background-image: none !important;
+      background-color: rgba(0, 0, 0, 0) !important;
+      color: #18181b !important;
+      transform: rotate(45deg);
+      border: solid #000;
+      border-width: 0 1.5px 1.5px 0;
+      display: inline-block;
+      padding: 3px;
+      border-top: 0 !important;
+      border-left: 0 !important;
+      border-right: 1.5px solid #000 !important;
+      margin-top: 2px !important;
+      position: relative;
+      margin-left: 5px;
+    }
+  }
+
+  div#base_page\:locform\:languageSelect {
+    div#base_page\:locform\:languageSelect_input-button {
+      @include button();
+      display: flex;
+      background-color: var(--secondary-orange-color);
+      opacity: 1;
+
+      span {
+        @include title();
+        @include black-text();
+        line-height: 19px;
+        letter-spacing: 0.15em !important;
+        text-transform: uppercase;
+        margin-right: 5px;
+      }
+
+      .ui-btn-icon-right:after {
+        background: transparent !important;
+        @include body-text();
+      }
+    }
+  }
+  // message
+  .rbn-yb-searchtext {
+    @include body-text();
+    text-align: center;
+    margin-top: 1.8rem;
+    max-width: 949px;
+    display: block;
+    margin: auto;
+  }
+
+  // infor
+  form#base_page\:gform {
+    margin-top: 2.5rem;
+
+    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+      @include button();
+      @include title();
+      @include black-text();
+      width: fit-content;
+      margin: auto;
+      line-height: 19px;
+      letter-spacing: 0.15em;
+    }
+
+    .ui-field-contain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .ui-input-text {
+        @include main-font();
+        @include input;
+        @include body-text();
+        color: var(--dark-grey);
+        padding: 8px 15px;
+      }
+
+      input {
+        @include main-font();
+        padding: 0 !important;
+      }
+
+      label {
+        @include title();
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ui-outputpanel {
+    margin-top: 2.5rem;
+    margin-bottom: 3.1rem;
+
+    span#base_page\:guest-intranet-greeting {
+      @include sub-header();
       @include main-font();
-      text-transform: capitalize !important;
+
+      &::after {
+        @include body-text();
+        line-height: 26px;
+        display: block;
+        margin-top: 1rem;
+        content: "Scroll down to view reservations and payment status.";
+      }
     }
   }
-}
 
-app-payments {
-  mat-card {
+  // table
+  .table-stripe tbody tr:nth-child(odd) td,
+  .table-stripe tbody tr:nth-child(odd) th {
+    background: var(--secondary-light-grey-color) !important;
+  }
+
+  .table-stripe tbody tr:nth-child(even) td,
+  .table-stripe tbody tr:nth-child(even) th {
+    background: var(--secondary-grey-color) !important;
+  }
+
+  .ui-table td {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+
+  table {
+    thead {
+      .ui-column-header {
+        vertical-align: middle;
+        background-color: var(--secondary-grey-color);
+        padding: 1rem 0.625rem !important;
+        span {
+          font-weight: 500 !important;
+        }
+
+        .ui-column-title {
+          @include title;
+          @include second-font();
+          text-transform: uppercase;
+          letter-spacing: 0.15em;
+
+          span {
+            font-weight: 500 !important;
+          }
+        }
+      }
+    }
+
+    tbody {
+      .ui-table-row {
+        span {
+          @include main-font();
+          @include body-text();
+        }
+      }
+
+      td {
+        @include main-font();
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .ui-page-theme-a .ui-btn,
+  html .ui-bar-a .ui-btn,
+  html .ui-body-a .ui-btn,
+  html body .ui-group-theme-a .ui-btn,
+  html head + body .ui-btn.ui-btn-a,
+  .ui-page-theme-a .ui-btn:visited,
+  html .ui-bar-a .ui-btn:visited,
+  html .ui-body-a .ui-btn:visited,
+  html body .ui-group-theme-a .ui-btn:visited,
+  html head + body .ui-btn.ui-btn-a:visited {
+    border-color: var(--secondary-grey-color);
+  }
+
+  .ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
+  .ui-btn .ui-panel-collapsible-heading-toggle {
+    background-color: white;
+  }
+
+  .ui-icon-minus:after,
+  .ui-btn-icon-notext:after {
+    background-color: var(--dark-grey) !important;
+  }
+
+  .table-stroke thead th,
+  .table-stripe thead th,
+  .table-stripe tbody tr:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .ui-datatable {
+    @include border();
+    box-shadow: none !important;
+  }
+
+  div#base_page\:postab,
+  div#base_page\:ttab {
+    .ui-link {
+      text-decoration: none;
+      font-weight: 400 !important;
+    }
+
+    .ui-table-row {
+      td {
+        background: transparent !important;
+      }
+    }
+
+    .ui-table-cell-label {
+      @include main-font;
+      font-weight: 400;
+    }
+  }
+
+  div#base_page\:ttab {
+    margin-top: 2rem;
+  }
+
+  div#base_page\:tabview {
+    margin-top: 2.5rem;
+
+    .accordion-title span {
+      @include body-text();
+    }
+
+    a.ui-collapsible-heading-toggle {
+      padding: 1.25rem;
+      padding-left: 4rem !important;
+    }
+
+    .ui-icon-plus:after {
+      background-color: var(--dark-grey) !important;
+    }
+
+    .ui-btn-icon-left:after {
+      left: 1.25rem !important;
+    }
+
+    // collapse info
+    .rbn-vendor-box {
+      .ui-grid-solo {
+        margin-left: 1rem;
+        text-align: left;
+        span.rbn-bold {
+          @include sub-header();
+        }
+
+        .ui-block-a {
+          @include body-text();
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .ui-block-a {
+      @include main-font();
+    }
+
+    .accordion-status-block {
+      .accordion-status {
+        @include title();
+        color: white;
+        text-transform: lowercase;
+        padding: 0.8rem 1.25rem !important;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+
+        &.res {
+          background-color: var(--success-color) !important;
+        }
+
+        &.na {
+          background-color: var(--fail-color) !important;
+        }
+      }
+    }
+  }
+
+  // information
+  .ui-panel-m {
+    border-radius: 0 !important;
+  }
+  .ui-panel-m-titlebar {
+    background-color: var(--dark-grey) !important;
+    h3 {
+      @include sub-header();
+      @include main-font();
+      color: white !important;
+    }
+  }
+
+  .ui-panel-m-content {
+    background: transparent !important;
+    min-height: 70px;
+
+    span,
+    li {
+      @include main-font;
+      @include title;
+      @include black-text;
+    }
+  }
+
+  div#base_page\:vendorMessagePanel {
     border-radius: 0 !important;
   }
 
-  .invoice-label {
-    @include title;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-  }
-}
+  div#base_page\:txtab {
+    margin-top: 2.5rem;
 
-//=========================BOOKING PAGE=========================
-// top menu
-div#base_page\:base_header {
-  .rb-header {
-    height: 140px !important;
-
-    .ui-btn-icon-right:after {
-      color: #18181b !important;
-      background-color: rgba(0, 0, 0, 0) !important;
+    .ui-link {
+      font-weight: 400 !important;
     }
-  }
 
-  form#base_page\:locform {
-    top: 2rem !important;
-    right: 1.8 rem !important;
-  }
+    .ui-column-header {
+      text-align: center;
+    }
 
-  .ui-icon-carat-d:after {
-    border-radius: 0;
-    width: 1px;
-    height: 2px;
-    background-image: none !important;
-    background-color: rgba(0, 0, 0, 0) !important;
-    color: #18181b !important;
-    transform: rotate(45deg);
-    border: solid #000;
-    border-width: 0 1.5px 1.5px 0;
-    display: inline-block;
-    padding: 3px;
-    border-top: 0 !important;
-    border-left: 0 !important;
-    border-right: 1.5px solid #000 !important;
-    margin-top: 2px !important;
-    position: relative;
-    margin-left: 5px;
-  }
-}
+    .ui-table-row {
+      td {
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
 
-div#base_page\:locform\:languageSelect {
-  div#base_page\:locform\:languageSelect_input-button {
-    @include button();
-    display: flex;
-    background-color: var(--secondary-orange-color);
-    opacity: 1;
+    button[id*=":stpFrm:stripeSubmit"] {
+      @include button;
+      @include title;
+      @include black-text;
+      text-shadow: none !important;
+      font-family: Archivo;
+      letter-spacing: 0.15em;
+    }
 
-    span {
-      @include title();
-      @include black-text();
-      line-height: 19px;
-      letter-spacing: 0.15em !important;
+    .ui-datatable-tablewrapper {
+      div[id$="base_page:tabview:orderItem"] {
+        span {
+          @include main-font();
+        }
+      }
+    }
+
+    .ui-table-cell-label {
+      @include title;
+      font-weight: 500;
       text-transform: uppercase;
-      margin-right: 5px;
-    }
+      letter-spacing: 0.15em;
 
-    .ui-btn-icon-right:after {
-      background: transparent !important;
-      @include body-text();
-    }
-  }
-}
-// message
-.rbn-yb-searchtext {
-  @include body-text();
-  text-align: center;
-  margin-top: 1.8rem;
-  max-width: 949px;
-  display: block;
-  margin: auto;
-}
-
-// infor
-form#base_page\:gform {
-  margin-top: 2.5rem;
-
-  .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-    @include button();
-    @include title();
-    @include black-text();
-    width: fit-content;
-    margin: auto;
-    line-height: 19px;
-    letter-spacing: 0.15em;
-  }
-
-  .ui-field-contain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .ui-input-text {
-      @include main-font();
-      @include input;
-      @include body-text();
-      color: var(--dark-grey);
-      padding: 8px 15px;
-    }
-
-    input {
-      @include main-font();
       padding: 0 !important;
     }
+  }
+
+  #scrollToPay {
+    border-radius: 0 !important;
 
     label {
-      @include title();
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
+      @include body-text;
+      @include second-font();
+      @include black-text;
     }
   }
-}
 
-.ui-outputpanel {
-  margin-top: 2.5rem;
-  margin-bottom: 3.1rem;
-
-  span#base_page\:guest-intranet-greeting {
-    @include sub-header();
-    @include main-font();
-
-    &::after {
-      @include body-text();
-      line-height: 26px;
-      display: block;
-      margin-top: 1rem;
-      content: "Scroll down to view reservations and payment status.";
-    }
+  // footer
+  .rb-footer {
+    display: none;
   }
-}
 
-// table
-.table-stripe tbody tr:nth-child(odd) td,
-.table-stripe tbody tr:nth-child(odd) th {
-  background: var(--secondary-light-grey-color) !important;
-}
-
-.table-stripe tbody tr:nth-child(even) td,
-.table-stripe tbody tr:nth-child(even) th {
-  background: var(--secondary-grey-color) !important;
-}
-
-.ui-table td {
-  padding-left: 0.8rem !important;
-  padding-right: 0.8rem !important;
-}
-
-table {
-  thead {
-    .ui-column-header {
-      vertical-align: middle;
-      background-color: var(--secondary-grey-color);
-      padding: 1rem 0.625rem !important;
-      span {
-        font-weight: 500 !important;
+  @media (max-width: 35em) {
+    form#base_page\:gform {
+      .ui-field-contain {
+        align-items: flex-start !important;
+        flex-direction: column;
+        border: none !important;
       }
 
-      .ui-column-title {
-        @include title;
-        @include second-font();
-        text-transform: uppercase;
-        letter-spacing: 0.15em;
+      .ui-input-text {
+        width: 100%;
+      }
+    }
+
+    div#base_page\:postab,
+    div#base_page\:ttab {
+      border: none !important;
+      background-color: var(--secondary-grey-color) !important;
+      box-shadow: none !important;
+    }
+
+    div#base_page\:postab,
+    div#base_page\:ttab {
+      tbody {
+        td {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+        }
+      }
+    }
+
+    span#base_page\:guest-intranet-greeting::after {
+      max-width: 275px;
+      margin: auto;
+      width: fit-content;
+    }
+
+    .ui-grid-solo {
+      margin-top: 10px;
+    }
+
+    div#base_page\:tabview {
+      tbody[id*=":resultTable"]
+        // ,tbody[id*="base_page:tabview:orderItemTable"]
+      {
+        > .ui-table-row {
+          td {
+            align-items: center;
+            display: grid !important;
+            grid-template-columns: 4fr 6fr;
+          }
+        }
+      }
+
+      a.ui-collapsible-heading-toggle {
+        padding-left: 4rem !important;
+      }
+
+      div[id*=":pocgrd_content"],
+      div[id*=":pdoptgrd_content"] {
+        .ui-block-a {
+          display: grid;
+          grid-template-columns: 4fr 6fr;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+    }
+
+    div#base_page\:txtab {
+      .ui-table-cell-label {
+        text-align: left !important;
+        float: left;
+      }
+
+      td {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+
+      tbody#base_page\:txtab_data {
+        > .ui-table-row {
+          td {
+            text-align: left !important;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            span[id*=":receivedMessageText"] {
+              display: block;
+              text-align: left;
+              float: right;
+              margin-left: 50%;
+            }
+
+            form[id*=":f1"] {
+              float: right;
+            }
+
+            &:last-child:not(span) {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rack {
+    //   background: transparent !important;
+    margin-bottom: 0.5em;
+    background: rgba(232, 138, 138, 0.2) !important;
+  }
+
+  mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
+    color: var(--primary-black-color);
+  }
+  button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
+    background: #f4f4f4 !important;
+  }
+  @media (min-width: 28em) {
+    .ui-field-contain > label ~ [class*="ui-"],
+    .ui-field-contain .ui-controlgroup-controls {
+      width: 30% !important;
+    }
+
+    .ui-field-contain > label {
+      width: 10% !important;
+    }
+  }
+
+  // =======================================GUESS SITE=======================================
+
+  html .ui-button-text {
+    @include second-font();
+  }
+
+  body {
+    background-color: #f9f9f9;
+  }
+
+  button.ui-state-default {
+    .span.ui-button-text.ui-c {
+      color: white !important;
+    }
+  }
+
+  // general
+  html .ui-button-text {
+    @include main-font();
+    @include black-text();
+    letter-spacing: 0.15em;
+    font-weight: 400 !important;
+  }
+
+  html .ui-corner-all {
+    border-radius: 0 !important;
+  }
+
+  .ui-button {
+    padding: 0.5rem 1rem;
+  }
+
+  // icon
+  .fa-edit:before,
+  .fa-pencil-square-o:before,
+  .fa-trash-o::before,
+  .fa-info-circle:before,
+  .fa-arrow-left:before {
+    font-family: FontAwesome;
+  }
+
+  .fa-arrow-left:before {
+    @include black-text();
+    font-weight: 400;
+  }
+  //  checkbox
+  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: var(--secondary-orange-color);
+
+    svg.mat-checkbox-checkmark {
+      fill: white !important;
+
+      path {
+        stroke: white !important;
+      }
+    }
+  }
+  /* begin top menu section */
+  div#orderForm\:wzd_content,
+  div#orderForm\:prtcatpnl,
+  div#orderForm\:slctpdtpnl,
+  div#orderForm\:chdcatpnl,
+  div#orderForm\:bskpgtop {
+    margin-top: 4rem !important;
+  }
+
+  // selection
+  .ui-btn-right {
+    label {
+      @include body-text();
+    }
+  }
+  .ui-selectonemenu-items-wrapper {
+    line-height: 26px !important;
+
+    ul {
+      li {
+        @include body-text();
+
+        &::hover {
+          @include hover-underline();
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+
+  .vc-chip-container .ui-button.ui-widget.chip {
+    padding: 0.5rem 1rem;
+
+    span {
+      @include second-font();
+    }
+  }
+
+  form#locform {
+    .ui-btn-right {
+      td {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  html .ui-widget-content .ui-state-highlight {
+    color: var(--primary-black-color) !important;
+  }
+
+  .ui-selectonemenu-trigger {
+    padding: 0 !important;
+    .ui-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .ui-selectonemenu.ui-widget.ui-state-focus {
+    border: 1px solid var(--secondary-orange-color) !important;
+  }
+
+  html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+    margin: 0 !important;
+  }
+
+  .ui-widget-content .ui-state-highlight {
+    @include body-text();
+    background-color: transparent !important;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--secondary-orange-color);
+  }
+  html .vc-chip-container .chip {
+    @include body-text();
+
+    span {
+      @include second-font();
+    }
+  }
+
+  .chip.selected {
+    > span {
+      color: white !important;
+    }
+  }
+
+  .ui-button.ui-widget.ui-state-default {
+    background: var(--secondary-orange-color) !important;
+    color: white !important;
+  }
+
+  .vc-chip-container .chip {
+    @include body-text();
+
+    > .ui-button-text {
+      font-weight: 400 !important;
+    }
+  }
+  /* end top menu section */
+
+  /* begin menu section */
+
+  // category
+  .rb-vendor-text,
+  .rb-parent-cat-text,
+  .rb-child-cat-text,
+  .rb-prod-panel-text,
+  .rb-basket-title {
+    @include sub-header();
+    @include black-text();
+    @include second-font();
+    font-weight: 700;
+    font-size: 22px !important;
+  }
+
+  .rb-vendor-title:before,
+  .rb-prod-title:before,
+  .rb-parent-cat-title:before,
+  .rb-child-cat-title:before {
+    @include black-text();
+    @include body-text();
+    line-height: 0 !important;
+  }
+
+  html[lang="en"] #orderForm:vndcat button {
+    @include button();
+    @include border;
+  }
+  /* end menu section */
+
+  /* begin list section */
+
+  .flex-item {
+    box-sizing: content-box;
+    padding: 0 !important;
+
+    label {
+      @include body-text();
+      @include second-font();
+      font-weight: 500 !important;
+    }
+
+    img {
+      border-radius: 0 !important;
+    }
+  }
+
+  html .rb-h-selwrapper {
+    height: auto !important;
+  }
+
+  .flex-item > .ui-inputfield,
+  .flex-item > .ui-selectonemenu {
+    margin-bottom: 10px !important;
+  }
+
+  .flex-item > .ui-selectonemenu {
+    width: calc(200px - 34px) !important;
+  }
+
+  .flex-item > div#orderForm\:countrynew.ui-selectonemenu {
+    width: calc(200px - 24px) !important;
+  }
+
+  .rb-vendor-description label,
+  .rb-child-cat-description,
+  .rb-child-cat-desc,
+  .rb-parent-cat-desc,
+  .has-request-msg {
+    @include caption();
+    font-weight: 400 !important;
+  }
+
+  .rb-prod-desc-item:nth-child(2) label {
+    @include body-text();
+    @include black-text();
+    font-weight: 400 !important;
+    line-height: 26px;
+  }
+
+  .rb-child-cat-item {
+    max-width: none !important;
+  }
+
+  // choose item-active
+  .rb-vendor-container .rb-vendor-sel a img,
+  .rb-vendor-container .rb-vendor-sel .rb-cat-box a,
+  .rb-parent-cat-container .rb-parent-cat-sel a img,
+  .rb-parent-cat-container .rb-parent-cat-sel .rb-cat-box a,
+  .rb-child-cat-container .rb-child-cat-sel a img,
+  .rb-child-cat-container .rb-child-cat-sel .rb-cat-box a {
+    box-shadow: 0 0 0px 4px var(--secondary-grey-color) !important;
+  }
+
+  // choose product item
+  img[id*="pdtimg"] {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .rb-prod-item-panel > .ui-panel-content.ui-widget-content {
+    @include border;
+    background-color: var(--secondary-white-color);
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    .rb-prod-desc-item {
+      line-height: 26px;
+
+      &:first-child {
+        label {
+          @include header();
+          @include second-font();
+        }
+      }
+
+      button {
+        background-color: var(--secondary-orange-color) !important;
+        border: none;
+        padding: 13.5px 20px !important;
+        font-weight: 400 !important;
 
         span {
+          @include title();
+        }
+      }
+      span.ui-button-text.ui-c {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .rb-scroll-top-panel .ui-panel-content {
+    @include caption();
+    background-color: white !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0.5rem !important;
+  }
+
+  label#orderForm\:scrolltop {
+    @include title();
+    @include black-text();
+  }
+  /* end list section */
+
+  /* begin cart section */
+  //list
+  html #orderForm\:itemdtbsk_data tr.ui-widget-content > td:nth-child(1) {
+    padding-top: 2rem !important;
+  }
+
+  div#orderForm\:itemdtbsk {
+    @include border;
+    margin-top: 2rem;
+    box-shadow: none !important;
+
+    thead {
+      .ui-state-default {
+        padding: 1.6rem 1rem;
+        background-color: var(--secondary-grey-color) !important;
+
+        .ui-column-title {
+          @include black-text();
+          @include title();
+          @include second-font();
+          font-weight: 500;
+          text-transform: uppercase;
+          line-height: 19px;
+          letter-spacing: 0.15em;
+        }
+      }
+    }
+
+    tbody {
+      td {
+        padding: 2rem 1rem !important;
+
+        label[id$=":itempdt"] {
+          @include title;
+          border-radius: 0 !important;
+          text-transform: uppercase;
+        }
+
+        .item,
+        label {
+          font-size: 15px;
+          @include main-font();
           font-weight: 500 !important;
         }
       }
     }
   }
 
-  tbody {
-    .ui-table-row {
-      span {
-        @include main-font();
-        @include body-text();
-      }
-    }
-
-    td {
-      @include main-font();
-      vertical-align: middle;
-    }
-  }
-}
-
-.ui-page-theme-a .ui-btn,
-html .ui-bar-a .ui-btn,
-html .ui-body-a .ui-btn,
-html body .ui-group-theme-a .ui-btn,
-html head + body .ui-btn.ui-btn-a,
-.ui-page-theme-a .ui-btn:visited,
-html .ui-bar-a .ui-btn:visited,
-html .ui-body-a .ui-btn:visited,
-html body .ui-group-theme-a .ui-btn:visited,
-html head + body .ui-btn.ui-btn-a:visited {
-  border-color: var(--secondary-grey-color);
-}
-
-.ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
-.ui-btn .ui-panel-collapsible-heading-toggle {
-  background-color: white;
-}
-
-.ui-icon-minus:after,
-.ui-btn-icon-notext:after {
-  background-color: var(--dark-grey) !important;
-}
-
-.table-stroke thead th,
-.table-stripe thead th,
-.table-stripe tbody tr:last-child {
-  border-bottom: 0 !important;
-}
-
-.ui-datatable {
-  @include border();
-  box-shadow: none !important;
-}
-
-div#base_page\:postab,
-div#base_page\:ttab {
-  .ui-link {
-    text-decoration: none;
-    font-weight: 400 !important;
-  }
-
-  .ui-table-row {
-    td {
-      background: transparent !important;
-    }
-  }
-
-  .ui-table-cell-label {
-    @include main-font;
-    font-weight: 400;
-  }
-}
-
-div#base_page\:ttab {
-  margin-top: 2rem;
-}
-
-div#base_page\:tabview {
-  margin-top: 2.5rem;
-
-  .accordion-title span {
-    @include body-text();
-  }
-
-  a.ui-collapsible-heading-toggle {
-    padding: 1.25rem;
-    padding-left: 4rem !important;
-  }
-
-  .ui-icon-plus:after {
-    background-color: var(--dark-grey) !important;
-  }
-
-  .ui-btn-icon-left:after {
-    left: 1.25rem !important;
-  }
-
-  // collapse info
-  .rbn-vendor-box {
-    .ui-grid-solo {
-      margin-left: 1rem;
-      text-align: left;
-      span.rbn-bold {
-        @include sub-header();
-      }
-
-      .ui-block-a {
-        @include body-text();
-        margin-bottom: 10px;
-      }
-    }
-  }
-  .ui-block-a {
-    @include main-font();
-  }
-
-  .accordion-status-block {
-    .accordion-status {
-      @include title();
-      color: white;
-      text-transform: lowercase;
-      padding: 0.8rem 1.25rem !important;
-
-      &::first-letter {
-        text-transform: uppercase;
-      }
-
-      &.res {
-        background-color: var(--success-color) !important;
-      }
-
-      &.na {
-        background-color: var(--fail-color) !important;
-      }
-    }
-  }
-}
-
-// information
-.ui-panel-m {
-  border-radius: 0 !important;
-}
-.ui-panel-m-titlebar {
-  background-color: var(--dark-grey) !important;
-  h3 {
-    @include sub-header();
-    @include main-font();
-    color: white !important;
-  }
-}
-
-.ui-panel-m-content {
-  background: transparent !important;
-  min-height: 70px;
-
-  span,
-  li {
-    @include main-font;
-    @include title;
-    @include black-text;
-  }
-}
-
-div#base_page\:vendorMessagePanel {
-  border-radius: 0 !important;
-}
-
-div#base_page\:txtab {
-  margin-top: 2.5rem;
-
-  .ui-link {
-    font-weight: 400 !important;
-  }
-
-  .ui-column-header {
-    text-align: center;
-  }
-
-  .ui-table-row {
-    td {
-      text-align: center;
-      vertical-align: middle;
-    }
-  }
-
-  button[id*=":stpFrm:stripeSubmit"] {
-    @include button;
-    @include title;
-    @include black-text;
-    text-shadow: none !important;
-    font-family: Archivo;
-    letter-spacing: 0.15em;
-  }
-
-  .ui-datatable-tablewrapper {
-    div[id$="base_page:tabview:orderItem"] {
-      span {
-        @include main-font();
-      }
-    }
-  }
-
-  .ui-table-cell-label {
-    @include title;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-
-    padding: 0 !important;
-  }
-}
-
-#scrollToPay {
-  border-radius: 0 !important;
-
-  label {
-    @include body-text;
-    @include second-font();
-    @include black-text;
-  }
-}
-
-// footer
-.rb-footer {
-  display: none;
-}
-
-@media (max-width: 35em) {
-  form#base_page\:gform {
-    .ui-field-contain {
-      align-items: flex-start !important;
-      flex-direction: column;
-      border: none !important;
-    }
-
-    .ui-input-text {
-      width: 100%;
-    }
-  }
-
-  div#base_page\:postab,
-  div#base_page\:ttab {
-    border: none !important;
-    background-color: var(--secondary-grey-color) !important;
-    box-shadow: none !important;
-  }
-
-  div#base_page\:postab,
-  div#base_page\:ttab {
-    tbody {
-      td {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-      }
-    }
-  }
-
-  span#base_page\:guest-intranet-greeting::after {
-    max-width: 275px;
-    margin: auto;
-    width: fit-content;
-  }
-
-  .ui-grid-solo {
-    margin-top: 10px;
-  }
-
-  div#base_page\:tabview {
-    tbody[id*=":resultTable"]
-        // ,tbody[id*="base_page:tabview:orderItemTable"]
-    {
-      > .ui-table-row {
-        td {
-          align-items: center;
-          display: grid !important;
-          grid-template-columns: 4fr 6fr;
-        }
-      }
-    }
-
-    a.ui-collapsible-heading-toggle {
-      padding-left: 4rem !important;
-    }
-
-    div[id*=":pocgrd_content"],
-    div[id*=":pdoptgrd_content"] {
-      .ui-block-a {
-        display: grid;
-        grid-template-columns: 4fr 6fr;
-        align-items: center;
-        gap: 0.5rem;
-      }
-    }
-  }
-
-  div#base_page\:txtab {
-    .ui-table-cell-label {
-      text-align: left !important;
-      float: left;
-    }
-
-    td {
-      padding-top: 0.75rem;
-      padding-bottom: 0.75rem;
-    }
-
-    tbody#base_page\:txtab_data {
-      > .ui-table-row {
-        td {
-          text-align: left !important;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          align-items: center;
-
-          span[id*=":receivedMessageText"] {
-            display: block;
-            text-align: left;
-            float: right;
-            margin-left: 50%;
-          }
-
-          form[id*=":f1"] {
-            float: right;
-          }
-
-          &:last-child:not(span) {
-            display: block !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-.rack {
-  //   background: transparent !important;
-  margin-bottom: 0.5em;
-  background: rgba(232, 138, 138, 0.2) !important;
-}
-
-mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
-  color: var(--primary-black-color);
-}
-button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
-  background: #f4f4f4 !important;
-}
-@media (min-width: 28em) {
-  .ui-field-contain > label ~ [class*="ui-"],
-  .ui-field-contain .ui-controlgroup-controls {
-    width: 30% !important;
-  }
-
-  .ui-field-contain > label {
-    width: 10% !important;
-  }
-}
-
-// =======================================GUESS SITE=======================================
-
-html .ui-button-text {
-  @include second-font();
-}
-
-body {
-  background-color: #f9f9f9;
-}
-
-button.ui-state-default {
-  .span.ui-button-text.ui-c {
-    color: white !important;
-  }
-}
-
-// general
-html .ui-button-text {
-  @include main-font();
-  @include black-text();
-  letter-spacing: 0.15em;
-  font-weight: 400 !important;
-}
-
-html .ui-corner-all {
-  border-radius: 0 !important;
-}
-
-.ui-button {
-  padding: 0.5rem 1rem;
-}
-
-// icon
-.fa-edit:before,
-.fa-pencil-square-o:before,
-.fa-trash-o::before,
-.fa-info-circle:before,
-.fa-arrow-left:before {
-  font-family: FontAwesome;
-}
-
-.fa-arrow-left:before {
-  @include black-text();
-  font-weight: 400;
-}
-//  checkbox
-.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
-.mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color: var(--secondary-orange-color);
-
-  svg.mat-checkbox-checkmark {
-    fill: white !important;
-
-    path {
-      stroke: white !important;
-    }
-  }
-}
-/* begin top menu section */
-div#orderForm\:wzd_content,
-div#orderForm\:prtcatpnl,
-div#orderForm\:slctpdtpnl,
-div#orderForm\:chdcatpnl,
-div#orderForm\:bskpgtop {
-  margin-top: 4rem !important;
-}
-
-// selection
-.ui-btn-right {
-  label {
-    @include body-text();
-  }
-}
-.ui-selectonemenu-items-wrapper {
-  line-height: 26px !important;
-
-  ul {
-    li {
-      @include body-text();
-
-      &::hover {
-        @include hover-underline();
-        background-color: transparent !important;
-      }
-    }
-  }
-}
-
-.vc-chip-container .ui-button.ui-widget.chip {
-  padding: 0.5rem 1rem;
-
-  span {
-    @include second-font();
-  }
-}
-
-form#locform {
-  .ui-btn-right {
-    td {
-      margin-left: 1rem;
-    }
-  }
-}
-
-html .ui-widget-content .ui-state-highlight {
-  color: var(--primary-black-color) !important;
-}
-
-.ui-selectonemenu-trigger {
-  padding: 0 !important;
-  .ui-icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-.ui-selectonemenu.ui-widget.ui-state-focus {
-  border: 1px solid var(--secondary-orange-color) !important;
-}
-
-html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
-  margin: 0 !important;
-}
-
-.ui-widget-content .ui-state-highlight {
-  @include body-text();
-  background-color: transparent !important;
-  text-underline-offset: 4px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--secondary-orange-color);
-}
-html .vc-chip-container .chip {
-  @include body-text();
-
-  span {
-    @include second-font();
-  }
-}
-
-.chip.selected {
-  > span {
-    color: white !important;
-  }
-}
-
-.ui-button.ui-widget.ui-state-default {
-  background: var(--secondary-orange-color) !important;
-  color: white !important;
-}
-
-.vc-chip-container .chip {
-  @include body-text();
-
-  > .ui-button-text {
-    font-weight: 400 !important;
-  }
-}
-/* end top menu section */
-
-/* begin menu section */
-
-// category
-.rb-vendor-text,
-.rb-parent-cat-text,
-.rb-child-cat-text,
-.rb-prod-panel-text,
-.rb-basket-title {
-  @include sub-header();
-  @include black-text();
-  @include second-font();
-  font-weight: 700;
-  font-size: 22px !important;
-}
-
-.rb-vendor-title:before,
-.rb-prod-title:before,
-.rb-parent-cat-title:before,
-.rb-child-cat-title:before {
-  @include black-text();
-  @include body-text();
-  line-height: 0 !important;
-}
-
-html[lang="en"] #orderForm:vndcat button {
-  @include button();
-  @include border;
-}
-/* end menu section */
-
-/* begin list section */
-
-.flex-item {
-  box-sizing: content-box;
-  padding: 0 !important;
-
-  label {
-    @include body-text();
-    @include second-font();
-    font-weight: 500 !important;
-  }
-
-  img {
-    border-radius: 0 !important;
-  }
-}
-
-html .rb-h-selwrapper {
-  height: auto !important;
-}
-
-.flex-item > .ui-inputfield,
-.flex-item > .ui-selectonemenu {
-  margin-bottom: 10px !important;
-}
-
-.flex-item > .ui-selectonemenu {
-  width: calc(200px - 34px) !important;
-}
-
-.flex-item > div#orderForm\:countrynew.ui-selectonemenu {
-  width: calc(200px - 24px) !important;
-}
-
-.rb-vendor-description label,
-.rb-child-cat-description,
-.rb-child-cat-desc,
-.rb-parent-cat-desc,
-.has-request-msg {
-  @include caption();
-  font-weight: 400 !important;
-}
-
-.rb-prod-desc-item:nth-child(2) label {
-  @include body-text();
-  @include black-text();
-  font-weight: 400 !important;
-  line-height: 26px;
-}
-
-.rb-child-cat-item {
-  max-width: none !important;
-}
-
-// choose item-active
-.rb-vendor-container .rb-vendor-sel a img,
-.rb-vendor-container .rb-vendor-sel .rb-cat-box a,
-.rb-parent-cat-container .rb-parent-cat-sel a img,
-.rb-parent-cat-container .rb-parent-cat-sel .rb-cat-box a,
-.rb-child-cat-container .rb-child-cat-sel a img,
-.rb-child-cat-container .rb-child-cat-sel .rb-cat-box a {
-  box-shadow: 0 0 0px 4px var(--secondary-grey-color) !important;
-}
-
-// choose product item
-img[id*="pdtimg"] {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.rb-prod-item-panel > .ui-panel-content.ui-widget-content {
-  @include border;
-  background-color: var(--secondary-white-color);
-  border-radius: 0 !important;
-  box-shadow: none !important;
-
-  .rb-prod-desc-item {
-    line-height: 26px;
-
-    &:first-child {
-      label {
-        @include header();
-        @include second-font();
-      }
-    }
-
-    button {
-      background-color: var(--secondary-orange-color) !important;
-      border: none;
-      padding: 13.5px 20px !important;
-      font-weight: 400 !important;
-
-      span {
-        @include title();
-      }
-    }
-    span.ui-button-text.ui-c {
-      padding: 0 !important;
-    }
-  }
-}
-
-.rb-scroll-top-panel .ui-panel-content {
-  @include caption();
-  background-color: white !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  padding: 0.5rem !important;
-}
-
-label#orderForm\:scrolltop {
-  @include title();
-  @include black-text();
-}
-/* end list section */
-
-/* begin cart section */
-//list
-html #orderForm\:itemdtbsk_data tr.ui-widget-content > td:nth-child(1) {
-  padding-top: 2rem !important;
-}
-
-div#orderForm\:itemdtbsk {
-  @include border;
-  margin-top: 2rem;
-  box-shadow: none !important;
-
-  thead {
-    .ui-state-default {
-      padding: 1.6rem 1rem;
-      background-color: var(--secondary-grey-color) !important;
-
-      .ui-column-title {
-        @include black-text();
-        @include title();
-        @include second-font();
-        font-weight: 500;
-        text-transform: uppercase;
-        line-height: 19px;
-        letter-spacing: 0.15em;
-      }
-    }
-  }
-
-  tbody {
-    td {
-      padding: 2rem 1rem !important;
-
-      label[id$=":itempdt"] {
-        @include title;
-        border-radius: 0 !important;
-        text-transform: uppercase;
-      }
-
-      .item,
-      label {
-        font-size: 15px;
-        @include main-font();
-        font-weight: 500 !important;
-      }
-    }
-  }
-}
-
-table tbody tr:nth-child(odd) td,
-table tbody tr:nth-child(odd) td {
-  background: var(--secondary-light-grey-color) !important;
-}
-table tbody tr:nth-child(even) td,
-table tbody tr:nth-child(even) td {
-  background: var(--secondary-grey-color) !important;
-}
-
-// checkout
-
-input#orderForm\:disCode {
-  @include input();
-  min-width: 150px;
-}
-::placeholder {
-  @include body-text;
-}
-
-div#orderForm\:bskpnl_footer {
-  @include header;
-}
-
-button#orderForm\:apply,
-button#orderForm\:next {
-  @include button();
-  font-size: 12px;
-
-  span {
-    @include caption();
-    padding: 0 !important;
-  }
-}
-
-.rb-body-content {
-  padding-bottom: 0 !important;
-}
-/* ennd cart section */
-
-/* begin dialog section */
-.ui-dialog-buttonpane {
-  button {
-    border: none !important;
-    padding: 0.3em 0 0.3em 0.5em;
-
-    .ui-button-text.ui-c {
-      background-color: var(--secondary-orange-color);
-      color: white !important;
-    }
-  }
-}
-
-div#orderForm\:butpg {
-  background: transparent !important;
-
-  button#orderForm\:confirmedititem,
-  button#orderForm\:canceledititem {
-    @include button();
-    @include title();
-  }
-}
-
-form#orderForm,
-div#confirmdlg {
-  display: flex;
-  justify-content: center;
-  // align-items: center;
-
-  .ui-confirm-dialog-message {
-    @include body-text();
-  }
-
-  .ui-dialog-content.ui-widget-content {
-    padding: 1.2em !important;
-  }
-
-  .ui-dialog {
-    left: auto !important;
-    top: 50% !important;
-    transform: translateY(-50%);
-  }
-
-  .ui-dialog-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  // header
-  .ui-dialog-titlebar {
-    background-color: var(--secondary-grey-color) !important;
-    padding: 0.8rem calc(1rem - 1px) 0.8rem 1rem !important;
-    border-bottom: 0 !important;
-
-    .ui-dialog-title {
-      @include black-text();
-      @include second-font();
-      margin: 0 !important;
-    }
-  }
-
-  button#orderForm\:gcontshop {
-    .fa-arrow-left {
-      transform: translateY(-50%);
-      margin: 0 !important;
-      height: auto !important;
-    }
-  }
-}
-
-// warning + success + error messages
-.ui-growl {
-  left: 50%;
-  transform: translateX(-50%) !important;
-}
-
-.ui-state-error {
-  background-color: var(--fail-color);
-}
-
-.ui-growl-info {
-  background-color: var(--success-color);
-}
-.ui-growl-item-container {
-  opacity: 1;
-}
-
-.ui-growl-info,
-.ui-messages .ui-messages-info,
-.ui-message.ui-message-info {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.ui-growl-item {
-  display: flex;
-  align-items: center;
-}
-
-.ui-growl-message {
-  padding: 0 0 0 0.5rem !important;
-
-  span {
-    padding: 0 !important;
-  }
-
-  p {
-    @include caption();
-    @include black-text();
-    font-weight: 500;
-  }
-}
-
-.rb-prod-dialog-but {
-  margin-top: 2rem;
-  background-color: var(--secondary-orange-color);
-  padding: 13px 0 !important;
-
-  #orderForm\:butpg {
-    padding: 0 !important;
-  }
-
-  .button#orderForm\:addbtn {
-    padding: 0 !important;
-  }
-
-  .ui-button-text {
-    @include title();
-    @include black-text();
-    padding: 0 !important;
-    background-color: var(--secondary-orange-color);
-    font-weight: 400 !important;
-  }
-
-  .ui-button.ui-widget.ui-state-default {
-    background-color: var(--secondary-orange-color) !important;
-    border: 0;
-  }
-}
-
-// form
-
-.flex-option {
-  padding: 4px 0 !important;
-
-  label {
-    @include caption();
-  }
-
-  input,
-  .ui-selectonemenu,
-  input#orderForm\:stdtcal_input {
-    @include border;
-    caret-color: var(--primary-black-color);
-  }
-
-  .rb-prod-gross-value,
-  span,
-  input {
-    @include caption();
-    @include black-text();
-    font-weight: 400 !important;
-  }
-}
-
-div#orderForm\:addbskpg {
-  margin: 0;
-}
-
-/* end dialog section */
-
-.orderForm:chdcatpnl {
-  margin-top: 4rem !important;
-}
-
-@media (max-width: 820px) {
-  #orderForm\:orderNav {
-    text-align: right !important;
-  }
-}
-
-@media (max-width: 640px) {
-  form#locform {
-    .ui-inputfield {
-      padding: 0 !important;
-    }
-  }
-
-  .flex-option {
-    padding: 8px 4px;
-  }
-}
-
-// calendar
-html .ui-datepicker {
-  box-shadow: 2px 2px 4px 0px #00000021;
-
-  tbody {
-    background: white;
-  }
-
   table tbody tr:nth-child(odd) td,
-  table tbody tr:nth-child(odd) td,
+  table tbody tr:nth-child(odd) td {
+    background: var(--secondary-light-grey-color) !important;
+  }
   table tbody tr:nth-child(even) td,
   table tbody tr:nth-child(even) td {
-    background: white !important;
+    background: var(--secondary-grey-color) !important;
   }
 
-  th {
-    @include black-text();
-    @include body-text();
-    background: white !important;
-    text-shadow: none !important;
-    background-color: white !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
+  // checkout
 
-  td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undefined.ui-datepicker-current-day:has(
-      a.ui-state-active
-    ) {
-    background-color: var(--secondary-orange-color) !important;
-  }
-
-  .ui-state-default {
-    @include body-text();
-    @include black-text();
-    font-weight: 400 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-}
-
-// #ui-datepicker-div{
-//     border: 0 !important;
-
-//     .ui-datepicker-header{
-//         background-color: var(--secondary-orange-color) !important;
-//         border: none !important;
-
-//         .ui-datepicker-title{
-//             > select{
-//                 @include body-text();
-//             }
-//         }
-//     }
-// }
-
-/*=================== SIGN IN PAGE ===================*/
-.ui-button-text-icon-left .ui-button-text {
-  padding: 0 1em 0 1em;
-}
-.ui-button-text-only .ui-button-text {
-  padding: 0 !important;
-}
-label#orderForm\:existglbl,
-label#orderForm\:newguestlbl {
-  @include sub-header();
-  @include second-font();
-}
-
-label#orderForm\:newguesttxt,
-label#orderForm\:signintxt {
-  @include caption();
-}
-
-button#orderForm\:ngbut,
-button#orderForm\:sendvercode,
-button#orderForm\:gcontshop {
-  @include button;
-  @include title();
-}
-
-button#orderForm\:gcontshop {
-  width: 40px;
-  height: 40px;
-  border-radius: 50% !important;
-  background-color: var(--secondary-light-grey-color) !important;
-  padding: 1rem 0 1rem 1rem !important;
-
-  .fa-arrow-left {
-    left: 50%;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .ui-button-text-icon-left .ui-button-text {
-    padding: 0.3em 1em;
-  }
-
-  span.ui-button-text {
-    display: none;
-  }
-}
-
-.rb-or {
-  @include caption;
-}
-
-div#orderForm\:vercodepg {
-  input {
+  input#orderForm\:disCode {
     @include input();
+    min-width: 150px;
+  }
+  ::placeholder {
+    @include body-text;
   }
 
-  button#orderForm\:sendvercode {
-    margin-top: 0.5rem;
+  div#orderForm\:bskpnl_footer {
+    @include header;
   }
-}
 
-div#orderForm\:newguestpg {
-  .flex-item {
-    input,
-    .ui-selectonemenu {
-      margin-left: 2rem;
-      @include input();
+  button#orderForm\:apply,
+  button#orderForm\:next {
+    @include button();
+    font-size: 12px;
+
+    span {
+      @include caption();
+      padding: 0 !important;
     }
   }
-}
 
-.ui-selectonemenu {
-  padding-right: 1em !important;
-
-  &.ui-state-error {
-    border: 1px solid var(--fail-color) !important;
+  .rb-body-content {
+    padding-bottom: 0 !important;
   }
+  /* ennd cart section */
 
-  .ui-selectonemenu-label {
-    width: auto !important;
-  }
-}
-
-.ui-inputfield {
-  &.ui-state-error {
-    border: 1px solid var(--fail-color) !important;
-  }
-
-  &.ui-state-focus {
-    border: 1px solid var(--secondary-orange-color) !important;
-    box-shadow: none !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
+  /* begin dialog section */
   .ui-dialog-buttonpane {
-    button#cdYes,
-    button#cdNo {
-      padding-right: 0 !important;
+    button {
+      border: none !important;
+      padding: 0.3em 0 0.3em 0.5em;
 
       .ui-button-text.ui-c {
         background-color: var(--secondary-orange-color);
@@ -3163,49 +2821,392 @@ div#orderForm\:newguestpg {
     }
   }
 
-  .rb-prod-dialog-but {
-    padding: 0 !important;
+  div#orderForm\:butpg {
+    background: transparent !important;
+
+    button#orderForm\:confirmedititem,
+    button#orderForm\:canceledititem {
+      @include button();
+      @include title();
+    }
   }
 
-  .rb-new-guest-form {
-    .flex-container {
-      .flex-item {
-        > div,
-        > input {
-          margin-left: 0rem !important;
+  form#orderForm,
+  div#confirmdlg {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    .ui-confirm-dialog-message {
+      @include body-text();
+    }
+
+    .ui-dialog-content.ui-widget-content {
+      padding: 1.2em !important;
+    }
+
+    .ui-dialog {
+      left: auto !important;
+      top: 50% !important;
+      transform: translateY(-50%);
+    }
+
+    .ui-dialog-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // header
+    .ui-dialog-titlebar {
+      background-color: var(--secondary-grey-color) !important;
+      padding: 0.8rem calc(1rem - 1px) 0.8rem 1rem !important;
+      border-bottom: 0 !important;
+
+      .ui-dialog-title {
+        @include black-text();
+        @include second-font();
+        margin: 0 !important;
+      }
+    }
+
+    button#orderForm\:gcontshop {
+      .fa-arrow-left {
+        transform: translateY(-50%);
+        margin: 0 !important;
+        height: auto !important;
+      }
+    }
+  }
+
+  // warning + success + error messages
+  .ui-growl {
+    left: 50%;
+    transform: translateX(-50%) !important;
+  }
+
+  .ui-state-error {
+    background-color: var(--fail-color);
+  }
+
+  .ui-growl-info {
+    background-color: var(--success-color);
+  }
+  .ui-growl-item-container {
+    opacity: 1;
+  }
+
+  .ui-growl-info,
+  .ui-messages .ui-messages-info,
+  .ui-message.ui-message-info {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .ui-growl-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .ui-growl-message {
+    padding: 0 0 0 0.5rem !important;
+
+    span {
+      padding: 0 !important;
+    }
+
+    p {
+      @include caption();
+      @include black-text();
+      font-weight: 500;
+    }
+  }
+
+  .rb-prod-dialog-but {
+    margin-top: 2rem;
+    background-color: var(--secondary-orange-color);
+    padding: 13px 0 !important;
+
+    #orderForm\:butpg {
+      padding: 0 !important;
+    }
+
+    .button#orderForm\:addbtn {
+      padding: 0 !important;
+    }
+
+    .ui-button-text {
+      @include title();
+      @include black-text();
+      padding: 0 !important;
+      background-color: var(--secondary-orange-color);
+      font-weight: 400 !important;
+    }
+
+    .ui-button.ui-widget.ui-state-default {
+      background-color: var(--secondary-orange-color) !important;
+      border: 0;
+    }
+  }
+
+  // form
+
+  .flex-option {
+    padding: 4px 0 !important;
+
+    label {
+      @include caption();
+    }
+
+    input,
+    .ui-selectonemenu,
+    input#orderForm\:stdtcal_input {
+      @include border;
+      caret-color: var(--primary-black-color);
+    }
+
+    .rb-prod-gross-value,
+    span,
+    input {
+      @include caption();
+      @include black-text();
+      font-weight: 400 !important;
+    }
+  }
+
+  div#orderForm\:addbskpg {
+    margin: 0;
+  }
+
+  /* end dialog section */
+
+  .orderForm:chdcatpnl {
+    margin-top: 4rem !important;
+  }
+
+  @media (max-width: 820px) {
+    #orderForm\:orderNav {
+      text-align: right !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    form#locform {
+      .ui-inputfield {
+        padding: 0 !important;
+      }
+    }
+
+    .flex-option {
+      padding: 8px 4px;
+    }
+  }
+
+  // calendar
+  html .ui-datepicker {
+    box-shadow: 2px 2px 4px 0px #00000021;
+
+    tbody {
+      background: white;
+    }
+
+    table tbody tr:nth-child(odd) td,
+    table tbody tr:nth-child(odd) td,
+    table tbody tr:nth-child(even) td,
+    table tbody tr:nth-child(even) td {
+      background: white !important;
+    }
+
+    th {
+      @include black-text();
+      @include body-text();
+      background: white !important;
+      text-shadow: none !important;
+      background-color: white !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undefined.ui-datepicker-current-day:has(
+        a.ui-state-active
+      ) {
+      background-color: var(--secondary-orange-color) !important;
+    }
+
+    .ui-state-default {
+      @include body-text();
+      @include black-text();
+      font-weight: 400 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+  }
+
+  // #ui-datepicker-div{
+  //     border: 0 !important;
+
+  //     .ui-datepicker-header{
+  //         background-color: var(--secondary-orange-color) !important;
+  //         border: none !important;
+
+  //         .ui-datepicker-title{
+  //             > select{
+  //                 @include body-text();
+  //             }
+  //         }
+  //     }
+  // }
+
+  /*=================== SIGN IN PAGE ===================*/
+  .ui-button-text-icon-left .ui-button-text {
+    padding: 0 1em 0 1em;
+  }
+  .ui-button-text-only .ui-button-text {
+    padding: 0 !important;
+  }
+  label#orderForm\:existglbl,
+  label#orderForm\:newguestlbl {
+    @include sub-header();
+    @include second-font();
+  }
+
+  label#orderForm\:newguesttxt,
+  label#orderForm\:signintxt {
+    @include caption();
+  }
+
+  button#orderForm\:ngbut,
+  button#orderForm\:sendvercode,
+  button#orderForm\:gcontshop {
+    @include button;
+    @include title();
+  }
+
+  button#orderForm\:gcontshop {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background-color: var(--secondary-light-grey-color) !important;
+    padding: 1rem 0 1rem 1rem !important;
+
+    .fa-arrow-left {
+      left: 50%;
+      transform: translate(-50%, -50%) !important;
+    }
+
+    .ui-button-text-icon-left .ui-button-text {
+      padding: 0.3em 1em;
+    }
+
+    span.ui-button-text {
+      display: none;
+    }
+  }
+
+  .rb-or {
+    @include caption;
+  }
+
+  div#orderForm\:vercodepg {
+    input {
+      @include input();
+    }
+
+    button#orderForm\:sendvercode {
+      margin-top: 0.5rem;
+    }
+  }
+
+  div#orderForm\:newguestpg {
+    .flex-item {
+      input,
+      .ui-selectonemenu {
+        margin-left: 2rem;
+        @include input();
+      }
+    }
+  }
+
+  .ui-selectonemenu {
+    padding-right: 1em !important;
+
+    &.ui-state-error {
+      border: 1px solid var(--fail-color) !important;
+    }
+
+    .ui-selectonemenu-label {
+      width: auto !important;
+    }
+  }
+
+  .ui-inputfield {
+    &.ui-state-error {
+      border: 1px solid var(--fail-color) !important;
+    }
+
+    &.ui-state-focus {
+      border: 1px solid var(--secondary-orange-color) !important;
+      box-shadow: none !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ui-dialog-buttonpane {
+      button#cdYes,
+      button#cdNo {
+        padding-right: 0 !important;
+
+        .ui-button-text.ui-c {
+          background-color: var(--secondary-orange-color);
+          color: white !important;
+        }
+      }
+    }
+
+    .rb-prod-dialog-but {
+      padding: 0 !important;
+    }
+
+    .rb-new-guest-form {
+      .flex-container {
+        .flex-item {
+          > div,
+          > input {
+            margin-left: 0rem !important;
+          }
         }
       }
     }
   }
-}
 
-// device break layout
-_::-webkit-full-page-media,
-_:future,
-:root .safari_only {
-  div#orderForm\:itemdtbsk tbody td {
-    width: 100%;
-    display: block;
-  }
-}
-
-.rb-vendor-desc,
-.rb-child-cat-desc {
-  @include black-text();
-}
-
-.rb-vendor-desc {
-  &::before {
-    content: "About: ";
-    font-weight: 500;
-  }
-}
-
-div[id*=":pdtpnl"] {
-  &:first-child {
-    &::before {
+  // device break layout
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari_only {
+    div#orderForm\:itemdtbsk tbody td {
+      width: 100%;
       display: block;
-      content: "About";
+    }
+  }
+
+  .rb-vendor-desc,
+  .rb-child-cat-desc {
+    @include black-text();
+  }
+
+  .rb-vendor-desc {
+    &::before {
+      content: "About: ";
+      font-weight: 500;
+    }
+  }
+
+  div[id*=":pdtpnl"] {
+    &:first-child {
+      &::before {
+        display: block;
+        content: "About";
+      }
     }
   }
 }
