@@ -1845,7 +1845,7 @@ app-customer-form {
     column-gap: 2.5rem;
   }
 
-  .details.customer-address-micro{
+  .details:not(.customer-identity,.customer-contact,.customer-nation){
     display: none !important;
   }
 
