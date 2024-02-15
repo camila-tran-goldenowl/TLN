@@ -208,13 +208,6 @@ mat-label {
   font-weight: 400 !important;
   line-height: 28px;
 }
-
-// mat-form-field:hover{
-//     .mat-form-field-outline-start,
-//     .mat-form-field-outline-end {
-//         border-color: var(--secondary-orange-color) !important;
-//     }
-// }
 /* end general */
 
 /* begin filter search section */
@@ -1702,16 +1695,20 @@ html[lang="en"] .mat-h1 {
 }
 
 // .mat-form-field-infix:has(input) {
-.mat-form-field-infix:has(input) .mat-form-field-label-wrapper .mat-form-field-label{
+.mat-form-field-infix:has(input)
+  .mat-form-field-label-wrapper
+  .mat-form-field-label {
   margin-top: 0.285em !important;
 }
 // }
 
-.mat-form-field-infix:has(.mat-select[aria-expanded="false"]) .mat-form-field-label-wrapper .mat-form-field-label{
+.mat-form-field-infix:has(.mat-select[aria-expanded="false"])
+  .mat-form-field-label-wrapper
+  .mat-form-field-label {
   margin-top: 0.7em !important;
 }
 
-.mat-form-field-can-float:has(.mat-select[aria-expanded="true"]){
+.mat-form-field-can-float:has(.mat-select[aria-expanded="true"]) {
   transform: translateY(-2.5em) scale(0.75) !important;
 }
 // input.mat-input-element {
