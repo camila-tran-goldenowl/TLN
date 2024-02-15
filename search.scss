@@ -1700,7 +1700,6 @@ html[lang="en"] .mat-h1 {
   .mat-form-field-label {
   transform: translateY(-2.1em) scale(0.75) !important;
 }
-
 .mat-form-field-infix:has(input){
   .mat-form-field-appearance-outline .mat-form-field-label {
     margin-top: 0.285em !important;
@@ -1712,7 +1711,6 @@ html[lang="en"] .mat-h1 {
     margin-top: 0.7em !important;
   }
 }
-
 
 
 // input.mat-input-element {
@@ -1817,7 +1815,7 @@ app-customer-form {
     .mat-form-field-wrapper {
       display: grid;
       align-items: center;
-      grid-template-columns: 1.1fr 7.9fr;
+      grid-template-columns: 2.5fr 7.5fr;
       &::before {
         @include header();
         @include black-text();
@@ -1830,7 +1828,7 @@ app-customer-form {
     .mat-form-field-wrapper {
       display: grid;
       align-items: center;
-      grid-template-columns: 1.1fr 7.9fr;
+      grid-template-columns: 2.5fr 7.5fr;
       &::before {
         @include header();
         @include black-text();
