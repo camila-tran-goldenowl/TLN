@@ -1838,7 +1838,8 @@ app-customer-form {
   }
 
   .details.customer-identity,
-  .details.customer-contact {
+  .details.customer-contact,
+  .details.customer-nation {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     column-gap: 2.5rem;
