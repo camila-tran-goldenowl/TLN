@@ -117,10 +117,8 @@
   caret-color: var(--secondary-orange-color) !important;
 }
 
-mat-form-field.mat-focused {
-  .mat-form-field-outline-thick {
-    // color: var(--secondary-orange-color) !important;
-  }
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+  color: var(--secondary-orange-color) !important;
 }
 
 /* begin general */
