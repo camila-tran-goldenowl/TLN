@@ -1722,7 +1722,7 @@ app-customer-form {
       &::before {
         @include header();
         @include black-text();
-        content: "First Name: ";
+        content: "First Name*: ";
       }
     }
   }
@@ -1735,7 +1735,7 @@ app-customer-form {
       &::before {
         @include header();
         @include black-text();
-        content: "Last Name: ";
+        content: "Last Name*: ";
       }
     }
   }
@@ -1748,7 +1748,7 @@ app-customer-form {
       &::before {
         @include header();
         @include black-text();
-        content: "Email: ";
+        content: "Email*: ";
       }
     }
   }
