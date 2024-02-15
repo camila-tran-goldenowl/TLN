@@ -1700,6 +1700,9 @@ html[lang="en"] .mat-h1 {
   .mat-form-field-label {
   transform: translateY(-2.3em) scale(0.75) !important;
 }
+.mat-form-field-appearance-outline .mat-form-field-outline-start, .mat-form-field-appearance-outline .mat-form-field-outline-end{
+  min-width: 18px !important;
+}
 .mat-form-field-appearance-outline .mat-form-field-label {
   margin-top: 0.185em !important;
 }
