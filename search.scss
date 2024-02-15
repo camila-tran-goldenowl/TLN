@@ -1787,6 +1787,19 @@ app-customer-form {
     }
   }
 
+  mat-form-field.language {
+    .mat-form-field-wrapper {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 2.5fr 7.5fr;
+      &::before {
+        @include header();
+        @include black-text();
+        content: "Language*: ";
+      }
+    }
+  }
+
   mat-form-field.phone {
     .mat-form-field-wrapper {
       display: grid;
