@@ -1698,21 +1698,23 @@ html[lang="en"] .mat-h1 {
   .mat-input-server:focus
   + .mat-form-field-label-wrapper
   .mat-form-field-label {
-  transform: translateY(-2.1em) scale(0.75) !important;
+  transform: translateY(-2.5em) scale(0.75) !important;
 }
 
-// .mat-form-field-infix:has(input) {
-.mat-form-field-appearance-outline .mat-form-field-label {
-  margin-top: 0.285em !important;
+.mat-form-field-infix:has(input)
+  .mat-form-field-label-wrapper
+  .mat-form-field-label {
+  margin-top: 0.5em !important;
 }
-// }
 
-.mat-form-field-infix:has(.mat-select) .mat-form-field-label-wrapper .mat-form-field-label{
+.mat-form-field-infix:has(.mat-select)
+  .mat-form-field-label-wrapper
+  .mat-form-field-label {
   margin-top: 0.7em !important;
   background-color: red;
 }
 
-.mat-form-field-can-float:has(.mat-select){
+.mat-form-field-can-float:has(.mat-select) {
   transform: translateY(-2.5em) scale(0.75) !important;
 }
 // input.mat-input-element {
