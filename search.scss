@@ -645,6 +645,18 @@ mat-form-field.search-discount-code {
   text-transform: uppercase;
 }
 
+.search-logo{
+  margin-right: 1rem; 
+	background: url('https://dabb7zy6p4b0z.cloudfront.net/nisade/nisade_black.png');  
+	background-size: contain;
+	background-repeat: no-repeat; 
+	background-position:center; 
+	width: 200px;
+	height: 60px;
+	background-position:center;
+	box-sizing: border-box;    
+}
+
 #searchBarSubmitBtn {
   @include button();
   @include black-text();
