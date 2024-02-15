@@ -1700,17 +1700,18 @@ html[lang="en"] .mat-h1 {
   .mat-form-field-label {
   transform: translateY(-2.1em) scale(0.75) !important;
 }
-.mat-form-field-infix:has(input) {
-  .mat-form-field-appearance-outline .mat-form-field-label {
-    margin-top: 0.285em !important;
-  }
-}
 
-.mat-form-field-infix:has(.mat-select) {
-  .mat-form-field-appearance-outline .mat-form-field-label {
-    margin-top: 0.7em !important;
-  }
-}
+// .mat-form-field-infix:has(input) {
+//   .mat-form-field-appearance-outline .mat-form-field-label {
+//     margin-top: 0.285em !important;
+//   }
+// }
+
+// .mat-form-field-infix:has(.mat-select) {
+//   .mat-form-field-appearance-outline .mat-form-field-label {
+//     margin-top: 0.7em !important;
+//   }
+// }
 
 // input.mat-input-element {
 //   margin-top: 0 !important;
