@@ -981,6 +981,14 @@ html[lang=en] h2.product-title,
   line-height: 17px;
 }
 
+app-search-filter-window span.mat-button-wrapper {
+  visibility: visible !important;
+}
+
+button:has(.mat-button-ripple.mat-button-ripple-round) {
+  background-color: #d5d3d3 !important;
+}
+
 html[lang=en] .vendor-description {
   font-size: 16px !important;
   font-weight: 400 !important;
@@ -1355,7 +1363,8 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
 .vendor-products-container mat-card-actions .mat-button-wrapper {
   visibility: hidden;
 }
-.vendor-products-container mat-card-actions button {
+
+app-shopping-cart mat-card-actions button {
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 400;
@@ -1363,7 +1372,7 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
   letter-spacing: 0.15em;
   text-align: center;
 }
-.vendor-products-container mat-card-actions button::after {
+app-shopping-cart mat-card-actions button::after {
   visibility: visible;
   display: block;
   margin: auto;
@@ -1372,10 +1381,10 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
+app-shopping-cart mat-card-actions button:not(.mat-button-disabled)::after {
   content: "PROCEED";
 }
-.vendor-products-container mat-card-actions .mat-button-disabled::after {
+app-shopping-cart mat-card-actions .mat-button-disabled::after {
   content: "BOOK NOW";
 }
 

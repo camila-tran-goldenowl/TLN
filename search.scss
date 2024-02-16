@@ -1123,6 +1123,16 @@ html[lang="en"] h2.product-title,
   }
 }
 
+app-search-filter-window{
+  span.mat-button-wrapper{
+      visibility: visible !important;
+  }
+}
+
+button:has(.mat-button-ripple.mat-button-ripple-round){
+  background-color: #d5d3d3 !important;
+}
+
 // description
 html[lang="en"] .vendor-description {
   @include body-text();
@@ -1507,7 +1517,11 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
     .mat-button-wrapper {
       visibility: hidden;
     }
+  }
+}
 
+app-shopping-cart{
+  mat-card-actions{
     button {
       font-family: Open Sans;
       font-size: 12px;
@@ -1515,7 +1529,7 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
       line-height: 19px;
       letter-spacing: 0.15em;
       text-align: center;
-
+  
       &::after {
         visibility: visible;
         display: block;
@@ -1525,12 +1539,12 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-
+  
       &:not(.mat-button-disabled)::after {
         content: "PROCEED";
       }
     }
-
+  
     .mat-button-disabled {
       &::after {
         content: "BOOK NOW";
