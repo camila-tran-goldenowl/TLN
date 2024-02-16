@@ -1335,8 +1335,9 @@ app-product {
     background: none !important;
   }
 }
-.open-gallery > .mat-icon,
-.open-gallery > span {
+
+html .open-gallery > .mat-icon,
+html .open-gallery > span {
   color: white !important;
 }
 
