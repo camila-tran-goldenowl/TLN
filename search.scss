@@ -1337,7 +1337,7 @@ app-product {
 }
 .open-gallery > .mat-icon,
 .open-gallery > span {
-  @include black-text();
+  color: white !important;
 }
 
 #add-product {
