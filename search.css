@@ -837,7 +837,7 @@ html[lang=en] .card-content * {
 }
 
 google-map .cluster-item img {
-  content: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/location.png");
+  content: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/location.png") !important;
 }
 
 .card-content {
