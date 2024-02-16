@@ -1129,7 +1129,7 @@ app-search-filter-window{
   }
 }
 
-button:has(.mat-button-ripple.mat-button-ripple-round){
+button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary{
   background-color: #d5d3d3 !important;
 }
 
