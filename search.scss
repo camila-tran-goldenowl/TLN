@@ -615,6 +615,13 @@ app-search-card.ng-star-inserted {
   max-width: 190px !important;
 }
 
+html .search-discount-code{
+  mat-label, input{
+    text-transform: capitalize !important;
+    @include header();
+  }
+}
+
 .mat-form-field-infix mat-label {
   @include title();
   text-transform: uppercase !important;
