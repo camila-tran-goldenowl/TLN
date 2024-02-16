@@ -17,7 +17,7 @@
 }
 
 /* REMOVE LATER */
-app-search-filter-window .vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
+.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
   content: "" !important;
 }
 
@@ -1389,10 +1389,10 @@ app-shopping-cart mat-card-actions button::after {
   transform: translate(-50%, -50%);
 }
 app-shopping-cart mat-card-actions button:not(.mat-button-disabled)::after {
-  content: "PROCEED";
+  content: "PROCEED" !important;
 }
 app-shopping-cart mat-card-actions .mat-button-disabled::after {
-  content: "BOOK NOW";
+  content: "BOOK NOW" !important;
 }
 
 html[lang=en] .mat-headline {

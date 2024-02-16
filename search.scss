@@ -103,15 +103,14 @@
 }
 
 /* REMOVE LATER */
-app-search-filter-window {
-  .vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
-    content: "" !important;
-  
-  }
+
+.vendor-products-container
+  mat-card-actions
+  button:not(.mat-button-disabled)::after {
+  content: "" !important;
 }
 
 /* REMOVE LATER */
-
 
 * {
   margin: 0;
@@ -1134,13 +1133,13 @@ html[lang="en"] h2.product-title,
   }
 }
 
-app-search-filter-window{
-  span.mat-button-wrapper{
-      visibility: visible !important;
+app-search-filter-window {
+  span.mat-button-wrapper {
+    visibility: visible !important;
   }
 }
 
-button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary{
+button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
   background-color: #d5d3d3 !important;
 }
 
@@ -1532,8 +1531,8 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
   }
 }
 
-app-shopping-cart{
-  mat-card-actions{
+app-shopping-cart {
+  mat-card-actions {
     button {
       font-family: Open Sans;
       font-size: 12px;
@@ -1541,7 +1540,7 @@ app-shopping-cart{
       line-height: 19px;
       letter-spacing: 0.15em;
       text-align: center;
-  
+
       &::after {
         visibility: visible;
         display: block;
@@ -1551,15 +1550,15 @@ app-shopping-cart{
         left: 50%;
         transform: translate(-50%, -50%);
       }
-  
+
       &:not(.mat-button-disabled)::after {
-        content: "PROCEED";
+        content: "PROCEED" !important;
       }
     }
-  
+
     .mat-button-disabled {
       &::after {
-        content: "BOOK NOW";
+        content: "BOOK NOW" !important;
       }
     }
   }
