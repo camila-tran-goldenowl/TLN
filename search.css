@@ -16,6 +16,12 @@
   --link-color: #3388cc;
 }
 
+/* REMOVE LATER */
+.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
+  content: "" !important;
+}
+
+/* REMOVE LATER */
 * {
   margin: 0;
   padding: 0;
