@@ -17,7 +17,7 @@
 }
 
 /* REMOVE LATER */
-app-search-filter .vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
+app-search-filter-window .vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
   content: "" !important;
 }
 
