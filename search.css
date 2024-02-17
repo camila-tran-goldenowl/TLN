@@ -1544,6 +1544,14 @@ html[lang=en] .mat-h1 {
   transform: translateY(-2.5em) scale(0.75) !important;
 }
 
+section.listing-container.final .vendor-image-container,
+section.listing-container.final .vendor-description {
+  display: none !important;
+}
+
+app-customer-form mat-card {
+  border-radius: 0 !important;
+}
 app-customer-form mat-checkbox .mat-checkbox-label {
   font-size: 14px !important;
   font-weight: 400 !important;

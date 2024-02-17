@@ -1749,7 +1749,18 @@ html[lang="en"] .mat-h1 {
 //   margin-top: 0 !important;
 // }
 
+section.listing-container.final{
+  .vendor-image-container,
+  .vendor-description{
+      display: none !important;
+  }
+}
+
 app-customer-form {
+  mat-card{
+    border-radius: 0 !important;
+  }
+
   mat-checkbox {
     .mat-checkbox-label {
       @include caption;
@@ -3059,7 +3070,6 @@ input#orderForm\:disCode {
   @include input();
   @include body-text();
   min-width: 150px;
-  
 }
 ::placeholder {
   @include body-text;
@@ -3156,7 +3166,7 @@ div#confirmdlg {
   }
 }
 
-#confirmdlg{
+#confirmdlg {
   display: block;
 }
 
