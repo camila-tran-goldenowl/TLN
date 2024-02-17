@@ -1545,7 +1545,8 @@ html[lang=en] .mat-h1 {
 }
 
 section.listing-container.final .vendor-image-container,
-section.listing-container.final .vendor-description {
+section.listing-container.final .vendor-description,
+section.listing-container.final .title-group {
   display: none !important;
 }
 
