@@ -301,6 +301,27 @@ mat-label {
   }
 
   // cart checkout
+  .mat-badge-content,
+  .mat-flat-button.mat-accent,
+  .mat-raised-button.mat-accent,
+  .mat-fab.mat-accent,
+  .mat-mini-fab.mat-accent {
+    background-color: var(--secondary-orange-color) !important;
+  }
+
+  .mob-date-range-container .search-icon,
+  .mat-icon.mat-primary {
+    color: var(--secondary-orange-color) !important;
+  }
+
+  .show-cart {
+    .mat-icon {
+      width: 30px !important;
+      height: 30px !important;
+      font-size: 30px !important;
+    }
+  }
+
   mat-expansion-panel {
     .basket-icon {
       margin-right: 10px;
@@ -1746,20 +1767,22 @@ html[lang="en"] .mat-h1 {
   transform: translateY(-2.5em) scale(0.75) !important;
 }
 
-section.listing-container.final{
+section.listing-container.final {
   .vendor-image-container,
   .vendor-description,
-  .title-group{
-      display: none !important;
+  .title-group {
+    display: none !important;
   }
 
-  .app-shopping-cart .mat-card{
-    margin-top: 0 !important;
+  .app-shopping-cart {
+    .mat-card {
+      margin-top: 0 !important;
+    }
   }
 }
 
 app-customer-form {
-  mat-card{
+  mat-card {
     border-radius: 0 !important;
   }
 
@@ -3284,6 +3307,28 @@ div#orderForm\:addbskpg {
 }
 
 @media (max-width: 640px) {
+  app-customer-form .details.customer-identity,
+  app-customer-form .details.customer-contact,
+  app-customer-form .details.customer-nation {
+    grid-template-columns: auto !important;
+  }
+
+  html mat-form-field.firstName,
+  html mat-form-field.lastName,
+  html mat-form-field.email,
+  html mat-form-field.language,
+  html mat-form-field.phone,
+  html mat-form-field.country,
+  html .message mat-form-field {
+    .mat-form-field-wrapper {
+      grid-template-columns: 3fr 9fr;
+    }
+
+    &::before {
+      @include body-text();
+    }
+  }
+
   form#locform {
     .ui-inputfield {
       padding: 0 !important;

@@ -186,6 +186,22 @@ mat-label {
 .mobile .product-dates {
   text-align: left !important;
 }
+.mobile .mat-badge-content,
+.mobile .mat-flat-button.mat-accent,
+.mobile .mat-raised-button.mat-accent,
+.mobile .mat-fab.mat-accent,
+.mobile .mat-mini-fab.mat-accent {
+  background-color: var(--secondary-orange-color) !important;
+}
+.mobile .mob-date-range-container .search-icon,
+.mobile .mat-icon.mat-primary {
+  color: var(--secondary-orange-color) !important;
+}
+.mobile .show-cart .mat-icon {
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 30px !important;
+}
 .mobile mat-expansion-panel .basket-icon {
   margin-right: 10px;
 }
@@ -2985,6 +3001,31 @@ div#orderForm\:addbskpg {
   }
 }
 @media (max-width: 640px) {
+  app-customer-form .details.customer-identity,
+  app-customer-form .details.customer-contact,
+  app-customer-form .details.customer-nation {
+    grid-template-columns: auto !important;
+  }
+  html mat-form-field.firstName .mat-form-field-wrapper,
+  html mat-form-field.lastName .mat-form-field-wrapper,
+  html mat-form-field.email .mat-form-field-wrapper,
+  html mat-form-field.language .mat-form-field-wrapper,
+  html mat-form-field.phone .mat-form-field-wrapper,
+  html mat-form-field.country .mat-form-field-wrapper,
+  html .message mat-form-field .mat-form-field-wrapper {
+    grid-template-columns: 3fr 9fr;
+  }
+  html mat-form-field.firstName::before,
+  html mat-form-field.lastName::before,
+  html mat-form-field.email::before,
+  html mat-form-field.language::before,
+  html mat-form-field.phone::before,
+  html mat-form-field.country::before,
+  html .message mat-form-field::before {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 26px;
+  }
   form#locform .ui-inputfield {
     padding: 0 !important;
   }
