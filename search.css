@@ -2061,7 +2061,8 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
 div#base_page\:vendorMessagePanel {
   border-radius: 0 !important;
 }
-div#base_page\:vendorMessagePanel .ui-panel-m-titlebar-icon {
+
+.ui-panel-m-titlebar-icon {
   border-radius: 50% !important;
 }
 
