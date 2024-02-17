@@ -3013,7 +3013,7 @@ div#orderForm\:addbskpg {
   html mat-form-field.phone .mat-form-field-wrapper,
   html mat-form-field.country .mat-form-field-wrapper,
   html .message mat-form-field .mat-form-field-wrapper {
-    grid-template-columns: 3fr 9fr;
+    grid-template-columns: 4fr 8fr;
   }
   html mat-form-field.firstName::before,
   html mat-form-field.lastName::before,
@@ -3023,8 +3023,6 @@ div#orderForm\:addbskpg {
   html mat-form-field.country::before,
   html .message mat-form-field::before {
     font-size: 16px !important;
-    font-weight: 400 !important;
-    line-height: 26px;
   }
   form#locform .ui-inputfield {
     padding: 0 !important;
