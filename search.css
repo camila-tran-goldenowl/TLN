@@ -1943,10 +1943,6 @@ html head + body .ui-btn.ui-btn-a:visited {
   background-color: white;
 }
 
-.ui-icon-minus,
-.ui-btn-icon-notext {
-  border-radius: 50% !important;
-}
 .ui-icon-minus:after,
 .ui-btn-icon-notext:after {
   background-color: var(--dark-grey) !important;
