@@ -2003,6 +2003,10 @@ div#base_page\:base_header {
     position: relative;
     margin-left: 5px;
   }
+
+  table tbody tr td{
+    background: none !important
+  }
 }
 
 div#base_page\:locform\:languageSelect {

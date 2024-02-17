@@ -1758,6 +1758,9 @@ div#base_page\:base_header .ui-icon-carat-d:after {
   position: relative;
   margin-left: 5px;
 }
+div#base_page\:base_header table tbody tr td {
+  background: none !important;
+}
 
 div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button {
   border: none !important;
