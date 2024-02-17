@@ -1549,6 +1549,9 @@ section.listing-container.final .vendor-description,
 section.listing-container.final .title-group {
   display: none !important;
 }
+section.listing-container.final .app-shopping-cart .mat-card {
+  margin-top: 0 !important;
+}
 
 app-customer-form mat-card {
   border-radius: 0 !important;
