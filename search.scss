@@ -3322,10 +3322,10 @@ div#orderForm\:addbskpg {
   html .message mat-form-field {
     .mat-form-field-wrapper {
       grid-template-columns: 4fr 8fr;
-    }
 
-    &::before {
-      font-size: 16px !important;
+      &::before {
+        font-size: 16px !important;
+      }
     }
   }
 

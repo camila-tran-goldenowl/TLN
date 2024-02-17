@@ -3015,13 +3015,13 @@ div#orderForm\:addbskpg {
   html .message mat-form-field .mat-form-field-wrapper {
     grid-template-columns: 4fr 8fr;
   }
-  html mat-form-field.firstName::before,
-  html mat-form-field.lastName::before,
-  html mat-form-field.email::before,
-  html mat-form-field.language::before,
-  html mat-form-field.phone::before,
-  html mat-form-field.country::before,
-  html .message mat-form-field::before {
+  html mat-form-field.firstName .mat-form-field-wrapper::before,
+  html mat-form-field.lastName .mat-form-field-wrapper::before,
+  html mat-form-field.email .mat-form-field-wrapper::before,
+  html mat-form-field.language .mat-form-field-wrapper::before,
+  html mat-form-field.phone .mat-form-field-wrapper::before,
+  html mat-form-field.country .mat-form-field-wrapper::before,
+  html .message mat-form-field .mat-form-field-wrapper::before {
     font-size: 16px !important;
   }
   form#locform .ui-inputfield {
