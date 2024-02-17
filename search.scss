@@ -1968,7 +1968,17 @@ app-customer-form {
   }
 }
 //=========================BOOKING PAGE=========================
-.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head+body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head+body .ui-btn-a.ui-focus, html head+body .ui-body-a.ui-focus{
+.ui-page-theme-a .ui-btn:focus,
+html .ui-bar-a .ui-btn:focus,
+html .ui-body-a .ui-btn:focus,
+html body .ui-group-theme-a .ui-btn:focus,
+html head + body .ui-btn.ui-btn-a:focus,
+.ui-page-theme-a .ui-focus,
+html .ui-bar-a .ui-focus,
+html .ui-body-a .ui-focus,
+html body .ui-group-theme-a .ui-focus,
+html head + body .ui-btn-a.ui-focus,
+html head + body .ui-body-a.ui-focus {
   box-shadow: 0 0 12px var(--secondary-orange-color) !important;
 }
 // top menu
@@ -2007,8 +2017,8 @@ div#base_page\:base_header {
     margin-left: 5px;
   }
 
-  table tbody tr td{
-    background: none !important
+  table tbody tr td {
+    background: none !important;
   }
 }
 
@@ -2174,10 +2184,13 @@ html head + body .ui-btn.ui-btn-a:visited {
   background-color: white;
 }
 
-.ui-icon-minus:after,
-.ui-btn-icon-notext:after {
+.ui-icon-minus,
+.ui-btn-icon-notext {
   border-radius: 50% !important;
-  background-color: var(--dark-grey) !important;
+
+  &:after {
+    background-color: var(--dark-grey) !important;
+  }
 }
 
 .table-stroke thead th,
