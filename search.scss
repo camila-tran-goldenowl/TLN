@@ -2176,6 +2176,7 @@ html head + body .ui-btn.ui-btn-a:visited {
 
 .ui-icon-minus:after,
 .ui-btn-icon-notext:after {
+  border-radius: 50% !important;
   background-color: var(--dark-grey) !important;
 }
 
