@@ -1727,18 +1727,19 @@ app-customer-form app-payments .invoice-label {
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
-app-customer-form div#base_page\:base_header .rb-header {
+
+div#base_page\:base_header .rb-header {
   height: 140px !important;
 }
-app-customer-form div#base_page\:base_header .rb-header .ui-btn-icon-right:after {
+div#base_page\:base_header .rb-header .ui-btn-icon-right:after {
   color: #18181b !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }
-app-customer-form div#base_page\:base_header form#base_page\:locform {
+div#base_page\:base_header form#base_page\:locform {
   top: 2rem !important;
   right: 1.8 rem !important;
 }
-app-customer-form div#base_page\:base_header .ui-icon-carat-d:after {
+div#base_page\:base_header .ui-icon-carat-d:after {
   border-radius: 0;
   width: 1px;
   height: 2px;
@@ -1757,7 +1758,8 @@ app-customer-form div#base_page\:base_header .ui-icon-carat-d:after {
   position: relative;
   margin-left: 5px;
 }
-app-customer-form div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button {
+
+div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button {
   border: none !important;
   padding: 10px 25px;
   background-color: var(--secondary-orange-color) !important;
@@ -1767,7 +1769,7 @@ app-customer-form div#base_page\:locform\:languageSelect div#base_page\:locform\
   background-color: var(--secondary-orange-color);
   opacity: 1;
 }
-app-customer-form div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button span {
+div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button span {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 17px;
@@ -1777,13 +1779,14 @@ app-customer-form div#base_page\:locform\:languageSelect div#base_page\:locform\
   text-transform: uppercase;
   margin-right: 5px;
 }
-app-customer-form div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button .ui-btn-icon-right:after {
+div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button .ui-btn-icon-right:after {
   background: transparent !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
 }
-app-customer-form .rbn-yb-searchtext {
+
+.rbn-yb-searchtext {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
@@ -1793,10 +1796,11 @@ app-customer-form .rbn-yb-searchtext {
   display: block;
   margin: auto;
 }
-app-customer-form form#base_page\:gform {
+
+form#base_page\:gform {
   margin-top: 2.5rem;
 }
-app-customer-form form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   border: none !important;
   padding: 10px 25px;
   background-color: var(--secondary-orange-color) !important;
@@ -1812,12 +1816,12 @@ app-customer-form form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-sh
   line-height: 19px;
   letter-spacing: 0.15em;
 }
-app-customer-form form#base_page\:gform .ui-field-contain {
+form#base_page\:gform .ui-field-contain {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-app-customer-form form#base_page\:gform .ui-field-contain .ui-input-text {
+form#base_page\:gform .ui-field-contain .ui-input-text {
   font-family: Inter !important;
   box-shadow: none !important;
   border: 1px solid var(--secondary-grey-color) !important;
@@ -1828,27 +1832,28 @@ app-customer-form form#base_page\:gform .ui-field-contain .ui-input-text {
   color: var(--dark-grey);
   padding: 8px 15px;
 }
-app-customer-form form#base_page\:gform .ui-field-contain input {
+form#base_page\:gform .ui-field-contain input {
   font-family: Inter !important;
   padding: 0 !important;
 }
-app-customer-form form#base_page\:gform .ui-field-contain label {
+form#base_page\:gform .ui-field-contain label {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 17px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
-app-customer-form .ui-outputpanel {
+
+.ui-outputpanel {
   margin-top: 2.5rem;
   margin-bottom: 3.1rem;
 }
-app-customer-form .ui-outputpanel span#base_page\:guest-intranet-greeting {
+.ui-outputpanel span#base_page\:guest-intranet-greeting {
   font-size: 20px !important;
   font-weight: 400 !important;
   font-family: Inter !important;
 }
-app-customer-form .ui-outputpanel span#base_page\:guest-intranet-greeting::after {
+.ui-outputpanel span#base_page\:guest-intranet-greeting::after {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
@@ -1857,27 +1862,31 @@ app-customer-form .ui-outputpanel span#base_page\:guest-intranet-greeting::after
   margin-top: 1rem;
   content: "Scroll down to view reservations and payment status.";
 }
-app-customer-form .table-stripe tbody tr:nth-child(odd) td,
-app-customer-form .table-stripe tbody tr:nth-child(odd) th {
+
+.table-stripe tbody tr:nth-child(odd) td,
+.table-stripe tbody tr:nth-child(odd) th {
   background: var(--secondary-light-grey-color) !important;
 }
-app-customer-form .table-stripe tbody tr:nth-child(even) td,
-app-customer-form .table-stripe tbody tr:nth-child(even) th {
+
+.table-stripe tbody tr:nth-child(even) td,
+.table-stripe tbody tr:nth-child(even) th {
   background: var(--secondary-grey-color) !important;
 }
-app-customer-form .ui-table td {
+
+.ui-table td {
   padding-left: 0.8rem !important;
   padding-right: 0.8rem !important;
 }
-app-customer-form table thead .ui-column-header {
+
+table thead .ui-column-header {
   vertical-align: middle;
   background-color: var(--secondary-grey-color);
   padding: 1rem 0.625rem !important;
 }
-app-customer-form table thead .ui-column-header span {
+table thead .ui-column-header span {
   font-weight: 500 !important;
 }
-app-customer-form table thead .ui-column-header .ui-column-title {
+table thead .ui-column-header .ui-column-title {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 17px;
@@ -1885,101 +1894,109 @@ app-customer-form table thead .ui-column-header .ui-column-title {
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
-app-customer-form table thead .ui-column-header .ui-column-title span {
+table thead .ui-column-header .ui-column-title span {
   font-weight: 500 !important;
 }
-app-customer-form table tbody .ui-table-row span {
+table tbody .ui-table-row span {
   font-family: Inter !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
 }
-app-customer-form table tbody td {
+table tbody td {
   font-family: Inter !important;
   vertical-align: middle;
 }
-app-customer-form .ui-page-theme-a .ui-btn,
-app-customer-form html .ui-bar-a .ui-btn,
-app-customer-form html .ui-body-a .ui-btn,
-app-customer-form html body .ui-group-theme-a .ui-btn,
-app-customer-form html head + body .ui-btn.ui-btn-a,
-app-customer-form .ui-page-theme-a .ui-btn:visited,
-app-customer-form html .ui-bar-a .ui-btn:visited,
-app-customer-form html .ui-body-a .ui-btn:visited,
-app-customer-form html body .ui-group-theme-a .ui-btn:visited,
-app-customer-form html head + body .ui-btn.ui-btn-a:visited {
+
+.ui-page-theme-a .ui-btn,
+html .ui-bar-a .ui-btn,
+html .ui-body-a .ui-btn,
+html body .ui-group-theme-a .ui-btn,
+html head + body .ui-btn.ui-btn-a,
+.ui-page-theme-a .ui-btn:visited,
+html .ui-bar-a .ui-btn:visited,
+html .ui-body-a .ui-btn:visited,
+html body .ui-group-theme-a .ui-btn:visited,
+html head + body .ui-btn.ui-btn-a:visited {
   border-color: var(--secondary-grey-color);
 }
-app-customer-form .ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
-app-customer-form .ui-btn .ui-panel-collapsible-heading-toggle {
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
+.ui-btn .ui-panel-collapsible-heading-toggle {
   background-color: white;
 }
-app-customer-form .ui-icon-minus:after,
-app-customer-form .ui-btn-icon-notext:after {
+
+.ui-icon-minus:after,
+.ui-btn-icon-notext:after {
   background-color: var(--dark-grey) !important;
 }
-app-customer-form .table-stroke thead th,
-app-customer-form .table-stripe thead th,
-app-customer-form .table-stripe tbody tr:last-child {
+
+.table-stroke thead th,
+.table-stripe thead th,
+.table-stripe tbody tr:last-child {
   border-bottom: 0 !important;
 }
-app-customer-form .ui-datatable {
+
+.ui-datatable {
   border: 1px solid var(--secondary-grey-color) !important;
   box-shadow: none !important;
 }
-app-customer-form div#base_page\:postab .ui-link,
-app-customer-form div#base_page\:ttab .ui-link {
+
+div#base_page\:postab .ui-link,
+div#base_page\:ttab .ui-link {
   text-decoration: none;
   font-weight: 400 !important;
 }
-app-customer-form div#base_page\:postab .ui-table-row td,
-app-customer-form div#base_page\:ttab .ui-table-row td {
+div#base_page\:postab .ui-table-row td,
+div#base_page\:ttab .ui-table-row td {
   background: transparent !important;
 }
-app-customer-form div#base_page\:postab .ui-table-cell-label,
-app-customer-form div#base_page\:ttab .ui-table-cell-label {
+div#base_page\:postab .ui-table-cell-label,
+div#base_page\:ttab .ui-table-cell-label {
   font-family: Inter !important;
   font-weight: 400;
 }
-app-customer-form div#base_page\:ttab {
+
+div#base_page\:ttab {
   margin-top: 2rem;
 }
-app-customer-form div#base_page\:tabview {
+
+div#base_page\:tabview {
   margin-top: 2.5rem;
 }
-app-customer-form div#base_page\:tabview .accordion-title span {
+div#base_page\:tabview .accordion-title span {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
 }
-app-customer-form div#base_page\:tabview a.ui-collapsible-heading-toggle {
+div#base_page\:tabview a.ui-collapsible-heading-toggle {
   padding: 1.25rem;
   padding-left: 4rem !important;
 }
-app-customer-form div#base_page\:tabview .ui-icon-plus:after {
+div#base_page\:tabview .ui-icon-plus:after {
   background-color: var(--dark-grey) !important;
 }
-app-customer-form div#base_page\:tabview .ui-btn-icon-left:after {
+div#base_page\:tabview .ui-btn-icon-left:after {
   left: 1.25rem !important;
 }
-app-customer-form div#base_page\:tabview .rbn-vendor-box .ui-grid-solo {
+div#base_page\:tabview .rbn-vendor-box .ui-grid-solo {
   margin-left: 1rem;
   text-align: left;
 }
-app-customer-form div#base_page\:tabview .rbn-vendor-box .ui-grid-solo span.rbn-bold {
+div#base_page\:tabview .rbn-vendor-box .ui-grid-solo span.rbn-bold {
   font-size: 20px !important;
   font-weight: 400 !important;
 }
-app-customer-form div#base_page\:tabview .rbn-vendor-box .ui-grid-solo .ui-block-a {
+div#base_page\:tabview .rbn-vendor-box .ui-grid-solo .ui-block-a {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
   margin-bottom: 10px;
 }
-app-customer-form div#base_page\:tabview .ui-block-a {
+div#base_page\:tabview .ui-block-a {
   font-family: Inter !important;
 }
-app-customer-form div#base_page\:tabview .accordion-status-block .accordion-status {
+div#base_page\:tabview .accordion-status-block .accordion-status {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 17px;
@@ -1987,56 +2004,61 @@ app-customer-form div#base_page\:tabview .accordion-status-block .accordion-stat
   text-transform: lowercase;
   padding: 0.8rem 1.25rem !important;
 }
-app-customer-form div#base_page\:tabview .accordion-status-block .accordion-status::first-letter {
+div#base_page\:tabview .accordion-status-block .accordion-status::first-letter {
   text-transform: uppercase;
 }
-app-customer-form div#base_page\:tabview .accordion-status-block .accordion-status.res {
+div#base_page\:tabview .accordion-status-block .accordion-status.res {
   background-color: var(--success-color) !important;
 }
-app-customer-form div#base_page\:tabview .accordion-status-block .accordion-status.na {
+div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: var(--fail-color) !important;
 }
-app-customer-form .ui-panel-m {
+
+.ui-panel-m {
   border-radius: 0 !important;
 }
-app-customer-form .ui-panel-m-titlebar {
+
+.ui-panel-m-titlebar {
   background-color: var(--dark-grey) !important;
 }
-app-customer-form .ui-panel-m-titlebar h3 {
+.ui-panel-m-titlebar h3 {
   font-size: 20px !important;
   font-weight: 400 !important;
   font-family: Inter !important;
   color: white !important;
 }
-app-customer-form .ui-panel-m-content {
+
+.ui-panel-m-content {
   background: transparent !important;
   min-height: 70px;
 }
-app-customer-form .ui-panel-m-content span,
-app-customer-form .ui-panel-m-content li {
+.ui-panel-m-content span,
+.ui-panel-m-content li {
   font-family: Inter !important;
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 17px;
   color: var(--primary-black-color) !important;
 }
-app-customer-form div#base_page\:vendorMessagePanel {
+
+div#base_page\:vendorMessagePanel {
   border-radius: 0 !important;
 }
-app-customer-form div#base_page\:txtab {
+
+div#base_page\:txtab {
   margin-top: 2.5rem;
 }
-app-customer-form div#base_page\:txtab .ui-link {
+div#base_page\:txtab .ui-link {
   font-weight: 400 !important;
 }
-app-customer-form div#base_page\:txtab .ui-column-header {
+div#base_page\:txtab .ui-column-header {
   text-align: center;
 }
-app-customer-form div#base_page\:txtab .ui-table-row td {
+div#base_page\:txtab .ui-table-row td {
   text-align: center;
   vertical-align: middle;
 }
-app-customer-form div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
+div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
   border: none !important;
   padding: 10px 25px;
   background-color: var(--secondary-orange-color) !important;
@@ -2050,10 +2072,10 @@ app-customer-form div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
   font-family: Archivo;
   letter-spacing: 0.15em;
 }
-app-customer-form div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:orderItem"] span {
+div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:orderItem"] span {
   font-family: Inter !important;
 }
-app-customer-form div#base_page\:txtab .ui-table-cell-label {
+div#base_page\:txtab .ui-table-cell-label {
   font-size: 12px !important;
   font-weight: 400 !important;
   line-height: 17px;
@@ -2062,111 +2084,116 @@ app-customer-form div#base_page\:txtab .ui-table-cell-label {
   letter-spacing: 0.15em;
   padding: 0 !important;
 }
-app-customer-form #scrollToPay {
+
+#scrollToPay {
   border-radius: 0 !important;
 }
-app-customer-form #scrollToPay label {
+#scrollToPay label {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 26px;
   font-family: Archivo !important;
   color: var(--primary-black-color) !important;
 }
-app-customer-form .rb-footer {
+
+.rb-footer {
   display: none;
 }
+
 @media (max-width: 35em) {
-  app-customer-form form#base_page\:gform .ui-field-contain {
+  form#base_page\:gform .ui-field-contain {
     align-items: flex-start !important;
     flex-direction: column;
     border: none !important;
   }
-  app-customer-form form#base_page\:gform .ui-input-text {
+  form#base_page\:gform .ui-input-text {
     width: 100%;
   }
-  app-customer-form div#base_page\:postab,
-  app-customer-form div#base_page\:ttab {
+  div#base_page\:postab,
+  div#base_page\:ttab {
     border: none !important;
     background-color: var(--secondary-grey-color) !important;
     box-shadow: none !important;
   }
-  app-customer-form div#base_page\:postab tbody td,
-  app-customer-form div#base_page\:ttab tbody td {
+  div#base_page\:postab tbody td,
+  div#base_page\:ttab tbody td {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  app-customer-form span#base_page\:guest-intranet-greeting::after {
+  span#base_page\:guest-intranet-greeting::after {
     max-width: 275px;
     margin: auto;
     width: -moz-fit-content;
     width: fit-content;
   }
-  app-customer-form .ui-grid-solo {
+  .ui-grid-solo {
     margin-top: 10px;
   }
-  app-customer-form div#base_page\:tabview tbody[id*=":resultTable"] > .ui-table-row td {
+  div#base_page\:tabview tbody[id*=":resultTable"] > .ui-table-row td {
     align-items: center;
     display: grid !important;
     grid-template-columns: 4fr 6fr;
   }
-  app-customer-form div#base_page\:tabview a.ui-collapsible-heading-toggle {
+  div#base_page\:tabview a.ui-collapsible-heading-toggle {
     padding-left: 4rem !important;
   }
-  app-customer-form div#base_page\:tabview div[id*=":pocgrd_content"] .ui-block-a,
-  app-customer-form div#base_page\:tabview div[id*=":pdoptgrd_content"] .ui-block-a {
+  div#base_page\:tabview div[id*=":pocgrd_content"] .ui-block-a,
+  div#base_page\:tabview div[id*=":pdoptgrd_content"] .ui-block-a {
     display: grid;
     grid-template-columns: 4fr 6fr;
     align-items: center;
     gap: 0.5rem;
   }
-  app-customer-form div#base_page\:txtab .ui-table-cell-label {
+  div#base_page\:txtab .ui-table-cell-label {
     text-align: left !important;
     float: left;
   }
-  app-customer-form div#base_page\:txtab td {
+  div#base_page\:txtab td {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
-  app-customer-form div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td {
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td {
     text-align: left !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  app-customer-form div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td span[id*=":receivedMessageText"] {
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td span[id*=":receivedMessageText"] {
     display: block;
     text-align: left;
     float: right;
     margin-left: 50%;
   }
-  app-customer-form div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td form[id*=":f1"] {
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td form[id*=":f1"] {
     float: right;
   }
-  app-customer-form div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td:last-child:not(span) {
+  div#base_page\:txtab tbody#base_page\:txtab_data > .ui-table-row td:last-child:not(span) {
     display: block !important;
   }
 }
-app-customer-form .rack {
+.rack {
   margin-bottom: 0.5em;
   background: rgba(232, 138, 138, 0.2) !important;
 }
-app-customer-form mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
+
+mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
   color: var(--primary-black-color);
 }
-app-customer-form button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
+
+button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
   background: #f4f4f4 !important;
 }
+
 @media (min-width: 28em) {
-  app-customer-form .ui-field-contain > label ~ [class*=ui-],
-  app-customer-form .ui-field-contain .ui-controlgroup-controls {
+  .ui-field-contain > label ~ [class*=ui-],
+  .ui-field-contain .ui-controlgroup-controls {
     width: 30% !important;
   }
-  app-customer-form .ui-field-contain > label {
+  .ui-field-contain > label {
     width: 10% !important;
   }
 }
-
 /* REMOVE AFTER CONFIRM */
 .ui-button,
 button.ui-button.ui-state-default,

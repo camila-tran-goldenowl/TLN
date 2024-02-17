@@ -973,7 +973,11 @@ html[lang="en"] .mdc-slider {
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();
-  background: linear-gradient(0deg, var(--secondary-grey-color), var(--secondary-grey-color)) !important;
+  background: linear-gradient(
+    0deg,
+    var(--secondary-grey-color),
+    var(--secondary-grey-color)
+  ) !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
@@ -1962,525 +1966,524 @@ app-customer-form {
       letter-spacing: 0.15em;
     }
   }
+}
+//=========================BOOKING PAGE=========================
+// top menu
+div#base_page\:base_header {
+  .rb-header {
+    height: 140px !important;
 
-  //=========================BOOKING PAGE=========================
-  // top menu
-  div#base_page\:base_header {
-    .rb-header {
-      height: 140px !important;
-
-      .ui-btn-icon-right:after {
-        color: #18181b !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-      }
-    }
-
-    form#base_page\:locform {
-      top: 2rem !important;
-      right: 1.8 rem !important;
-    }
-
-    .ui-icon-carat-d:after {
-      border-radius: 0;
-      width: 1px;
-      height: 2px;
-      background-image: none !important;
-      background-color: rgba(0, 0, 0, 0) !important;
+    .ui-btn-icon-right:after {
       color: #18181b !important;
-      transform: rotate(45deg);
-      border: solid #000;
-      border-width: 0 1.5px 1.5px 0;
-      display: inline-block;
-      padding: 3px;
-      border-top: 0 !important;
-      border-left: 0 !important;
-      border-right: 1.5px solid #000 !important;
-      margin-top: 2px !important;
-      position: relative;
-      margin-left: 5px;
+      background-color: rgba(0, 0, 0, 0) !important;
     }
   }
 
-  div#base_page\:locform\:languageSelect {
-    div#base_page\:locform\:languageSelect_input-button {
-      @include button();
-      display: flex;
-      background-color: var(--secondary-orange-color);
-      opacity: 1;
-
-      span {
-        @include title();
-        @include black-text();
-        line-height: 19px;
-        letter-spacing: 0.15em !important;
-        text-transform: uppercase;
-        margin-right: 5px;
-      }
-
-      .ui-btn-icon-right:after {
-        background: transparent !important;
-        @include body-text();
-      }
-    }
-  }
-  // message
-  .rbn-yb-searchtext {
-    @include body-text();
-    text-align: center;
-    margin-top: 1.8rem;
-    max-width: 949px;
-    display: block;
-    margin: auto;
+  form#base_page\:locform {
+    top: 2rem !important;
+    right: 1.8 rem !important;
   }
 
-  // infor
-  form#base_page\:gform {
-    margin-top: 2.5rem;
+  .ui-icon-carat-d:after {
+    border-radius: 0;
+    width: 1px;
+    height: 2px;
+    background-image: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #18181b !important;
+    transform: rotate(45deg);
+    border: solid #000;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 1.5px solid #000 !important;
+    margin-top: 2px !important;
+    position: relative;
+    margin-left: 5px;
+  }
+}
 
-    .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-      @include button();
+div#base_page\:locform\:languageSelect {
+  div#base_page\:locform\:languageSelect_input-button {
+    @include button();
+    display: flex;
+    background-color: var(--secondary-orange-color);
+    opacity: 1;
+
+    span {
       @include title();
       @include black-text();
-      width: fit-content;
-      margin: auto;
       line-height: 19px;
-      letter-spacing: 0.15em;
+      letter-spacing: 0.15em !important;
+      text-transform: uppercase;
+      margin-right: 5px;
     }
 
-    .ui-field-contain {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .ui-input-text {
-        @include main-font();
-        @include input;
-        @include body-text();
-        color: var(--dark-grey);
-        padding: 8px 15px;
-      }
-
-      input {
-        @include main-font();
-        padding: 0 !important;
-      }
-
-      label {
-        @include title();
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-      }
+    .ui-btn-icon-right:after {
+      background: transparent !important;
+      @include body-text();
     }
   }
+}
+// message
+.rbn-yb-searchtext {
+  @include body-text();
+  text-align: center;
+  margin-top: 1.8rem;
+  max-width: 949px;
+  display: block;
+  margin: auto;
+}
 
-  .ui-outputpanel {
-    margin-top: 2.5rem;
-    margin-bottom: 3.1rem;
+// infor
+form#base_page\:gform {
+  margin-top: 2.5rem;
 
-    span#base_page\:guest-intranet-greeting {
-      @include sub-header();
+  .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
+    @include button();
+    @include title();
+    @include black-text();
+    width: fit-content;
+    margin: auto;
+    line-height: 19px;
+    letter-spacing: 0.15em;
+  }
+
+  .ui-field-contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ui-input-text {
       @include main-font();
+      @include input;
+      @include body-text();
+      color: var(--dark-grey);
+      padding: 8px 15px;
+    }
 
-      &::after {
-        @include body-text();
-        line-height: 26px;
-        display: block;
-        margin-top: 1rem;
-        content: "Scroll down to view reservations and payment status.";
-      }
+    input {
+      @include main-font();
+      padding: 0 !important;
+    }
+
+    label {
+      @include title();
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
     }
   }
+}
 
-  // table
-  .table-stripe tbody tr:nth-child(odd) td,
-  .table-stripe tbody tr:nth-child(odd) th {
-    background: var(--secondary-light-grey-color) !important;
+.ui-outputpanel {
+  margin-top: 2.5rem;
+  margin-bottom: 3.1rem;
+
+  span#base_page\:guest-intranet-greeting {
+    @include sub-header();
+    @include main-font();
+
+    &::after {
+      @include body-text();
+      line-height: 26px;
+      display: block;
+      margin-top: 1rem;
+      content: "Scroll down to view reservations and payment status.";
+    }
   }
+}
 
-  .table-stripe tbody tr:nth-child(even) td,
-  .table-stripe tbody tr:nth-child(even) th {
-    background: var(--secondary-grey-color) !important;
-  }
+// table
+.table-stripe tbody tr:nth-child(odd) td,
+.table-stripe tbody tr:nth-child(odd) th {
+  background: var(--secondary-light-grey-color) !important;
+}
 
-  .ui-table td {
-    padding-left: 0.8rem !important;
-    padding-right: 0.8rem !important;
-  }
+.table-stripe tbody tr:nth-child(even) td,
+.table-stripe tbody tr:nth-child(even) th {
+  background: var(--secondary-grey-color) !important;
+}
 
-  table {
-    thead {
-      .ui-column-header {
-        vertical-align: middle;
-        background-color: var(--secondary-grey-color);
-        padding: 1rem 0.625rem !important;
+.ui-table td {
+  padding-left: 0.8rem !important;
+  padding-right: 0.8rem !important;
+}
+
+table {
+  thead {
+    .ui-column-header {
+      vertical-align: middle;
+      background-color: var(--secondary-grey-color);
+      padding: 1rem 0.625rem !important;
+      span {
+        font-weight: 500 !important;
+      }
+
+      .ui-column-title {
+        @include title;
+        @include second-font();
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+
         span {
           font-weight: 500 !important;
         }
-
-        .ui-column-title {
-          @include title;
-          @include second-font();
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-
-          span {
-            font-weight: 500 !important;
-          }
-        }
       }
     }
+  }
 
-    tbody {
-      .ui-table-row {
-        span {
-          @include main-font();
-          @include body-text();
-        }
-      }
-
-      td {
+  tbody {
+    .ui-table-row {
+      span {
         @include main-font();
-        vertical-align: middle;
+        @include body-text();
       }
+    }
+
+    td {
+      @include main-font();
+      vertical-align: middle;
+    }
+  }
+}
+
+.ui-page-theme-a .ui-btn,
+html .ui-bar-a .ui-btn,
+html .ui-body-a .ui-btn,
+html body .ui-group-theme-a .ui-btn,
+html head + body .ui-btn.ui-btn-a,
+.ui-page-theme-a .ui-btn:visited,
+html .ui-bar-a .ui-btn:visited,
+html .ui-body-a .ui-btn:visited,
+html body .ui-group-theme-a .ui-btn:visited,
+html head + body .ui-btn.ui-btn-a:visited {
+  border-color: var(--secondary-grey-color);
+}
+
+.ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
+.ui-btn .ui-panel-collapsible-heading-toggle {
+  background-color: white;
+}
+
+.ui-icon-minus:after,
+.ui-btn-icon-notext:after {
+  background-color: var(--dark-grey) !important;
+}
+
+.table-stroke thead th,
+.table-stripe thead th,
+.table-stripe tbody tr:last-child {
+  border-bottom: 0 !important;
+}
+
+.ui-datatable {
+  @include border();
+  box-shadow: none !important;
+}
+
+div#base_page\:postab,
+div#base_page\:ttab {
+  .ui-link {
+    text-decoration: none;
+    font-weight: 400 !important;
+  }
+
+  .ui-table-row {
+    td {
+      background: transparent !important;
     }
   }
 
-  .ui-page-theme-a .ui-btn,
-  html .ui-bar-a .ui-btn,
-  html .ui-body-a .ui-btn,
-  html body .ui-group-theme-a .ui-btn,
-  html head + body .ui-btn.ui-btn-a,
-  .ui-page-theme-a .ui-btn:visited,
-  html .ui-bar-a .ui-btn:visited,
-  html .ui-body-a .ui-btn:visited,
-  html body .ui-group-theme-a .ui-btn:visited,
-  html head + body .ui-btn.ui-btn-a:visited {
-    border-color: var(--secondary-grey-color);
+  .ui-table-cell-label {
+    @include main-font;
+    font-weight: 400;
+  }
+}
+
+div#base_page\:ttab {
+  margin-top: 2rem;
+}
+
+div#base_page\:tabview {
+  margin-top: 2.5rem;
+
+  .accordion-title span {
+    @include body-text();
   }
 
-  .ui-panel-m-titlebar.ui-bar.ui-bar-inherit,
-  .ui-btn .ui-panel-collapsible-heading-toggle {
-    background-color: white;
+  a.ui-collapsible-heading-toggle {
+    padding: 1.25rem;
+    padding-left: 4rem !important;
   }
 
-  .ui-icon-minus:after,
-  .ui-btn-icon-notext:after {
+  .ui-icon-plus:after {
     background-color: var(--dark-grey) !important;
   }
 
-  .table-stroke thead th,
-  .table-stripe thead th,
-  .table-stripe tbody tr:last-child {
-    border-bottom: 0 !important;
+  .ui-btn-icon-left:after {
+    left: 1.25rem !important;
   }
 
-  .ui-datatable {
-    @include border();
+  // collapse info
+  .rbn-vendor-box {
+    .ui-grid-solo {
+      margin-left: 1rem;
+      text-align: left;
+      span.rbn-bold {
+        @include sub-header();
+      }
+
+      .ui-block-a {
+        @include body-text();
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .ui-block-a {
+    @include main-font();
+  }
+
+  .accordion-status-block {
+    .accordion-status {
+      @include title();
+      color: white;
+      text-transform: lowercase;
+      padding: 0.8rem 1.25rem !important;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+
+      &.res {
+        background-color: var(--success-color) !important;
+      }
+
+      &.na {
+        background-color: var(--fail-color) !important;
+      }
+    }
+  }
+}
+
+// information
+.ui-panel-m {
+  border-radius: 0 !important;
+}
+.ui-panel-m-titlebar {
+  background-color: var(--dark-grey) !important;
+  h3 {
+    @include sub-header();
+    @include main-font();
+    color: white !important;
+  }
+}
+
+.ui-panel-m-content {
+  background: transparent !important;
+  min-height: 70px;
+
+  span,
+  li {
+    @include main-font;
+    @include title;
+    @include black-text;
+  }
+}
+
+div#base_page\:vendorMessagePanel {
+  border-radius: 0 !important;
+}
+
+div#base_page\:txtab {
+  margin-top: 2.5rem;
+
+  .ui-link {
+    font-weight: 400 !important;
+  }
+
+  .ui-column-header {
+    text-align: center;
+  }
+
+  .ui-table-row {
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  button[id*=":stpFrm:stripeSubmit"] {
+    @include button;
+    @include title;
+    @include black-text;
+    text-shadow: none !important;
+    font-family: Archivo;
+    letter-spacing: 0.15em;
+  }
+
+  .ui-datatable-tablewrapper {
+    div[id$="base_page:tabview:orderItem"] {
+      span {
+        @include main-font();
+      }
+    }
+  }
+
+  .ui-table-cell-label {
+    @include title;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+    padding: 0 !important;
+  }
+}
+
+#scrollToPay {
+  border-radius: 0 !important;
+
+  label {
+    @include body-text;
+    @include second-font();
+    @include black-text;
+  }
+}
+
+// footer
+.rb-footer {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  form#base_page\:gform {
+    .ui-field-contain {
+      align-items: flex-start !important;
+      flex-direction: column;
+      border: none !important;
+    }
+
+    .ui-input-text {
+      width: 100%;
+    }
+  }
+
+  div#base_page\:postab,
+  div#base_page\:ttab {
+    border: none !important;
+    background-color: var(--secondary-grey-color) !important;
     box-shadow: none !important;
   }
 
   div#base_page\:postab,
   div#base_page\:ttab {
-    .ui-link {
-      text-decoration: none;
-      font-weight: 400 !important;
-    }
-
-    .ui-table-row {
+    tbody {
       td {
-        background: transparent !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
       }
-    }
-
-    .ui-table-cell-label {
-      @include main-font;
-      font-weight: 400;
     }
   }
 
-  div#base_page\:ttab {
-    margin-top: 2rem;
+  span#base_page\:guest-intranet-greeting::after {
+    max-width: 275px;
+    margin: auto;
+    width: fit-content;
+  }
+
+  .ui-grid-solo {
+    margin-top: 10px;
   }
 
   div#base_page\:tabview {
-    margin-top: 2.5rem;
-
-    .accordion-title span {
-      @include body-text();
+    tbody[id*=":resultTable"]
+        // ,tbody[id*="base_page:tabview:orderItemTable"]
+    {
+      > .ui-table-row {
+        td {
+          align-items: center;
+          display: grid !important;
+          grid-template-columns: 4fr 6fr;
+        }
+      }
     }
 
     a.ui-collapsible-heading-toggle {
-      padding: 1.25rem;
       padding-left: 4rem !important;
     }
 
-    .ui-icon-plus:after {
-      background-color: var(--dark-grey) !important;
-    }
-
-    .ui-btn-icon-left:after {
-      left: 1.25rem !important;
-    }
-
-    // collapse info
-    .rbn-vendor-box {
-      .ui-grid-solo {
-        margin-left: 1rem;
-        text-align: left;
-        span.rbn-bold {
-          @include sub-header();
-        }
-
-        .ui-block-a {
-          @include body-text();
-          margin-bottom: 10px;
-        }
+    div[id*=":pocgrd_content"],
+    div[id*=":pdoptgrd_content"] {
+      .ui-block-a {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        align-items: center;
+        gap: 0.5rem;
       }
     }
-    .ui-block-a {
-      @include main-font();
-    }
-
-    .accordion-status-block {
-      .accordion-status {
-        @include title();
-        color: white;
-        text-transform: lowercase;
-        padding: 0.8rem 1.25rem !important;
-
-        &::first-letter {
-          text-transform: uppercase;
-        }
-
-        &.res {
-          background-color: var(--success-color) !important;
-        }
-
-        &.na {
-          background-color: var(--fail-color) !important;
-        }
-      }
-    }
-  }
-
-  // information
-  .ui-panel-m {
-    border-radius: 0 !important;
-  }
-  .ui-panel-m-titlebar {
-    background-color: var(--dark-grey) !important;
-    h3 {
-      @include sub-header();
-      @include main-font();
-      color: white !important;
-    }
-  }
-
-  .ui-panel-m-content {
-    background: transparent !important;
-    min-height: 70px;
-
-    span,
-    li {
-      @include main-font;
-      @include title;
-      @include black-text;
-    }
-  }
-
-  div#base_page\:vendorMessagePanel {
-    border-radius: 0 !important;
   }
 
   div#base_page\:txtab {
-    margin-top: 2.5rem;
-
-    .ui-link {
-      font-weight: 400 !important;
-    }
-
-    .ui-column-header {
-      text-align: center;
-    }
-
-    .ui-table-row {
-      td {
-        text-align: center;
-        vertical-align: middle;
-      }
-    }
-
-    button[id*=":stpFrm:stripeSubmit"] {
-      @include button;
-      @include title;
-      @include black-text;
-      text-shadow: none !important;
-      font-family: Archivo;
-      letter-spacing: 0.15em;
-    }
-
-    .ui-datatable-tablewrapper {
-      div[id$="base_page:tabview:orderItem"] {
-        span {
-          @include main-font();
-        }
-      }
-    }
-
     .ui-table-cell-label {
-      @include title;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-
-      padding: 0 !important;
-    }
-  }
-
-  #scrollToPay {
-    border-radius: 0 !important;
-
-    label {
-      @include body-text;
-      @include second-font();
-      @include black-text;
-    }
-  }
-
-  // footer
-  .rb-footer {
-    display: none;
-  }
-
-  @media (max-width: 35em) {
-    form#base_page\:gform {
-      .ui-field-contain {
-        align-items: flex-start !important;
-        flex-direction: column;
-        border: none !important;
-      }
-
-      .ui-input-text {
-        width: 100%;
-      }
+      text-align: left !important;
+      float: left;
     }
 
-    div#base_page\:postab,
-    div#base_page\:ttab {
-      border: none !important;
-      background-color: var(--secondary-grey-color) !important;
-      box-shadow: none !important;
+    td {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
     }
 
-    div#base_page\:postab,
-    div#base_page\:ttab {
-      tbody {
+    tbody#base_page\:txtab_data {
+      > .ui-table-row {
         td {
+          text-align: left !important;
           display: grid;
           grid-template-columns: 1fr 1fr;
           align-items: center;
-        }
-      }
-    }
 
-    span#base_page\:guest-intranet-greeting::after {
-      max-width: 275px;
-      margin: auto;
-      width: fit-content;
-    }
-
-    .ui-grid-solo {
-      margin-top: 10px;
-    }
-
-    div#base_page\:tabview {
-      tbody[id*=":resultTable"]
-        // ,tbody[id*="base_page:tabview:orderItemTable"]
-      {
-        > .ui-table-row {
-          td {
-            align-items: center;
-            display: grid !important;
-            grid-template-columns: 4fr 6fr;
+          span[id*=":receivedMessageText"] {
+            display: block;
+            text-align: left;
+            float: right;
+            margin-left: 50%;
           }
-        }
-      }
 
-      a.ui-collapsible-heading-toggle {
-        padding-left: 4rem !important;
-      }
+          form[id*=":f1"] {
+            float: right;
+          }
 
-      div[id*=":pocgrd_content"],
-      div[id*=":pdoptgrd_content"] {
-        .ui-block-a {
-          display: grid;
-          grid-template-columns: 4fr 6fr;
-          align-items: center;
-          gap: 0.5rem;
-        }
-      }
-    }
-
-    div#base_page\:txtab {
-      .ui-table-cell-label {
-        text-align: left !important;
-        float: left;
-      }
-
-      td {
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-      }
-
-      tbody#base_page\:txtab_data {
-        > .ui-table-row {
-          td {
-            text-align: left !important;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-
-            span[id*=":receivedMessageText"] {
-              display: block;
-              text-align: left;
-              float: right;
-              margin-left: 50%;
-            }
-
-            form[id*=":f1"] {
-              float: right;
-            }
-
-            &:last-child:not(span) {
-              display: block !important;
-            }
+          &:last-child:not(span) {
+            display: block !important;
           }
         }
       }
     }
   }
+}
 
-  .rack {
-    //   background: transparent !important;
-    margin-bottom: 0.5em;
-    background: rgba(232, 138, 138, 0.2) !important;
+.rack {
+  //   background: transparent !important;
+  margin-bottom: 0.5em;
+  background: rgba(232, 138, 138, 0.2) !important;
+}
+
+mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
+  color: var(--primary-black-color);
+}
+button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
+  background: #f4f4f4 !important;
+}
+@media (min-width: 28em) {
+  .ui-field-contain > label ~ [class*="ui-"],
+  .ui-field-contain .ui-controlgroup-controls {
+    width: 30% !important;
   }
 
-  mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
-    color: var(--primary-black-color);
-  }
-  button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
-    background: #f4f4f4 !important;
-  }
-  @media (min-width: 28em) {
-    .ui-field-contain > label ~ [class*="ui-"],
-    .ui-field-contain .ui-controlgroup-controls {
-      width: 30% !important;
-    }
-
-    .ui-field-contain > label {
-      width: 10% !important;
-    }
+  .ui-field-contain > label {
+    width: 10% !important;
   }
 }
 
