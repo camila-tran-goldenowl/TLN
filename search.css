@@ -19,7 +19,7 @@
 
 /* REMOVE LATER */
 .vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
-  content: "" !important;
+  content: "";
 }
 
 /* REMOVE LATER */
