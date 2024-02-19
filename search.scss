@@ -1597,15 +1597,21 @@ app-shopping-cart {
     }
   }
 
+  .checkout-vendor {
+    margin-bottom: 2em !important;
+  }
 
-  mat-list{
+  app-cart-product {
+    .mat-line.summary-row.dates-row {
+      display: none !important;
+    }
+
     &:first-child {
       .mat-line.summary-row.dates-row {
-        display: block !important;
+        display: flex !important;
+        position: absolute !important;
+        top: -6.5rem;
       }
-    }
-    .mat-line.summary-row.dates-row {
-      display: none;
     }
   }
 }
@@ -3345,6 +3351,26 @@ div#orderForm\:addbskpg {
 }
 
 @media (max-width: 640px) {
+  app-shopping-cart {
+    .checkout-vendor {
+      margin-bottom: 4em !important;
+    }
+
+    app-cart-product {
+      .mat-line.summary-row.dates-row {
+        display: none !important;
+      }
+  
+      &:first-child {
+        .mat-line.summary-row.dates-row {
+          display: flex !important;
+          position: absolute !important;
+          top: -9rem;
+        }
+      }
+    }
+  }
+
   app-customer-form .details.customer-identity,
   app-customer-form .details.customer-contact,
   app-customer-form .details.customer-nation {
