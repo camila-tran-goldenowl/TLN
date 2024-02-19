@@ -1393,7 +1393,7 @@ html .open-gallery > span {
 
     .rate-plan-price {
       .rack {
-        background: rgba(232, 138, 138, 0.2) !important;
+        background: transparent !important;
         margin-bottom: 0.5em;
       }
     }
@@ -2506,9 +2506,8 @@ div#base_page\:txtab {
 }
 
 .rack {
-  //   background: transparent !important;
+  background: transparent !important;
   margin-bottom: 0.5em;
-  background: rgba(232, 138, 138, 0.2) !important;
 }
 
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
