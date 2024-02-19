@@ -1596,6 +1596,18 @@ app-shopping-cart {
       }
     }
   }
+
+
+  mat-list{
+    &:first-child {
+      .mat-line.summary-row.dates-row {
+        display: block !important;
+      }
+    }
+    .mat-line.summary-row.dates-row {
+      display: none;
+    }
+  }
 }
 
 html[lang="en"] .mat-headline {
@@ -2186,7 +2198,6 @@ html head + body .ui-btn.ui-btn-a:visited {
 
 .ui-icon-minus,
 .ui-btn-icon-notext {
-
   &:after {
     background-color: var(--dark-grey) !important;
   }
@@ -2316,7 +2327,7 @@ div#base_page\:vendorMessagePanel {
   border-radius: 0 !important;
 }
 
-html .ui-panel-m-titlebar-icon{
+html[lang="en"] .ui-panel-m-titlebar-icon {
   border-radius: 50% !important;
 }
 
