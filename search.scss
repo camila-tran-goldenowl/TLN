@@ -2052,7 +2052,7 @@ div#base_page\:locform\:languageSelect {
   div#base_page\:locform\:languageSelect_input-button {
     @include button();
     display: flex;
-    background-color: var(--secondary-orange-color);
+    background-color: white !important;
     opacity: 1;
 
     span {
