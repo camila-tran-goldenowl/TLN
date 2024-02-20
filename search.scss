@@ -2080,7 +2080,11 @@ div#base_page\:locform\:languageSelect {
   visibility: hidden;
 
   &::before{
-    content: "Your Booking";
+    visibility: visible;
+    white-space: pre;
+    text-align: center;
+    word-wrap: break-word;
+    content: "Your Booking \A";
     @include main-font();
     @include header();
     margin-bottom: 40px;
