@@ -2528,6 +2528,9 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
 }
 
 // =======================================GUESS SITE=======================================
+#confirmdlg{
+ display: none !important;
+}
 
 /* REMOVE AFTER CONFIRM */
 .ui-button,
@@ -2538,7 +2541,6 @@ button.ui-button.ui-state-default,
 
 /* Your Booking */
 /* Custom */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap");
 .rb-loc-cur label {
   font-weight: 400 !important;
 }
@@ -2555,9 +2557,6 @@ button.ui-button.ui-state-default,
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
-* {
-  font-family: "Noto Sans JP", sans-serif;
-}
 
 .rb-header {
   background-image: url("https://nisade.com/assets/svg/nisade-logo-white.svg"),
@@ -2573,10 +2572,6 @@ button.ui-button.ui-state-default,
 
 .rb-header-title {
   display: none;
-}
-
-.rb-header-title {
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 /* Custom Headers */
@@ -2600,7 +2595,6 @@ button.ui-button.ui-state-default,
 h3 {
   color: #333;
   text-transform: none;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 /*Custom Icons */
@@ -2673,9 +2667,6 @@ h3 {
 }
 
 /* Custom Button Font */
-.ui-button-text {
-  font-family: "Noto Sans JP", sans-serif !important;
-}
 
 /* Lang and currency */
 #locform\:currencySelect_label,
@@ -2685,6 +2676,15 @@ h3 {
 
 .ui-widget-content .ui-state-highlight {
   background: #ff7900;
+}
+
+ul#locform\:languageSelect_items{
+  li{
+    &:nth-child(n+3){
+      display: none !important;
+    }
+  }
+  
 }
 
 /* CHECKOUT */
