@@ -2088,7 +2088,7 @@ div#base_page\:locform\:languageSelect {
     @include second-font();
     @include sub-header();
     margin-bottom: 40px;
-    font-weight: 700;
+    font-weight: 700 !important;
   }
 
   &::after{
