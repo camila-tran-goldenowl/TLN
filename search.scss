@@ -2086,7 +2086,7 @@ div#base_page\:locform\:languageSelect {
     word-wrap: break-word;
     content: "Your Booking \A";
     @include second-font();
-    @include header();
+    @include sub-header();
     margin-bottom: 40px;
     font-weight: 700;
   }
