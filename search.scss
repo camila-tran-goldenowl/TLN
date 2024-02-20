@@ -2119,6 +2119,7 @@ form#base_page\:gform {
     margin: auto;
     line-height: 19px;
     letter-spacing: 0.15em;
+    width: 100%;
   }
 
   .ui-field-contain {
@@ -2129,6 +2130,7 @@ form#base_page\:gform {
       @include body-text();
       color: var(--dark-grey);
       padding: 8px 15px;
+      width: 100%;
     }
 
     input {
