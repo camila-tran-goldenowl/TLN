@@ -2564,7 +2564,7 @@ button.ui-button.ui-state-default,
   background-color: #fff !important;
   background-repeat: no-repeat;
   background-position: center center, center 25%;
-  background-size: 175px, cover;
+  background-size: 250px, cover;
   border: none;
   height: 100px !important;
   border-bottom: 0;
@@ -2987,11 +2987,11 @@ html .rb-h-selwrapper {
 }
 
 .flex-item > .ui-selectonemenu {
-  width: calc(200px - 34px) !important;
+  width: 200 !important;
 }
 
 .flex-item > div#orderForm\:countrynew.ui-selectonemenu {
-  width: calc(200px - 24px) !important;
+  width: 200 !important;
 }
 
 .rb-vendor-description label,
