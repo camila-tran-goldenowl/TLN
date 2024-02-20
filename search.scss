@@ -2109,6 +2109,7 @@ div#base_page\:locform\:languageSelect {
 form#base_page\:gform {
   margin-top: 2.5rem;
   width: 600px;
+  margin: auto;
 
   .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
     @include button();
@@ -2551,6 +2552,10 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
 @media (min-width: 28em) {
   form#base_page\:gform {
     width: 600px;
+
+    .ui-field-contain>label{
+      float: none !important;
+    }
   }
 }
 
