@@ -2084,6 +2084,10 @@ div#base_page\:locform\:languageSelect {
 form#base_page\:gform {
   margin-top: 2.5rem;
 
+  .ui-shadow-inset{
+    box-shadow: none !important
+  }
+
   .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
     @include button();
     @include title();
