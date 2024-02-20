@@ -87,6 +87,14 @@
   border-radius: 0 !important;
 }
 
+@mixin inputGuest{
+  @include black-text;
+  @include body-text;
+  border: 1px solid var(--secondary-grey-color);
+  background-color: white;
+  padding: 8px 15px;
+}
+
 @mixin hover-underline {
   background-color: transparent !important;
   text-decoration: underline;
@@ -2093,7 +2101,7 @@ form#base_page\:gform {
 
     .ui-input-text {
       @include main-font();
-      @include input;
+      @include inputGuest;
       @include body-text();
       color: var(--dark-grey);
       padding: 8px 15px;
@@ -3135,7 +3143,7 @@ table tbody tr:nth-child(even) td {
 // checkout
 
 input#orderForm\:disCode {
-  @include input();
+  @include inputGuest();
   @include body-text();
   min-width: 150px;
 }
@@ -3512,7 +3520,7 @@ button#orderForm\:gcontshop {
 
 div#orderForm\:vercodepg {
   input {
-    @include input();
+    @include inputGuest();
   }
 
   button#orderForm\:sendvercode {
@@ -3525,7 +3533,7 @@ div#orderForm\:newguestpg {
     input,
     .ui-selectonemenu {
       margin-left: 2rem;
-      @include input();
+      @include inputGuest();
     }
   }
 }
