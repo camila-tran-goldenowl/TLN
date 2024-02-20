@@ -2074,10 +2074,25 @@ div#base_page\:locform\:languageSelect {
 .rbn-yb-searchtext {
   @include body-text();
   text-align: center;
-  margin-top: 1.8rem;
   max-width: 949px;
   display: block;
   margin: auto;
+  visibility: hidden;
+
+  &::before{
+    content: "Your Booking";
+    @include main-font();
+    @include header();
+    margin-bottom: 40px;
+  }
+
+  &::after{
+    visibility: visible;
+    content: "\A Enter your booking ID and email address to view your booking. \A Details of how to make payment are also available. Please contact us if you have any questions.";
+    white-space: pre;
+    text-align: center;
+    word-wrap: break-word;
+  }
 }
 
 // infor
