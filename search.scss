@@ -3531,7 +3531,8 @@ div#orderForm\:vercodepg {
 div#orderForm\:newguestpg {
   .flex-item {
     input,
-    .ui-selectonemenu {
+    .ui-selectonemenu,
+    textarea {
       margin-left: 2rem;
       @include inputGuest();
     }
