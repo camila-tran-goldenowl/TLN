@@ -2085,9 +2085,10 @@ div#base_page\:locform\:languageSelect {
     text-align: center;
     word-wrap: break-word;
     content: "Your Booking \A";
-    @include main-font();
+    @include second-font();
     @include header();
     margin-bottom: 40px;
+    font-weight: 700;
   }
 
   &::after{
