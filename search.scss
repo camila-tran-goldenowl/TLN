@@ -2081,9 +2081,6 @@ div#base_page\:locform\:languageSelect {
 }
 
 // infor
-.ui-shadow-inset{
-  box-shadow: none !important
-}
 
 form#base_page\:gform {
   margin-top: 2.5rem;
@@ -2531,7 +2528,8 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
 }
 @media (min-width: 28em) {
   .ui-field-contain > label ~ [class*="ui-"],
-  .ui-field-contain .ui-controlgroup-controls {
+  .ui-field-contain .ui-controlgroup-controls,
+  .ui-btn.ui-input-btn.ui-corner-all.ui-shadow:has(input#base_page\:gform\:gbutt) {
     width: 30% !important;
   }
 
