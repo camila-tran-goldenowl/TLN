@@ -140,6 +140,9 @@
   color: var(--secondary-orange-color) !important;
 }
 
+.mat-form-field-can-float:has(.mat-select[aria-expanded=true]){
+  transform: translate(0) !important;
+}
 /* begin general */
 html[lang="en"] body,
 html[lang="en"] .mat-body,
