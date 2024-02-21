@@ -2322,6 +2322,10 @@ div#base_page\:tabview {
     @include main-font();
   }
 
+  .accordion-vendor{
+    font-weight: 500!important;
+  }
+  
   .accordion-status-block {
     .accordion-status {
       @include title();
