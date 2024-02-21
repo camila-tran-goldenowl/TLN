@@ -2384,6 +2384,14 @@ div#base_page\:txtab {
 
   .ui-column-header {
     text-align: center;
+
+    &:last-child{
+      span.ui-column-title{
+        &::before{
+          content: "YOUR STATUS";
+        }
+      }
+    }
   }
 
   .ui-table-row {
