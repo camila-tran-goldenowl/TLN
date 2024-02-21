@@ -1159,6 +1159,10 @@ html[lang="en"] h2.product-title,
   line-height: 32px;
 }
 
+#language-panel .mat-option:nth-child(n + 3) {
+    display: none !important;
+}
+
 // search bar
 .search-bar {
   .mat-flat-button {
