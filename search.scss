@@ -1782,10 +1782,6 @@ html[lang="en"] .mat-h1 {
   margin-top: 0.7em !important;
 }
 
-.mat-form-field-can-float:has(.mat-select[aria-expanded="true"]) {
-  transform: translateY(-2.5em) scale(0.75) !important;
-}
-
 section.listing-container.final {
   .vendor-image-container,
   .vendor-description,
