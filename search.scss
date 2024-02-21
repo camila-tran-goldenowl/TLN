@@ -2324,12 +2324,12 @@ div#base_page\:tabview {
   }
 
   .accordion-vendor{
-    font-weight: 700!important;
+    font-weight: 700 !important;
   }
 
   .accordion-status-block {
     .accordion-status {
-      @include title();
+      @include body-text();
       color: white;
       text-transform: lowercase;
       padding: 0.8rem 1.25rem !important;
