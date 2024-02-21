@@ -44,24 +44,24 @@
 
 @mixin sub-header {
   font-size: 20px !important;
-  font-weight: 400 !important;
+  font-weight: 400;
 }
 
 @mixin body-text {
   font-size: 16px !important;
-  font-weight: 400 !important;
+  font-weight: 400;
   line-height: 26px;
 }
 
 @mixin caption {
   font-size: 14px !important;
-  font-weight: 400 !important;
+  font-weight: 400;
   line-height: 17px;
 }
 
 @mixin title {
   font-size: 12px !important;
-  font-weight: 400 !important;
+  font-weight: 400;
   line-height: 17px;
 }
 
@@ -2325,7 +2325,7 @@ div#base_page\:tabview {
   .accordion-vendor{
     font-weight: 500!important;
   }
-  
+
   .accordion-status-block {
     .accordion-status {
       @include title();
