@@ -1210,7 +1210,8 @@ html[lang="en"] .vendor-description {
     font-weight: 600;
     line-height: 19px;
     font-size: 20px;
-    margin-bottom: 1.2rem;
+    margin-bottom: 30px;
+    display: block;
   }
 }
 
@@ -2382,7 +2383,9 @@ div#base_page\:txtab {
   &::before{
     content: "Payments  \A";
     @include sub-header();
-    font-size: 20px;
+    @include second-font();
+    display: block;
+    height: 30px;
     font-weight: 700 !important;
   }
 
