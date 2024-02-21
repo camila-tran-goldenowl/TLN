@@ -2513,6 +2513,12 @@ div#base_page\:txtab {
   }
 
   div#base_page\:txtab {
+    &::before{
+      content: "Payments  \A";
+      font-size: 20px;
+      font-weight: 700 !important;
+    }
+
     .ui-table-cell-label {
       text-align: left !important;
       float: left;
