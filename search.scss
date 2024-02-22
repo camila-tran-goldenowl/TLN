@@ -2529,10 +2529,6 @@ div#base_page\:txtab {
       border: none !important;
     }
 
-    .ui-datatable-tablewrapper{
-      @include border;
-    }
-
     .ui-table-cell-label {
       text-align: left !important;
       float: left;
@@ -2569,6 +2565,10 @@ div#base_page\:txtab {
       }
     }
   }
+}
+
+div#base_page\:txtab .ui-datatable-tablewrapper{
+  @include border();
 }
 
 .rack {
