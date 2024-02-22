@@ -2377,6 +2377,7 @@ html[lang="en"] .ui-panel-m-titlebar-icon {
 
 div#base_page\:txtab {
   margin-top: 2.5rem;
+  border: none !important;
 
   &::before{
     content: "Payments  \A";
