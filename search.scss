@@ -2378,6 +2378,17 @@ html[lang="en"] .ui-panel-m-titlebar-icon {
 div#base_page\:txtab {
   margin-top: 2.5rem;
 
+  &::before{
+    content: "Payments  \A";
+    @include sub-header();
+    font-size: 20px;
+    font-weight: 700 !important;
+  }
+
+  .ui-datatable{
+    border: none !important;
+  }
+
   .ui-link {
     font-weight: 400 !important;
   }
@@ -2513,11 +2524,6 @@ div#base_page\:txtab {
   }
 
   div#base_page\:txtab {
-    &::before{
-      content: "Payments  \A";
-      font-size: 20px;
-      font-weight: 700 !important;
-    }
 
     .ui-table-cell-label {
       text-align: left !important;
