@@ -1139,9 +1139,17 @@ google-map {
   }
 }
 
-.map-icon:before,
-.map-icon-focus:before {
+html .map-icon-focus{
+  border-radius: 0;
+  @include main-font;
+  background-color: var(--secondary-orange-color) !important;
+  color: white !important;
+}
+
+html .map-icon::before,
+html .map-icon-focus::before {
   content: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/house-icon.svg") !important;
+  content: url("tln-nisade-git-main-camila-tran-goldenowl.vercel.app/house-icon.svg") !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
 }
