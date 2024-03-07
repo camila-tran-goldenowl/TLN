@@ -3700,3 +3700,14 @@ div[id*=":pdtpnl"] {
     }
   }
 }
+
+
+button#orderForm\:sendinq{
+  span{
+    visibility: hidden;
+
+    &::after {
+      content:'SEND ENQUIRY'; 
+    }
+  }
+}
