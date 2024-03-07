@@ -3707,6 +3707,7 @@ button#orderForm\:sendinq{
     visibility: hidden;
 
     &::after {
+      visibility: visible;
       content:'SEND ENQUIRY'; 
     }
   }
