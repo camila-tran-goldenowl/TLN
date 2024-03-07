@@ -3751,10 +3751,11 @@ div[id*=":pdtpnl"] {
 button#orderForm\:sendinq {
   span {
     visibility: hidden;
+    font-size: 0;
 
     &::after {
       visibility: visible;
-
+      letter-spacing: 0.15em;
       font-size: 16px;
       content: "SEND ENQUIRY";
     }
