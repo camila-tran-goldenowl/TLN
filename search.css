@@ -1019,6 +1019,16 @@ html[lang=en] h2.product-title,
 .search-bar .mat-flat-button {
   border-radius: 50%;
 }
+.search-bar .spacer:first-child {
+  background-size: contain;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-image: url(https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/logo.png) !important;
+  height: 40px;
+  background-position: center;
+  box-sizing: border-box;
+  width: 200px;
+}
 
 .select-dates span {
   text-transform: uppercase !important;
