@@ -19,6 +19,7 @@
   --dark-grey: #66686a;
   --link-color: #3388cc;
 }
+
 @mixin main-font {
   font-family: Inter !important;
 }
@@ -87,7 +88,7 @@
   border-radius: 0 !important;
 }
 
-@mixin inputGuest{
+@mixin inputGuest {
   @include black-text;
   @include body-text;
   border: 1px solid var(--secondary-grey-color);
@@ -112,9 +113,7 @@
 
 /* REMOVE LATER */
 
-.vendor-products-container
-  mat-card-actions
-  button:not(.mat-button-disabled)::after {
+.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
   content: "";
 }
 
@@ -141,9 +140,10 @@
   color: var(--secondary-orange-color) !important;
 }
 
-.mat-form-field-can-float:has(.mat-select[aria-expanded=true]){
+.mat-form-field-can-float:has(.mat-select[aria-expanded=true]) {
   transform: translate(0) !important;
 }
+
 /* begin general */
 html[lang="en"] body,
 html[lang="en"] .mat-body,
@@ -208,13 +208,9 @@ html[lang="en"] .mat-dialog-title {
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label,
 .mat-form-field.mat-form-field-invalid .mat-form-field-label.mat-accent,
-.mat-form-field.mat-form-field-invalid
-  .mat-form-field-label
-  .mat-form-field-required-marker,
-.mat-form-field-appearance-outline.mat-focused.mat-warn
-  .mat-form-field-outline-thick,
-.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
-  .mat-form-field-outline-thick {
+.mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker,
+.mat-form-field-appearance-outline.mat-focused.mat-warn .mat-form-field-outline-thick,
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
   color: #ff0000 !important;
 }
 
@@ -230,13 +226,16 @@ mat-label {
   font-weight: 400 !important;
   line-height: 28px;
 }
+
 /* end general */
 
 /* begin filter search section */
 .mobile-top {
   width: 100% !important;
 }
+
 .mobile {
+
   // card
   .search-card {
     padding: 0px !important;
@@ -251,7 +250,7 @@ mat-label {
     }
 
     .title-cal-search {
-      > div {
+      >div {
         @include second-font();
         font-size: 20px;
         margin-left: 10px;
@@ -298,7 +297,7 @@ mat-label {
   mat-label {
     text-transform: capitalize !important;
 
-    > span {
+    >span {
       text-transform: capitalize !important;
     }
   }
@@ -344,9 +343,10 @@ mat-label {
     }
 
     .mat-expansion-panel-body {
-      > div {
+      >div {
         align-items: baseline;
-        > p {
+
+        >p {
           @include header;
         }
       }
@@ -387,9 +387,11 @@ mat-label {
     max-width: calc(100vw - 66px) !important;
   }
 }
+
 #mobileLang {
   border-radius: 0 !important;
 }
+
 .show-search-extended {
   border-radius: 0 !important;
   background-color: #a1a1aa !important;
@@ -483,7 +485,7 @@ html[lang="en"] .mat-calendar * {
     flex: 1;
   }
 
-  mat-datepicker-toggle > button {
+  mat-datepicker-toggle>button {
     width: fit-content !important;
     height: fit-content !important;
     vertical-align: middle !important;
@@ -550,6 +552,7 @@ app-search-card.ng-star-inserted {
 .mat-typography p {
   margin: 0;
 }
+
 // guest
 .search-location.mat-focused {
   .mat-select-arrow-wrapper {
@@ -563,6 +566,7 @@ app-search-card.ng-star-inserted {
     height: fit-content;
   }
 }
+
 .mat-option:hover .mat-option-text {
   text-decoration: underline !important;
 }
@@ -649,6 +653,7 @@ app-search-card.ng-star-inserted {
 }
 
 html .search-discount-code {
+
   mat-label,
   input {
     text-transform: capitalize !important;
@@ -710,6 +715,7 @@ mat-form-field.search-discount-code {
   flex: none !important;
   font-size: 12px;
 }
+
 /* end filter search section */
 
 /* begin filter list section */
@@ -721,18 +727,15 @@ mat-form-field.search-discount-code {
 .filter-container {
   top: 64px !important;
 }
+
 .mat-card {
   @include main-font();
 }
 
 .open-filter-button.active,
 .mdc-evolution-chip__text-label,
-html[lang="en"]
-  .mdc-evolution-chip__action[aria-selected="false"]
-  .mdc-evolution-chip__text-label,
-html[lang="en"]
-  .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
-  .mdc-evolution-chip__checkmark {
+html[lang="en"] .mdc-evolution-chip__action[aria-selected="false"] .mdc-evolution-chip__text-label,
+html[lang="en"] .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark {
   @include black-text();
 }
 
@@ -744,7 +747,7 @@ app-search-filter-bar {
   .title {
     align-items: center !important;
 
-    > span {
+    >span {
       @include sub-header();
     }
 
@@ -758,12 +761,12 @@ app-search-filter {
   .title {
     font-size: 24px !important;
   }
+
   mat-icon {
     @include black-text();
   }
 
-  .mat-card-actions:not(.mat-card-actions-align-end)
-    .mat-stroked-button:first-child {
+  .mat-card-actions:not(.mat-card-actions-align-end) .mat-stroked-button:first-child {
     border: none !important;
     padding-left: 0 !important;
     @include hover-underline();
@@ -890,6 +893,7 @@ html[lang="en"] .mdc-slider {
     @include border();
   }
 }
+
 // action
 .mat-card-actions {
   &:first-child {
@@ -924,6 +928,7 @@ html[lang="en"] .mdc-slider {
     background-color: white !important;
   }
 }
+
 /* end filter list section */
 
 /* begin card section */
@@ -985,11 +990,9 @@ html[lang="en"] .mdc-slider {
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();
-  background: linear-gradient(
-    0deg,
-    var(--secondary-grey-color),
-    var(--secondary-grey-color)
-  ) !important;
+  background: linear-gradient(0deg,
+      var(--secondary-grey-color),
+      var(--secondary-grey-color)) !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
@@ -1002,17 +1005,20 @@ html[lang="en"] .search-card:hover {
 
   .search-card-from {
     @include black-text();
-    > span {
+
+    >span {
       @include black-text();
     }
   }
 }
+
 /* end card section */
 
 /* begin map section */
 html[lang="en"] .card-content * {
   @include main-font();
 }
+
 google-map {
   .cluster-item {
     img {
@@ -1020,6 +1026,7 @@ google-map {
     }
   }
 }
+
 .card-content {
   @include main-font();
   @include black-text();
@@ -1102,6 +1109,7 @@ app-search-card {
 
 map-info-window {
   border-radius: 0 !important;
+
   .content-title {
     border-radius: 0 !important;
   }
@@ -1139,7 +1147,7 @@ google-map {
   }
 }
 
-html .map-icon-focus{
+html .map-icon-focus {
   border-radius: 0;
   @include main-font;
   background-color: var(--secondary-orange-color) !important;
@@ -1153,12 +1161,14 @@ html .map-icon-focus::before {
   top: 50% !important;
   transform: translateY(-50%) !important;
 }
+
 /* end map section */
 
 /* begin search list result */
 .search-results {
   width: calc(52% - 1em) !important;
 }
+
 /* end search list result */
 
 /*==================PROPER PAGE =====================*/
@@ -1171,7 +1181,7 @@ html[lang="en"] h2.product-title,
 }
 
 #language-panel .mat-option:nth-child(n + 3) {
-    display: none !important;
+  display: none !important;
 }
 
 // search bar
@@ -1213,7 +1223,7 @@ html[lang="en"] .vendor-description {
   box-shadow: none !important;
 
   &::before {
-    content: "Highlights\a"attr(title);
+    content: "Highlights\a" attr(title);
     white-space: pre;
     font-weight: 600;
     line-height: 19px;
@@ -1266,7 +1276,7 @@ app-cart-product,
   .product-features {
     margin-top: 20px;
 
-    > span {
+    >span {
       @include caption();
       margin-right: 10px;
     }
@@ -1307,10 +1317,11 @@ app-product {
   @include header();
 }
 
-.rate-price-container > * {
+.rate-price-container>* {
   @include caption();
   line-height: 22px;
 }
+
 .open-gallery[_ngcontent-lqp-c70] {
   font-weight: 400 !important;
 }
@@ -1318,14 +1329,17 @@ app-product {
 .vendor-container {
   .vendor-image-container {
     border-radius: 0 !important;
+
     &:hover {
       .open-gallery {
         transition: 0.2s;
         border: none !important;
+
         span,
         mat-icon {
           color: white !important;
         }
+
         background-color: var(--primary-black-color) !important;
       }
     }
@@ -1387,8 +1401,8 @@ app-product {
   }
 }
 
-html .open-gallery > .mat-icon,
-html .open-gallery > span {
+html .open-gallery>.mat-icon,
+html .open-gallery>span {
   color: white !important;
 }
 
@@ -1445,6 +1459,7 @@ html .open-gallery > span {
     }
   }
 }
+
 .mat-select-panel {
   border-radius: 0 !important;
 }
@@ -1497,6 +1512,7 @@ html[lang="en"] app-product-dialog-component {
     }
   }
 }
+
 /* end dialog section */
 
 /* begin checkout section */
@@ -1550,7 +1566,7 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
     @include header();
   }
 
-  > div {
+  >div {
     justify-content: space-between;
     align-items: baseline;
     margin-top: 10px;
@@ -1580,6 +1596,7 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
     margin-right: 0 !important;
   }
 }
+
 .vendor-products-container {
   mat-card-actions {
     margin-bottom: 0 !important;
@@ -1692,6 +1709,7 @@ app-search-bar {
     // }
   }
 }
+
 // ====================================
 
 app-shopping-cart {
@@ -1703,7 +1721,7 @@ app-shopping-cart {
     padding-bottom: 1.1rem !important;
   }
 
-  .mat-card-content > div {
+  .mat-card-content>div {
     // p{
     //     display: none;
     // }
@@ -1717,6 +1735,7 @@ app-shopping-cart {
 html[lang="en"] .rate-plan-info {
   padding-top: 1.6rem !important;
 }
+
 .rate-plan-info {
   margin-top: 24px !important;
   margin-bottom: 24px !important;
@@ -1769,30 +1788,24 @@ html[lang="en"] .mat-h1 {
   font-size: 22px !important;
 }
 
-.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
-  .mat-form-field-label,
-.mat-form-field-appearance-outline.mat-form-field-can-float
-  .mat-input-server:focus
-  + .mat-form-field-label-wrapper
-  .mat-form-field-label {
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+.mat-form-field-appearance-outline.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label {
   transform: translateY(-2.1em) scale(0.75) !important;
 }
 
 // .mat-form-field-infix:has(input) {
-.mat-form-field-infix:has(input)
-  .mat-form-field-label-wrapper
-  .mat-form-field-label {
+.mat-form-field-infix:has(input) .mat-form-field-label-wrapper .mat-form-field-label {
   margin-top: 0.285em !important;
 }
+
 // }
 
-.mat-form-field-infix:has(.mat-select[aria-expanded="false"])
-  .mat-form-field-label-wrapper
-  .mat-form-field-label {
+.mat-form-field-infix:has(.mat-select[aria-expanded="false"]) .mat-form-field-label-wrapper .mat-form-field-label {
   margin-top: 0.7em !important;
 }
 
 section.listing-container.final {
+
   .vendor-image-container,
   .vendor-description,
   .title-group {
@@ -1875,6 +1888,7 @@ app-customer-form {
       display: grid;
       align-items: center;
       grid-template-columns: 2.5fr 7.5fr;
+
       &::before {
         @include header();
         @include black-text();
@@ -1888,6 +1902,7 @@ app-customer-form {
       display: grid;
       align-items: center;
       grid-template-columns: 2.5fr 7.5fr;
+
       &::before {
         @include header();
         @include black-text();
@@ -1901,6 +1916,7 @@ app-customer-form {
       display: grid;
       align-items: center;
       grid-template-columns: 2.5fr 7.5fr;
+
       &::before {
         @include header();
         @include black-text();
@@ -1914,6 +1930,7 @@ app-customer-form {
       display: grid;
       align-items: center;
       grid-template-columns: 2.5fr 7.5fr;
+
       &::before {
         @include header();
         @include black-text();
@@ -1927,6 +1944,7 @@ app-customer-form {
       display: grid;
       align-items: center;
       grid-template-columns: 2.5fr 7.5fr;
+
       &::before {
         @include header();
         @include black-text();
@@ -1940,6 +1958,7 @@ app-customer-form {
       display: grid;
       align-items: center;
       grid-template-columns: 1.1fr 7.9fr;
+
       &::before {
         @include header();
         @include black-text();
@@ -1956,12 +1975,10 @@ app-customer-form {
     column-gap: 2.5rem;
   }
 
-  .details:not(
-      .customer-identity,
-      .customer-contact,
-      .customer-nation,
-      .message
-    ) {
+  .details:not(.customer-identity,
+    .customer-contact,
+    .customer-nation,
+    .message) {
     display: none !important;
   }
 
@@ -1985,6 +2002,7 @@ app-customer-form {
 
   .search-discount-code {
     .mat-form-field-infix {
+
       input,
       mat-label {
         @include header();
@@ -2006,20 +2024,22 @@ app-customer-form {
     }
   }
 }
+
 //=========================BOOKING PAGE=========================
 .ui-page-theme-a .ui-btn:focus,
 html .ui-bar-a .ui-btn:focus,
 html .ui-body-a .ui-btn:focus,
 html body .ui-group-theme-a .ui-btn:focus,
-html head + body .ui-btn.ui-btn-a:focus,
+html head+body .ui-btn.ui-btn-a:focus,
 .ui-page-theme-a .ui-focus,
 html .ui-bar-a .ui-focus,
 html .ui-body-a .ui-focus,
 html body .ui-group-theme-a .ui-focus,
-html head + body .ui-btn-a.ui-focus,
-html head + body .ui-body-a.ui-focus {
+html head+body .ui-btn-a.ui-focus,
+html head+body .ui-body-a.ui-focus {
   box-shadow: 0 0 12px var(--secondary-orange-color) !important;
 }
+
 // top menu
 div#base_page\:base_header {
   .rb-header {
@@ -2083,6 +2103,7 @@ div#base_page\:locform\:languageSelect {
     }
   }
 }
+
 // message
 .rbn-yb-searchtext {
   font-size: 0 !important;
@@ -2092,7 +2113,7 @@ div#base_page\:locform\:languageSelect {
   margin: auto;
   visibility: hidden;
 
-  &::before{
+  &::before {
     visibility: visible;
     white-space: pre;
     text-align: center;
@@ -2104,7 +2125,7 @@ div#base_page\:locform\:languageSelect {
     font-weight: 700 !important;
   }
 
-  &::after{
+  &::after {
     @include body-text();
     visibility: visible;
     content: "\A Enter your booking ID and email address to view your booking. \A Details of how to make payment are also available. Please contact us if you have any questions.";
@@ -2115,7 +2136,7 @@ div#base_page\:locform\:languageSelect {
 }
 
 // infor
-.ui-shadow-inset{
+.ui-shadow-inset {
   box-shadow: none !important;
 }
 
@@ -2200,6 +2221,7 @@ table {
       vertical-align: middle;
       background-color: var(--secondary-grey-color);
       padding: 1rem 0.625rem !important;
+
       span {
         font-weight: 500 !important;
       }
@@ -2236,12 +2258,12 @@ table {
 html .ui-bar-a .ui-btn,
 html .ui-body-a .ui-btn,
 html body .ui-group-theme-a .ui-btn,
-html head + body .ui-btn.ui-btn-a,
+html head+body .ui-btn.ui-btn-a,
 .ui-page-theme-a .ui-btn:visited,
 html .ui-bar-a .ui-btn:visited,
 html .ui-body-a .ui-btn:visited,
 html body .ui-group-theme-a .ui-btn:visited,
-html head + body .ui-btn.ui-btn-a:visited {
+html head+body .ui-btn.ui-btn-a:visited {
   border-color: var(--secondary-grey-color);
 }
 
@@ -2316,6 +2338,7 @@ div#base_page\:tabview {
     .ui-grid-solo {
       margin-left: 1rem;
       text-align: left;
+
       span.rbn-bold {
         @include sub-header();
       }
@@ -2326,11 +2349,12 @@ div#base_page\:tabview {
       }
     }
   }
+
   .ui-block-a {
     @include main-font();
   }
 
-  .accordion-vendor{
+  .accordion-vendor {
     font-weight: 700 !important;
   }
 
@@ -2360,8 +2384,10 @@ div#base_page\:tabview {
 .ui-panel-m {
   border-radius: 0 !important;
 }
+
 .ui-panel-m-titlebar {
   background-color: var(--dark-grey) !important;
+
   h3 {
     @include sub-header();
     @include main-font();
@@ -2393,7 +2419,7 @@ div#base_page\:txtab {
   margin-top: 2.5rem;
   border: none !important;
 
-  &::before{
+  &::before {
     content: "Payments  \A";
     @include sub-header();
     @include second-font();
@@ -2402,7 +2428,7 @@ div#base_page\:txtab {
     font-weight: 700 !important;
   }
 
-  .ui-datatable{
+  .ui-datatable {
     border: none !important;
   }
 
@@ -2413,9 +2439,9 @@ div#base_page\:txtab {
   .ui-column-header {
     text-align: center;
 
-    &:last-child{
-      span.ui-column-title{
-        &::before{
+    &:last-child {
+      span.ui-column-title {
+        &::before {
           content: "YOUR STATUS";
         }
       }
@@ -2513,10 +2539,10 @@ div#base_page\:txtab {
   }
 
   div#base_page\:tabview {
-    tbody[id*=":resultTable"]
-        // ,tbody[id*="base_page:tabview:orderItemTable"]
-    {
-      > .ui-table-row {
+    tbody[id*=":resultTable"] // ,tbody[id*="base_page:tabview:orderItemTable"]
+
+      {
+      >.ui-table-row {
         td {
           align-items: center;
           display: grid !important;
@@ -2542,7 +2568,7 @@ div#base_page\:txtab {
 
   div#base_page\:txtab {
 
-    .ui-datatable{
+    .ui-datatable {
       border: none !important;
     }
 
@@ -2557,7 +2583,7 @@ div#base_page\:txtab {
     }
 
     tbody#base_page\:txtab_data {
-      > .ui-table-row {
+      >.ui-table-row {
         td {
           text-align: left !important;
           display: grid;
@@ -2584,7 +2610,7 @@ div#base_page\:txtab {
   }
 }
 
-div#base_page\:txtab .ui-datatable-tablewrapper{
+div#base_page\:txtab .ui-datatable-tablewrapper {
   @include border();
 }
 
@@ -2596,6 +2622,7 @@ div#base_page\:txtab .ui-datatable-tablewrapper{
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
   color: var(--primary-black-color);
 }
+
 button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
   background: #f4f4f4 !important;
 }
@@ -2604,19 +2631,19 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
   form#base_page\:gform {
     width: 600px;
 
-    .ui-field-contain>label{
+    .ui-field-contain>label {
       float: none !important;
     }
 
-    .ui-field-contain{
+    .ui-field-contain {
       margin: 30px 0 !important;
     }
   }
 }
 
 // =======================================GUESS SITE=======================================
-#confirmdlg{
- display: none !important;
+#confirmdlg {
+  display: none !important;
 }
 
 /* REMOVE AFTER CONFIRM */
@@ -2718,13 +2745,13 @@ h3 {
   display: none;
 }
 
-#orderForm\:addbskpg > tbody:nth-child(1) > tr:nth-child(1) {
+#orderForm\:addbskpg>tbody:nth-child(1)>tr:nth-child(1) {
   text-align: left;
 }
 
 /* Basket Item Highlights */
-#orderForm\:itemdtbsk_data tr.ui-widget-content > td:nth-child(1) > label,
-#orderForm\:itemdtchkout_data tr.ui-widget-content > td:nth-child(1) > label {
+#orderForm\:itemdtbsk_data tr.ui-widget-content>td:nth-child(1)>label,
+#orderForm\:itemdtchkout_data tr.ui-widget-content>td:nth-child(1)>label {
   background-color: #000;
   box-shadow: 2px -1 -1 #000, -2px -1 -1 #000;
 }
@@ -2765,13 +2792,13 @@ h3 {
   background: #ff7900;
 }
 
-ul#orderForm\:languagenew_items{
-  li{
-    &:nth-child(n+4){
+ul#orderForm\:languagenew_items {
+  li {
+    &:nth-child(n+4) {
       display: none !important;
     }
   }
-  
+
 }
 
 /* CHECKOUT */
@@ -2806,11 +2833,13 @@ ul#orderForm\:languagenew_items{
 .rb-header .ui-title {
   display: none !important;
 }
+
 .ui-popup .ui-header.ui-bar-inherit {
   color: #fff;
   background: #ff7900;
   text-shadow: none;
 }
+
 .ui-popup .ui-icon-delete:after {
   background-color: #ff7900;
   border: none;
@@ -2835,20 +2864,20 @@ ul#orderForm\:languagenew_items{
 }
 
 /* Buttons */
-#base_page\:gform > .ui-btn.ui-input-btn.ui-corner-all.ui-shadow,
+#base_page\:gform>.ui-btn.ui-input-btn.ui-corner-all.ui-shadow,
 #base_page\:locform\:languageSelect_input-button,
 #base_page\:locform\:currencySelect_input-button,
-[id*="ppstdform"] > .ui-btn {
+[id*="ppstdform"]>.ui-btn {
   background-color: #ff7900;
   border: none;
   color: #fff !important;
   text-shadow: none !important;
 }
 
-#base_page\:gform > .ui-btn.ui-input-btn.ui-corner-all.ui-shadow:hover,
+#base_page\:gform>.ui-btn.ui-input-btn.ui-corner-all.ui-shadow:hover,
 #base_page\:locform\:languageSelect_input-button:hover,
 #base_page\:locform\:currencySelect_input-button:hover,
-[id*="ppstdform"] > .ui-btn:hover {
+[id*="ppstdform"]>.ui-btn:hover {
   background-color: #ff9433;
   border: none;
 }
@@ -2856,6 +2885,7 @@ ul#orderForm\:languagenew_items{
 #base_page:locform {
   margin-top: 0.25em;
 }
+
 /* REMOVE AFTER CONFIRM */
 
 html .ui-button-text {
@@ -2901,6 +2931,7 @@ html .ui-corner-all {
   @include black-text();
   font-weight: 400;
 }
+
 //  checkbox
 .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
 .mat-checkbox-checked.mat-accent .mat-checkbox-background {
@@ -2914,6 +2945,7 @@ html .ui-corner-all {
     }
   }
 }
+
 /* begin top menu section */
 div#orderForm\:wzd_content,
 div#orderForm\:prtcatpnl,
@@ -2929,6 +2961,7 @@ div#orderForm\:bskpgtop {
     @include body-text();
   }
 }
+
 .ui-selectonemenu-items-wrapper {
   line-height: 26px !important;
 
@@ -2966,6 +2999,7 @@ html .ui-widget-content .ui-state-highlight {
 
 .ui-selectonemenu-trigger {
   padding: 0 !important;
+
   .ui-icon {
     position: absolute;
     top: 50%;
@@ -2989,6 +3023,7 @@ html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
   text-decoration-thickness: 2px;
   text-decoration-color: var(--secondary-orange-color);
 }
+
 html .vc-chip-container .chip {
   @include body-text();
 
@@ -2998,7 +3033,7 @@ html .vc-chip-container .chip {
 }
 
 .chip.selected {
-  > span {
+  >span {
     color: white !important;
   }
 }
@@ -3011,10 +3046,11 @@ html .vc-chip-container .chip {
 .vc-chip-container .chip {
   @include body-text();
 
-  > .ui-button-text {
+  >.ui-button-text {
     font-weight: 400 !important;
   }
 }
+
 /* end top menu section */
 
 /* begin menu section */
@@ -3045,6 +3081,7 @@ html[lang="en"] #orderForm:vndcat button {
   @include button();
   @include border;
 }
+
 /* end menu section */
 
 /* begin list section */
@@ -3068,16 +3105,16 @@ html .rb-h-selwrapper {
   height: auto !important;
 }
 
-.flex-item > .ui-inputfield,
-.flex-item > .ui-selectonemenu {
+.flex-item>.ui-inputfield,
+.flex-item>.ui-selectonemenu {
   // margin-bottom: 10px !important; NOTE HERE
 }
 
-.flex-item > .ui-selectonemenu {
+.flex-item>.ui-selectonemenu {
   width: 200px !important;
 }
 
-.flex-item > div#orderForm\:countrynew.ui-selectonemenu {
+.flex-item>div#orderForm\:countrynew.ui-selectonemenu {
   width: 200px !important;
 }
 
@@ -3116,7 +3153,7 @@ img[id*="pdtimg"] {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.rb-prod-item-panel > .ui-panel-content.ui-widget-content {
+.rb-prod-item-panel>.ui-panel-content.ui-widget-content {
   @include border;
   background-color: var(--secondary-white-color);
   border-radius: 0 !important;
@@ -3142,6 +3179,7 @@ img[id*="pdtimg"] {
         @include title();
       }
     }
+
     span.ui-button-text.ui-c {
       padding: 0 !important;
     }
@@ -3160,11 +3198,12 @@ label#orderForm\:scrolltop {
   @include title();
   @include black-text();
 }
+
 /* end list section */
 
 /* begin cart section */
 //list
-html #orderForm\:itemdtbsk_data tr.ui-widget-content > td:nth-child(1) {
+html #orderForm\:itemdtbsk_data tr.ui-widget-content>td:nth-child(1) {
   padding-top: 2rem !important;
 }
 
@@ -3214,6 +3253,7 @@ table tbody tr:nth-child(odd) td,
 table tbody tr:nth-child(odd) td {
   background: var(--secondary-light-grey-color) !important;
 }
+
 table tbody tr:nth-child(even) td,
 table tbody tr:nth-child(even) td {
   background: var(--secondary-grey-color) !important;
@@ -3226,6 +3266,7 @@ input#orderForm\:disCode {
   @include body-text();
   min-width: 150px;
 }
+
 ::placeholder {
   @include body-text;
 }
@@ -3248,6 +3289,7 @@ button#orderForm\:next {
 .rb-body-content {
   padding-bottom: 0 !important;
 }
+
 /* ennd cart section */
 
 /* begin dialog section */
@@ -3338,6 +3380,7 @@ div#confirmdlg {
 .ui-growl-info {
   background-color: var(--success-color);
 }
+
 .ui-growl-item-container {
   opacity: 1;
 }
@@ -3437,17 +3480,17 @@ div#orderForm\:addbskpg {
 }
 
 @media (max-width: 640px) {
-  section.listing-container.final{
+  section.listing-container.final {
     app-shopping-cart {
       .checkout-vendor {
         margin-bottom: 4em !important;
       }
-  
+
       app-cart-product {
         .mat-line.summary-row.dates-row {
           display: none !important;
         }
-    
+
         &:first-child {
           .mat-line.summary-row.dates-row {
             display: flex !important;
@@ -3517,9 +3560,7 @@ html .ui-datepicker {
     border: none !important;
   }
 
-  td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undefined.ui-datepicker-current-day:has(
-      a.ui-state-active
-    ) {
+  td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undefined.ui-datepicker-current-day:has(a.ui-state-active) {
     background-color: var(--secondary-orange-color) !important;
   }
 
@@ -3551,9 +3592,11 @@ html .ui-datepicker {
 .ui-button-text-icon-left .ui-button-text {
   padding: 0 1em 0 1em;
 }
+
 .ui-button-text-only .ui-button-text {
   padding: 0 !important;
 }
+
 label#orderForm\:existglbl,
 label#orderForm\:newguestlbl {
   @include sub-header();
@@ -3576,7 +3619,7 @@ button#orderForm\:gcontshop {
   width: 40px;
   height: 40px;
   border-radius: 50% !important;
-  background-color:#c4c2c2  !important;
+  background-color: #c4c2c2 !important;
   padding: 1rem 0 1rem 1rem !important;
 
   .fa-arrow-left {
@@ -3609,6 +3652,7 @@ div#orderForm\:vercodepg {
 
 div#orderForm\:newguestpg {
   .flex-item {
+
     input,
     .ui-selectonemenu,
     textarea {
@@ -3643,6 +3687,7 @@ div#orderForm\:newguestpg {
 
 @media screen and (max-width: 480px) {
   .ui-dialog-buttonpane {
+
     button#cdYes,
     button#cdNo {
       padding-right: 0 !important;
@@ -3661,8 +3706,9 @@ div#orderForm\:newguestpg {
   .rb-new-guest-form {
     .flex-container {
       .flex-item {
-        > div,
-        > input {
+
+        >div,
+        >input {
           margin-left: 0rem !important;
         }
       }
@@ -3702,13 +3748,15 @@ div[id*=":pdtpnl"] {
 }
 
 
-button#orderForm\:sendinq{
-  span{
+button#orderForm\:sendinq {
+  span {
     visibility: hidden;
 
     &::after {
       visibility: visible;
-      content:'SEND ENQUIRY'; 
+
+      font-size: 16px;
+      content: "SEND ENQUIRY";
     }
   }
 }

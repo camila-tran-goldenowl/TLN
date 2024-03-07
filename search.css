@@ -3349,5 +3349,6 @@ button#orderForm\:sendinq span {
 }
 button#orderForm\:sendinq span::after {
   visibility: visible;
+  font-size: 16px;
   content: "SEND ENQUIRY";
 }/*# sourceMappingURL=search.css.map */
