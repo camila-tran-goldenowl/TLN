@@ -2165,7 +2165,7 @@ form#base_page\:gform {
     margin: auto;
     line-height: 19px;
     letter-spacing: 0.15em;
-    // width: 100%;
+    width: fit-content !important;
   }
 
   .ui-field-contain {
