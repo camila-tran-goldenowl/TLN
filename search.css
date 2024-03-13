@@ -552,7 +552,8 @@ mat-form-field.search-discount-code .mat-form-field-infix {
   text-transform: uppercase;
 }
 
-.search-logo {
+html[lang=en] .search-logo {
+  display: none !important;
   margin-right: 1rem;
   background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/logo.png") !important;
   background-size: contain;
@@ -991,7 +992,7 @@ html .map-icon-focus {
 html .map-icon::before,
 html .map-icon-focus::before {
   content: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/house-icon.png") !important;
-  top: 50% !important;
+  top: 55% !important;
   transform: translateY(-50%) !important;
 }
 
@@ -1892,7 +1893,7 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   margin: auto;
   line-height: 19px;
   letter-spacing: 0.15em;
-  width: 100%;
+  width: fit-content !important;
 }
 form#base_page\:gform .ui-field-contain .ui-input-text {
   font-family: Inter !important;
