@@ -2158,9 +2158,7 @@ form#base_page\:gform {
   margin: auto;
 
   .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-    @include button();
     @include title();
-    @include black-text();
     width: fit-content;
     margin: auto;
     line-height: 19px;
@@ -2168,6 +2166,12 @@ form#base_page\:gform {
     width: fit-content !important;
     background: black !important;
     color: white !important;
+
+    border: none !important;
+    padding: 10px 25px;
+  
+    border-radius: 0 !important;
+    text-transform: uppercase;
   }
 
   .ui-field-contain {

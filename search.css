@@ -1879,15 +1879,9 @@ form#base_page\:gform {
   margin: auto;
 }
 form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
-  border: none !important;
-  padding: 10px 25px;
-  background-color: var(--secondary-orange-color) !important;
-  border-radius: 0 !important;
-  text-transform: uppercase;
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  color: var(--primary-black-color) !important;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -1896,6 +1890,10 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   width: fit-content !important;
   background: black !important;
   color: white !important;
+  border: none !important;
+  padding: 10px 25px;
+  border-radius: 0 !important;
+  text-transform: uppercase;
 }
 form#base_page\:gform .ui-field-contain .ui-input-text {
   font-family: Inter !important;
