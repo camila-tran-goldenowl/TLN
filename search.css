@@ -2094,7 +2094,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status::first-letter {
 }
 div#base_page\:tabview .accordion-status-block .accordion-status.res {
   background-color: var(--success-color) !important;
-  font-size: 0;
+  font-size: 0 !important;
 }
 div#base_page\:tabview .accordion-status-block .accordion-status.res::after {
   font-size: 16px !important;

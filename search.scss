@@ -2385,7 +2385,7 @@ div#base_page\:tabview {
 
       &.res {
         background-color: var(--success-color) !important;
-        font-size: 0;
+        font-size: 0 !important;
 
 
         &::after{
