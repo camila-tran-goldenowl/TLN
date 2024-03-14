@@ -2388,7 +2388,7 @@ div#base_page\:tabview {
         font-size: 0 !important;
 
 
-        &::after{
+        &::before{
           @include body-text();
           content: "CONFIRMED";
           color: white !important

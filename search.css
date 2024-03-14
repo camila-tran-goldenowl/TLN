@@ -2096,7 +2096,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.res {
   background-color: var(--success-color) !important;
   font-size: 0 !important;
 }
-div#base_page\:tabview .accordion-status-block .accordion-status.res::after {
+div#base_page\:tabview .accordion-status-block .accordion-status.res::before {
   font-size: 16px !important;
   font-weight: 400;
   line-height: 26px;
