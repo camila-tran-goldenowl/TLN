@@ -1894,8 +1894,6 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   line-height: 19px;
   letter-spacing: 0.15em;
   width: fit-content !important;
-  background: black !important;
-  color: white !important;
 }
 form#base_page\:gform .ui-field-contain .ui-input-text {
   font-family: Inter !important;
@@ -2094,14 +2092,6 @@ div#base_page\:tabview .accordion-status-block .accordion-status::first-letter {
 }
 div#base_page\:tabview .accordion-status-block .accordion-status.res {
   background-color: var(--success-color) !important;
-  font-size: 0;
-}
-div#base_page\:tabview .accordion-status-block .accordion-status.res::after {
-  font-size: 16px !important;
-  font-weight: 400;
-  line-height: 26px;
-  content: "CONFIRMED";
-  color: white !important;
 }
 div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: var(--fail-color) !important;
@@ -3374,4 +3364,4 @@ button#orderForm\:sendinq span::after {
   letter-spacing: 0.15em;
   font-size: 16px;
   content: "SEND ENQUIRY";
-}/*# sourceMappingURL=search.css.map */
+}/*# sourceMappingURL=search_v1.6.240313.css.map */

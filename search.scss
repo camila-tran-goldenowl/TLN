@@ -2166,6 +2166,8 @@ form#base_page\:gform {
     line-height: 19px;
     letter-spacing: 0.15em;
     width: fit-content !important;
+    background: black !important;
+    color: white !important;
   }
 
   .ui-field-contain {
@@ -2383,6 +2385,14 @@ div#base_page\:tabview {
 
       &.res {
         background-color: var(--success-color) !important;
+        font-size: 0;
+
+
+        &::after{
+          @include body-text();
+          content: "CONFIRMED";
+          color: white !important
+        }
       }
 
       &.na {
