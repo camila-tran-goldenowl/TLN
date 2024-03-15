@@ -2100,6 +2100,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.res::before {
   line-height: 26px;
   content: "CONFIRMED";
   color: white !important;
+  vertical-align: middle;
 }
 div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: var(--fail-color) !important;
