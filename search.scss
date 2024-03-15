@@ -3514,11 +3514,14 @@ div#orderForm\:addbskpg {
     white-space: normal !important;
   }
 
-  .div#base_page\:tabview .accordion-status-block .accordion-status{
-    &::before{
-      @include title();
-    }
+  div#base_page\:tabview .accordion-status-block .accordion-status.res::before{
+    @include title();
   }
+  
+  .accordion-status.na{
+    @include title();
+  }
+
   
   section.listing-container.final {
     app-shopping-cart {
