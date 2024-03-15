@@ -3515,7 +3515,9 @@ div#orderForm\:addbskpg {
   }
 
   .div#base_page\:tabview .accordion-status-block .accordion-status{
-    @include title();
+    &::before{
+      @include title();
+    }
   }
   
   section.listing-container.final {
