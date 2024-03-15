@@ -2378,7 +2378,9 @@ div#base_page\:tabview {
 
   .accordion-status-block {
     .accordion-status {
-      @include body-text();
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
       color: white;
       text-transform: lowercase;
       padding: 0.8rem 1.25rem !important;
@@ -2393,7 +2395,9 @@ div#base_page\:tabview {
 
 
         &::before{
-          @include body-text();
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
           content: "CONFIRMED";
           color: white !important
         }
@@ -3517,7 +3521,7 @@ div#orderForm\:addbskpg {
   div#base_page\:tabview .accordion-status-block .accordion-status.res::before{
     @include title();
   }
-  
+
   .accordion-status.na{
     @include title();
   }
