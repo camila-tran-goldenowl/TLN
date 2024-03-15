@@ -3506,6 +3506,10 @@ div#orderForm\:addbskpg {
 }
 
 @media (max-width: 640px) {
+  form#base_page\:gform{
+    width: 100% !important;
+  }
+  
   section.listing-container.final {
     app-shopping-cart {
       .checkout-vendor {
