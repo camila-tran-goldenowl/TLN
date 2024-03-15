@@ -3509,6 +3509,14 @@ div#orderForm\:addbskpg {
   form#base_page\:gform{
     width: 100% !important;
   }
+
+  .rbn-yb-searchtext::after{
+    white-space: normal !important;
+  }
+
+  .div#base_page\:tabview .accordion-status-block .accordion-status{
+    @include title();
+  }
   
   section.listing-container.final {
     app-shopping-cart {
