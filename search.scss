@@ -1451,6 +1451,7 @@ html .open-gallery>span {
 
     .rate-plan-subtitle {
       @include body-text();
+      display: none !important;
       white-space: inherit !important;
       line-height: 25.6px;
     }
