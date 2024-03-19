@@ -217,7 +217,7 @@ mat-label {
   align-items: baseline;
 }
 .mobile mat-expansion-panel .mat-expansion-panel-body > div > p {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -370,7 +370,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 
 .mat-date-range-input input {
   color: var(--primary-black-color) !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -386,7 +386,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 }
 
 .mat-select-value-text {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -512,7 +512,7 @@ app-search-card.ng-star-inserted:hover button {
 html .search-discount-code mat-label,
 html .search-discount-code input {
   text-transform: capitalize !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -797,7 +797,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .search-card-from {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1147,7 +1147,7 @@ app-product .product-card .mat-form-field-label {
 .sl {
   font-weight: 500;
   line-height: 22px;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1269,7 +1269,7 @@ html .open-gallery > span {
   line-height: 25.6px;
 }
 .rate-plan-container .rate-plan-text-container .rate-plan-title-container h3 {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1339,7 +1339,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
 
 .mat-list .mat-list-item .cart-room-type {
   font-family: "EB Garamond" !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1379,7 +1379,7 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
 }
 
 .mat-card-content p {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1518,7 +1518,7 @@ html[lang=en] .rate-plan-info {
   border-radius: 0 !important;
 }
 .rate-plan-info .rate-plan-title {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1627,7 +1627,7 @@ app-customer-form mat-form-field.firstName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.firstName .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1640,7 +1640,7 @@ app-customer-form mat-form-field.lastName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.lastName .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1653,7 +1653,7 @@ app-customer-form mat-form-field.email .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.email .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1666,7 +1666,7 @@ app-customer-form mat-form-field.language .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.language .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1679,7 +1679,7 @@ app-customer-form mat-form-field.phone .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.phone .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1692,7 +1692,7 @@ app-customer-form mat-form-field.country .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.country .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1705,7 +1705,7 @@ app-customer-form .message mat-form-field .mat-form-field-wrapper {
   grid-template-columns: 1.1fr 7.9fr;
 }
 app-customer-form .message mat-form-field .mat-form-field-wrapper::before {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1739,7 +1739,7 @@ app-customer-form .details.customer-nation::only-child .button-container button:
 }
 app-customer-form .search-discount-code .mat-form-field-infix input,
 app-customer-form .search-discount-code .mat-form-field-infix mat-label {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -2808,7 +2808,7 @@ img[id*=pdtimg] {
   line-height: 26px;
 }
 .rb-prod-item-panel > .ui-panel-content.ui-widget-content .rb-prod-desc-item:first-child label {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -2926,7 +2926,7 @@ input#orderForm\:disCode {
 }
 
 div#orderForm\:bskpnl_footer {
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
