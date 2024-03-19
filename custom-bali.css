@@ -210,14 +210,14 @@ mat-label {
   margin-right: 10px;
 }
 .mobile mat-expansion-panel .basket-text {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
 }
 .mobile mat-expansion-panel .mat-expansion-panel-body > div {
   align-items: baseline;
 }
 .mobile mat-expansion-panel .mat-expansion-panel-body > div > p {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -260,16 +260,11 @@ mat-label {
 }
 .show-search-extended span.edit-search {
   margin-left: 0.7rem;
-  color: white !important;
   font-size: 16px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: capitalize !important;
 }
-.show-search-extended .mat-icon {
-  color: white !important;
-}
-
 .show-search-extended:has(.add-code) {
   background: #f3cb9f !important;
 }
@@ -375,7 +370,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 
 .mat-date-range-input input {
   color: var(--primary-black-color) !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -391,7 +386,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 }
 
 .mat-select-value-text {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -517,7 +512,7 @@ app-search-card.ng-star-inserted:hover button {
 html .search-discount-code mat-label,
 html .search-discount-code input {
   text-transform: capitalize !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -608,7 +603,7 @@ app-search-filter-bar .title {
   align-items: center !important;
 }
 app-search-filter-bar .title > span {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
 }
 app-search-filter-bar .title button {
@@ -638,7 +633,7 @@ app-search-filter-window .filter-container {
   width: auto !important;
 }
 app-search-filter-window .mat-card .title {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-size: 24px !important;
 }
@@ -785,7 +780,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .search-card-title {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   font-weight: 500 !important;
@@ -802,7 +797,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .search-card-from {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1005,7 +1000,7 @@ html .map-icon-focus::before {
 /*==================PROPER PAGE =====================*/
 html[lang=en] h2.product-title,
 .checkout-room-type {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   font-weight: 500;
@@ -1152,7 +1147,7 @@ app-product .product-card .mat-form-field-label {
 .sl {
   font-weight: 500;
   line-height: 22px;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1274,7 +1269,7 @@ html .open-gallery > span {
   line-height: 25.6px;
 }
 .rate-plan-container .rate-plan-text-container .rate-plan-title-container h3 {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1300,7 +1295,7 @@ html .open-gallery > span {
 /* end hotel card detail section */
 /* begin dialog section */
 html[lang=en] app-product-dialog-component h2.mat-dialog-title {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   font-weight: 700 !important;
@@ -1344,7 +1339,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
 
 .mat-list .mat-list-item .cart-room-type {
   font-family: "EB Garamond" !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1384,7 +1379,7 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
 }
 
 .mat-card-content p {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1453,7 +1448,7 @@ html[lang=en] .mat-headline {
 }
 
 html[lang=en] .mat-card-title {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   font-weight: 500;
@@ -1502,7 +1497,7 @@ app-search-bar #searchBarSubmitBtn {
 }
 
 app-shopping-cart .checkout-vendor {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   font-size: 22px !important;
@@ -1523,7 +1518,7 @@ html[lang=en] .rate-plan-info {
   border-radius: 0 !important;
 }
 .rate-plan-info .rate-plan-title {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1563,7 +1558,7 @@ app-payment-schedule .payment-schedule-container mat-icon {
 }
 
 html[lang=en] .mat-h1 {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   font-weight: 700 !important;
@@ -1632,7 +1627,7 @@ app-customer-form mat-form-field.firstName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.firstName .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1645,7 +1640,7 @@ app-customer-form mat-form-field.lastName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.lastName .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1658,7 +1653,7 @@ app-customer-form mat-form-field.email .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.email .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1671,7 +1666,7 @@ app-customer-form mat-form-field.language .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.language .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1684,7 +1679,7 @@ app-customer-form mat-form-field.phone .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.phone .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1697,7 +1692,7 @@ app-customer-form mat-form-field.country .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.country .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1710,7 +1705,7 @@ app-customer-form .message mat-form-field .mat-form-field-wrapper {
   grid-template-columns: 1.1fr 7.9fr;
 }
 app-customer-form .message mat-form-field .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1744,7 +1739,7 @@ app-customer-form .details.customer-nation::only-child .button-container button:
 }
 app-customer-form .search-discount-code .mat-form-field-infix input,
 app-customer-form .search-discount-code .mat-form-field-infix mat-label {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -1852,7 +1847,7 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
   word-wrap: break-word;
   content: "Your Booking \a";
   font-family: "EB Garamond" !important;
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   margin-bottom: 40px;
   font-weight: 700 !important;
@@ -1928,7 +1923,7 @@ form#base_page\:gform .ui-field-contain label {
   margin-bottom: 3.1rem;
 }
 .ui-outputpanel span#base_page\:guest-intranet-greeting {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "Open Sans" !important;
 }
@@ -2063,7 +2058,7 @@ div#base_page\:tabview .rbn-vendor-box .ui-grid-solo {
   text-align: left;
 }
 div#base_page\:tabview .rbn-vendor-box .ui-grid-solo span.rbn-bold {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
 }
 div#base_page\:tabview .rbn-vendor-box .ui-grid-solo .ui-block-a {
@@ -2113,7 +2108,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
   background-color: var(--dark-grey) !important;
 }
 .ui-panel-m-titlebar h3 {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "Open Sans" !important;
   color: white !important;
@@ -2146,7 +2141,7 @@ div#base_page\:txtab {
 }
 div#base_page\:txtab::before {
   content: "Payments  \a";
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
   display: block;
@@ -2709,7 +2704,7 @@ html .vc-chip-container .chip span {
 .rb-child-cat-text,
 .rb-prod-panel-text,
 .rb-basket-title {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   color: var(--primary-black-color) !important;
   font-family: "EB Garamond" !important;
@@ -2813,7 +2808,7 @@ img[id*=pdtimg] {
   line-height: 26px;
 }
 .rb-prod-item-panel > .ui-panel-content.ui-widget-content .rb-prod-desc-item:first-child label {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -2931,7 +2926,7 @@ input#orderForm\:disCode {
 }
 
 div#orderForm\:bskpnl_footer {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -3245,7 +3240,7 @@ html .ui-datepicker .ui-state-default {
 
 label#orderForm\:existglbl,
 label#orderForm\:newguestlbl {
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
 }
