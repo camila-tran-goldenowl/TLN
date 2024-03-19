@@ -2,15 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
-
-
 :root {
   --primary-sea-color: #79a2aa;
   --primary-brown-color: #625956;
   --primary-black-color: #625956;
 
   --secondary-yellow-color: #ffd075;
-  --secondary-orange-color: #FFD075;
+  --secondary-orange-color: #ffd075;
   --secondary-beige-color: #f9f6f0;
   --secondary-white-color: #fffdfa;
   --secondary-grey-color: #dcddde;
@@ -115,7 +113,9 @@
 
 /* REMOVE LATER */
 
-.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
+.vendor-products-container
+  mat-card-actions
+  button:not(.mat-button-disabled)::after {
   content: "";
 }
 
@@ -142,7 +142,7 @@
   color: var(--secondary-orange-color) !important;
 }
 
-.mat-form-field-can-float:has(.mat-select[aria-expanded=true]) {
+.mat-form-field-can-float:has(.mat-select[aria-expanded="true"]) {
   transform: translate(0) !important;
 }
 
@@ -210,9 +210,13 @@ html[lang="en"] .mat-dialog-title {
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label,
 .mat-form-field.mat-form-field-invalid .mat-form-field-label.mat-accent,
-.mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker,
-.mat-form-field-appearance-outline.mat-focused.mat-warn .mat-form-field-outline-thick,
-.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+.mat-form-field.mat-form-field-invalid
+  .mat-form-field-label
+  .mat-form-field-required-marker,
+.mat-form-field-appearance-outline.mat-focused.mat-warn
+  .mat-form-field-outline-thick,
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+  .mat-form-field-outline-thick {
   color: #ff0000 !important;
 }
 
@@ -237,7 +241,6 @@ mat-label {
 }
 
 .mobile {
-
   // card
   .search-card {
     padding: 0px !important;
@@ -252,7 +255,7 @@ mat-label {
     }
 
     .title-cal-search {
-      >div {
+      > div {
         @include second-font();
         font-size: 20px;
         margin-left: 10px;
@@ -299,7 +302,7 @@ mat-label {
   mat-label {
     text-transform: capitalize !important;
 
-    >span {
+    > span {
       text-transform: capitalize !important;
     }
   }
@@ -345,10 +348,10 @@ mat-label {
     }
 
     .mat-expansion-panel-body {
-      >div {
+      > div {
         align-items: baseline;
 
-        >p {
+        > p {
           @include header;
         }
       }
@@ -487,7 +490,7 @@ html[lang="en"] .mat-calendar * {
     flex: 1;
   }
 
-  mat-datepicker-toggle>button {
+  mat-datepicker-toggle > button {
     width: fit-content !important;
     height: fit-content !important;
     vertical-align: middle !important;
@@ -655,7 +658,6 @@ app-search-card.ng-star-inserted {
 }
 
 html .search-discount-code {
-
   mat-label,
   input {
     text-transform: capitalize !important;
@@ -736,8 +738,12 @@ html[lang="en"] .search-logo {
 
 .open-filter-button.active,
 .mdc-evolution-chip__text-label,
-html[lang="en"] .mdc-evolution-chip__action[aria-selected="false"] .mdc-evolution-chip__text-label,
-html[lang="en"] .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__checkmark {
+html[lang="en"]
+  .mdc-evolution-chip__action[aria-selected="false"]
+  .mdc-evolution-chip__text-label,
+html[lang="en"]
+  .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
+  .mdc-evolution-chip__checkmark {
   @include black-text();
 }
 
@@ -749,7 +755,7 @@ app-search-filter-bar {
   .title {
     align-items: center !important;
 
-    >span {
+    > span {
       @include sub-header();
     }
 
@@ -768,7 +774,8 @@ app-search-filter {
     @include black-text();
   }
 
-  .mat-card-actions:not(.mat-card-actions-align-end) .mat-stroked-button:first-child {
+  .mat-card-actions:not(.mat-card-actions-align-end)
+    .mat-stroked-button:first-child {
     border: none !important;
     padding-left: 0 !important;
     @include hover-underline();
@@ -992,9 +999,11 @@ html[lang="en"] .mdc-slider {
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();
-  background: linear-gradient(0deg,
-      var(--secondary-grey-color),
-      var(--secondary-grey-color)) !important;
+  background: linear-gradient(
+    0deg,
+    var(--secondary-grey-color),
+    var(--secondary-grey-color)
+  ) !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
@@ -1008,7 +1017,7 @@ html[lang="en"] .search-card:hover {
   .search-card-from {
     @include black-text();
 
-    >span {
+    > span {
       @include black-text();
     }
   }
@@ -1200,7 +1209,7 @@ html[lang="en"] h2.product-title,
     height: 40px;
     background-position: center;
     box-sizing: border-box;
-    width: 200px
+    width: 200px;
   }
 }
 
@@ -1236,7 +1245,7 @@ html[lang="en"] .vendor-description {
   box-shadow: none !important;
 
   &::before {
-    content: "Highlights\a" attr(title);
+    content: "Highlights\a"attr(title);
     white-space: pre;
     font-weight: 600;
     line-height: 19px;
@@ -1289,7 +1298,7 @@ app-cart-product,
   .product-features {
     margin-top: 20px;
 
-    >span {
+    > span {
       @include caption();
       margin-right: 10px;
     }
@@ -1330,7 +1339,7 @@ app-product {
   @include header();
 }
 
-.rate-price-container>* {
+.rate-price-container > * {
   @include caption();
   line-height: 22px;
 }
@@ -1414,8 +1423,8 @@ app-product {
   }
 }
 
-html .open-gallery>.mat-icon,
-html .open-gallery>span {
+html .open-gallery > .mat-icon,
+html .open-gallery > span {
   color: white !important;
 }
 
@@ -1580,7 +1589,7 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
     @include header();
   }
 
-  >div {
+  > div {
     justify-content: space-between;
     align-items: baseline;
     margin-top: 10px;
@@ -1735,7 +1744,7 @@ app-shopping-cart {
     padding-bottom: 1.1rem !important;
   }
 
-  .mat-card-content>div {
+  .mat-card-content > div {
     // p{
     //     display: none;
     // }
@@ -1802,24 +1811,31 @@ html[lang="en"] .mat-h1 {
   font-size: 22px !important;
 }
 
-.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
-.mat-form-field-appearance-outline.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label {
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label,
+.mat-form-field-appearance-outline.mat-form-field-can-float
+  .mat-input-server:focus
+  + .mat-form-field-label-wrapper
+  .mat-form-field-label {
   transform: translateY(-2.1em) scale(0.75) !important;
 }
 
 // .mat-form-field-infix:has(input) {
-.mat-form-field-infix:has(input) .mat-form-field-label-wrapper .mat-form-field-label {
+.mat-form-field-infix:has(input)
+  .mat-form-field-label-wrapper
+  .mat-form-field-label {
   margin-top: 0.285em !important;
 }
 
 // }
 
-.mat-form-field-infix:has(.mat-select[aria-expanded="false"]) .mat-form-field-label-wrapper .mat-form-field-label {
+.mat-form-field-infix:has(.mat-select[aria-expanded="false"])
+  .mat-form-field-label-wrapper
+  .mat-form-field-label {
   margin-top: 0.7em !important;
 }
 
 section.listing-container.final {
-
   .vendor-image-container,
   .vendor-description,
   .title-group {
@@ -1989,10 +2005,12 @@ app-customer-form {
     column-gap: 2.5rem;
   }
 
-  .details:not(.customer-identity,
-    .customer-contact,
-    .customer-nation,
-    .message) {
+  .details:not(
+      .customer-identity,
+      .customer-contact,
+      .customer-nation,
+      .message
+    ) {
     display: none !important;
   }
 
@@ -2016,7 +2034,6 @@ app-customer-form {
 
   .search-discount-code {
     .mat-form-field-infix {
-
       input,
       mat-label {
         @include header();
@@ -2044,13 +2061,13 @@ app-customer-form {
 html .ui-bar-a .ui-btn:focus,
 html .ui-body-a .ui-btn:focus,
 html body .ui-group-theme-a .ui-btn:focus,
-html head+body .ui-btn.ui-btn-a:focus,
+html head + body .ui-btn.ui-btn-a:focus,
 .ui-page-theme-a .ui-focus,
 html .ui-bar-a .ui-focus,
 html .ui-body-a .ui-focus,
 html body .ui-group-theme-a .ui-focus,
-html head+body .ui-btn-a.ui-focus,
-html head+body .ui-body-a.ui-focus {
+html head + body .ui-btn-a.ui-focus,
+html head + body .ui-body-a.ui-focus {
   box-shadow: 0 0 12px var(--secondary-orange-color) !important;
 }
 
@@ -2171,13 +2188,12 @@ form#base_page\:gform {
 
     border: none !important;
     padding: 10px 25px;
-  
+
     border-radius: 0 !important;
     text-transform: uppercase;
   }
 
   .ui-field-contain {
-
     .ui-input-text {
       @include main-font();
       @include inputGuest;
@@ -2278,12 +2294,12 @@ table {
 html .ui-bar-a .ui-btn,
 html .ui-body-a .ui-btn,
 html body .ui-group-theme-a .ui-btn,
-html head+body .ui-btn.ui-btn-a,
+html head + body .ui-btn.ui-btn-a,
 .ui-page-theme-a .ui-btn:visited,
 html .ui-bar-a .ui-btn:visited,
 html .ui-body-a .ui-btn:visited,
 html body .ui-group-theme-a .ui-btn:visited,
-html head+body .ui-btn.ui-btn-a:visited {
+html head + body .ui-btn.ui-btn-a:visited {
   border-color: var(--secondary-grey-color);
 }
 
@@ -2336,6 +2352,11 @@ div#base_page\:ttab {
 div#base_page\:tabview {
   margin-top: 2.5rem;
 
+  table tbody tr:nth-child(odd) td,
+  table tbody tr:nth-child(odd) td {
+    background-color: #f6f6f6 !important;
+  }
+
   .accordion-title span {
     @include body-text();
   }
@@ -2343,6 +2364,8 @@ div#base_page\:tabview {
   a.ui-collapsible-heading-toggle {
     padding: 1.25rem;
     padding-left: 4rem !important;
+    background-color: #f6f6f6 !important;
+    color: inherit !important;
   }
 
   .ui-icon-plus:after {
@@ -2395,8 +2418,7 @@ div#base_page\:tabview {
         background-color: var(--success-color) !important;
         font-size: 0 !important;
 
-
-        &::before{
+        &::before {
           font-size: 16px;
           font-weight: 400;
           line-height: 26px;
@@ -2573,9 +2595,8 @@ div#base_page\:txtab {
 
   div#base_page\:tabview {
     tbody[id*=":resultTable"] // ,tbody[id*="base_page:tabview:orderItemTable"]
-
-      {
-      >.ui-table-row {
+    {
+      > .ui-table-row {
         td {
           align-items: center;
           display: grid !important;
@@ -2586,6 +2607,8 @@ div#base_page\:txtab {
 
     a.ui-collapsible-heading-toggle {
       padding-left: 4rem !important;
+      background-color: #f6f6f6 !important;
+      color: inherit !important;
     }
 
     div[id*=":pocgrd_content"],
@@ -2600,7 +2623,6 @@ div#base_page\:txtab {
   }
 
   div#base_page\:txtab {
-
     .ui-datatable {
       border: none !important;
     }
@@ -2616,7 +2638,7 @@ div#base_page\:txtab {
     }
 
     tbody#base_page\:txtab_data {
-      >.ui-table-row {
+      > .ui-table-row {
         td {
           text-align: left !important;
           display: grid;
@@ -2664,7 +2686,7 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
   form#base_page\:gform {
     width: 600px;
 
-    .ui-field-contain>label {
+    .ui-field-contain > label {
       float: none !important;
     }
 
@@ -2704,10 +2726,9 @@ button.ui-button.ui-state-default,
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
-
 .rb-header {
-  // background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/nisade-logo-white.png"),
-  //   url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg");
+  background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/nisade-logo-white.png"),
+    url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg");
   background-color: #fff !important;
   background-repeat: no-repeat;
   background-position: center center, center 25%;
@@ -2778,13 +2799,13 @@ h3 {
   display: none;
 }
 
-#orderForm\:addbskpg>tbody:nth-child(1)>tr:nth-child(1) {
+#orderForm\:addbskpg > tbody:nth-child(1) > tr:nth-child(1) {
   text-align: left;
 }
 
 /* Basket Item Highlights */
-#orderForm\:itemdtbsk_data tr.ui-widget-content>td:nth-child(1)>label,
-#orderForm\:itemdtchkout_data tr.ui-widget-content>td:nth-child(1)>label {
+#orderForm\:itemdtbsk_data tr.ui-widget-content > td:nth-child(1) > label,
+#orderForm\:itemdtchkout_data tr.ui-widget-content > td:nth-child(1) > label {
   background-color: #000;
   box-shadow: 2px -1 -1 #000, -2px -1 -1 #000;
 }
@@ -2827,11 +2848,10 @@ h3 {
 
 ul#orderForm\:languagenew_items {
   li {
-    &:nth-child(n+4) {
+    &:nth-child(n + 4) {
       display: none !important;
     }
   }
-
 }
 
 /* CHECKOUT */
@@ -2897,20 +2917,20 @@ ul#orderForm\:languagenew_items {
 }
 
 /* Buttons */
-#base_page\:gform>.ui-btn.ui-input-btn.ui-corner-all.ui-shadow,
+#base_page\:gform > .ui-btn.ui-input-btn.ui-corner-all.ui-shadow,
 #base_page\:locform\:languageSelect_input-button,
 #base_page\:locform\:currencySelect_input-button,
-[id*="ppstdform"]>.ui-btn {
+[id*="ppstdform"] > .ui-btn {
   background-color: #ff7900;
   border: none;
   color: #fff !important;
   text-shadow: none !important;
 }
 
-#base_page\:gform>.ui-btn.ui-input-btn.ui-corner-all.ui-shadow:hover,
+#base_page\:gform > .ui-btn.ui-input-btn.ui-corner-all.ui-shadow:hover,
 #base_page\:locform\:languageSelect_input-button:hover,
 #base_page\:locform\:currencySelect_input-button:hover,
-[id*="ppstdform"]>.ui-btn:hover {
+[id*="ppstdform"] > .ui-btn:hover {
   background-color: #ff9433;
   border: none;
 }
@@ -3066,7 +3086,7 @@ html .vc-chip-container .chip {
 }
 
 .chip.selected {
-  >span {
+  > span {
     color: white !important;
   }
 }
@@ -3079,7 +3099,7 @@ html .vc-chip-container .chip {
 .vc-chip-container .chip {
   @include body-text();
 
-  >.ui-button-text {
+  > .ui-button-text {
     font-weight: 400 !important;
   }
 }
@@ -3138,16 +3158,16 @@ html .rb-h-selwrapper {
   height: auto !important;
 }
 
-.flex-item>.ui-inputfield,
-.flex-item>.ui-selectonemenu {
+.flex-item > .ui-inputfield,
+.flex-item > .ui-selectonemenu {
   // margin-bottom: 10px !important; NOTE HERE
 }
 
-.flex-item>.ui-selectonemenu {
+.flex-item > .ui-selectonemenu {
   width: 200px !important;
 }
 
-.flex-item>div#orderForm\:countrynew.ui-selectonemenu {
+.flex-item > div#orderForm\:countrynew.ui-selectonemenu {
   width: 200px !important;
 }
 
@@ -3186,7 +3206,7 @@ img[id*="pdtimg"] {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.rb-prod-item-panel>.ui-panel-content.ui-widget-content {
+.rb-prod-item-panel > .ui-panel-content.ui-widget-content {
   @include border;
   background-color: var(--secondary-white-color);
   border-radius: 0 !important;
@@ -3236,7 +3256,7 @@ label#orderForm\:scrolltop {
 
 /* begin cart section */
 //list
-html #orderForm\:itemdtbsk_data tr.ui-widget-content>td:nth-child(1) {
+html #orderForm\:itemdtbsk_data tr.ui-widget-content > td:nth-child(1) {
   padding-top: 2rem !important;
 }
 
@@ -3513,23 +3533,22 @@ div#orderForm\:addbskpg {
 }
 
 @media (max-width: 640px) {
-  form#base_page\:gform{
+  form#base_page\:gform {
     width: 100% !important;
   }
 
-  .rbn-yb-searchtext::after{
+  .rbn-yb-searchtext::after {
     white-space: normal !important;
   }
 
-  div#base_page\:tabview .accordion-status-block .accordion-status.res::before{
+  div#base_page\:tabview .accordion-status-block .accordion-status.res::before {
     @include title();
   }
 
-  .accordion-status.na{
+  .accordion-status.na {
     @include title();
   }
 
-  
   section.listing-container.final {
     app-shopping-cart {
       .checkout-vendor {
@@ -3610,7 +3629,9 @@ html .ui-datepicker {
     border: none !important;
   }
 
-  td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undefined.ui-datepicker-current-day:has(a.ui-state-active) {
+  td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undefined.ui-datepicker-current-day:has(
+      a.ui-state-active
+    ) {
     background-color: var(--secondary-orange-color) !important;
   }
 
@@ -3702,7 +3723,6 @@ div#orderForm\:vercodepg {
 
 div#orderForm\:newguestpg {
   .flex-item {
-
     input,
     .ui-selectonemenu,
     textarea {
@@ -3737,7 +3757,6 @@ div#orderForm\:newguestpg {
 
 @media screen and (max-width: 480px) {
   .ui-dialog-buttonpane {
-
     button#cdYes,
     button#cdNo {
       padding-right: 0 !important;
@@ -3756,9 +3775,8 @@ div#orderForm\:newguestpg {
   .rb-new-guest-form {
     .flex-container {
       .flex-item {
-
-        >div,
-        >input {
+        > div,
+        > input {
           margin-left: 0rem !important;
         }
       }
@@ -3796,7 +3814,6 @@ div[id*=":pdtpnl"] {
     }
   }
 }
-
 
 button#orderForm\:sendinq {
   span {

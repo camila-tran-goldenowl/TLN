@@ -5,7 +5,7 @@
   --primary-brown-color: #625956;
   --primary-black-color: #625956;
   --secondary-yellow-color: #ffd075;
-  --secondary-orange-color: #FFD075;
+  --secondary-orange-color: #ffd075;
   --secondary-beige-color: #f9f6f0;
   --secondary-white-color: #fffdfa;
   --secondary-grey-color: #dcddde;
@@ -2038,6 +2038,10 @@ div#base_page\:ttab {
 div#base_page\:tabview {
   margin-top: 2.5rem;
 }
+div#base_page\:tabview table tbody tr:nth-child(odd) td,
+div#base_page\:tabview table tbody tr:nth-child(odd) td {
+  background-color: #f6f6f6 !important;
+}
 div#base_page\:tabview .accordion-title span {
   font-size: 16px !important;
   font-weight: 400;
@@ -2046,6 +2050,8 @@ div#base_page\:tabview .accordion-title span {
 div#base_page\:tabview a.ui-collapsible-heading-toggle {
   padding: 1.25rem;
   padding-left: 4rem !important;
+  background-color: #f6f6f6 !important;
+  color: inherit !important;
 }
 div#base_page\:tabview .ui-icon-plus:after {
   background-color: var(--dark-grey) !important;
@@ -2243,6 +2249,8 @@ div#base_page\:txtab .ui-table-cell-label {
   }
   div#base_page\:tabview a.ui-collapsible-heading-toggle {
     padding-left: 4rem !important;
+    background-color: #f6f6f6 !important;
+    color: inherit !important;
   }
   div#base_page\:tabview div[id*=":pocgrd_content"] .ui-block-a,
   div#base_page\:tabview div[id*=":pdoptgrd_content"] .ui-block-a {
@@ -2338,6 +2346,7 @@ button.ui-button.ui-state-default,
 }
 
 .rb-header {
+  background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/nisade-logo-white.png"), url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg");
   background-color: #fff !important;
   background-repeat: no-repeat;
   background-position: center center, center 25%;
