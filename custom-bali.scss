@@ -480,6 +480,7 @@ html[lang="en"] .mat-calendar * {
 
   .mat-date-range-input-wrapper {
     flex: 1;
+    @include second-font();
   }
 
   mat-datepicker-toggle > button {
