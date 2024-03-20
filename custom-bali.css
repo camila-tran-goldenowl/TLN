@@ -1059,7 +1059,7 @@ html[lang=en] .vendor-description {
   color: var(--primary-black-color) !important;
   font-family: "Open Sans" !important;
   border-radius: 0 !important;
-  background-color: var(--secondary-grey-color) !important;
+  background-color: #F9F6F0 !important;
   line-height: 26px !important;
   letter-spacing: 0 !important;
   padding: 10px 15px;
