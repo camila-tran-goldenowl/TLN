@@ -256,7 +256,7 @@ mat-label {
 }
 .show-search-extended span.edit-search {
   margin-left: 0.7rem;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: capitalize !important;
@@ -293,7 +293,7 @@ mat-label {
 
 html[lang=en] .mat-calendar * {
   font-family: "Open Sans" !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -316,7 +316,7 @@ html[lang=en] .mat-calendar * mat-calendar-body-label {
   display: none !important;
 }
 html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label span {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: lowercase;
@@ -347,7 +347,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 }
 
 .mat-calendar-content td.mat-calendar-body-label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: lowercase;
@@ -424,7 +424,7 @@ app-search-card.ng-star-inserted:hover button {
 }
 
 .mat-selected {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -461,7 +461,7 @@ app-search-card.ng-star-inserted:hover button {
 }
 
 .mat-stroked-button.mat-primary {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -475,7 +475,7 @@ app-search-card.ng-star-inserted:hover button {
 }
 
 .mat-menu-item {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -534,7 +534,7 @@ mat-form-field.search-discount-code .mat-form-field-infix {
 }
 
 .open-filter-button .ng-star-inserted {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -675,7 +675,7 @@ app-search-filter-window mat-card-actions .mat-focus-indicator .mat-button-wrapp
 }
 
 .mat-mdc-chip-action-label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -714,7 +714,7 @@ html[lang=en] .mat-mdc-slider .mdc-slider__value-indicator {
 }
 html[lang=en] .mat-mdc-slider .mdc-slider__value-indicator span {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 20px;
@@ -789,7 +789,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .search-card-desc {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -823,7 +823,7 @@ html[lang=en] .mdc-slider__thumb-knob {
   background-color: var(--secondary-orange-color) !important;
   border-radius: 0 !important;
   text-transform: uppercase;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -922,7 +922,7 @@ google-map .cluster-item img {
 }
 
 .map-container .map-icon {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   font-family: "Open Sans" !important;
@@ -1042,7 +1042,7 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
 }
 
 html[lang=en] .vendor-description {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -1076,7 +1076,7 @@ html[lang=en] .vendor-description::before {
 
 /* begin hotel card detail section */
 html[lang=en] .checkout-room-description {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   opacity: 1;
@@ -1125,7 +1125,7 @@ app-cart-product .product-features .material-icons,
 app-cart-product .product-description,
 .product-info-container .product-description {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1261,7 +1261,7 @@ html .open-gallery > span {
   margin-bottom: 0.5em;
 }
 .rate-plan-container .rate-plan-text-container .rate-plan-subtitle {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   display: none !important;
@@ -1302,7 +1302,7 @@ html[lang=en] app-product-dialog-component h2.mat-dialog-title {
   line-height: 29px !important;
 }
 html[lang=en] app-product-dialog-component .mat-dialog-content {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1349,7 +1349,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
   white-space: inherit !important;
 }
 .mat-list .mat-list-item .summary-row {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -1366,7 +1366,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
   text-transform: uppercase;
 }
 .mat-list .mat-list-item .date {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1530,7 +1530,7 @@ html[lang=en] .rate-plan-info {
   color: var(--primary-black-color) !important;
 }
 .rate-plan-info .more-info-long p {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1826,7 +1826,7 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
 }
 div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button .ui-btn-icon-right:after {
   background: transparent !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -1881,13 +1881,13 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
 form#base_page\:gform .ui-field-contain .ui-input-text {
   font-family: "Open Sans" !important;
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
   background-color: white;
   padding: 8px 15px;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--dark-grey);
@@ -1917,7 +1917,7 @@ form#base_page\:gform .ui-field-contain label {
   font-family: "Open Sans" !important;
 }
 .ui-outputpanel span#base_page\:guest-intranet-greeting::after {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1962,7 +1962,7 @@ table thead .ui-column-header .ui-column-title span {
 }
 table tbody .ui-table-row span {
   font-family: "Open Sans" !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2041,7 +2041,7 @@ div#base_page\:tabview table tbody tr:nth-child(odd) td {
   background-color: #f6f6f6 !important;
 }
 div#base_page\:tabview .accordion-title span {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2064,7 +2064,7 @@ div#base_page\:tabview .rbn-vendor-box .ui-grid-solo span.rbn-bold {
   font-weight: 400;
 }
 div#base_page\:tabview .rbn-vendor-box .ui-grid-solo .ui-block-a {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 10px;
@@ -2197,7 +2197,7 @@ div#base_page\:txtab .ui-table-cell-label {
   border-radius: 0 !important;
 }
 #scrollToPay label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   font-family: "EB Garamond" !important;
@@ -2610,7 +2610,7 @@ div#orderForm\:bskpgtop {
 }
 
 .ui-btn-right label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2619,7 +2619,7 @@ div#orderForm\:bskpgtop {
   line-height: 26px !important;
 }
 .ui-selectonemenu-items-wrapper ul li {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2664,7 +2664,7 @@ html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
 }
 
 .ui-widget-content .ui-state-highlight {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   background-color: transparent !important;
@@ -2675,7 +2675,7 @@ html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
 }
 
 html .vc-chip-container .chip {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2693,7 +2693,7 @@ html .vc-chip-container .chip span {
 }
 
 .vc-chip-container .chip {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2721,7 +2721,7 @@ html .vc-chip-container .chip span {
 .rb-parent-cat-title:before,
 .rb-child-cat-title:before {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 0 !important;
@@ -2743,7 +2743,7 @@ html[lang=en] #orderForm:vndcat button {
   padding: 0 !important;
 }
 .flex-item label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   font-family: "EB Garamond" !important;
@@ -2777,7 +2777,7 @@ html .rb-h-selwrapper {
 }
 
 .rb-prod-desc-item:nth-child(2) label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -2905,26 +2905,26 @@ table tbody tr:nth-child(even) td {
 
 input#orderForm\:disCode {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
   background-color: white;
   padding: 8px 15px;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   min-width: 150px;
 }
 
 ::-moz-placeholder {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
 
 ::placeholder {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2990,7 +2990,7 @@ div#confirmdlg {
 }
 form#orderForm .ui-confirm-dialog-message,
 div#confirmdlg .ui-confirm-dialog-message {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -3211,7 +3211,7 @@ html .ui-datepicker table tbody tr:nth-child(even) td {
 }
 html .ui-datepicker th {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   background: white !important;
@@ -3224,7 +3224,7 @@ html .ui-datepicker td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undef
   background-color: var(--secondary-orange-color) !important;
 }
 html .ui-datepicker .ui-state-default {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -3295,7 +3295,7 @@ button#orderForm\:gcontshop span.ui-button-text {
 
 div#orderForm\:vercodepg input {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
@@ -3311,7 +3311,7 @@ div#orderForm\:newguestpg .flex-item .ui-selectonemenu,
 div#orderForm\:newguestpg .flex-item textarea {
   margin-left: 2rem;
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
