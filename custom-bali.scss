@@ -2734,14 +2734,15 @@ button.ui-button.ui-state-default,
 
 .rb-header {
   background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/nisade-logo-white.png"),
-    url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg");
+    url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg") !important;
   background-color: #fff !important;
-  background-repeat: no-repeat;
-  background-position: center center, center 25%;
-  background-size: 250px, cover;
-  border: none;
+  background-repeat: no-repeat !important;
+  background-position: center center, center 25% !important;
+  background-size: 250px, cover !important;
+  border: none !important;
   height: 100px !important;
-  border-bottom: 0;
+  border-bottom: 0 !important;
+  background-size: 20%, 100%, 30% !important;
 }
 
 .rb-header-title {
