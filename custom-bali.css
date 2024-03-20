@@ -766,6 +766,10 @@ html[lang=en] .mdc-slider__thumb-knob {
 .search-card {
   padding: 15px !important;
 }
+.search-card.focused .search-card-title {
+  font-weight: 400 !important;
+  text-decoration: underline;
+}
 
 .search-card-carousel:not(.mobile) {
   height: auto !important;

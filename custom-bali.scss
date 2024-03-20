@@ -938,6 +938,13 @@ html[lang="en"] .mdc-slider {
 /* begin card section */
 .search-card {
   padding: 15px !important;
+
+  &.focused {
+    .search-card-title{
+      font-weight: 400 !important;
+      text-decoration: underline;
+    }
+  }
 }
 
 .search-card-carousel:not(.mobile) {
