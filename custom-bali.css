@@ -841,7 +841,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 html[lang=en] .search-card.focused,
 html[lang=en] .search-card:hover {
   color: var(--primary-black-color) !important;
-  background: linear-gradient(0deg, var(--secondary-grey-color), var(--secondary-grey-color)) !important;
+  background: #F9F6F0 !important;
   border: none;
   transition: 0.2s;
   transform: none !important;

@@ -999,11 +999,7 @@ html[lang="en"] .mdc-slider {
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();
-  background: linear-gradient(
-    0deg,
-    var(--secondary-grey-color),
-    var(--secondary-grey-color)
-  ) !important;
+  background: #F9F6F0 !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
