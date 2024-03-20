@@ -525,6 +525,7 @@ html .search-discount-code input {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
+  font-family: "EB Garamond" !important;
   text-transform: uppercase !important;
 }
 
@@ -1038,7 +1039,7 @@ html[lang=en] .checkout-room-type {
 
 .select-dates span {
   text-transform: uppercase !important;
-  font-family: "Open Sans" !important;
+  font-family: "EB Garamond" !important;
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;

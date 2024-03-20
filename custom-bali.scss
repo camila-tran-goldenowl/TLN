@@ -668,6 +668,7 @@ html .search-discount-code {
 
 .mat-form-field-infix mat-label {
   @include title();
+  @include second-font();
   text-transform: uppercase !important;
 }
 
@@ -1226,7 +1227,7 @@ html[lang="en"] .checkout-room-type {
 .select-dates {
   span {
     text-transform: uppercase !important;
-    @include main-font();
+    @include second-font();
     @include title();
   }
 }
