@@ -157,11 +157,9 @@ mat-label {
 .mobile app-search-bar .search-dates {
   max-width: none !important;
 }
-.mobile app-search-bar .search-dates .mat-date-range-input-container {
-  font-family: "EB Garamond" !important;
-}
 .mobile app-search-bar .search-dates .mat-date-range-input-wrapper {
   flex: none !important;
+  font-family: "EB Garamond" !important;
 }
 .mobile app-search-bar .search-discount-code {
   max-width: none !important;
