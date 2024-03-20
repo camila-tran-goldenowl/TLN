@@ -660,10 +660,6 @@ html .search-discount-code {
     text-transform: capitalize !important;
     @include header();
   }
-
-  input {
-    @include second-font();
-  }
 }
 
 .mat-form-field-infix mat-label {
