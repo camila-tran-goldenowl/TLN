@@ -2349,7 +2349,9 @@ div#base_page\:ttab {
   margin-top: 2rem;
 }
 
-.ui-collapsible-heading-toggle{
+
+html .ui-collapsible-heading-toggle, 
+html .ui-panel-m-titlebar{
   background-color: #f6f6f6 !important;
   color: var(--primary-black-color);
 }
