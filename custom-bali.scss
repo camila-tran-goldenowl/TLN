@@ -530,6 +530,10 @@ html[lang="en"] .mat-calendar * {
 .mat-select-value-text {
   @include header();
   @include second-font();
+
+  span{
+    @include second-font();
+  }
 }
 
 app-search-card.ng-star-inserted {
