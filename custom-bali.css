@@ -769,6 +769,8 @@ html[lang=en] .mdc-slider__thumb-knob {
 .search-card.focused .search-card-title {
   font-weight: 400 !important;
   text-decoration: underline;
+  transition: 0.3s;
+  text-underline-offset: 4px;
 }
 
 .search-card-carousel:not(.mobile) {
