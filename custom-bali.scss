@@ -2349,6 +2349,11 @@ div#base_page\:ttab {
   margin-top: 2rem;
 }
 
+.ui-collapsible-heading-toggle{
+  background-color: #f6f6f6 !important;
+  color: var(--primary-black-color);
+}
+
 div#base_page\:tabview {
   margin-top: 2.5rem;
 
@@ -2364,8 +2369,6 @@ div#base_page\:tabview {
   a.ui-collapsible-heading-toggle {
     padding: 1.25rem;
     padding-left: 4rem !important;
-    background-color: #f6f6f6 !important;
-    color: inherit !important;
   }
 
   .ui-icon-plus:after {
@@ -2607,8 +2610,6 @@ div#base_page\:txtab {
 
     a.ui-collapsible-heading-toggle {
       padding-left: 4rem !important;
-      background-color: #f6f6f6 !important;
-      color: inherit !important;
     }
 
     div[id*=":pocgrd_content"],

@@ -2035,6 +2035,11 @@ div#base_page\:ttab {
   margin-top: 2rem;
 }
 
+.ui-collapsible-heading-toggle {
+  background-color: #f6f6f6 !important;
+  color: var(--primary-black-color);
+}
+
 div#base_page\:tabview {
   margin-top: 2.5rem;
 }
@@ -2050,8 +2055,6 @@ div#base_page\:tabview .accordion-title span {
 div#base_page\:tabview a.ui-collapsible-heading-toggle {
   padding: 1.25rem;
   padding-left: 4rem !important;
-  background-color: #f6f6f6 !important;
-  color: inherit !important;
 }
 div#base_page\:tabview .ui-icon-plus:after {
   background-color: var(--dark-grey) !important;
@@ -2249,8 +2252,6 @@ div#base_page\:txtab .ui-table-cell-label {
   }
   div#base_page\:tabview a.ui-collapsible-heading-toggle {
     padding-left: 4rem !important;
-    background-color: #f6f6f6 !important;
-    color: inherit !important;
   }
   div#base_page\:tabview div[id*=":pocgrd_content"] .ui-block-a,
   div#base_page\:tabview div[id*=":pdoptgrd_content"] .ui-block-a {
