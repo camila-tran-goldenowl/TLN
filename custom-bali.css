@@ -215,7 +215,7 @@ mat-label {
 .mobile mat-expansion-panel .mat-expansion-panel-body > div > p {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 .mobile mat-expansion-panel .sl {
@@ -368,7 +368,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   color: var(--primary-black-color) !important;
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 
@@ -384,7 +384,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 .mat-select-value-text {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 
@@ -510,7 +510,7 @@ html .search-discount-code input {
   text-transform: capitalize !important;
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 
@@ -795,7 +795,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 .search-card-from {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   max-width: 55% !important;
   line-height: unset !important;
@@ -1145,7 +1145,7 @@ app-product .product-card .mat-form-field-label {
   line-height: 22px;
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 
@@ -1267,7 +1267,7 @@ html .open-gallery > span {
 .rate-plan-container .rate-plan-text-container .rate-plan-title-container h3 {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   white-space: inherit !important;
   font-family: "EB Garamond" !important;
@@ -1337,7 +1337,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
   font-family: "EB Garamond" !important;
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   font-weight: 500;
   line-height: 21px;
@@ -1377,7 +1377,7 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
 .mat-card-content p {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 .mat-card-content > div {
@@ -1516,7 +1516,7 @@ html[lang=en] .rate-plan-info {
 .rate-plan-info .rate-plan-title {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   font-family: "EB Garamond" !important;
   font-weight: 500 !important;
@@ -1625,7 +1625,7 @@ app-customer-form mat-form-field.firstName .mat-form-field-wrapper {
 app-customer-form mat-form-field.firstName .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "First Name*: ";
@@ -1638,7 +1638,7 @@ app-customer-form mat-form-field.lastName .mat-form-field-wrapper {
 app-customer-form mat-form-field.lastName .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "Last Name*: ";
@@ -1651,7 +1651,7 @@ app-customer-form mat-form-field.email .mat-form-field-wrapper {
 app-customer-form mat-form-field.email .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "Email*: ";
@@ -1664,7 +1664,7 @@ app-customer-form mat-form-field.language .mat-form-field-wrapper {
 app-customer-form mat-form-field.language .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "Language*: ";
@@ -1677,7 +1677,7 @@ app-customer-form mat-form-field.phone .mat-form-field-wrapper {
 app-customer-form mat-form-field.phone .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "Phone: ";
@@ -1690,7 +1690,7 @@ app-customer-form mat-form-field.country .mat-form-field-wrapper {
 app-customer-form mat-form-field.country .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "Country: ";
@@ -1703,7 +1703,7 @@ app-customer-form .message mat-form-field .mat-form-field-wrapper {
 app-customer-form .message mat-form-field .mat-form-field-wrapper::before {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   color: var(--primary-black-color) !important;
   content: "Message: ";
@@ -1737,7 +1737,7 @@ app-customer-form .search-discount-code .mat-form-field-infix input,
 app-customer-form .search-discount-code .mat-form-field-infix mat-label {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   font-family: "Open Sans" !important;
   text-transform: capitalize !important;
@@ -2811,7 +2811,7 @@ img[id*=pdtimg] {
 .rb-prod-item-panel > .ui-panel-content.ui-widget-content .rb-prod-desc-item:first-child label {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
   font-family: "EB Garamond" !important;
 }
@@ -2929,7 +2929,7 @@ input#orderForm\:disCode {
 div#orderForm\:bskpnl_footer {
   font-size: 18px !important;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0em;
 }
 
