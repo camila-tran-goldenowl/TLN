@@ -1001,10 +1001,8 @@ html .map-icon-focus::before {
 /*==================PROPER PAGE =====================*/
 html[lang=en] h2.product-title,
 .checkout-room-type {
-  font-size: 20px !important;
-  font-weight: 400;
+  font-size: 22px !important;
   font-family: "EB Garamond" !important;
-  font-weight: 500;
   line-height: 32px;
 }
 
