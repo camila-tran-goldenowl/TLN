@@ -1190,6 +1190,7 @@ html .map-icon-focus::before {
 html[lang="en"] h2.product-title,
 html[lang="en"] .checkout-room-type {
   font-size: 22px !important;
+  font-weight: 400 !important;
   @include second-font();
   line-height: 32px;
 }
