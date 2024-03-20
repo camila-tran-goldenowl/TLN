@@ -1518,12 +1518,11 @@ html[lang=en] .rate-plan-info {
   border-radius: 0 !important;
 }
 .rate-plan-info .rate-plan-title {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
   font-family: "EB Garamond" !important;
   font-weight: 500 !important;
+  color: var(--primary-black-color) !important;
 }
 .rate-plan-info .more-info-long {
   margin-top: 24px !important;

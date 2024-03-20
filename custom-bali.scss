@@ -1770,9 +1770,10 @@ html[lang="en"] .rate-plan-info {
   border-radius: 0 !important;
 
   .rate-plan-title {
-    @include header;
+    @include sub-header;
     @include second-font();
     font-weight: 500 !important;
+    color: var(--primary-black-color) !important;
   }
 
   .more-info-long {
