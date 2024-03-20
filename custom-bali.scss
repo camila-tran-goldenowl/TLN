@@ -1222,7 +1222,6 @@ html[lang="en"] .checkout-room-type {
 .select-dates {
   span {
     text-transform: uppercase !important;
-    @include second-font();
     @include title();
   }
 }
@@ -2053,6 +2052,10 @@ app-customer-form {
         @include main-font();
         text-transform: capitalize !important;
       }
+    }
+
+    input{
+      @include second-font();
     }
   }
 

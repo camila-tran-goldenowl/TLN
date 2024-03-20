@@ -1035,7 +1035,6 @@ html[lang=en] .checkout-room-type {
 
 .select-dates span {
   text-transform: uppercase !important;
-  font-family: "EB Garamond" !important;
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
@@ -1747,6 +1746,9 @@ app-customer-form .search-discount-code .mat-form-field-infix mat-label {
   line-height: 26px;
   font-family: "Open Sans" !important;
   text-transform: capitalize !important;
+}
+app-customer-form .search-discount-code input {
+  font-family: "EB Garamond" !important;
 }
 app-customer-form app-payments mat-card {
   border-radius: 0 !important;
