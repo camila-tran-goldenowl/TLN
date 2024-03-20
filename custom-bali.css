@@ -516,12 +516,14 @@ html .search-discount-code input {
   line-height: 22px;
   letter-spacing: 0em;
 }
+html .search-discount-code input {
+  font-family: "EB Garamond" !important;
+}
 
 .mat-form-field-infix mat-label {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  font-family: "EB Garamond" !important;
   text-transform: uppercase !important;
 }
 
