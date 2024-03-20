@@ -1805,6 +1805,11 @@ app-payment-schedule {
   }
 }
 
+.button-container{
+  span.mat-button-wrapper{
+    letter-spacing: 0.15em;
+  }
+}
 // form
 html[lang="en"] .mat-h1 {
   @include sub-header();

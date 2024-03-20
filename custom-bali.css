@@ -1559,6 +1559,10 @@ app-payment-schedule .payment-schedule-container mat-icon {
   font-size: 14px !important;
 }
 
+.button-container span.mat-button-wrapper {
+  letter-spacing: 0.15em;
+}
+
 html[lang=en] .mat-h1 {
   font-size: 20px !important;
   font-weight: 400;
