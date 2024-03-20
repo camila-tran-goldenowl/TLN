@@ -1216,7 +1216,7 @@ html[lang="en"] .checkout-room-type {
 .select-dates {
   span {
     text-transform: uppercase !important;
-    @include second-font();
+    @include main-font();
     @include title();
   }
 }
