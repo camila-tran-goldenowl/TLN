@@ -516,6 +516,7 @@ html[lang="en"] .mat-calendar * {
 .mat-date-range-input input {
   @include black-text();
   @include header();
+  @include second-font();
 }
 
 // input
