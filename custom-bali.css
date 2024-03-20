@@ -17,10 +17,6 @@
 }
 
 /* REMOVE LATER */
-.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
-  content: "";
-}
-
 /* REMOVE LATER */
 * {
   margin: 0;
@@ -1851,16 +1847,6 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
   font-weight: 400;
   margin-bottom: 40px;
   font-weight: 700 !important;
-}
-.rbn-yb-searchtext::after {
-  font-size: 16px !important;
-  font-weight: 400;
-  line-height: 26px;
-  visibility: visible;
-  content: "\a Enter your booking ID and email address to view your booking. \a Details of how to make payment are also available. Please contact us if you have any questions.";
-  white-space: pre;
-  text-align: center;
-  word-wrap: break-word;
 }
 
 .ui-shadow-inset {

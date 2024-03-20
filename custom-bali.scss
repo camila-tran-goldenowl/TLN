@@ -113,11 +113,6 @@
 
 /* REMOVE LATER */
 
-.vendor-products-container
-  mat-card-actions
-  button:not(.mat-button-disabled)::after {
-  content: "";
-}
 
 /* REMOVE LATER */
 
@@ -2154,15 +2149,6 @@ div#base_page\:locform\:languageSelect {
     @include sub-header();
     margin-bottom: 40px;
     font-weight: 700 !important;
-  }
-
-  &::after {
-    @include body-text();
-    visibility: visible;
-    content: "\A Enter your booking ID and email address to view your booking. \A Details of how to make payment are also available. Please contact us if you have any questions.";
-    white-space: pre;
-    text-align: center;
-    word-wrap: break-word;
   }
 }
 
