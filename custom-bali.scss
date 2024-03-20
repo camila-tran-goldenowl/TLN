@@ -512,12 +512,13 @@ html[lang="en"] .mat-calendar * {
 }
 
 .mat-date-range-input-wrapper {
-  max-width: calc(55% - 4px) !important;
+  max-width: calc(44% - 4px) !important;
 }
 
 .mat-date-range-input input {
   @include black-text();
   @include header();
+  @include second-font();
 }
 
 // input
