@@ -2035,10 +2035,13 @@ div#base_page\:ttab {
   margin-top: 2rem;
 }
 
-html .ui-collapsible-heading-toggle,
-html .ui-panel-m-titlebar {
+html .ui-collapsible-heading-toggle {
   background-color: #f6f6f6 !important;
   color: var(--primary-black-color) !important;
+}
+
+html .ui-panel-m-titlebar {
+  background-color: var(--dark-grey) !important;
 }
 
 div#base_page\:tabview {
