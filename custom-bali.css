@@ -1081,13 +1081,12 @@ html[lang=en] .checkout-room-description {
   opacity: 1;
 }
 
+html app-cart-product {
+  /*** CHECK MORE  */
+}
 html app-cart-product .mat-list-item.cart-item {
   max-width: none !important;
 }
-html app-cart-product mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
-  color: #c0c0c0;
-}
-
 app-cart-product .product-features {
   margin-top: 10px !important;
 }
