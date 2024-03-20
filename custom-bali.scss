@@ -533,7 +533,7 @@ html[lang="en"] .mat-calendar * {
   @include header();
   @include second-font();
 
-  span{
+  span {
     @include second-font();
   }
 }
@@ -663,9 +663,8 @@ html .search-discount-code {
     @include header();
   }
 
-  input{
+  input {
     @include second-font();
-  
   }
 }
 
@@ -949,7 +948,7 @@ html[lang="en"] .mdc-slider {
   padding: 15px !important;
 
   &.focused {
-    .search-card-title{
+    .search-card-title {
       font-weight: 400 !important;
       text-decoration: underline;
       transition: 0.3s;
@@ -1009,14 +1008,14 @@ html[lang="en"] .mdc-slider {
   opacity: 1 !important;
 }
 
-.mat-line.summary-row.info.rate-plan-info{
-  background-color: #F9F6F0 !important;
+.mat-line.summary-row.info.rate-plan-info {
+  background-color: #f9f6f0 !important;
 }
 
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();
-  background: #F9F6F0 !important;
+  background: #f9f6f0 !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
@@ -1218,7 +1217,7 @@ html[lang="en"] .checkout-room-type {
     background-size: contain;
     flex-grow: 1;
     background-repeat: no-repeat;
-    background-image: url('https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png') !important;
+    background-image: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png") !important;
     height: 40px;
     background-position: center;
     box-sizing: border-box;
@@ -1249,7 +1248,7 @@ html[lang="en"] .vendor-description {
   @include black-text();
   @include main-font();
   border-radius: 0 !important;
-  background-color: #F9F6F0 !important;
+  background-color: #f9f6f0 !important;
   line-height: 26px !important;
   letter-spacing: 0 !important;
   padding: 10px 15px;
@@ -1817,8 +1816,8 @@ app-payment-schedule {
   }
 }
 
-.button-container{
-  span.mat-button-wrapper{
+.button-container {
+  span.mat-button-wrapper {
     letter-spacing: 0.15em;
   }
 }
@@ -2061,7 +2060,7 @@ app-customer-form {
       }
     }
 
-    input{
+    input {
       @include second-font();
     }
   }
@@ -2363,7 +2362,6 @@ div#base_page\:ttab {
 div#base_page\:ttab {
   margin-top: 2rem;
 }
-
 
 html .ui-collapsible-heading-toggle {
   background-color: #f6f6f6 !important;
@@ -2748,7 +2746,7 @@ button.ui-button.ui-state-default,
 }
 
 .rb-header {
-  background-image: url('https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png'),
+  background-image: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png"),
     url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg") !important;
   background-color: #fff !important;
   background-repeat: no-repeat !important;

@@ -849,13 +849,13 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .mat-line.summary-row.info.rate-plan-info {
-  background-color: #F9F6F0 !important;
+  background-color: #f9f6f0 !important;
 }
 
 html[lang=en] .search-card.focused,
 html[lang=en] .search-card:hover {
   color: var(--primary-black-color) !important;
-  background: #F9F6F0 !important;
+  background: #f9f6f0 !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
@@ -1060,7 +1060,7 @@ html[lang=en] .vendor-description {
   color: var(--primary-black-color) !important;
   font-family: "Open Sans" !important;
   border-radius: 0 !important;
-  background-color: #F9F6F0 !important;
+  background-color: #f9f6f0 !important;
   line-height: 26px !important;
   letter-spacing: 0 !important;
   padding: 10px 15px;
