@@ -1809,7 +1809,7 @@ app-payment-schedule {
 html[lang="en"] .mat-h1 {
   @include sub-header();
   @include second-font();
-  font-weight: 700 !important;
+  // font-weight: 700 !important;
   font-size: 22px !important;
 }
 
@@ -1908,7 +1908,7 @@ app-customer-form {
       grid-template-columns: 2.5fr 7.5fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "First Name*: ";
       }
@@ -1922,7 +1922,7 @@ app-customer-form {
       grid-template-columns: 2.5fr 7.5fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "Last Name*: ";
       }
@@ -1936,7 +1936,7 @@ app-customer-form {
       grid-template-columns: 2.5fr 7.5fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "Email*: ";
       }
@@ -1950,7 +1950,7 @@ app-customer-form {
       grid-template-columns: 2.5fr 7.5fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "Language*: ";
       }
@@ -1964,7 +1964,7 @@ app-customer-form {
       grid-template-columns: 2.5fr 7.5fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "Phone: ";
       }
@@ -1978,7 +1978,7 @@ app-customer-form {
       grid-template-columns: 2.5fr 7.5fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "Country: ";
       }
@@ -1992,7 +1992,7 @@ app-customer-form {
       grid-template-columns: 1.1fr 7.9fr;
 
       &::before {
-        @include header();
+        @include body-text();
         @include black-text();
         content: "Message: ";
       }
@@ -2038,7 +2038,7 @@ app-customer-form {
     .mat-form-field-infix {
       input,
       mat-label {
-        @include header();
+        @include body-text();
         @include main-font();
         text-transform: capitalize !important;
       }

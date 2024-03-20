@@ -1563,7 +1563,6 @@ html[lang=en] .mat-h1 {
   font-size: 20px !important;
   font-weight: 400;
   font-family: "EB Garamond" !important;
-  font-weight: 700 !important;
   font-size: 22px !important;
 }
 
@@ -1629,10 +1628,9 @@ app-customer-form mat-form-field.firstName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.firstName .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "First Name*: ";
 }
@@ -1642,10 +1640,9 @@ app-customer-form mat-form-field.lastName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.lastName .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Last Name*: ";
 }
@@ -1655,10 +1652,9 @@ app-customer-form mat-form-field.email .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.email .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Email*: ";
 }
@@ -1668,10 +1664,9 @@ app-customer-form mat-form-field.language .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.language .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Language*: ";
 }
@@ -1681,10 +1676,9 @@ app-customer-form mat-form-field.phone .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.phone .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Phone: ";
 }
@@ -1694,10 +1688,9 @@ app-customer-form mat-form-field.country .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.country .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Country: ";
 }
@@ -1707,10 +1700,9 @@ app-customer-form .message mat-form-field .mat-form-field-wrapper {
   grid-template-columns: 1.1fr 7.9fr;
 }
 app-customer-form .message mat-form-field .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Message: ";
 }
@@ -1741,10 +1733,9 @@ app-customer-form .details.customer-nation::only-child .button-container button:
 }
 app-customer-form .search-discount-code .mat-form-field-infix input,
 app-customer-form .search-discount-code .mat-form-field-infix mat-label {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   font-family: "Open Sans" !important;
   text-transform: capitalize !important;
 }
