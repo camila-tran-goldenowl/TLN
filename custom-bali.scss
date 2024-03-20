@@ -266,6 +266,10 @@ mat-label {
     .search-dates {
       max-width: none !important;
 
+      .mat-date-range-input-container{
+        @include second-font();
+      }
+
       .mat-date-range-input-wrapper {
         flex: none !important;
       }
