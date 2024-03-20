@@ -996,6 +996,10 @@ html[lang="en"] .mdc-slider {
   opacity: 1 !important;
 }
 
+.mat-line.summary-row.info.rate-plan-info{
+  background-color: #F9F6F0 !important;
+}
+
 html[lang="en"] .search-card.focused,
 html[lang="en"] .search-card:hover {
   @include black-text();

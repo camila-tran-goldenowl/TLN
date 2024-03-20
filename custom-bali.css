@@ -838,6 +838,10 @@ html[lang=en] .mdc-slider__thumb-knob {
   opacity: 1 !important;
 }
 
+.mat-line.summary-row.info.rate-plan-info {
+  background-color: #F9F6F0 !important;
+}
+
 html[lang=en] .search-card.focused,
 html[lang=en] .search-card:hover {
   color: var(--primary-black-color) !important;
