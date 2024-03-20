@@ -2292,7 +2292,7 @@ div#base_page\:txtab .ui-datatable-tablewrapper {
 }
 
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
-  color: var(--primary-black-color);
+  color: var(--primary-black-color) !important;
 }
 
 button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
