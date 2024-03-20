@@ -1556,7 +1556,7 @@ html[lang="en"] app-product-dialog-component {
     .cart-room-type {
       @include second-font();
       @include header();
-      font-weight: 500;
+      font-size: 20px !important;
       line-height: 21px;
       letter-spacing: -0.5px;
       white-space: inherit !important;
