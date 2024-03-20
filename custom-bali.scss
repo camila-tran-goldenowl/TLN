@@ -1239,7 +1239,7 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
 html[lang="en"] .vendor-description {
   @include body-text();
   @include black-text();
-  @include second-font();
+  @include main-font();
   border-radius: 0 !important;
   background-color: var(--secondary-grey-color) !important;
   line-height: 26px !important;
