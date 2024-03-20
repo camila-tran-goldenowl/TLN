@@ -778,6 +778,7 @@ html[lang=en] .mdc-slider__thumb-knob {
 .search-card-title {
   font-family: "EB Garamond" !important;
   font-size: 22px !important;
+  font-weight: 400 !important;
   margin-bottom: 20px !important;
 }
 
