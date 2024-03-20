@@ -1859,6 +1859,7 @@ form#base_page\:gform {
   padding-top: 20px;
   width: 600px;
   margin: auto;
+  display: none;
 }
 form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   font-size: 12px !important;

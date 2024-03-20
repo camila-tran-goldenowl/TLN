@@ -2168,6 +2168,7 @@ form#base_page\:gform {
   padding-top: 20px;
   width: 600px;
   margin: auto;
+  display: none;
 
   .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
     @include title();
