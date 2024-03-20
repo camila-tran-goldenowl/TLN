@@ -1014,6 +1014,7 @@ html[lang=en] h2.product-title,
   background-size: contain;
   flex-grow: 1;
   background-repeat: no-repeat;
+  background-image: url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisade_black.png") !important;
   height: 40px;
   background-position: center;
   box-sizing: border-box;
@@ -2337,7 +2338,7 @@ button.ui-button.ui-state-default,
 }
 
 .rb-header {
-  background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/nisade-logo-white.png"), url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg") !important;
+  background-image: url("https://nisade.com/assets/svg/nisade-logo-white.svg"), url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg") !important;
   background-color: #fff !important;
   background-repeat: no-repeat !important;
   background-position: center center, center 25% !important;
