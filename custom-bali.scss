@@ -11,7 +11,7 @@
   --secondary-orange-color: #ffd075;
   --secondary-beige-color: #f9f6f0;
   --secondary-white-color: #fffdfa;
-  --secondary-grey-color: #dcddde;
+  --secondary-grey-color: #f9f6f0;
   --secondary-light-grey-color: #f4f4f4;
 
   --success-color: #54af91;
@@ -210,6 +210,9 @@ html[lang="en"] .mat-dialog-title {
   color: #ff0000 !important;
 }
 
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+  border-color: var(--secondary-grey-color) !important;
+}
 .mat-form-field-hide-placeholder .mat-select-placeholder,
 mat-label {
   @include main-font();
@@ -533,6 +536,8 @@ html[lang="en"] .mat-calendar * {
   @include second-font();
 
   span {
+    @include header();
+    @include black-text();
     @include second-font();
   }
 }
@@ -660,6 +665,10 @@ html .search-discount-code {
   input {
     text-transform: capitalize !important;
     @include header();
+  }
+
+  mat-label{
+    @include second-font();
   }
 
   input {
@@ -2158,7 +2167,6 @@ div#base_page\:locform\:languageSelect {
 
 // message
 .rbn-yb-searchtext {
-  font-size: 0 !important;
   text-align: center;
   max-width: 949px;
   display: block;
@@ -2173,8 +2181,8 @@ div#base_page\:locform\:languageSelect {
     content: "Your Booking \A";
     @include second-font();
     @include sub-header();
+    font-size: 25px !important;
     margin-bottom: 40px;
-    font-weight: 700 !important;
   }
 }
 
@@ -2231,7 +2239,6 @@ form#base_page\:gform {
 }
 
 .ui-outputpanel {
-  margin-top: 5rem;
   margin-bottom: 3.1rem;
 
   span#base_page\:guest-intranet-greeting {
@@ -2272,6 +2279,7 @@ table {
       padding: 1rem 0.625rem !important;
 
       span {
+        @include second-font();
         font-weight: 500 !important;
       }
 
@@ -2290,8 +2298,8 @@ table {
   tbody {
     .ui-table-row {
       span {
-        @include second-font();
         @include body-text();
+        font-size: 16px !important;
       }
     }
 
@@ -2343,6 +2351,7 @@ div#base_page\:ttab {
   .ui-link {
     text-decoration: none;
     font-weight: 400 !important;
+    font-size: 16px !important;
   }
 
   .ui-table-row {
@@ -2475,10 +2484,11 @@ div#base_page\:tabview {
 
   span,
   li {
-    @include main-font;
-    @include title;
+    @include body-text;
     @include black-text;
+    font-size: 16px !important;
   }
+    
 }
 
 div#base_page\:vendorMessagePanel {
@@ -2496,10 +2506,9 @@ div#base_page\:txtab {
   &::before {
     content: "Payments  \A";
     @include sub-header();
-    @include second-font();
     display: block;
     height: 30px;
-    font-weight: 700 !important;
+    font-size: 18px !important;
   }
 
   .ui-datatable {
@@ -2748,7 +2757,7 @@ button.ui-button.ui-state-default,
     url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/mamun-srizon-Wibty7aUonI-unsplash.jpg") !important;
   background-color: #fff !important;
   background-repeat: no-repeat !important;
-  background-position: center center, center 25% !important;
+  background-position: center center, center 58% !important;
   background-size: 250px, cover !important;
   border: none !important;
   height: 100px !important;
