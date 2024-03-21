@@ -1963,7 +1963,6 @@ table thead .ui-column-header .ui-column-title {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  font-family: "EB Garamond" !important;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -1971,7 +1970,7 @@ table thead .ui-column-header .ui-column-title span {
   font-weight: 500 !important;
 }
 table tbody .ui-table-row span {
-  font-family: "Open Sans" !important;
+  font-family: "EB Garamond" !important;
   font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
@@ -2350,7 +2349,7 @@ button.ui-button.ui-state-default,
 }
 
 .rb-header {
-  background-image: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png"), url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg") !important;
+  background-image: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png"), url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/mamun-srizon-Wibty7aUonI-unsplash.jpg") !important;
   background-color: #fff !important;
   background-repeat: no-repeat !important;
   background-position: center center, center 25% !important;

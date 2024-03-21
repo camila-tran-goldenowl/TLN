@@ -2277,7 +2277,6 @@ table {
 
       .ui-column-title {
         @include title;
-        @include second-font();
         text-transform: uppercase;
         letter-spacing: 0.15em;
 
@@ -2291,7 +2290,7 @@ table {
   tbody {
     .ui-table-row {
       span {
-        @include main-font();
+        @include second-font();
         @include body-text();
       }
     }
