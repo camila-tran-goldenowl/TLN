@@ -210,7 +210,11 @@ html[lang="en"] .mat-dialog-title {
   color: #ff0000 !important;
 }
 
-.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
   border-color: var(--secondary-grey-color) !important;
 }
 .mat-form-field-hide-placeholder .mat-select-placeholder,
@@ -667,7 +671,7 @@ html .search-discount-code {
     @include header();
   }
 
-  mat-label{
+  mat-label {
     @include second-font();
   }
 
@@ -2271,11 +2275,17 @@ form#base_page\:gform {
   padding-right: 0.8rem !important;
 }
 
+.ui-page-theme-a,
+.ui-bar-a {
+  text-shadow: none !important;
+}
+
 table {
   thead {
     .ui-column-header {
       vertical-align: middle;
-      background-color: var(--secondary-grey-color);
+      background-color: #66686a !important;
+      color: white !important;
       padding: 1rem 0.625rem !important;
 
       span {
@@ -2338,7 +2348,7 @@ html head + body .ui-btn.ui-btn-a:visited {
 .table-stroke thead th,
 .table-stripe thead th,
 .table-stripe tbody tr:last-child {
-  border-bottom: 0 !important;
+  // border-bottom: 0 !important;
 }
 
 .ui-datatable {
@@ -2468,12 +2478,16 @@ div#base_page\:tabview {
   border-radius: 0 !important;
 }
 
+// .ui-datatable{
+//   border: 1px solid #66686A !important;
+// }
+
 .ui-panel-m-titlebar {
   background-color: var(--dark-grey) !important;
 
   h3 {
     @include sub-header();
-    @include main-font();
+    @include second-font();
     color: white !important;
   }
 }
@@ -2486,9 +2500,7 @@ div#base_page\:tabview {
   li {
     @include body-text;
     @include black-text;
-    font-size: 16px !important;
   }
-    
 }
 
 div#base_page\:vendorMessagePanel {
@@ -2505,10 +2517,11 @@ div#base_page\:txtab {
 
   &::before {
     content: "Payments  \A";
-    @include sub-header();
+    @include header();
     display: block;
     height: 30px;
     font-size: 18px !important;
+    @include second-font();
   }
 
   .ui-datatable {
