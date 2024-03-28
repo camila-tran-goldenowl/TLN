@@ -1148,6 +1148,15 @@ app-product .product-card .mat-form-field-label {
   line-height: 19px;
   letter-spacing: 0.15em;
 }
+app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-label {
+  font-size: 0 !important;
+}
+app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-label::before {
+  content: "Children (6-12)";
+  font-size: 12px !important;
+  font-weight: 400;
+  line-height: 17px;
+}
 
 .rate-plan-price .sl,
 .cart-item-price .sl[_ngcontent-lqp-c63],
