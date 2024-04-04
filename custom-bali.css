@@ -341,6 +341,9 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   flex: 1;
   font-family: "EB Garamond" !important;
 }
+.search-dates .mat-form-field-infix {
+  width: 205px !important;
+}
 .search-dates mat-datepicker-toggle > button {
   width: -moz-fit-content !important;
   width: fit-content !important;
@@ -379,6 +382,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   line-height: 22px;
   letter-spacing: 0em;
   font-family: "EB Garamond" !important;
+  font-size: 20px !important;
 }
 
 .mat-form-field-label {
@@ -530,6 +534,9 @@ html .search-discount-code input {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
+}
+html .search-discount-code input {
+  font-size: 20px !important;
 }
 html .search-discount-code mat-label {
   font-family: "EB Garamond" !important;
@@ -1058,6 +1065,7 @@ html[lang=en] .checkout-room-type {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
+  font-size: 18px !important;
 }
 
 app-search-filter-window span.mat-button-wrapper {
@@ -1155,6 +1163,7 @@ app-cart-product .product-description,
   font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
+  font-size: 14px !important;
   line-height: 26px;
 }
 
@@ -1470,7 +1479,7 @@ app-shopping-cart mat-card-actions .mat-button-disabled::after {
   content: "BOOK NOW" !important;
 }
 
-html[lang=en] .mat-headline {
+.vendor-container .title-group h2 {
   color: white !important;
 }
 

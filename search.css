@@ -1459,7 +1459,7 @@ app-shopping-cart mat-card-actions .mat-button-disabled::after {
   content: "BOOK NOW" !important;
 }
 
-html[lang=en] .mat-headline {
+.vendor-container .title-group h2 {
   color: white !important;
 }
 
