@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 :root {
   --primary-sea-color: #79a2aa;
   --primary-brown-color: #625956;
-  --primary-black-color: #18181b;
+  --primary-black-color: #625956;
   --secondary-yellow-color: #ffd075;
-  --secondary-orange-color: #f89426;
+  --secondary-orange-color: #ffd075;
   --secondary-beige-color: #f9f6f0;
   --secondary-white-color: #fffdfa;
-  --secondary-grey-color: #dcddde;
+  --secondary-grey-color: #f9f6f0;
   --secondary-light-grey-color: #f4f4f4;
   --success-color: #54af91;
   --fail-color: #ea5f5f;
@@ -16,18 +16,12 @@
   --link-color: #3388cc;
 }
 
-/* REMOVE LATER */
-.vendor-products-container mat-card-actions button:not(.mat-button-disabled)::after {
-  content: "";
-}
-
-/* REMOVE LATER */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-weight: 400;
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 
 .material-icons {
@@ -99,13 +93,13 @@ html[lang=en] .mobile-top span,
 html[lang=en] .mat-card-content,
 html[lang=en] .mat-checkbox,
 html[lang=en] .invoice-container {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   font-weight: 400 !important;
   color: var(--primary-black-color) !important;
 }
 
 html[lang=en] .mat-dialog-title {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 700 !important;
 }
 
@@ -117,9 +111,17 @@ html[lang=en] .mat-dialog-title {
   color: #ff0000 !important;
 }
 
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
+  border-color: var(--secondary-grey-color) !important;
+}
+
 .mat-form-field-hide-placeholder .mat-select-placeholder,
 mat-label {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 
 .mat-flat-button.mat-primary {
@@ -149,7 +151,7 @@ mat-label {
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1215686275);
 }
 .mobile app-search-bar .title-cal-search > div {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-size: 20px;
   margin-left: 10px;
 }
@@ -164,6 +166,7 @@ mat-label {
 }
 .mobile app-search-bar .search-dates .mat-date-range-input-wrapper {
   flex: none !important;
+  font-family: "EB Garamond" !important;
 }
 .mobile app-search-bar .search-discount-code {
   max-width: none !important;
@@ -241,7 +244,7 @@ mat-label {
 }
 
 .basket-text {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 
 @media screen and (max-width: 400px) {
@@ -260,16 +263,11 @@ mat-label {
 }
 .show-search-extended span.edit-search {
   margin-left: 0.7rem;
-  color: white !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: capitalize !important;
 }
-.show-search-extended .mat-icon {
-  color: white !important;
-}
-
 .show-search-extended:has(.add-code) {
   background: #f3cb9f !important;
 }
@@ -301,8 +299,8 @@ mat-label {
 }
 
 html[lang=en] .mat-calendar * {
-  font-family: Inter !important;
-  font-size: 16px !important;
+  font-family: "Open Sans" !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -325,7 +323,7 @@ html[lang=en] .mat-calendar * mat-calendar-body-label {
   display: none !important;
 }
 html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label span {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: lowercase;
@@ -341,6 +339,10 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 }
 .search-dates .mat-date-range-input-wrapper {
   flex: 1;
+  font-family: "EB Garamond" !important;
+}
+.search-dates .mat-form-field-infix {
+  width: 205px !important;
 }
 .search-dates mat-datepicker-toggle > button {
   width: -moz-fit-content !important;
@@ -356,7 +358,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 }
 
 .mat-calendar-content td.mat-calendar-body-label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   text-transform: lowercase;
@@ -370,7 +372,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
 }
 
 .mat-date-range-input-wrapper {
-  max-width: calc(55% - 4px) !important;
+  max-width: calc(44% - 4px) !important;
 }
 
 .mat-date-range-input input {
@@ -379,6 +381,8 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
+  font-family: "EB Garamond" !important;
+  font-size: 20px !important;
 }
 
 .mat-form-field-label {
@@ -395,6 +399,15 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
+  font-family: "EB Garamond" !important;
+}
+.mat-select-value-text span {
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: var(--primary-black-color) !important;
+  font-family: "EB Garamond" !important;
 }
 
 app-search-card.ng-star-inserted:hover {
@@ -433,7 +446,7 @@ app-search-card.ng-star-inserted:hover button {
 }
 
 .mat-selected {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -465,12 +478,12 @@ app-search-card.ng-star-inserted:hover button {
   letter-spacing: 0.15em;
 }
 #desktopLang span {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   font-size: 16px;
 }
 
 .mat-stroked-button.mat-primary {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -484,7 +497,7 @@ app-search-card.ng-star-inserted:hover button {
 }
 
 .mat-menu-item {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -522,6 +535,15 @@ html .search-discount-code input {
   line-height: 22px;
   letter-spacing: 0em;
 }
+html .search-discount-code input {
+  font-size: 20px !important;
+}
+html .search-discount-code mat-label {
+  font-family: "EB Garamond" !important;
+}
+html .search-discount-code input {
+  font-family: "EB Garamond" !important;
+}
 
 .mat-form-field-infix mat-label {
   font-size: 12px !important;
@@ -543,7 +565,7 @@ mat-form-field.search-discount-code .mat-form-field-infix {
 }
 
 .open-filter-button .ng-star-inserted {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -555,7 +577,6 @@ mat-form-field.search-discount-code .mat-form-field-infix {
 html[lang=en] .search-logo {
   display: none !important;
   margin-right: 1rem;
-  background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/logo.png") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -592,7 +613,7 @@ html[lang=en] .search-logo {
 }
 
 .mat-card {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 
 .open-filter-button.active,
@@ -645,7 +666,7 @@ app-search-filter-window .mat-card .title {
 }
 app-search-filter-window .mat-card .title span {
   font-weight: 500;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 app-search-filter-window mat-card-actions .mat-focus-indicator {
   margin-left: 30px;
@@ -685,7 +706,7 @@ app-search-filter-window mat-card-actions .mat-focus-indicator .mat-button-wrapp
 }
 
 .mat-mdc-chip-action-label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -718,17 +739,17 @@ html mat-chip-option button[aria-selected=false] .mdc-evolution-chip__action {
 }
 
 html[lang=en] .mat-mdc-slider .mdc-slider__value-indicator {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   opacity: 1 !important;
   background-color: transparent !important;
 }
 html[lang=en] .mat-mdc-slider .mdc-slider__value-indicator span {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 20px;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 html[lang=en] .mat-mdc-slider .mdc-slider__value-indicator span::before {
   display: none;
@@ -776,6 +797,12 @@ html[lang=en] .mdc-slider__thumb-knob {
 .search-card {
   padding: 15px !important;
 }
+.search-card.focused .search-card-title {
+  font-weight: 400 !important;
+  text-decoration: underline;
+  transition: 0.3s;
+  text-underline-offset: 4px;
+}
 
 .search-card-carousel:not(.mobile) {
   height: auto !important;
@@ -786,15 +813,14 @@ html[lang=en] .mdc-slider__thumb-knob {
 }
 
 .search-card-title {
-  font-size: 20px !important;
-  font-weight: 400;
-  font-family: Archivo !important;
-  font-weight: 500 !important;
+  font-family: "EB Garamond" !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
   margin-bottom: 20px !important;
 }
 
 .search-card-desc {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -828,7 +854,7 @@ html[lang=en] .mdc-slider__thumb-knob {
   background-color: var(--secondary-orange-color) !important;
   border-radius: 0 !important;
   text-transform: uppercase;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -844,10 +870,14 @@ html[lang=en] .mdc-slider__thumb-knob {
   opacity: 1 !important;
 }
 
+.mat-line.summary-row.info.rate-plan-info {
+  background-color: #f9f6f0 !important;
+}
+
 html[lang=en] .search-card.focused,
 html[lang=en] .search-card:hover {
   color: var(--primary-black-color) !important;
-  background: linear-gradient(0deg, var(--secondary-grey-color), var(--secondary-grey-color)) !important;
+  background: #f9f6f0 !important;
   border: none;
   transition: 0.2s;
   transform: none !important;
@@ -870,7 +900,7 @@ html[lang=en] .search-card:hover .search-card-from > span {
 /* end card section */
 /* begin map section */
 html[lang=en] .card-content * {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 
 google-map .cluster-item img {
@@ -878,7 +908,7 @@ google-map .cluster-item img {
 }
 
 .card-content {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   color: var(--primary-black-color) !important;
   padding: 13px 10px;
   display: flex;
@@ -927,10 +957,10 @@ google-map .cluster-item img {
 }
 
 .map-container .map-icon {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   color: var(--primary-black-color) !important;
   font-size: 15px;
   font-weight: 500;
@@ -984,7 +1014,7 @@ google-map .content-title {
 
 html .map-icon-focus {
   border-radius: 0;
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   background-color: var(--secondary-orange-color) !important;
   color: white !important;
 }
@@ -1005,11 +1035,10 @@ html .map-icon-focus::before {
 /* end search list result */
 /*==================PROPER PAGE =====================*/
 html[lang=en] h2.product-title,
-.checkout-room-type {
-  font-size: 20px !important;
-  font-weight: 400;
-  font-family: Archivo !important;
-  font-weight: 500;
+html[lang=en] .checkout-room-type {
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  font-family: "EB Garamond" !important;
   line-height: 32px;
 }
 
@@ -1024,7 +1053,7 @@ html[lang=en] h2.product-title,
   background-size: contain;
   flex-grow: 1;
   background-repeat: no-repeat;
-  background-image: url(https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/logo.png) !important;
+  background-image: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png") !important;
   height: 40px;
   background-position: center;
   box-sizing: border-box;
@@ -1033,10 +1062,10 @@ html[lang=en] h2.product-title,
 
 .select-dates span {
   text-transform: uppercase !important;
-  font-family: Archivo !important;
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
+  font-size: 18px !important;
 }
 
 app-search-filter-window span.mat-button-wrapper {
@@ -1048,13 +1077,13 @@ button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.
 }
 
 html[lang=en] .vendor-description {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
-  font-family: Archivo !important;
+  font-family: "Open Sans" !important;
   border-radius: 0 !important;
-  background-color: var(--secondary-grey-color) !important;
+  background-color: #f9f6f0 !important;
   line-height: 26px !important;
   letter-spacing: 0 !important;
   padding: 10px 15px;
@@ -1082,19 +1111,18 @@ html[lang=en] .vendor-description::before {
 
 /* begin hotel card detail section */
 html[lang=en] .checkout-room-description {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   opacity: 1;
 }
 
+html app-cart-product {
+  /*** CHECK MORE  */
+}
 html app-cart-product .mat-list-item.cart-item {
   max-width: none !important;
 }
-html app-cart-product mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
-  color: #c0c0c0;
-}
-
 app-cart-product .product-features {
   margin-top: 10px !important;
 }
@@ -1132,9 +1160,10 @@ app-cart-product .product-features .material-icons,
 app-cart-product .product-description,
 .product-info-container .product-description {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
+  font-size: 14px !important;
   line-height: 26px;
 }
 
@@ -1148,15 +1177,6 @@ app-product .product-card .mat-form-field-label {
   line-height: 19px;
   letter-spacing: 0.15em;
 }
-app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-label {
-  font-size: 0 !important;
-}
-app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-label::before {
-  content: "Children (6-12)";
-  font-size: 12px !important;
-  font-weight: 400;
-  line-height: 17px;
-}
 
 .rate-plan-price .sl,
 .cart-item-price .sl[_ngcontent-lqp-c63],
@@ -1167,6 +1187,7 @@ app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-la
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
+  font-size: 17px !important;
 }
 
 .rate-price-container > * {
@@ -1196,7 +1217,7 @@ app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-la
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   text-transform: uppercase;
   border: none !important;
   line-height: 19px;
@@ -1226,7 +1247,7 @@ app-product .mat-line.guest-type.summary-row .mat-form-field:nth-child(2) mat-la
   margin: 14px;
 }
 .vendor-container .title-group h2 {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   font-size: 10px !important;
   line-height: 28px !important;
   letter-spacing: 0.15em !important;
@@ -1277,10 +1298,10 @@ html .open-gallery > span {
   margin-bottom: 0.5em;
 }
 .rate-plan-container .rate-plan-text-container .rate-plan-subtitle {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
-  display: none !important;
+  display: block !important;
   white-space: inherit !important;
   line-height: 25.6px;
 }
@@ -1290,7 +1311,7 @@ html .open-gallery > span {
   line-height: 22px;
   letter-spacing: 0em;
   white-space: inherit !important;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 500 !important;
 }
 .rate-plan-container .rate-plan-text-container button mat-icon {
@@ -1313,12 +1334,12 @@ html .open-gallery > span {
 html[lang=en] app-product-dialog-component h2.mat-dialog-title {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 700 !important;
   line-height: 29px !important;
 }
 html[lang=en] app-product-dialog-component .mat-dialog-content {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1337,7 +1358,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 15px;
@@ -1347,25 +1368,25 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
 /* end dialog section */
 /* begin checkout section */
 .mat-card-title {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-size: 20px;
   font-weight: 400;
   line-height: 35px;
 }
 
 .mat-list .mat-list-item .cart-room-type {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-size: 18px !important;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  font-weight: 500;
+  font-size: 20px !important;
   line-height: 21px;
   letter-spacing: -0.5px;
   white-space: inherit !important;
 }
 .mat-list .mat-list-item .summary-row {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -1382,7 +1403,7 @@ html[lang=en] app-product-dialog-component mat-dialog-actions button span {
   text-transform: uppercase;
 }
 .mat-list .mat-list-item .date {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1409,7 +1430,6 @@ html[lang=en] .rack[_ngcontent-lqp-c56] {
   margin-top: 0 !important;
 }
 .mat-card-content .cart-total .sl {
-  margin-top: 10px;
   font-size: 22px;
   font-weight: 500;
   line-height: 27px;
@@ -1459,14 +1479,14 @@ app-shopping-cart mat-card-actions .mat-button-disabled::after {
   content: "BOOK NOW" !important;
 }
 
-html[lang=en] .mat-headline {
+.vendor-container .title-group h2 {
   color: white !important;
 }
 
 html[lang=en] .mat-card-title {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 500;
   font-size: 20px !important;
 }
@@ -1515,7 +1535,7 @@ app-search-bar #searchBarSubmitBtn {
 app-shopping-cart .checkout-vendor {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-size: 22px !important;
   line-height: 35px;
   padding-bottom: 1.1rem !important;
@@ -1534,12 +1554,11 @@ html[lang=en] .rate-plan-info {
   border-radius: 0 !important;
 }
 .rate-plan-info .rate-plan-title {
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 500 !important;
+  color: var(--primary-black-color) !important;
 }
 .rate-plan-info .more-info-long {
   margin-top: 24px !important;
@@ -1547,7 +1566,7 @@ html[lang=en] .rate-plan-info {
   color: var(--primary-black-color) !important;
 }
 .rate-plan-info .more-info-long p {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1573,11 +1592,14 @@ app-payment-schedule .payment-schedule-container mat-icon {
   font-size: 14px !important;
 }
 
+.button-container span.mat-button-wrapper {
+  letter-spacing: 0.15em;
+}
+
 html[lang=en] .mat-h1 {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Archivo !important;
-  font-weight: 700 !important;
+  font-family: "EB Garamond" !important;
   font-size: 22px !important;
 }
 
@@ -1643,10 +1665,9 @@ app-customer-form mat-form-field.firstName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.firstName .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "First Name*: ";
 }
@@ -1656,10 +1677,9 @@ app-customer-form mat-form-field.lastName .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.lastName .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Last Name*: ";
 }
@@ -1669,10 +1689,9 @@ app-customer-form mat-form-field.email .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.email .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Email*: ";
 }
@@ -1682,10 +1701,9 @@ app-customer-form mat-form-field.language .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.language .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Language*: ";
 }
@@ -1695,10 +1713,9 @@ app-customer-form mat-form-field.phone .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.phone .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Phone: ";
 }
@@ -1708,10 +1725,9 @@ app-customer-form mat-form-field.country .mat-form-field-wrapper {
   grid-template-columns: 2.5fr 7.5fr;
 }
 app-customer-form mat-form-field.country .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Country: ";
 }
@@ -1721,10 +1737,9 @@ app-customer-form .message mat-form-field .mat-form-field-wrapper {
   grid-template-columns: 1.1fr 7.9fr;
 }
 app-customer-form .message mat-form-field .mat-form-field-wrapper::before {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
   content: "Message: ";
 }
@@ -1755,12 +1770,14 @@ app-customer-form .details.customer-nation::only-child .button-container button:
 }
 app-customer-form .search-discount-code .mat-form-field-infix input,
 app-customer-form .search-discount-code .mat-form-field-infix mat-label {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  font-family: Inter !important;
+  line-height: 26px;
+  font-family: "Open Sans" !important;
   text-transform: capitalize !important;
+}
+app-customer-form .search-discount-code input {
+  font-family: "EB Garamond" !important;
 }
 app-customer-form app-payments mat-card {
   border-radius: 0 !important;
@@ -1791,7 +1808,7 @@ div#base_page\:base_header .rb-header {
   height: 140px !important;
 }
 div#base_page\:base_header .rb-header .ui-btn-icon-right:after {
-  color: #18181b !important;
+  color: #625956 !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 div#base_page\:base_header form#base_page\:locform {
@@ -1804,7 +1821,7 @@ div#base_page\:base_header .ui-icon-carat-d:after {
   height: 2px;
   background-image: none !important;
   background-color: rgba(0, 0, 0, 0) !important;
-  color: #18181b !important;
+  color: #625956 !important;
   transform: rotate(45deg);
   border: solid #000;
   border-width: 0 1.5px 1.5px 0;
@@ -1843,13 +1860,12 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
 }
 div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_input-button .ui-btn-icon-right:after {
   background: transparent !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
 
 .rbn-yb-searchtext {
-  font-size: 0 !important;
   text-align: center;
   max-width: 949px;
   display: block;
@@ -1862,21 +1878,11 @@ div#base_page\:locform\:languageSelect div#base_page\:locform\:languageSelect_in
   text-align: center;
   word-wrap: break-word;
   content: "Your Booking \a";
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-size: 20px !important;
   font-weight: 400;
+  font-size: 25px !important;
   margin-bottom: 40px;
-  font-weight: 700 !important;
-}
-.rbn-yb-searchtext::after {
-  font-size: 16px !important;
-  font-weight: 400;
-  line-height: 26px;
-  visibility: visible;
-  content: "\a Enter your booking ID and email address to view your booking. \a Details of how to make payment are also available. Please contact us if you have any questions.";
-  white-space: pre;
-  text-align: center;
-  word-wrap: break-word;
 }
 
 .ui-shadow-inset {
@@ -1887,6 +1893,7 @@ form#base_page\:gform {
   padding-top: 20px;
   width: 600px;
   margin: auto;
+  display: none;
 }
 form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   font-size: 12px !important;
@@ -1906,15 +1913,15 @@ form#base_page\:gform .ui-btn.ui-input-btn.ui-corner-all.ui-shadow {
   text-transform: uppercase;
 }
 form#base_page\:gform .ui-field-contain .ui-input-text {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
   background-color: white;
   padding: 8px 15px;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--dark-grey);
@@ -1922,7 +1929,7 @@ form#base_page\:gform .ui-field-contain .ui-input-text {
   width: 100%;
 }
 form#base_page\:gform .ui-field-contain input {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   padding: 0 !important;
 }
 form#base_page\:gform .ui-field-contain label {
@@ -1935,16 +1942,15 @@ form#base_page\:gform .ui-field-contain label {
 }
 
 .ui-outputpanel {
-  margin-top: 5rem;
   margin-bottom: 3.1rem;
 }
 .ui-outputpanel span#base_page\:guest-intranet-greeting {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 .ui-outputpanel span#base_page\:guest-intranet-greeting::after {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 26px;
@@ -1968,19 +1974,25 @@ form#base_page\:gform .ui-field-contain label {
   padding-right: 0.8rem !important;
 }
 
+.ui-page-theme-a,
+.ui-bar-a {
+  text-shadow: none !important;
+}
+
 table thead .ui-column-header {
   vertical-align: middle;
-  background-color: var(--secondary-grey-color);
+  background-color: #66686a !important;
+  color: white !important;
   padding: 1rem 0.625rem !important;
 }
 table thead .ui-column-header span {
+  font-family: "EB Garamond" !important;
   font-weight: 500 !important;
 }
 table thead .ui-column-header .ui-column-title {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  font-family: Archivo !important;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -1988,13 +2000,13 @@ table thead .ui-column-header .ui-column-title span {
   font-weight: 500 !important;
 }
 table tbody .ui-table-row span {
-  font-family: Inter !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
+  font-size: 16px !important;
 }
 table tbody td {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   vertical-align: middle;
 }
 
@@ -2021,12 +2033,6 @@ html head + body .ui-btn.ui-btn-a:visited {
   background-color: var(--dark-grey) !important;
 }
 
-.table-stroke thead th,
-.table-stripe thead th,
-.table-stripe tbody tr:last-child {
-  border-bottom: 0 !important;
-}
-
 .ui-datatable {
   border: 1px solid var(--secondary-grey-color) !important;
   box-shadow: none !important;
@@ -2036,6 +2042,7 @@ div#base_page\:postab .ui-link,
 div#base_page\:ttab .ui-link {
   text-decoration: none;
   font-weight: 400 !important;
+  font-size: 16px !important;
 }
 div#base_page\:postab .ui-table-row td,
 div#base_page\:ttab .ui-table-row td {
@@ -2043,7 +2050,7 @@ div#base_page\:ttab .ui-table-row td {
 }
 div#base_page\:postab .ui-table-cell-label,
 div#base_page\:ttab .ui-table-cell-label {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   font-weight: 400;
 }
 
@@ -2051,11 +2058,24 @@ div#base_page\:ttab {
   margin-top: 2rem;
 }
 
+html .ui-collapsible-heading-toggle {
+  background-color: #f6f6f6 !important;
+  color: var(--primary-black-color) !important;
+}
+
+html .ui-panel-m-titlebar {
+  background-color: var(--dark-grey) !important;
+}
+
 div#base_page\:tabview {
   margin-top: 2.5rem;
 }
+div#base_page\:tabview table tbody tr:nth-child(odd) td,
+div#base_page\:tabview table tbody tr:nth-child(odd) td {
+  background-color: #f6f6f6 !important;
+}
 div#base_page\:tabview .accordion-title span {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2078,13 +2098,13 @@ div#base_page\:tabview .rbn-vendor-box .ui-grid-solo span.rbn-bold {
   font-weight: 400;
 }
 div#base_page\:tabview .rbn-vendor-box .ui-grid-solo .ui-block-a {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 10px;
 }
 div#base_page\:tabview .ui-block-a {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 div#base_page\:tabview .accordion-vendor {
   font-weight: 700 !important;
@@ -2126,7 +2146,7 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
 .ui-panel-m-titlebar h3 {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Inter !important;
+  font-family: "EB Garamond" !important;
   color: white !important;
 }
 
@@ -2136,10 +2156,9 @@ div#base_page\:tabview .accordion-status-block .accordion-status.na {
 }
 .ui-panel-m-content span,
 .ui-panel-m-content li {
-  font-family: Inter !important;
-  font-size: 12px !important;
+  font-size: 15px !important;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 26px;
   color: var(--primary-black-color) !important;
 }
 
@@ -2157,12 +2176,14 @@ div#base_page\:txtab {
 }
 div#base_page\:txtab::before {
   content: "Payments  \a";
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 400;
-  font-family: Archivo !important;
+  line-height: 22px;
+  letter-spacing: 0em;
   display: block;
   height: 30px;
-  font-weight: 700 !important;
+  font-size: 18px !important;
+  font-family: "EB Garamond" !important;
 }
 div#base_page\:txtab .ui-datatable {
   border: none !important;
@@ -2195,7 +2216,7 @@ div#base_page\:txtab button[id*=":stpFrm:stripeSubmit"] {
   letter-spacing: 0.15em;
 }
 div#base_page\:txtab .ui-datatable-tablewrapper div[id$="base_page:tabview:orderItem"] span {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
 }
 div#base_page\:txtab .ui-table-cell-label {
   font-size: 12px !important;
@@ -2211,10 +2232,10 @@ div#base_page\:txtab .ui-table-cell-label {
   border-radius: 0 !important;
 }
 #scrollToPay label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   color: var(--primary-black-color) !important;
 }
 
@@ -2307,7 +2328,7 @@ div#base_page\:txtab .ui-datatable-tablewrapper {
 }
 
 mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
-  color: var(--primary-black-color);
+  color: var(--primary-black-color) !important;
 }
 
 button.mat-focus-indicator.main.mat-flat-button.mat-icon-button.mat-button-base.mat-primary {
@@ -2354,14 +2375,15 @@ button.ui-button.ui-state-default,
 }
 
 .rb-header {
-  background-image: url("https://storage.googleapis.com/theluxenomad-python.appspot.com/assets/roomboss/nisade-logo-white.png"), url("https://dabb7zy6p4b0z.cloudfront.net/nisade/nisadehero.jpg");
+  background-image: url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/TLN_Logo_Earth Brown.png"), url("https://tln-nisade-git-main-camila-tran-goldenowl.vercel.app/mamun-srizon-Wibty7aUonI-unsplash.jpg") !important;
   background-color: #fff !important;
-  background-repeat: no-repeat;
-  background-position: center center, center 25%;
-  background-size: 250px, cover;
-  border: none;
+  background-repeat: no-repeat !important;
+  background-position: center center, center 58% !important;
+  background-size: 250px, cover !important;
+  border: none !important;
   height: 100px !important;
-  border-bottom: 0;
+  border-bottom: 0 !important;
+  background-size: 12%, 100%, 30% !important;
 }
 
 .rb-header-title {
@@ -2561,7 +2583,7 @@ ul#orderForm\:languagenew_items li:nth-child(n+4) {
 
 /* REMOVE AFTER CONFIRM */
 html .ui-button-text {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 
 body {
@@ -2573,7 +2595,7 @@ button.ui-state-default .span.ui-button-text.ui-c {
 }
 
 html .ui-button-text {
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   color: var(--primary-black-color) !important;
   letter-spacing: 0.15em;
   font-weight: 400 !important;
@@ -2623,7 +2645,7 @@ div#orderForm\:bskpgtop {
 }
 
 .ui-btn-right label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2632,7 +2654,7 @@ div#orderForm\:bskpgtop {
   line-height: 26px !important;
 }
 .ui-selectonemenu-items-wrapper ul li {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2648,7 +2670,7 @@ div#orderForm\:bskpgtop {
   padding: 0.5rem 1rem;
 }
 .vc-chip-container .ui-button.ui-widget.chip span {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 
 form#locform .ui-btn-right td {
@@ -2677,7 +2699,7 @@ html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
 }
 
 .ui-widget-content .ui-state-highlight {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   background-color: transparent !important;
@@ -2688,12 +2710,12 @@ html .ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
 }
 
 html .vc-chip-container .chip {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
 html .vc-chip-container .chip span {
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 
 .chip.selected > span {
@@ -2706,7 +2728,7 @@ html .vc-chip-container .chip span {
 }
 
 .vc-chip-container .chip {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -2724,7 +2746,7 @@ html .vc-chip-container .chip span {
   font-size: 20px !important;
   font-weight: 400;
   color: var(--primary-black-color) !important;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 700 !important;
   font-size: 22px !important;
 }
@@ -2734,7 +2756,7 @@ html .vc-chip-container .chip span {
 .rb-parent-cat-title:before,
 .rb-child-cat-title:before {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   line-height: 0 !important;
@@ -2756,10 +2778,10 @@ html[lang=en] #orderForm:vndcat button {
   padding: 0 !important;
 }
 .flex-item label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 500 !important;
 }
 .flex-item img {
@@ -2790,7 +2812,7 @@ html .rb-h-selwrapper {
 }
 
 .rb-prod-desc-item:nth-child(2) label {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -2829,7 +2851,7 @@ img[id*=pdtimg] {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 .rb-prod-item-panel > .ui-panel-content.ui-widget-content .rb-prod-desc-item button {
   background-color: var(--secondary-orange-color) !important;
@@ -2883,7 +2905,7 @@ div#orderForm\:itemdtbsk thead .ui-state-default .ui-column-title {
   font-size: 12px !important;
   font-weight: 400;
   line-height: 17px;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 19px;
@@ -2902,7 +2924,7 @@ div#orderForm\:itemdtbsk tbody td label[id$=":itempdt"] {
 div#orderForm\:itemdtbsk tbody td .item,
 div#orderForm\:itemdtbsk tbody td label {
   font-size: 15px;
-  font-family: Inter !important;
+  font-family: "Open Sans" !important;
   font-weight: 500 !important;
 }
 
@@ -2918,26 +2940,26 @@ table tbody tr:nth-child(even) td {
 
 input#orderForm\:disCode {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
   background-color: white;
   padding: 8px 15px;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   min-width: 150px;
 }
 
 ::-moz-placeholder {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
 
 ::placeholder {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -3003,7 +3025,7 @@ div#confirmdlg {
 }
 form#orderForm .ui-confirm-dialog-message,
 div#confirmdlg .ui-confirm-dialog-message {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
 }
@@ -3032,7 +3054,7 @@ div#confirmdlg .ui-dialog-titlebar {
 form#orderForm .ui-dialog-titlebar .ui-dialog-title,
 div#confirmdlg .ui-dialog-titlebar .ui-dialog-title {
   color: var(--primary-black-color) !important;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
   margin: 0 !important;
 }
 form#orderForm button#orderForm\:gcontshop .fa-arrow-left,
@@ -3224,7 +3246,7 @@ html .ui-datepicker table tbody tr:nth-child(even) td {
 }
 html .ui-datepicker th {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   background: white !important;
@@ -3237,7 +3259,7 @@ html .ui-datepicker td.ui-datepicker-week-end.ui-datepicker-days-cell-over.undef
   background-color: var(--secondary-orange-color) !important;
 }
 html .ui-datepicker .ui-state-default {
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   color: var(--primary-black-color) !important;
@@ -3259,7 +3281,7 @@ label#orderForm\:existglbl,
 label#orderForm\:newguestlbl {
   font-size: 20px !important;
   font-weight: 400;
-  font-family: Archivo !important;
+  font-family: "EB Garamond" !important;
 }
 
 label#orderForm\:newguesttxt,
@@ -3308,7 +3330,7 @@ button#orderForm\:gcontshop span.ui-button-text {
 
 div#orderForm\:vercodepg input {
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
@@ -3324,7 +3346,7 @@ div#orderForm\:newguestpg .flex-item .ui-selectonemenu,
 div#orderForm\:newguestpg .flex-item textarea {
   margin-left: 2rem;
   color: var(--primary-black-color) !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   font-weight: 400;
   line-height: 26px;
   border: 1px solid var(--secondary-grey-color);
@@ -3399,4 +3421,4 @@ button#orderForm\:sendinq span::after {
   letter-spacing: 0.15em;
   font-size: 16px;
   content: "SEND ENQUIRY";
-}/*# sourceMappingURL=search.css.map */
+}/*# sourceMappingURL=custom-bali.css.map */
