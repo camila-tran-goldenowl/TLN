@@ -342,7 +342,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   font-family: "EB Garamond" !important;
 }
 .search-dates .mat-form-field-infix {
-  width: 205px !important;
+  width: 210px !important;
 }
 .search-dates mat-datepicker-toggle > button {
   width: -moz-fit-content !important;
