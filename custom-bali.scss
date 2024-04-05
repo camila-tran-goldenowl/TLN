@@ -490,7 +490,7 @@ html[lang="en"] .mat-calendar * {
   }
 
   .mat-form-field-infix {
-    width: 205px !important
+    width: 210px !important;
   }
 
   mat-datepicker-toggle > button {
@@ -1661,6 +1661,16 @@ html[lang="en"] .rack[_ngcontent-lqp-c56] {
 
     .mat-button-wrapper {
       visibility: hidden;
+    }
+  }
+}
+
+html[lang="en"] app-shopping-cart .hide-delay {
+  mat-card-actions {
+    button {
+      background-color: #0000001f !important;
+      color: #00000042 !important;
+      box-shadow: 0 0 #0003, 0 0 #00000024, 0 0 #0000001f !important;
     }
   }
 }
