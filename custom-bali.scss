@@ -1376,8 +1376,17 @@ app-product {
 }
 
 .rate-price-container > * {
+  display: none;
   @include caption();
   line-height: 22px;
+}
+
+.rate-plan-price {
+  .sl {
+    &:before {
+      content: "Total ";
+    }
+  }
 }
 
 .open-gallery[_ngcontent-lqp-c70] {

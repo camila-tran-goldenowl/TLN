@@ -1191,10 +1191,15 @@ app-product .product-card .mat-form-field-label {
 }
 
 .rate-price-container > * {
+  display: none;
   font-size: 14px !important;
   font-weight: 400;
   line-height: 17px;
   line-height: 22px;
+}
+
+.rate-plan-price .sl:before {
+  content: "Total ";
 }
 
 .open-gallery[_ngcontent-lqp-c70] {
