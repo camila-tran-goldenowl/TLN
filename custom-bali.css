@@ -1198,8 +1198,8 @@ app-product .product-card .mat-form-field-label {
   line-height: 22px;
 }
 
-.rate-plan-price .sl:before {
-  content: "Total ";
+.rate-plan-price .sl:after {
+  content: "  for total stay";
 }
 
 .open-gallery[_ngcontent-lqp-c70] {

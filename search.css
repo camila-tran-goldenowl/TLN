@@ -1441,8 +1441,8 @@ html[lang=en] app-shopping-cart .hide-delay mat-card-actions button {
   box-shadow: 0 0 rgba(0, 0, 0, 0.2), 0 0 rgba(0, 0, 0, 0.1411764706), 0 0 rgba(0, 0, 0, 0.1215686275) !important;
 }
 
-.rate-plan-price .sl:before {
-  content: "Total ";
+.rate-plan-price .sl:after {
+  content: "  for total stay";
 }
 
 app-shopping-cart mat-card-actions button {

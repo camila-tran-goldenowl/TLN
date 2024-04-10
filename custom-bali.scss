@@ -1383,8 +1383,8 @@ app-product {
 
 .rate-plan-price {
   .sl {
-    &:before {
-      content: "Total ";
+    &:after {
+      content: "  for total stay";
     }
   }
 }

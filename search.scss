@@ -1652,8 +1652,9 @@ html[lang=en] app-shopping-cart .hide-delay mat-card-actions button {
 
 .rate-plan-price {
   .sl {
-    &:before {
-      content: "Total ";
+
+    &:after{
+      content: "  for total stay";
     }
   }
 }
