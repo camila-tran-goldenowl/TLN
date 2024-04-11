@@ -237,6 +237,10 @@ mat-label {
   width: 100% !important;
 }
 
+html[lang="en"] .mobile .product-selection mat-form-field{
+  margin: 2rem 0 0.5rem !important;
+}
+
 .mobile {
   // card
   .search-card {
