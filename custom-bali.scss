@@ -378,6 +378,12 @@ mat-label {
       top: 0;
     }
   }
+
+  .product-selection{
+    mat-form-field{
+      margin: 2rem 0 .5rem;
+    }
+  }
 }
 
 .basket-text {
@@ -1388,6 +1394,8 @@ app-product {
     }
   }
 }
+
+
 
 .open-gallery[_ngcontent-lqp-c70] {
   font-weight: 400 !important;
