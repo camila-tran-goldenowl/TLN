@@ -559,12 +559,29 @@ html[lang="en"] .mat-form-field-label {
   letter-spacing: 0.15em;
 }
 
-html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-start,
-html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-end,
-html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-gap {
+html[lang="en"]
+  .search-bar
+  .mat-form-field-appearance-outline
+  .mat-form-field-outline-start,
+html[lang="en"]
+  .search-bar
+  .mat-form-field-appearance-outline
+  .mat-form-field-outline-end,
+html[lang="en"]
+  .search-bar
+  .mat-form-field-appearance-outline
+  .mat-form-field-outline-gap {
   color: #0000001f !important;
   border-width: 1px !important;
   opacity: 1 !important;
+}
+
+html[lang="en"] .search-bar .mat-form-field-label,
+html[lang="en"] .search-bar .mat-date-range-input-inner,
+html[lang="en"] .search-bar .mat-select-value,
+html[lang="en"] .date-range,
+html[lang="en"] .title-cal-search {
+  color: var(--primary-black-color) !important;
 }
 
 .mat-select-value-text {
