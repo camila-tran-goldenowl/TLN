@@ -237,7 +237,7 @@ mat-label {
   width: 100% !important;
 }
 
-html[lang="en"] .mobile .product-selection mat-form-field{
+html[lang="en"] .mobile .product-selection mat-form-field {
   margin: 2rem 0 0.5rem !important;
 }
 
@@ -392,9 +392,9 @@ html[lang="en"] .mobile .product-selection mat-form-field{
     }
   }
 
-  .product-selection{
-    mat-form-field{
-      margin: 2rem 0 .5rem;
+  .product-selection {
+    mat-form-field {
+      margin: 2rem 0 0.5rem;
     }
   }
 }
@@ -557,6 +557,12 @@ html[lang="en"] .mat-form-field-label {
   @include title();
   @include black-text();
   letter-spacing: 0.15em;
+}
+
+html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-start,
+html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-end,
+html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-gap {
+  color: #0000001f !important;
 }
 
 .mat-select-value-text {
@@ -1406,8 +1412,6 @@ app-product {
     }
   }
 }
-
-
 
 .open-gallery[_ngcontent-lqp-c70] {
   font-weight: 400 !important;

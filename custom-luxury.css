@@ -410,6 +410,12 @@ html[lang=en] .mat-form-field-label {
   letter-spacing: 0.15em;
 }
 
+html[lang=en] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-start,
+html[lang=en] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-end,
+html[lang=en] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-gap {
+  color: rgba(0, 0, 0, 0.1215686275) !important;
+}
+
 .mat-select-value-text {
   font-size: 18px !important;
   font-weight: 400;
