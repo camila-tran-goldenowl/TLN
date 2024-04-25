@@ -241,6 +241,16 @@ html[lang="en"] .mobile .product-selection mat-form-field{
   margin: 2rem 0 0.5rem !important;
 }
 
+.search-bar-container {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px #00000005, 0 4px 6px -2px #00000003;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: none;
+}
+
 .mobile {
   // card
   .search-card {
