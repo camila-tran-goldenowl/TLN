@@ -422,7 +422,11 @@ html[lang=en] .search-bar .mat-form-field-label,
 html[lang=en] .search-bar .mat-date-range-input-inner,
 html[lang=en] .search-bar .mat-select-value,
 html[lang=en] .date-range,
-html[lang=en] .title-cal-search {
+html[lang=en] .title-cal-search,
+html[lang=en] .mat-date-range-input-separator,
+html[lang=en] .title-cal-search .mat-icon,
+html[lang=en] .search-bar .mat-datepicker-toggle-default-icon,
+html[lang=en] .mat-select-arrow {
   color: var(--primary-black-color) !important;
 }
 
