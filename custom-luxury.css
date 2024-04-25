@@ -148,12 +148,11 @@ html[lang=en] .mobile .product-selection mat-form-field {
 
 .search-bar-container {
   width: 100%;
-  background-color: #fff;
+  background: #fff !important;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.0196078431), 0 4px 6px -2px rgba(0, 0, 0, 0.0117647059);
   position: sticky;
   top: 0;
   z-index: 900;
-  background: none;
   background: none !important;
 }
 
