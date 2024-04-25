@@ -552,7 +552,7 @@ html[lang="en"] .mat-calendar * {
 }
 
 // input
-.mat-form-field-label {
+html[lang="en"] .mat-form-field-label {
   text-transform: uppercase;
   @include title();
   @include black-text();

@@ -401,7 +401,7 @@ html[lang=en] .mat-calendar * .mat-calendar-controls .mdc-button__label::first-l
   font-size: 20px !important;
 }
 
-.mat-form-field-label {
+html[lang=en] .mat-form-field-label {
   text-transform: uppercase;
   font-size: 12px !important;
   font-weight: 400;
