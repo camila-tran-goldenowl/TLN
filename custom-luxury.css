@@ -414,6 +414,8 @@ html[lang=en] .search-bar .mat-form-field-appearance-outline .mat-form-field-out
 html[lang=en] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-end,
 html[lang=en] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-gap {
   color: rgba(0, 0, 0, 0.1215686275) !important;
+  border-width: 1px !important;
+  opacity: 1 !important;
 }
 
 .mat-select-value-text {

@@ -563,6 +563,8 @@ html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-o
 html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-end,
 html[lang="en"] .search-bar .mat-form-field-appearance-outline .mat-form-field-outline-gap {
   color: #0000001f !important;
+  border-width: 1px !important;
+  opacity: 1 !important;
 }
 
 .mat-select-value-text {
