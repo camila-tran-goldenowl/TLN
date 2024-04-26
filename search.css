@@ -1256,6 +1256,9 @@ html .open-gallery > span {
   display: block;
   margin-left: auto;
   margin-right: 0;
+  background: white !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--secondary-orange-color) !important;
 }
 #add-product mat-icon {
   display: none;
