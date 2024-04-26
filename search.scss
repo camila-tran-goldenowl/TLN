@@ -1448,7 +1448,10 @@ html .open-gallery > span {
   display: block;
   margin-left: auto;
   margin-right: 0;
-
+  background: white !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--secondary-orange-color) !important;
+  
   mat-icon {
     display: none;
   }
@@ -1658,6 +1661,7 @@ html[lang=en] app-shopping-cart .hide-delay mat-card-actions button {
     }
   }
 }
+
 
 app-shopping-cart {
   mat-card-actions {
